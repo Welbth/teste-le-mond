@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <title>Showcase - Temda Estofados Design System</title>
+
+    <style>
+        /* Sourced custom fonts definition */
+        @font-face {
+            font-family: "madefor-display-bold";
+            src: url("assets/36b8ceceb9cb75b1_madefor-display.var.original.woff2") format("woff2");
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "madefor-text";
+            src: url("assets/83ea0d46fbd59442_madefor-text.var.original.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "adobe-caslon-w01-smbd";
+            src: url("assets/480eb9a39f30be97_adobe-caslon-w01-smbd.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Variables definitions matching original theme properties */
+        :root {
+            --color_0: 255,255,255;
+            --color_2: 0,0,0;
+            --color_3: 237,28,36;
+            --color_11: 255,255,255;
+            --color_12: 240,240,240;
+            --color_14: 110,110,110;
+            --color_15: 0,0,0;
+            --color_18: 213,123,13; /* Brand Orange-Gold */
+            --color_38: 240,240,240;
+            --color_39: 194,194,194;
+
+            --font_0: normal normal normal 73px/1.2em madefor-display-bold, sans-serif;
+            --font_2: normal normal normal 42px/1.3em madefor-display-bold, sans-serif;
+            --font_3: normal normal normal 38px/1.3em madefor-display-bold, sans-serif;
+            --font_4: normal normal normal 34px/1.3em madefor-display-bold, sans-serif;
+            --font_7: normal normal normal 18px/1.6em madefor-text, sans-serif;
+            --font_8: normal normal normal 16px/1.6em madefor-text, sans-serif;
+            --font_9: normal normal normal 14px/1.6em madefor-text, sans-serif;
+        }
+
+        /* General layout styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "madefor-text", Helvetica, Arial, sans-serif;
+            background-color: rgb(var(--color_11));
+            color: rgb(var(--color_15));
+            line-height: 1.6;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Fixed Header Navigation Bar style */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90px;
+            background-color: rgb(var(--color_11));
+            border-bottom: 1px solid rgb(var(--color_12));
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+        }
+        .header-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            max-height: 50px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(var(--color_15));
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: rgb(var(--color_18));
+        }
+
+        /* Documentation section styles */
+        .doc-section {
+            padding: 90px 0;
+            border-bottom: 1px solid rgb(var(--color_12));
+        }
+        .doc-section:nth-of-type(even) {
+            background-color: rgb(var(--color_12));
+        }
+        .doc-title {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 32px;
+            color: rgb(var(--color_15));
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .doc-subtitle {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 18px;
+            color: rgb(var(--color_18));
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            border-left: 4px solid rgb(var(--color_18));
+            padding-left: 12px;
+        }
+
+        /* Cloned slideshow layout wrapper */
+        .hero-slideshow {
+            position: relative;
+            height: 480px;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .slide-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slide-item.active {
+            opacity: 1;
+            z-index: 10;
+        }
+        .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.35);
+        }
+        .slide-content {
+            position: relative;
+            z-index: 20;
+            text-align: center;
+            color: #fff;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .slide-title {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 46px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .slide-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 30;
+            background: none;
+            border: none;
+            cursor: pointer;
+            fill: #fff;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .slide-control:hover {
+            opacity: 1;
+        }
+        .slide-control.prev {
+            left: 20px;
+        }
+        .slide-control.next {
+            right: 20px;
+            transform: translateY(-50%) scaleX(-1);
+        }
+
+        /* Typography spec vertical list layout */
+        .typography-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .typography-label {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 13px;
+            color: rgb(var(--color_14));
+            width: 25%;
+        }
+        .typography-preview {
+            width: 55%;
+        }
+        .typography-metrics {
+            font-family: monospace;
+            font-size: 12px;
+            color: rgb(var(--color_14));
+            text-align: right;
+            width: 20%;
+        }
+
+        /* Color swatches card grid */
+        .colors-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .color-card {
+            flex: 1;
+            min-width: 200px;
+            background-color: rgb(var(--color_11));
+            border: 1px solid rgb(var(--color_12));
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: transform 0.3s;
+        }
+        .color-card:hover {
+            transform: translateY(-5px);
+        }
+        .color-swatch {
+            height: 100px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .color-name {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .color-details {
+            font-size: 12px;
+            color: rgb(var(--color_14));
+        }
+
+        /* UI elements layout */
+        .ui-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .ui-block {
+            flex: 1;
+            min-width: 300px;
+        }
+        .state-label {
+            font-family: monospace;
+            font-size: 11px;
+            color: rgb(var(--color_14));
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Brand Styled Button */
+        .wixui-button {
+            display: inline-block;
+            background-color: rgb(var(--color_18));
+            color: #fff;
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 20px;
+            border: 2px solid rgb(var(--color_18));
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        .wixui-button:hover {
+            background-color: rgb(var(--color_15));
+            border-color: rgb(var(--color_15));
+        }
+        .wixui-button.disabled {
+            background-color: rgb(var(--color_39));
+            border-color: rgb(var(--color_39));
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-family: "madefor-text", sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .form-input {
+            width: 100%;
+            height: 45px;
+            padding: 10px 15px;
+            border: 1px solid rgb(var(--color_39));
+            background-color: rgb(var(--color_11));
+            font-family: "madefor-text", sans-serif;
+            font-size: 14px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .form-input:focus {
+            border-color: rgb(var(--color_18));
+        }
+        .form-textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px 15px;
+            border: 1px solid rgb(var(--color_39));
+            background-color: rgb(var(--color_11));
+            font-family: "madefor-text", sans-serif;
+            font-size: 14px;
+            outline: none;
+            resize: vertical;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .form-textarea:focus {
+            border-color: rgb(var(--color_18));
+        }
+
+        /* Original spacing and columns split grids */
+        .split-layout {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .split-col {
+            flex: 1;
+            min-width: 300px;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .featured-card {
+            background-color: rgb(var(--color_11));
+            border: 1px solid rgb(var(--color_12));
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .featured-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .featured-title {
+            font-family: "madefor-display-bold", sans-serif;
+            font-size: 18px;
+            margin: 15px 0 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <div class="header-nav">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#hero">
+                    <img alt="logo" src="assets/718511a5aa7904cd_Temda.png"/>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Hero</a></li>
+                <li><a href="#typography">Tipografia</a></li>
+                <li><a href="#colors">Cores</a></li>
+                <li><a href="#components">Componentes</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#motion">Motion</a></li>
+                <li><a href="#icons">Ícones</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content wrapper -->
+    <main style="margin-top: 90px;">
+
+        <!-- Section 0: Hero Carousel (Anchor: #hero) -->
+        <section id="hero" class="hero-slideshow">
+            <!-- Slide 1 -->
+            <div class="slide-item active" style="background-image: url('assets/f22079a692c37777_01.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Design System | Tipografia</h2>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide-item" style="background-image: url('assets/c7f5ea2614a3673f_01_20amb_20copiar.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Design System | Cores & Superfícies</h2>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide-item" style="background-image: url('assets/656739d3c76c9d75_01_JPG.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Design System | Componentes</h2>
+                </div>
+            </div>
+
+            <!-- Slideshow Controls Sourced SVG -->
+            <button class="slide-control prev" onclick="prevSlide()">
+                <svg height="40" viewbox="0 0 200 200" width="40">
+                    <path d="M104.133 18.918l-9.431 8.947 61.913 65.269-137.498.938.089 13 138.096-.942-61.338 66.11 9.529 8.842 75.39-81.254-76.75-80.91z"></path>
+                </svg>
+            </button>
+            <button class="slide-control next" onclick="nextSlide()">
+                <svg height="40" viewbox="0 0 200 200" width="40">
+                    <path d="M104.133 18.918l-9.431 8.947 61.913 65.269-137.498.938.089 13 138.096-.942-61.338 66.11 9.529 8.842 75.39-81.254-76.75-80.91z"></path>
+                </svg>
+            </button>
+        </section>
+
+        <!-- Section 1: Typography (Anchor: #typography) -->
+        <section id="typography" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Tipografia</h1>
+
+                <!-- Heading 1 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 1</div>
+                    <div class="typography-preview">
+                        <span style="font: var(--font_0); color: rgb(var(--color_15)); margin:0;">Heading 1 Title</span>
+                    </div>
+                    <div class="typography-metrics">madefor-display-bold / 73px</div>
+                </div>
+
+                <!-- Heading 2 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 2</div>
+                    <div class="typography-preview">
+                        <span style="font: var(--font_2); color: rgb(var(--color_15)); margin:0;">Heading 2 Subtitle</span>
+                    </div>
+                    <div class="typography-metrics">madefor-display-bold / 42px</div>
+                </div>
+
+                <!-- Heading 3 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 3</div>
+                    <div class="typography-preview">
+                        <span style="font: var(--font_3); color: rgb(var(--color_15)); margin:0;">Heading 3 Title Box</span>
+                    </div>
+                    <div class="typography-metrics">madefor-display-bold / 38px</div>
+                </div>
+
+                <!-- Heading 4 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 4</div>
+                    <div class="typography-preview">
+                        <span style="font: var(--font_4); color: rgb(var(--color_15)); margin:0;">Heading 4 Title Box</span>
+                    </div>
+                    <div class="typography-metrics">madefor-display-bold / 34px</div>
+                </div>
+
+                <!-- Body text / paragraph -->
+                <div class="typography-row">
+                    <div class="typography-label">Body Text (Medium)</div>
+                    <div class="typography-preview">
+                        <span style="font: var(--font_8); color: rgb(var(--color_15));">Este é o estilo principal de parágrafos utilizado nas seções Sobre Nós e detalhes de contato do rodapé.</span>
+                    </div>
+                    <div class="typography-metrics">madefor-text / 16px</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Colors & Surfaces (Anchor: #colors) -->
+        <section id="colors" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Cores & Superfícies</h1>
+
+                <div class="doc-subtitle">Paleta Cromática Temda</div>
+                <div class="colors-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background-color: rgb(var(--color_18));"></div>
+                        <div class="color-name">Brand Gold-Orange</div>
+                        <div class="color-details">RGB: 213, 123, 13<br>Hex: #D57B0D<br>Uso: Botões e acentos</div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background-color: rgb(var(--color_15));"></div>
+                        <div class="color-name">Primary Black</div>
+                        <div class="color-details">RGB: 0, 0, 0<br>Hex: #000000<br>Uso: Textos e títulos</div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background-color: rgb(var(--color_14));"></div>
+                        <div class="color-name">Charcoal Gray</div>
+                        <div class="color-details">RGB: 110, 110, 110<br>Hex: #6E6E6E<br>Uso: Textos secundários</div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background-color: rgb(var(--color_12));"></div>
+                        <div class="color-name">Light Gray</div>
+                        <div class="color-details">RGB: 240, 240, 240<br>Hex: #F0F0F0<br>Uso: Fundos e bordas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: UI Components (Anchor: #components) -->
+        <section id="components" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Componentes</h1>
+
+                <div class="ui-showcase">
+                    <!-- Button States -->
+                    <div class="ui-block">
+                        <div class="doc-subtitle">Botões</div>
+                        <div style="margin-bottom: 25px;">
+                            <span class="state-label">Default:</span>
+                            <button class="wixui-button">Enviar</button>
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <span class="state-label">Hover (Simulation):</span>
+                            <button class="wixui-button" style="background-color: rgb(var(--color_15)); border-color: rgb(var(--color_15));">Enviar</button>
+                        </div>
+                        <div>
+                            <span class="state-label">Disabled:</span>
+                            <button class="wixui-button disabled">Enviar</button>
+                        </div>
+                    </div>
+
+                    <!-- Input Fields Mockup -->
+                    <div class="ui-block">
+                        <div class="doc-subtitle">Campos de Entrada (Formulário)</div>
+                        <div class="form-group">
+                            <label class="form-label">Nome Completo</label>
+                            <input class="form-input" placeholder="Seu nome" type="text"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Mensagem</label>
+                            <textarea class="form-textarea" placeholder="Sua mensagem"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Layout & Spacing (Anchor: #layout) -->
+        <section id="layout" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Layout & Espaçamento</h1>
+
+                <div class="doc-subtitle">1. Split Info Column Layout ("Sobre Nós")</div>
+                <div class="split-layout" style="margin-bottom: 50px;">
+                    <div class="split-col">
+                        <span style="font: var(--font_2); color: rgb(var(--color_15)); display:block; margin-bottom:15px;">A Temda Estofados</span>
+                        <p style="font: var(--font_8); color: rgb(var(--color_14));">Há mais de 20 anos criando estofados sob medida de alta qualidade que elevam o bem estar e conforto dos lares brasileiros.</p>
+                    </div>
+                    <div class="split-col">
+                        <img alt="Big Vertical" src="assets/0269785548f48713_Light_20-_20Big_20Vertical.jpg" style="width: 100%; border-radius: 4px;"/>
+                    </div>
+                </div>
+
+                <div class="doc-subtitle">2. Featured Cards Grid Layout ("Produtos em Destaque")</div>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <img alt="Allegro" class="featured-img" src="assets/b5fa98d4e8eb8dd6_Allegro_20Amb_JPG.jpg"/>
+                        <h3 class="featured-title">Allegro Stof</h3>
+                        <button class="wixui-button" style="font-size:12px; padding: 6px 15px;">Detalhes</button>
+                    </div>
+                    <div class="featured-card">
+                        <img alt="Aston" class="featured-img" src="assets/d24561fffeba9330_Aston_20Amb.jpg"/>
+                        <h3 class="featured-title">Aston Modern</h3>
+                        <button class="wixui-button" style="font-size:12px; padding: 6px 15px;">Detalhes</button>
+                    </div>
+                    <div class="featured-card">
+                        <img alt="01 amb" class="featured-img" src="assets/03449f929b31afc8_01_20amb_20copiar.jpg"/>
+                        <h3 class="featured-title">Comfort Classic</h3>
+                        <button class="wixui-button" style="font-size:12px; padding: 6px 15px;">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Motion & Interaction (Anchor: #motion) -->
+        <section id="motion" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Motion & Interações</h1>
+
+                <div style="background-color: rgb(var(--color_11)); padding: 30px; border-radius: 4px; border: 1px solid rgb(var(--color_12));">
+                    <ul style="font-family: var(--font_8); color: rgb(var(--color_14)); line-height: 2;">
+                        <li><strong>Slideshow Fade Transition</strong>: Transições de slide utilizando opacidade de 1s de duração.</li>
+                        <li><strong>Button Hover Highlight</strong>: Efeito de hover nos botões mudando do tom dourado original para a cor preta em 0.3s.</li>
+                        <li><strong>Nav Link Transition</strong>: Mudança gradual de cor dos links na barra de cabeçalho.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Icons (Anchor: #icons) -->
+        <section id="icons" class="doc-section">
+            <div class="container">
+                <h1 class="doc-title">Ícones</h1>
+
+                <div class="doc-subtitle">Sourced SVG Vector Graphics</div>
+                <div style="display: flex; gap: 30px; flex-wrap:wrap; text-align:center;">
+                    <!-- Hamburger Menu -->
+                    <div style="width: 120px; background:#fff; padding: 15px; border-radius: 4px; border: 1px solid rgb(var(--color_12));">
+                        <svg height="30" viewbox="0 0 40 30" width="40">
+                            <path d="M40 2.903H0V0h40zm0 13.549H0v-2.904h40zM40 30H0v-2.903h40z" fill="#000"></path>
+                        </svg>
+                        <div style="font-size: 12px; margin-top:10px;">Menu Hamburguer</div>
+                    </div>
+
+                    <!-- Slide Arrow Controls -->
+                    <div style="width: 120px; background:#fff; padding: 15px; border-radius: 4px; border: 1px solid rgb(var(--color_12));">
+                        <svg height="30" viewbox="0 0 200 200" width="30">
+                            <path d="M104.133 18.918l-9.431 8.947 61.913 65.269-137.498.938.089 13 138.096-.942-61.338 66.11 9.529 8.842 75.39-81.254-76.75-80.91z" fill="#000"></path>
+                        </svg>
+                        <div style="font-size: 12px; margin-top:10px;">Setas de Slideshow</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Slideshow Control Script -->
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide-item');
+
+        function showSlide(index) {
+            slides[currentSlideIndex].classList.remove('active');
+            currentSlideIndex = (index + slides.length) % slides.length;
+            slides[currentSlideIndex].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlideIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlideIndex - 1);
+        }
+
+        // Auto transition every 4 seconds
+        setInterval(nextSlide, 4000);
+    </script>
+</body>
+</html>

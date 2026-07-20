@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/08767d4bd04dff18_favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <title>Master Design System & Creative Showcase</title>
+    
+    <!-- CSS Dependencies from reference systems -->
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/5f7fe2a35dcc901b_css.css" rel="stylesheet"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/ae576713bc196098_bootstrap.min.css" rel="stylesheet"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/e18d9e813983b247_style.css" rel="stylesheet"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/450cebfb01d4f337_animate.css" rel="stylesheet"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/64c33eb0d853ee6a_scrollToStyle.css" rel="stylesheet"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/de1e399b07289f3b_slick.css" rel="stylesheet" type="text/css"/>
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/eeb17a45a48aca1d_all.css" rel="stylesheet"/>
+    
+    <!-- Google Fonts for custom typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Custom Variables for complete harmony */
+        :root {
+            --ds-bg-main: #fcfcfc;
+            --ds-bg-card: #ffffff;
+            --ds-bg-gray: #f5f5f5;
+            --ds-text-primary: #1c1c1c;
+            --ds-text-secondary: #555555;
+            --ds-text-muted: #8c8c8c;
+            
+            /* Curated harmonious accents */
+            --ds-accent-sage: #717965;         /* Nature green from Buriti */
+            --ds-accent-burgundy: #6b3034;     /* Deep warmth from Florarte */
+            --ds-accent-gold: #d57b0d;         /* Warm amber from Tem */
+            --ds-accent-slate: #707070;        /* Slate gray from ADM */
+            
+            --ds-border-color: rgba(0, 0, 0, 0.06);
+            --ds-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.02);
+            --ds-shadow-medium: 0 20px 40px rgba(0, 0, 0, 0.04);
+            --ds-shadow-glow: 0 0 25px rgba(113, 121, 101, 0.15);
+            
+            /* Fonts */
+            --ds-font-sans: 'Poppins', sans-serif;
+            --ds-font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--ds-bg-main);
+            color: var(--ds-text-primary);
+            font-family: var(--ds-font-sans);
+            font-size: 14px;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Subtle animated grid background */
+        .ds-grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.01) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 0, 0, 0.01) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: -2;
+        }
+
+        .ds-glow-spot {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(100px);
+            animation: floatGlow 20s infinite alternate ease-in-out;
+            opacity: 0.4;
+        }
+        .ds-glow-spot-1 {
+            top: -200px;
+            left: -200px;
+            background: radial-gradient(circle, rgba(113, 121, 101, 0.12) 0%, rgba(255,255,255,0) 70%);
+        }
+        .ds-glow-spot-2 {
+            bottom: -200px;
+            right: -200px;
+            background: radial-gradient(circle, rgba(213, 123, 13, 0.08) 0%, rgba(255,255,255,0) 70%);
+            animation-delay: -5s;
+        }
+
+        @keyframes floatGlow {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(60px, 30px) scale(1.1); }
+            100% { transform: translate(-30px, -40px) scale(0.95); }
+        }
+
+        /* ---------------------------------------------------- */
+        /* STYLING OVERRIDES AND NAMESPACING TO PREVENT COLLISION */
+        /* ---------------------------------------------------- */
+        .ds-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--ds-border-color);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.01);
+            transition: all 0.3s ease;
+        }
+        .ds-header .logo svg {
+            display: block;
+        }
+
+        /* Reset admmobiliario style.css rules inside our custom elements */
+        .ds-hero-section, .ds-showcase-container, .ds-card-box, .ds-custom-nav {
+            float: none !important;
+            display: block !important;
+            position: relative !important;
+            top: auto !important;
+            margin: 0 auto !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+            width: 100% !important;
+            background: transparent !important;
+            padding: 0 !important;
+        }
+
+        .ds-hero-section h1,
+        .ds-hero-section h2,
+        .ds-hero-section h3,
+        .ds-hero-section h6,
+        .ds-hero-section p,
+        .ds-hero-section a,
+        .ds-hero-section img {
+            position: static !important;
+            margin: 0 !important;
+            bottom: auto !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+            float: none !important;
+            z-index: auto !important;
+            width: auto !important;
+            height: auto !important;
+            opacity: 1 !important;
+        }
+
+        .ds-hero-section .carousel-caption {
+            position: absolute !important;
+            left: 20px !important;
+            bottom: 20px !important;
+            right: 20px !important;
+            top: auto !important;
+            text-align: left !important;
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(8px) !important;
+            padding: 15px 20px !important;
+            border-radius: 8px !important;
+            border: 1px solid rgba(0, 0, 0, 0.05) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+        }
+        .ds-hero-section .carousel-caption h2 {
+            font-family: var(--ds-font-sans) !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            color: var(--ds-text-primary) !important;
+            margin-bottom: 2px !important;
+            letter-spacing: 1px !important;
+        }
+        .ds-hero-section .carousel-caption p {
+            font-family: var(--ds-font-sans) !important;
+            font-size: 12px !important;
+            color: var(--ds-text-secondary) !important;
+            margin: 0 !important;
+        }
+
+        /* ---------------------------------------------------- */
+        /* HERO (FIRST FOLD) - Harmonized & Modern Editorial Layout */
+        /* ---------------------------------------------------- */
+        .ds-hero-section {
+            padding: 160px 0 100px 0 !important;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .ds-hero-badge {
+            background-color: var(--ds-bg-gray);
+            border: 1px solid var(--ds-border-color);
+            color: var(--ds-accent-sage);
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        
+        .ds-hero-title {
+            font-family: var(--ds-font-sans);
+            font-size: 52px;
+            font-weight: 300;
+            line-height: 1.15;
+            color: var(--ds-text-primary);
+            margin-bottom: 25px !important;
+        }
+        .ds-hero-title span.serif {
+            font-family: var(--ds-font-serif);
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .ds-hero-desc {
+            font-family: var(--ds-font-sans);
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--ds-text-secondary);
+            margin-bottom: 40px !important;
+            max-width: 480px;
+        }
+
+        /* Interactive buttons with fine aesthetics */
+        .ds-btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .ds-btn-primary {
+            font-family: var(--ds-font-sans);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 15px 35px;
+            background-color: var(--ds-text-primary);
+            color: #ffffff !important;
+            border: 1px solid var(--ds-text-primary);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none !important;
+        }
+        .ds-btn-primary:hover {
+            background-color: var(--ds-accent-sage);
+            border-color: var(--ds-accent-sage);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(113, 121, 101, 0.15);
+        }
+
+        .ds-btn-outline {
+            font-family: var(--ds-font-sans);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 15px 35px;
+            background-color: transparent;
+            color: var(--ds-text-primary) !important;
+            border: 1px solid var(--ds-accent-slate);
+            transition: all 0.4s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none !important;
+        }
+        .ds-btn-outline:hover {
+            background-color: #ffffff;
+            border-color: var(--ds-text-primary);
+            color: var(--ds-text-primary) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--ds-shadow-medium);
+        }
+
+        /* Layered Visual Showcase in Hero */
+        .ds-hero-visual {
+            position: relative;
+            width: 100%;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ds-hero-glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            padding: 30px;
+            width: 85%;
+            max-width: 400px;
+            box-shadow: var(--ds-shadow-medium);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.5s ease;
+        }
+        .ds-hero-glass-card:hover {
+            transform: translateY(-5px);
+        }
+        .ds-hero-product-img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            animation: floatUpDown 6s infinite ease-in-out;
+        }
+        
+        .ds-hero-floating-card {
+            position: absolute;
+            background: #ffffff;
+            border: 1px solid var(--ds-border-color);
+            border-radius: 8px;
+            padding: 12px 18px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+            bottom: 20px;
+            right: 0px;
+            z-index: 3;
+            animation: floatUpDown 6s infinite ease-in-out;
+            animation-delay: -3s;
+        }
+        .ds-hero-floating-card h5 {
+            font-family: var(--ds-font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0 0 3px 0;
+            color: var(--ds-text-primary);
+        }
+        .ds-hero-floating-card p {
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            color: var(--ds-text-muted);
+            margin: 0;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* ---------------------------------------------------- */
+        /* DOCUMENTATION SECTIONS GENERAL */
+        /* ---------------------------------------------------- */
+        .ds-section {
+            padding: 120px 0;
+            border-bottom: 1px solid var(--ds-border-color);
+        }
+        .ds-section-title {
+            font-family: var(--ds-font-sans);
+            font-weight: 300;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--ds-text-primary);
+        }
+        .ds-section-title span.serif {
+            font-family: var(--ds-font-serif);
+            font-style: italic;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        .ds-section-desc {
+            font-family: var(--ds-font-sans);
+            font-size: 14px;
+            color: var(--ds-text-secondary);
+            text-align: center;
+            max-width: 550px;
+            margin: 0 auto 60px auto;
+            line-height: 1.6;
+        }
+
+        /* ---------------------------------------------------- */
+        /* TYPOGRAPHY SHOWCASE */
+        /* ---------------------------------------------------- */
+        .font-card {
+            background: var(--ds-bg-card);
+            border: 1px solid var(--ds-border-color);
+            border-radius: 12px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: var(--ds-shadow-soft);
+            transition: all 0.4s ease;
+        }
+        .font-card:hover {
+            box-shadow: var(--ds-shadow-medium);
+            transform: translateY(-4px);
+        }
+        .font-card-preview {
+            font-size: 80px;
+            line-height: 1;
+            margin-bottom: 25px;
+            color: var(--ds-text-primary);
+        }
+        .font-card-title {
+            font-family: var(--ds-font-sans);
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--ds-text-primary);
+        }
+        .font-card-desc {
+            font-family: var(--ds-font-sans);
+            font-size: 13px;
+            color: var(--ds-text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ---------------------------------------------------- */
+        /* COLOR SHOWCASE */
+        /* ---------------------------------------------------- */
+        .color-card {
+            background: var(--ds-bg-card);
+            border: 1px solid var(--ds-border-color);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: var(--ds-shadow-soft);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        .color-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--ds-shadow-medium);
+        }
+        .color-swatch {
+            height: 110px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            margin-bottom: 15px;
+        }
+        .color-title {
+            font-family: var(--ds-font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .color-value {
+            font-family: monospace;
+            font-size: 11px;
+            color: var(--ds-text-muted);
+            margin-bottom: 4px;
+            display: block;
+        }
+        .color-role {
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            color: var(--ds-accent-sage);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .color-card::after {
+            content: 'Copiar Cor';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--ds-text-primary);
+            color: #ffffff;
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            font-weight: 500;
+            text-align: center;
+            padding: 8px 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .color-card:hover::after {
+            transform: translateY(0);
+        }
+
+        /* ---------------------------------------------------- */
+        /* COMPONENT PREVIEWS */
+        /* ---------------------------------------------------- */
+        .component-box {
+            background: #ffffff;
+            border: 1px solid var(--ds-border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--ds-shadow-soft);
+            margin-bottom: 30px;
+        }
+        .component-label {
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ds-text-muted);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Product Card in Grid */
+        .ds-product-card {
+            background: #ffffff;
+            border: 1px solid var(--ds-border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+        .ds-product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--ds-shadow-medium);
+        }
+        .ds-product-img-wrapper {
+            position: relative;
+            background: var(--ds-bg-gray);
+            padding: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ds-product-card img {
+            max-height: 180px;
+            object-fit: contain;
+            transition: transform 0.6s ease;
+        }
+        .ds-product-card:hover img {
+            transform: scale(1.06);
+        }
+        .ds-product-info {
+            padding: 20px;
+            text-align: left;
+        }
+        .ds-product-category {
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            color: var(--ds-accent-sage);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .ds-product-title {
+            font-family: var(--ds-font-sans);
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--ds-text-primary);
+            margin: 0 0 8px 0;
+        }
+        .ds-product-price {
+            font-family: var(--ds-font-sans);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ds-text-primary);
+        }
+
+        /* ---------------------------------------------------- */
+        /* REUSE ORIGINAL MENU & OVERLAYS */
+        /* ---------------------------------------------------- */
+        .overlay {
+            background: rgba(28, 28, 28, 0.98) !important;
+        }
+        .overlay-menu ul li a {
+            font-family: var(--ds-font-sans) !important;
+            font-weight: 300 !important;
+            letter-spacing: 2px !important;
+            font-size: 32px !important;
+            color: #ffffff !important;
+        }
+        .overlay-menu ul li a:hover {
+            color: var(--ds-accent-sage) !important;
+        }
+        
+        .copy-toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--ds-text-primary);
+            color: #ffffff;
+            padding: 14px 28px;
+            font-family: var(--ds-font-sans);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            z-index: 100000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: none;
+            animation: fadeInUp 0.3s ease;
+        }
+
+        /* Custom Demo Modal Popup */
+        .modal-custom-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .modal-custom-box {
+            background: #ffffff;
+            border: 1px solid var(--ds-border-color);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: var(--ds-shadow-medium);
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .modal-custom-overlay.open .modal-custom-box {
+            transform: scale(1);
+        }
+        .modal-custom-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+            color: var(--ds-text-muted);
+            transition: color 0.2s ease;
+        }
+        .modal-custom-close:hover {
+            color: var(--ds-text-primary);
+        }
+
+        /* Custom Badges */
+        .badge-premium {
+            display: inline-block;
+            font-family: var(--ds-font-sans);
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: 50px;
+            background-color: var(--ds-text-primary);
+            color: #ffffff;
+            border: 1px solid var(--ds-text-primary);
+            transition: all 0.3s ease;
+        }
+        .badge-premium.outline {
+            background-color: transparent;
+            color: var(--ds-text-primary);
+        }
+        .badge-premium.glow {
+            box-shadow: 0 0 15px rgba(113, 121, 101, 0.2);
+        }
+
+        /* Custom Tooltips */
+        .tooltip-custom {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip-custom .tooltip-text {
+            visibility: hidden;
+            width: 140px;
+            background-color: var(--ds-text-primary);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 100;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -70px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-family: var(--ds-font-sans);
+            font-size: 11px;
+            font-weight: normal;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .tooltip-custom .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--ds-text-primary) transparent transparent transparent;
+        }
+        .tooltip-custom:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Editorial Helpers */
+        .doc-subsection-title {
+            font-family: var(--ds-font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--ds-text-muted);
+            margin-bottom: 25px;
+            margin-top: 45px;
+            border-bottom: 1px solid var(--ds-border-color);
+            padding-bottom: 10px;
+        }
+
+        .button-categoria {
+            font-family: var(--ds-font-sans) !important;
+            font-size: 11px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1.5px !important;
+            color: var(--ds-text-primary) !important;
+            border-bottom: 2px solid var(--ds-text-primary) !important;
+            padding-bottom: 4px !important;
+            text-decoration: none !important;
+            transition: all 0.3s ease !important;
+        }
+        .button-categoria:hover {
+            color: var(--ds-accent-sage) !important;
+            border-color: var(--ds-accent-sage) !important;
+            padding-left: 5px !important;
+        }
+
+        /* ---------------------------------------------------- */
+        /* MOTION SANDBOX */
+        /* ---------------------------------------------------- */
+        #animation-demo-box {
+            width: 130px;
+            height: 130px;
+            background: var(--ds-text-primary);
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-family: var(--ds-font-sans);
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            box-shadow: var(--ds-shadow-medium);
+            transition: all 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Subtle animated grids & spot background -->
+    <div class="ds-grid-bg"></div>
+    <div class="ds-glow-spot ds-glow-spot-1"></div>
+    <div class="ds-glow-spot ds-glow-spot-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="ds-header wow fadeInDown" data-wow-delay=".1s">
+        <div class="container">
+            <div class="row align-items-center" style="height: 80px;">
+                <div class="col-md-3 col-8">
+                    <a alt="Master Design System" class="logo" href="#hero" title="Design System" style="display: inline-block;">
+                        <!-- Custom Minimal ADM Sourced SVG Logo -->
+                        <svg fill="none" height="34" viewbox="0 0 518 58" width="220" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M310.32 2.42969H326.18C333.39 2.42969 336.95 3.29969 339.1 4.69969C341.48 6.26969 342.76 8.60969 342.76 11.9997C342.76 15.6597 341.33 17.9297 339.12 19.3497C336.69 20.9197 333.28 21.4497 327.15 21.4497H310.32V2.42969ZM313.12 19.0997H327.07C332.33 19.0997 335.24 18.6497 337.08 17.5597C338.93 16.4697 339.9 14.7597 339.9 11.9997C339.9 9.42969 338.95 7.66969 337.05 6.48969C335.23 5.36969 331.85 4.77969 326.09 4.77969H313.12V19.0997Z" fill="black"></path>
+                            <path d="M349.58 15.0725V15.1025C349.64 16.5825 350.31 17.5925 351.43 18.2925C352.8 19.1625 355.23 19.6625 359.68 19.6625C364.6 19.6625 367.84 18.8225 369.86 18.2325L370.11 20.3525C368.63 20.8325 364.88 21.8325 359.68 21.8325C355.04 21.8325 352.13 21.2125 350.14 20.1525C348.29 19.1725 346.95 17.3325 346.95 13.9725C346.95 11.2325 347.98 9.2725 349.75 8.0725C351.79 6.6725 354.64 6.0625 358.92 6.0625C363.2 6.0625 365.63 6.5925 367.09 7.1825C369.33 8.0825 370.5 9.7225 370.5 11.9625C370.5 13.1125 370.25 14.7025 370.16 15.0625H349.58V15.0725ZM349.58 13.0625H367.78C367.78 13.0625 367.86 12.5625 367.86 11.9725C367.86 10.8025 367.27 9.7925 365.71 9.1225C364.51 8.6225 362.41 8.2525 358.92 8.2525C355.17 8.2525 352.74 8.8425 351.34 9.7925C350.08 10.6325 349.63 11.8325 349.58 13.0625Z" fill="black"></path>
+                            <path d="M375.33 18.6525C377.23 19.0125 381.43 19.6625 385.84 19.6625C389.28 19.6625 391.38 19.4625 392.63 18.9925C393.8 18.5425 394.25 17.9025 394.25 16.7525C394.25 15.6925 393.66 15.0725 391.85 14.9025C390.42 14.7625 388.38 14.7325 385.7 14.7325C380.33 14.7325 377.9 14.6525 376.42 14.0025C375.13 13.4425 374.41 12.3525 374.41 10.9025C374.41 9.2525 375.22 7.8225 377.4 7.0425C378.91 6.5125 381.31 6.0625 385.68 6.0625C391.11 6.0625 395.38 6.8725 395.38 6.8725L395.02 9.0225C395.02 9.0225 390.41 8.2425 385.68 8.2425C382.02 8.2425 379.56 8.6025 378.52 8.9725C377.43 9.3625 377.04 10.0025 377.04 10.8425C377.04 11.6225 377.46 12.1525 378.3 12.4125C379.31 12.7225 381.12 12.7225 385.71 12.7225C389.76 12.7225 392 12.7225 393.68 13.0825C396.03 13.5825 396.9 14.9825 396.9 16.7425C396.9 18.5025 396.26 19.7325 394.8 20.5225C393.04 21.4725 388.98 21.8325 385.85 21.8325C380.73 21.8325 376.76 21.1925 375.06 20.8025L375.34 18.6525H375.33Z" fill="black"></path>
+                            <path d="M403.46 0C404.61 0 405.05 0.61 405.05 1.57C405.05 2.53 404.6 3.14 403.46 3.14C402.32 3.14 401.87 2.53 401.87 1.57C401.87 0.61 402.32 0 403.46 0ZM404.77 21.45H402.14V6.35H404.77V21.45Z" fill="black"></path>
+                            <path d="M413.83 15.6603C413.1 16.4703 412.49 17.3403 412.49 18.2003C412.49 19.2603 413.16 19.7103 415.45 19.7103H427.42C432.2 19.7103 434.27 21.1903 434.27 24.0203C434.27 26.8503 432.54 29.5603 421.77 29.5603C412.18 29.5603 410.03 27.9103 410.03 25.0903C410.03 23.7503 410.81 22.5203 411.88 21.4003V21.3403C410.62 20.7803 410.03 19.8003 410.03 18.4303C410.03 17.2303 410.67 15.8903 412.07 14.5203C411.31 13.7603 411.01 12.7903 411.01 11.3303C411.01 9.57031 411.88 8.20031 413.41 7.33031C415 6.44031 417.49 6.07031 421.38 6.07031C423.06 6.07031 424.54 6.18031 425.74 6.35031H433.71V8.36031H431.84C430.92 8.36031 430.3 8.28031 430.3 8.28031L430.27 8.36031C431.25 8.92031 431.75 9.98031 431.75 11.4103C431.75 13.2603 430.97 14.6003 429.29 15.4603C427.61 16.3303 425.01 16.7503 421.38 16.7503C418 16.7503 415.51 16.3903 413.83 15.6603ZM414.22 21.8403C413.44 22.6203 412.71 23.7103 412.71 24.7503C412.71 26.5103 414.25 27.3803 421.77 27.3803C430.3 27.3803 431.59 25.9503 431.59 24.1903C431.59 22.7903 430.72 21.9003 428.04 21.9003H415.46C415.01 21.9003 414.59 21.8703 414.23 21.8403H414.22ZM415.06 13.7303C416.26 14.2903 418.14 14.5703 421.38 14.5703C424.62 14.5703 426.53 14.2603 427.7 13.7303C428.71 13.2803 429.13 12.4403 429.13 11.3503C429.13 10.2603 428.71 9.48031 427.68 9.03031C426.48 8.50031 424.3 8.25031 421.39 8.25031C418.48 8.25031 416.3 8.47031 415.1 9.03031C414.07 9.51031 413.65 10.4003 413.65 11.3503C413.65 12.4103 414.04 13.2503 415.08 13.7303H415.06Z" fill="black"></path>
+                            <path d="M460.11 21.4503V13.6203C460.11 10.1203 458.12 8.25031 451.64 8.25031C447.61 8.25031 443.19 9.42031 441.38 10.3803V21.4503H438.75V6.35031H440.82C440.9 7.05031 441.02 7.64031 441.1 8.31031H441.18C443.31 7.42031 447.44 6.07031 451.64 6.07031C460.31 6.07031 462.74 9.06031 462.74 13.5103V21.4503H460.11Z" fill="black"></path>
+                            <path d="M341.7 41.7172H341.64L327.49 55.0872H327.32L313.17 41.7172H313.11V57.1272H310.31V38.1172H312.69L327.37 51.9272H327.43L342.05 38.1172H344.48V57.1272H341.68V41.7172H341.7Z" fill="black"></path>
+                            <path d="M352.09 55.3322C350.36 54.1822 349.24 52.4522 349.24 49.5722C349.24 46.8622 350.25 45.0422 352.06 43.8422C354.1 42.5022 357.62 41.7422 361.88 41.7422C366.14 41.7422 369.65 42.5022 371.7 43.8422C373.52 45.0422 374.52 46.8622 374.52 49.5722C374.52 52.4522 373.4 54.1822 371.67 55.3322C369.77 56.5922 366.44 57.4022 361.88 57.4022C357.32 57.4022 353.99 56.5922 352.09 55.3322ZM369.76 53.6522C370.99 52.9022 371.83 51.6122 371.83 49.5722C371.83 47.5322 371.13 46.2722 369.82 45.4622C368.34 44.5422 365.35 43.9222 361.88 43.9222C358.41 43.9222 355.42 44.5422 353.94 45.4622C352.63 46.2722 351.93 47.4722 351.93 49.5722C351.93 51.6722 352.77 52.9022 354 53.6522C355.48 54.5722 358.39 55.2222 361.89 55.2222C365.39 55.2222 368.29 54.5822 369.78 53.6522H369.76Z" fill="black"></path>
+                            <path d="M378.99 57.1184V36.1484H381.62V43.3084H381.68C383.11 42.8584 387.41 41.7384 392.33 41.7384C401.64 41.7384 404.21 45.0384 404.21 49.5384C404.21 54.4884 400.8 57.3984 392.44 57.3984C387.63 57.3984 382.93 55.9184 381.45 55.3884H381.34L381.06 57.1184H378.99ZM381.62 45.5984V53.3484C382.82 53.7684 387.55 55.1684 392.44 55.2184C399.71 55.2184 401.53 52.9784 401.53 49.5384C401.53 46.5184 400.19 43.9184 392.33 43.9184C386.77 43.9184 382.49 45.2584 381.62 45.5984Z" fill="black"></path>
+                            <path d="M410.78 35.6797C411.93 35.6797 412.37 36.2897 412.37 37.2497C412.37 38.2097 411.92 38.8197 410.78 38.8197C409.64 38.8197 409.19 38.2097 409.19 37.2497C409.19 36.2897 409.64 35.6797 410.78 35.6797ZM412.09 57.1297H409.46V42.0297H412.09V57.1297Z" fill="black"></path>
+                            <path d="M421.32 57.1184H418.69V36.1484H421.32V57.1184Z" fill="black"></path>
+                            <path d="M429.24 35.6797C430.39 35.6797 430.83 36.2897 430.83 37.2497C430.83 38.2097 430.38 38.8197 429.24 38.8197C428.1 38.8197 427.65 38.2097 427.65 37.2497C427.65 36.2897 428.1 35.6797 429.24 35.6797ZM430.55 57.1297H427.92V42.0297H430.55V57.1297Z" fill="black"></path>
+                            <path d="M456.44 57.1237L456.16 55.4437H456.1C453.78 56.2537 449.7 57.5137 444.44 57.5137C441.67 57.5137 439.21 57.1737 437.84 56.4237C436.53 55.6937 435.8 54.5238 435.8 52.9038C435.8 51.4538 436.5 50.1938 437.87 49.4338C438.88 48.8738 441.11 48.2837 445.2 48.2837C449.51 48.2837 455.8 48.8737 455.8 48.8737H455.88V47.6737C455.88 45.2437 452.47 43.9237 445.76 43.9237C441.2 43.9237 437.87 44.7038 437.43 44.7938L437.07 42.6637C437.35 42.6037 440.87 41.7438 445.77 41.7438C453.96 41.7438 458.52 43.9238 458.52 47.5838V57.1237H456.45H456.44ZM455.88 53.4338V50.8037C455.88 50.8037 450.2 50.3037 445.2 50.3037C441.76 50.3037 439.97 50.7538 439.22 51.3138C438.69 51.7038 438.44 52.2338 438.44 52.9038C438.44 53.5738 438.72 54.2137 439.31 54.5537C439.98 54.9437 441.46 55.3338 444.51 55.3338C449.52 55.3338 453.77 54.1638 455.89 53.4338H455.88ZM452.27 35.5938H455.99V36.2137L447.46 39.5137H444.44V39.1237L452.27 35.6037V35.5938Z" fill="black"></path>
+                            <path d="M465.61 42.0166L465.89 44.0266H465.97L466.11 43.5766C467.14 42.9566 470.08 41.7266 474.86 41.7266C477.57 41.7266 479.33 42.0666 479.7 42.1166L479.48 44.3566C479.12 44.2766 477.13 43.9066 474.81 43.9066C469.39 43.9066 466.17 45.5866 466.17 45.5866V57.1066H463.54V42.0066H465.61V42.0166Z" fill="black"></path>
+                            <path d="M485.44 35.6797C486.59 35.6797 487.03 36.2897 487.03 37.2497C487.03 38.2097 486.58 38.8197 485.44 38.8197C484.3 38.8197 483.85 38.2097 483.85 37.2497C483.85 36.2897 484.3 35.6797 485.44 35.6797ZM486.75 57.1297H484.12V42.0297H486.75V57.1297Z" fill="black"></path>
+                            <path d="M494.86 55.3322C493.13 54.1822 492.01 52.4522 492.01 49.5722C492.01 46.8622 493.02 45.0422 494.83 43.8422C496.87 42.5022 500.39 41.7422 504.65 41.7422C508.91 41.7422 512.42 42.5022 514.47 43.8422C516.29 45.0422 517.29 46.8622 517.29 49.5722C517.29 52.4522 516.17 54.1822 514.44 55.3322C512.54 56.5922 494.86 57.4022 504.65 57.4022C500.09 57.4022 496.76 56.5922 494.86 55.3322ZM512.53 53.6522C513.76 52.9022 514.6 51.6122 514.6 49.5722C514.6 47.5322 513.9 46.2722 512.59 45.4622C511.11 44.5422 508.12 43.9222 504.65 43.9222C501.18 43.9222 498.19 44.5422 496.71 45.4622C495.4 46.2722 494.7 47.4722 494.7 49.5722C494.7 51.6722 495.54 52.9022 496.77 53.6522C498.25 54.5722 501.16 55.2222 504.66 55.2222C508.16 55.2222 511.06 54.5822 512.55 53.6522H512.53Z" fill="black"></path>
+                            <path d="M184.08 2.28906H96.0298V38.7991L112.37 57.0691H161.35C179.41 57.0691 189.39 55.4691 196.52 51.0291C202.8 47.0791 208.78 39.8191 208.78 29.8491L184.07 2.28906H184.08ZM185.15 40.6191C180.87 42.7591 173.74 43.7691 160.67 43.7691H110.57V15.7991H157.5C171.68 15.7991 180.5 16.9191 185.25 19.3791C189.77 21.7591 193 24.7091 193 30.0991C193 35.9591 189.5 38.4091 185.14 40.6291L185.15 40.6191Z" fill="black"></path>
+                            <path d="M52.09 18.6581C52.16 18.7281 39.33 32.9081 39.33 32.9081L74.77 43.9181C74.77 43.9181 52.02 18.5881 52.09 18.6581ZM63.13 51.4781L40.07 46.2381C33.57 44.7581 27.03 46.6581 22.59 51.6381L17.75 57.0681H0L49.08 2.32812H55.22L104.29 57.0581H86.42L63.13 51.4681" fill="black"></path>
+                            <path d="M249.58 47.0013L270.5 23.5512V57.1113L285.55 57.0713L285.57 2.29125H278.79C274.29 2.29125 270 4.20125 266.99 7.55125L240.54 36.9913L213.73 7.48125C210.72 4.17125 206.46 2.28125 201.99 2.28125L191.65 2.31125L231.51 47.0013H249.58Z" fill="black"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-8 d-none d-md-block text-center">
+                    <ul class="ds-custom-nav" style="display: inline-flex; gap: 30px; margin: 0; padding: 0; list-style: none;">
+                        <li><a alt="Hero" href="#hero" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Hero</a></li>
+                        <li><a alt="Tipografia" href="#typography" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Tipografia</a></li>
+                        <li><a alt="Cores" href="#colors" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Cores</a></li>
+                        <li><a alt="Componentes" href="#components" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Componentes</a></li>
+                        <li><a alt="Ícones" href="#icons" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Ícones</a></li>
+                        <li><a alt="Motion" href="#motion" style="font-family: var(--ds-font-sans); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--ds-text-primary); text-decoration: none; font-weight: 500; transition: color 0.3s;" class="ds-nav-link">Motion</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1 col-4 text-right d-flex align-items-center justify-content-end">
+                    <span class="menu-legenda remove-mobile" style="font-family: var(--ds-font-sans); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; margin-right: 15px; color: var(--ds-text-primary);">Menu</span>
+                    <div class="button_container" id="toggle" style="position: relative; z-index: 10001; cursor: pointer; width: 25px; height: 16px;">
+                        <span class="top" style="background: var(--ds-text-primary); height: 2px; width: 100%; position: absolute; top: 0; left: 0; transition: all 0.35s ease;"></span>
+                        <span class="bottom" style="background: var(--ds-text-primary); height: 2px; width: 100%; position: absolute; bottom: 0; left: 0; transition: all 0.35s ease;"></span>
+                    </div>
+                    <!-- Slide out overlay menu -->
+                    <div class="overlay" id="overlay" style="position: fixed; background: rgba(28,28,28,0.98); top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; transition: opacity 0.35s, visibility 0.35s, height 0.35s; overflow: hidden; z-index: 10000;">
+                        <nav class="overlay-menu" style="position: relative; height: 70%; top: 50%; transform: translateY(-50%); font-size: 40px; font-family: var(--ds-font-sans); font-weight: 300; text-align: center;">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-12">
+                                        <ul style="list-style: none; padding: 0; margin: 0; display: inline-block; text-align: center;">
+                                            <li class="wow fadeInDown" data-wow-delay="0.1s" style="margin-bottom: 25px;"><a alt="Hero" href="#hero" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Hero Section</a></li>
+                                            <li class="wow fadeInDown" data-wow-delay="0.2s" style="margin-bottom: 25px;"><a alt="Tipografia" href="#typography" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Tipografia & Escala</a></li>
+                                            <li class="wow fadeInDown" data-wow-delay="0.3s" style="margin-bottom: 25px;"><a alt="Cores" href="#colors" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Sistema de Cores</a></li>
+                                            <li class="wow fadeInDown" data-wow-delay="0.4s" style="margin-bottom: 25px;"><a alt="Componentes" href="#components" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Componentes UI</a></li>
+                                            <li class="wow fadeInDown" data-wow-delay="0.5s" style="margin-bottom: 25px;"><a alt="Ícones" href="#icons" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Ícones Customizados</a></li>
+                                            <li class="wow fadeInDown" data-wow-delay="0.6s" style="margin-bottom: 25px;"><a alt="Motion" href="#motion" style="color: #fff; text-decoration: none; display: block; font-family: var(--ds-font-sans); font-weight: 300; font-size: 30px; text-transform: uppercase; letter-spacing: 2px; transition: color 0.2s;">Motion & Interações</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 d-none d-md-block text-center" style="height: 380px; background: url('ref-design-systems/admmobiliario.com.br_pt/assets/878da096c4b0ca27_poltronas-menu.png') no-repeat center center / contain;">
+                                        <div style="padding-top: 250px; color: #fff; text-align: center;">
+                                            <h4 style="font-family: var(--ds-font-sans); font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">Mobiliário Design</h4>
+                                            <p style="font-family: var(--ds-font-sans); font-size: 13px; font-weight: 300; opacity: 0.6; margin: 0;">Coleção Exclusiva Master 2026</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 0: Immersive Hero Section Showcase (Anchor: #hero) -->
+    <section id="hero" class="ds-hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- Left text column with animations -->
+                <div class="col-md-6 text-left">
+                    <div class="ds-hero-badge wow fadeIn" data-wow-delay=".2s">Showcase &bull; Design System</div>
+                    <h1 class="ds-hero-title wow fadeInUp" data-wow-delay=".4s">
+                        O minimalismo como <span class="serif">arte</span> e conforto.
+                    </h1>
+                    <p class="ds-hero-desc wow fadeInUp" data-wow-delay=".5s">
+                        Uma fusão poética de matérias nobres, texturas suaves e linhas puras. Desenvolvido para expressar sofisticação e harmonia visual em superfícies limpas e contornos refinados.
+                    </p>
+                    <div class="ds-btn-group wow fadeInUp" data-wow-delay=".6s">
+                        <a href="#components" class="ds-btn-primary">Explorar UI</a>
+                        <a href="#colors" class="ds-btn-outline">Ver Cores</a>
+                    </div>
+                </div>
+
+                <!-- Right layered showcase visual column -->
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="ds-hero-visual wow fadeInRight" data-wow-delay=".4s">
+                        <!-- Main floating glass card holding products -->
+                        <div class="ds-hero-glass-card">
+                            <div class="carousel slide carousel-fade" id="banner-home-carousel" data-ride="carousel">
+                                <div class="carousel-inner" style="border-radius: 8px; overflow: hidden;">
+                                    <div class="carousel-item active">
+                                        <img alt="Poltrona Pinhão" class="ds-hero-product-img" src="ref-design-systems/admmobiliario.com.br_pt/assets/cd7e3ed167fc0034_e6ca318aa2fac1d3d38491e985e0d3.png" />
+                                        <div class="carousel-caption">
+                                            <h2>Poltrona Pinhão</h2>
+                                            <p>ADM Mobiliário &bull; Design Autoral</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img alt="Luminária Reta" class="ds-hero-product-img" src="ref-design-systems/admmobiliario.com.br_pt/assets/f8252e2d8777aab3_9c4ed20901226a01411bb602e8fe28.png" />
+                                        <div class="carousel-caption">
+                                            <h2>Luminária Reta</h2>
+                                            <p>ADM Mobiliário &bull; Iluminação Minimalista</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img alt="Sofá Bold" class="ds-hero-product-img" src="ref-design-systems/admmobiliario.com.br_pt/assets/25935147208e7d53_2d6a1517c6106ccac3763e98aa05bb.png" />
+                                        <div class="carousel-caption">
+                                            <h2>Sofá Bold</h2>
+                                            <p>ADM Mobiliário &bull; Conforto & Ergonomia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mini floating accent info card -->
+                        <div class="ds-hero-floating-card">
+                            <h5>Design Elegante</h5>
+                            <p>Coleção Master 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Typography (Anchor: #typography) -->
+    <section id="typography" class="ds-section">
+        <div class="container">
+            <h2 class="ds-section-title wow fadeInUp">Tipografia &amp; Escala</h2>
+            <p class="ds-section-desc wow fadeInUp">Uma análise de fontes contemporâneas e a hierarquia correspondente ao ecossistema de marca.</p>
+            
+            <!-- Font Family Cards Showcase -->
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="font-card">
+                        <div class="font-card-preview" style="font-family: var(--ds-font-sans); font-weight: 300;">Aa</div>
+                        <div class="font-card-title">Poppins / Raleway (Sans-Serif)</div>
+                        <div class="font-card-desc">
+                            <strong>Uso:</strong> Textos institucionais, botões, formulários e corpo de conteúdo.<br>
+                            <strong>Aparência:</strong> Geometria limpa e legibilidade avançada em dispositivos digitais.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="font-card">
+                        <div class="font-card-preview" style="font-family: var(--ds-font-serif); font-style: italic;">Aa</div>
+                        <div class="font-card-title">Cormorant Garamond (Serif Display)</div>
+                        <div class="font-card-desc">
+                            <strong>Uso:</strong> Títulos conceituais, citações artísticas e seções de alta costura.<br>
+                            <strong>Aparência:</strong> Refinada e tradicional, transmitindo exclusividade e nobreza.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="font-card">
+                        <div class="font-card-preview" style="font-family: monospace; font-weight: bold; font-size: 64px; line-height: 1.25;">{ }</div>
+                        <div class="font-card-title">System Monospace (Auxiliares)</div>
+                        <div class="font-card-desc">
+                            <strong>Uso:</strong> Especificações técnicas, códigos hex, dimensões e metadados.<br>
+                            <strong>Aparência:</strong> Técnica, minimalista e funcional, ideal para documentação.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsive hierarchy table -->
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp">
+                    <div style="background: #ffffff; border: 1px solid var(--ds-border-color); border-radius: 12px; padding: 30px; box-shadow: var(--ds-shadow-soft); overflow-x: auto;">
+                        <table class="table" style="font-family: var(--ds-font-sans); min-width: 750px; margin: 0;">
+                            <thead>
+                                <tr style="text-transform: uppercase; font-size: 11px; letter-spacing: 1.5px; color: var(--ds-text-muted); border-bottom: 2px solid var(--ds-bg-gray);">
+                                    <th>Classe / Nível</th>
+                                    <th>Visualização</th>
+                                    <th class="text-right">Propriedades CSS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">H1 Title</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 38px; font-weight: 300;">H1 Título Principal</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 38px &bull; weight: 300 &bull; line-height: 1.2
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">H2 Section</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 26px; font-weight: 400; text-transform: uppercase; letter-spacing: 2px;">H2 Título Seção</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 26px &bull; weight: 400 &bull; tracking: 2px &bull; uppercase
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">H3 Card</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 18px; font-weight: 500;">H3 Título de Card</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 18px &bull; weight: 500 &bull; line-height: 1.4
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">Body Large</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 16px; color: var(--ds-text-secondary);">Leitura e introdução do artigo.</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 16px &bull; weight: 400 &bull; line-height: 1.6
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">Body Default</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 14px; color: var(--ds-text-secondary);">Conteúdo corrido para parágrafos gerais de descrição.</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 14px &bull; weight: 400 &bull; line-height: 1.6
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--ds-bg-gray);">
+                                    <td style="vertical-align: middle; font-weight: 600; color: var(--ds-text-primary);">Caption</td>
+                                    <td style="vertical-align: middle;">
+                                        <span style="font-family: var(--ds-font-sans); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--ds-text-muted);">Legendas, tags e metadados</span>
+                                    </td>
+                                    <td class="text-right" style="vertical-align: middle; color: var(--ds-text-muted); font-family: monospace; font-size: 12px;">
+                                        font-size: 12px &bull; weight: 500 &bull; tracking: 1px &bull; uppercase
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Color System (Anchor: #colors) -->
+    <section id="colors" class="ds-section">
+        <div class="container">
+            <h2 class="ds-section-title wow fadeInUp">Sistema de Cores</h2>
+            <p class="ds-section-desc wow fadeInUp">Nossa paleta une neutralidade e sofisticação natural. Clique sobre os cards para copiar o valor HEX.</p>
+            
+            <div class="doc-subsection-title wow fadeInUp">Superfícies &amp; Estrutura</div>
+            <div class="row mb-5">
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="color-card" data-clipboard="#ffffff">
+                        <div class="color-swatch" style="background: #ffffff;"></div>
+                        <div class="color-title">Pure White</div>
+                        <span class="color-value">HEX: #ffffff</span>
+                        <span class="color-role">Superfície Card</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="color-card" data-clipboard="#fcfcfc">
+                        <div class="color-swatch" style="background: #fcfcfc;"></div>
+                        <div class="color-title">Soft Off-White</div>
+                        <span class="color-value">HEX: #fcfcfc</span>
+                        <span class="color-role">Fundo do App</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="color-card" data-clipboard="#f5f5f5">
+                        <div class="color-swatch" style="background: #f5f5f5;"></div>
+                        <div class="color-title">Clean Gray</div>
+                        <span class="color-value">HEX: #f5f5f5</span>
+                        <span class="color-role">Divisores/Pills</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="color-card" data-clipboard="#1c1c1c">
+                        <div class="color-swatch" style="background: #1c1c1c;"></div>
+                        <div class="color-title">Ebony Black</div>
+                        <span class="color-value">HEX: #1c1c1c</span>
+                        <span class="color-role">Texto Primário</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title wow fadeInUp">Acentos Harmonizados</div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="color-card" data-clipboard="#717965">
+                        <div class="color-swatch" style="background: #717965;"></div>
+                        <div class="color-title">Buriti Green</div>
+                        <span class="color-value">HEX: #717965</span>
+                        <span class="color-role">Acento Orgânico</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="color-card" data-clipboard="#6b3034">
+                        <div class="color-swatch" style="background: #6b3034;"></div>
+                        <div class="color-title">Florarte Burgundy</div>
+                        <span class="color-value">HEX: #6b3034</span>
+                        <span class="color-role">Acento Conceitual</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="color-card" data-clipboard="#d57b0d">
+                        <div class="color-swatch" style="background: #d57b0d;"></div>
+                        <div class="color-title">Tem Gold</div>
+                        <span class="color-value">HEX: #d57b0d</span>
+                        <span class="color-role">Acento Secundário</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="color-card" data-clipboard="#707070">
+                        <div class="color-swatch" style="background: #707070;"></div>
+                        <div class="color-title">Slate Gray</div>
+                        <span class="color-value">HEX: #707070</span>
+                        <span class="color-role">Acento Neutro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: UI Components (Anchor: #components) -->
+    <section id="components" class="ds-section">
+        <div class="container">
+            <h2 class="ds-section-title wow fadeInUp">Componentes da Interface</h2>
+            <p class="ds-section-desc wow fadeInUp">Elementos funcionais refinados e projetados para criar interfaces coesas e premium.</p>
+            
+            <div class="row">
+                <!-- Buttons column -->
+                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="component-box">
+                        <span class="component-label">Tipos de Botão</span>
+                        <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start;">
+                            <div>
+                                <button class="ds-btn-primary">Botão Primário</button>
+                            </div>
+                            <div>
+                                <button class="ds-btn-outline">Botão Secundário</button>
+                            </div>
+                            <div>
+                                <a class="button-categoria" href="#" onclick="return false;" style="display: inline-block; float: none;">Ver Vitrine</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forms column -->
+                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="component-box" style="height: calc(100% - 30px);">
+                        <span class="component-label">Newsletter &amp; Form Fields</span>
+                        <div style="background: var(--ds-bg-gray); padding: 30px; border-radius: 8px;">
+                            <form style="margin:0; display:flex; flex-direction:column; gap:15px;" onsubmit="return false;">
+                                <input class="newsletter-email-input" placeholder="Digite seu e-mail" type="email" style="padding: 12px 16px; border: 1px solid var(--ds-border-color); border-radius: 4px; background: #fff; width: 100%; outline: none;" />
+                                <input class="buttonenviar" type="submit" value="Cadastrar" style="float:none; padding: 12px 25px; border-radius: 4px; font-family:var(--ds-font-sans); text-transform:uppercase; letter-spacing:1px; background:var(--ds-text-primary); color:#fff; border:none;" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Product Card preview -->
+                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="component-box">
+                        <span class="component-label">Card de Produto</span>
+                        <div class="ds-product-card">
+                            <div class="ds-product-img-wrapper">
+                                <img src="ref-design-systems/admmobiliario.com.br_pt/assets/6d495bb1c7c75dd7_dccb1f5aab16cddbf7c1a8f0226735.jpg" />
+                            </div>
+                            <div class="ds-product-info">
+                                <span class="ds-product-category">Poltronas</span>
+                                <h4 class="ds-product-title">Poltrona Ramo Buriti</h4>
+                                <span class="ds-product-price">R$ 3.890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Utilities column -->
+                <div class="col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="component-box" style="height: calc(100% - 30px);">
+                        <span class="component-label">Badges, Modals &amp; Tooltips</span>
+                        <div style="display: flex; flex-direction: column; gap: 25px;">
+                            <!-- Badges row -->
+                            <div style="display: flex; gap: 10px;">
+                                <span class="badge-premium">Novo</span>
+                                <span class="badge-premium outline">ADM Select</span>
+                                <span class="badge-premium glow" style="border-color: var(--ds-accent-sage); color: var(--ds-accent-sage);">Conceitual</span>
+                            </div>
+                            <!-- Tooltips -->
+                            <div style="font-family: var(--ds-font-sans); font-size: 13px;">
+                                Passe o cursor do mouse <span class="tooltip-custom" style="text-decoration: underline; font-weight: 500; cursor: pointer; color: var(--ds-accent-sage);">aqui<span class="tooltip-text">Tecido Linho Fino</span></span> para ver detalhes.
+                            </div>
+                            <!-- Modal trigger -->
+                            <div>
+                                <button class="ds-btn-outline" onclick="openDemoModal()">Testar Modal Popup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Icons (Anchor: #icons) -->
+    <section id="icons" class="ds-section">
+        <div class="container">
+            <h2 class="ds-section-title wow fadeInUp">Biblioteca de Ícones</h2>
+            <p class="ds-section-desc wow fadeInUp">Ícones otimizados e incorporados para a perfeita representação de categorias e fluxos de navegação.</p>
+            
+            <div class="row text-center mt-5">
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="color-card" style="cursor: default; padding: 25px 15px;">
+                        <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <svg class="svg replaced-svg" style="width: 50px; height: auto;" viewbox="0 0 348.7 182.04" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2" id="Camada_2"><g data-name="Camada 1" id="Camada_1-2"><path d="M332.25,34.88a59.79,59.79,0,0,0-7.21.24c-.58-5.89-2.51-16.32-10.39-24.24C305.38,1.54,292.59,0,286.48,0Q175,0,63.48,0a45.76,45.76,0,0,0-8.92.68,37.67,37.67,0,0,0-18.41,9.46c-10,9.57-11,22-11.2,25a47.34,47.34,0,0,0-8.39-.36c-5.74.24-10.71.46-13.74,3.26S-.25,45.38.24,53.85C.86,64.58,1.62,69.9,2.43,79.13Q4.81,106.55,7.33,134c.84,8.41,5.26,12.58,13.49,13H36c-.27,1.15-.42,2-.66,2.79-2.48,8.35-5,16.69-7.46,25.05-1.38,4.76.18,6.78,5.18,6.82,4.12,0,8.24-.11,12.35.05a6.59,6.59,0,0,0,6.22-3.22C58.17,169.1,65,159.9,71.5,150.44c1.87-2.73,3.88-3.51,7-3.51q96.53.13,193.06,0c3.3,0,5.46.81,7.34,3.66,4.12,6.24,8.58,12.26,13,18.29,3.08,4.2,5.53,9.89,9.73,12,4.36,2.14,10.47.79,15.82.82,4.75,0,6.34-2.09,5-6.63-1.9-6.58-3.94-13.12-5.89-19.68-.79-2.66-1.52-5.34-2.37-8.34h13.58c8.23-.45,12.65-4.62,13.49-13q2.5-27.41,4.9-54.83,1.11-12.64,2.19-25.28c.16-1.24,1.61-13.27-4.6-17.16C341.34,35.13,337.84,35,332.25,34.88ZM183.86,8.43q51.06,0,102.12,0c5.38,0,15.19,1,22.48,8.09,5.78,5.63,7.57,12.93,8.22,17.42V49.36l0,0V66.63c0,.17,0,.35,0,.52s0,.31,0,.46V80.44H285.91a.16.16,0,0,1,0,.07h-4.37c-20.24,0-47.7,0-89.4,0H179.69v-54h0V8.43Zm-158.54,130-4.5,0v0c-3.38-.28-4.47-1.25-5-4.53C12,88.16,9.33,55.09,8.77,50.08c-.1-.86-.41-3.42,1.1-5,.93-1,2.47-1.44,4.77-1.46h6.18v.06c3.36.33,4.12,1.71,4.14,6q.18,42.17.34,84.34h0Zm8.15-92.57h0a90.15,90.15,0,0,1,0-9.59c0-.78.1-1.56.17-2.33.9-13.69,12.51-25.29,26.2-25.38,36.4-.25,72.8-.11,109.21-.12a14.62,14.62,0,0,1,1.63.22V34h0V80.57H157.17l-87.89,0H64.63l0-.07H33.47ZM45.26,172.29c-1.2,1.51-5,.94-8.24,1.43l7.91-26.51H63.55C57.31,155.92,51.61,164.37,45.26,172.29Zm257.37-2.95-16-22.33c6.28,0,11.73-.06,17.18.07a2.82,2.82,0,0,1,2,1.63c2.47,7.95,4.81,15.94,7.19,23.92C307.17,174.29,305.87,173.86,302.63,169.34Zm13.93-35.42h0v4.39H33.93v-4.39h0v-2.15h282.6Zm.1-21.15c-.09,6.29-3.66,10-10,10.18-7.73.15-15.46,0-23.2,0H191.83c-.75,0-1.44,0-2.11-.07h-28c-1.12.09-2.24.07-3.37.07H46.46c-9.79,0-12.73-3-12.73-12.71,0-3.37,0-6.74,0-10.1,0-7.73,3.49-11.25,11.13-11.25q28.81,0,57.63,0,28.62,0,57.25,0c.64,0,1.24,0,1.82.07h26.82q.68-.06,1.41-.06,29.19-.06,58.37,0,28.62,0,57.24,0c7.73,0,11.24,3.48,11.27,11.11C316.69,104.29,316.73,108.53,316.66,112.77Zm23.25-62.69c-.56,5-3.27,38.08-7.06,83.88-.52,3.28-1.61,4.25-5,4.53v0l-1.66,0c-.22,0-.45-.19-1.18-.51v-4h0q0-41.59,0-83.17c0-4.13.54-6,2.8-6.75,3.33-.84,8.62-1.67,10.95,1C340.28,46.74,340,49.19,339.91,50.08Z" fill="#141414"></path></g></g></svg>
+                        </div>
+                        <div class="swatch-title">Sofás</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="color-card" style="cursor: default; padding: 25px 15px;">
+                        <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <svg class="svg replaced-svg" style="width: 30px; height: auto;" data-name="Camada 2" id="Camada_2" viewbox="0 0 290.64 434.73" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 1" id="Camada_1-2"><path d="M282.19,65.2c-.18-.06-.34-.11-.47-.17.09.04.16.08.22.11-2.17-1.24-183.3-58.27-184.94-58.74C92.05,5,70.07-.21,59.65,0c-6.75.14-27.28.56-33.33,26.91-4.71,20.54,2.5,32.02,7.97,38.42-8.08,9.02-9.84,22.5-5.21,40.1.51,1.95,1.11,4.07,1.78,6.3-.29.92-.45,1.89-.45,2.91,0,3.23,1.6,6.09,4.05,7.85,6.31,17,16.72,36.47,32.9,44.76,2.81,1.44,6.31,2.25,10.5,2.42,5.79,19.34,5.68,39.69-.39,59l-55.78,177.6c-5.99,1.3-11.59,3.28-15.62,6.28-4.93,3.67-6.87,7.41-5.78,11.11,1.72,5.85,10.25,7.64,17.11,8.11,5.92.4,91.54,2.96,130.12,2.96,2.05,0,3.96,0,5.72-.02,34.7-.3,37.83-.96,47.92-10.05,3.79-3.42,7.72-7.44,6.34-11.82-1.41-4.47-7.07-5.18-10.45-5.6-6.79-.84-128.57-3.52-141.54-3.13l53.98-171.87c5.5-17.51,6.43-36.06,2.92-53.87,1.79.03,3.57.06,5.35.06,28.23,0,55.92-4.57,98.01-22.74,25.19-10.87,43.31-28.86,54.07-42.04,12.29-15.05,19.33-29.04,20.41-34.16,1.49-7.13-1.21-11.93-8.05-14.27ZM34.61,28.82c3.36-14.67,11.6-18.86,20.19-19.96-.27,2.96-1.05,7.26-2.21,12.21-6.35,5.14-10.42,19.36-9.99,30.74-1.03,2.32-2.08,4.47-3.15,6.38-4.27-5.55-8.32-14.2-4.84-29.38ZM40.98,115.37c-.21-.62-.42-1.23-.61-1.83.5.13.89.56.89,1.11,0,.28-.11.52-.27.72ZM44,123.48c3.38-1.51,5.75-4.89,5.75-8.83,0-5.33-4.34-9.67-9.67-9.67-.77,0-1.52.1-2.23.27-.19-.69-.37-1.36-.54-1.98-3.96-15.06-2.68-26.11,3.83-32.84,11.15-11.55,21.2-48.32,22.19-61.8,9.91.75,26.61,4.61,31.34,5.96,7.01,2,136.22,42.93,173.57,54.93-13.84,6.71-40.35,22.54-82.53,49.24-3.45,2.18-6.43,4.07-6.89,4.33-22.14,12.45-89.43,45.91-107.59,36.6-12.72-6.52-21.57-22.2-27.24-36.21ZM196,415.67c.77.09,1.4.19,1.92.28-.57.61-1.36,1.39-2.46,2.38-7.76,7-8.39,7.57-42.29,7.86-34.85.31-128.99-2.49-135.19-2.92-4.28-.29-7.58-1.2-9.03-1.95.38-.44.77-2.11,2.21-1.96,12.49,1.27,30.83,1.66,44.01-6.78h.22s.22,0,.22,0c10.8-.41,134.14,2.29,140.4,3.07ZM101.37,229.68l-54.72,174.21c-4.36.02-9.87.22-15.57.86l54.5-173.53c6.37-20.28,6.7-41.61,1.02-61.99,4.12-.51,8.71-1.44,13.78-2.79,7.07,20.36,7.47,42.58.98,63.23ZM281.92,77.73c-1.57,7.48-25.65,51.2-69.52,70.14-44.43,19.18-72.19,22.72-102.04,21.94-.55-1.93-1.15-3.85-1.81-5.76,7.7-2.46,16.31-5.72,25.9-9.8,25.78-10.98,48.31-23.62,48.54-23.74.58-.33,2.52-1.56,7.26-4.56,65.41-41.39,84.46-50.98,88.92-51.74l-.19-1.11c.15.05.3.11.45.16,2.19.75,3.18,1.09,2.47,4.48Z" fill="#141414"></path></g></g></svg>
+                        </div>
+                        <div class="swatch-title">Luminárias</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="color-card" style="cursor: default; padding: 25px 15px;">
+                        <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <svg class="svg replaced-svg" style="width: 40px; height: auto;" id="Camada_1" version="1.1" viewbox="0 0 90 112.5" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><g><path d="M84.3,28.7C83,26,77.4,26,73.9,26.3c-0.1-3.7-0.2-13-0.3-15.5c0-0.5,0-1,0-1.4c0-2.3,0-5.1-3.9-5.3C67.6,4,66.2,5,65.2,5.6   C65,5.8,64.6,6,64.5,6.1C61.6,5.2,51,4.9,46.9,4.9c-0.1,0-0.1,0-0.2,0l0,0c-0.1,0-0.4,0-0.7,0s-0.5,0-0.7,0l0,0c-0.1,0-0.1,0-0.2,0   c-4.1,0-14.6,0.3-17.6,1.2C27.4,6,27,5.8,26.8,5.6c-1-0.7-2.4-1.6-4.5-1.6c-3.8,0.2-3.8,3-3.9,5.3c0,0.4,0,0.9,0,1.4   c-0.1,2.6,0.1,12.1,0.2,16.1c-4.9-0.7-7.6-0.3-9.1,0.4c-0.1,0-0.2,0-0.2,0c-0.3,0.1-0.5,0.2-0.6,0.4c-0.5,0.4-0.8,0.8-0.9,1   c-0.6,1.3-0.7,4.9,6.4,31.1c0.3,1,0.5,1.7,0.5,2l0.1,0.6c0.4,1.8,0.9,3.8,4.3,3.8c0.4,0,1.3,0,2.5,0l0,0l0,0c0.2,0,0.4,0,0.6,0   l-1,18.5h2.7l3.7-18.4c0.9,0,1.9,0,2.9,0.1l-0.7,11.1h2l2.6-11c4.3,0.1,8.3,0.2,10.5,0.2c0.1,0,0.2,0,0.3,0l0,0c0,0,0.3,0,0.7,0   s0.6,0,0.7,0l0,0c0.1,0,0.2,0,0.3,0c2.2,0,6.2-0.1,10.5-0.2l2.7,11.2h2l-0.7-11.2c1,0,2,0,2.9-0.1L68,84.8h2.7l-1-18.6   c0.2,0,0.4,0,0.6,0l0,0l0,0c1.2,0,2.1,0,2.5,0c3.4,0,3.9-2,4.3-3.8l0.1-0.6c0.1-0.3,0.3-1,0.5-2C84.9,33.6,84.9,30,84.3,28.7z    M69.6,6.9c1.1,0,1.1,0.1,1.1,2.5c0,0.5,0,1,0,1.5c0.1,3.1,0.3,16.9,0.3,17v1.6l1.6-0.2c1.1-0.1,2.2-0.2,3.3-0.2   c-3.3,2.6-5.7,7.8-7,15.2c0,0.2-0.1,0.4-0.1,0.5c-0.6-0.4-1.3-0.8-2-1.1c1.1-17.1-0.3-31.3-0.7-35.2c0.3-0.2,0.5-0.3,0.7-0.5   C67.6,7.4,68.4,6.9,69.6,6.9z M46,63.9c-3.2-0.1-15.7-0.3-22.6-0.5c0.4-2.3,1-6.8,0.4-13.2c3.1,0.7,12.1,2.6,21.3,2.8   c0.1,0,0.1,0,0.2,0c0.2,0,0.5,0,0.7,0s0.5,0,0.7,0c0.1,0,0.1,0,0.2,0c9.2-0.2,18.2-2.1,21.3-2.8c-0.5,6.3,0,10.8,0.4,13.2   C61.7,63.6,49.2,63.9,46,63.9z M28.7,8.7c2.5-0.6,11.5-0.9,17.3-1c5.8,0.1,14.9,0.4,17.3,1c0.4,3.7,1.7,17.4,0.8,34   c-6.2-1.7-14.7-1.7-18-1.6c-3.3-0.1-11.8-0.2-18,1.6C27,26.1,28.3,12.4,28.7,8.7z M45,43.9c0.1,0,0.3,0.1,0.4,0c0.2,0,0.4,0,0.6,0   c0.2,0,0.4,0,0.6,0c0.1,0,0.3,0,0.4,0c11.7-0.3,18.5,1.6,20.6,3.6c-2.9,0.7-12.4,2.7-21.7,2.8c-9.2-0.1-18.7-2.1-21.7-2.8   C26.5,45.6,33.2,43.6,45,43.9z M19.8,29.9l1.7,0.3v-1.7c0-0.1-0.4-14.5-0.3-17.6c0-0.5,0-1,0-1.5c0-2.4,0.1-2.4,1.1-2.5   c1.1-0.1,2,0.5,2.8,1.1c0.2,0.2,0.5,0.3,0.7,0.5c-0.4,3.9-1.8,18.1-0.7,35.2c-0.8,0.3-1.4,0.7-2,1.1c0-0.2-0.1-0.4-0.1-0.5   c-1.2-7.1-3.4-12.1-6.5-14.8C17.6,29.6,18.7,29.7,19.8,29.9z M17.6,61.8l-0.2-0.6c-0.1-0.3-0.3-1-0.5-2.1   c-6-22.4-6.8-27.9-6.6-29.2c0.5-0.1,1.8-0.1,3.4,0.9c2.1,1.4,5,4.9,6.5,13.9c1.7,9.7,0.8,16.3,0.3,18.7c-0.7,0-1.1,0-1.4,0   C18,63.4,18,63.4,17.6,61.8z M75.1,59.1c-0.3,1.1-0.5,1.8-0.5,2.1l-0.2,0.6c-0.4,1.6-0.4,1.6-1.5,1.6c-0.3,0-0.7,0-1.4,0   C71,61,70,54.5,71.7,44.8c1.6-9,4.4-12.6,6.5-13.9c1.6-1,2.9-1,3.4-0.9C81.8,31.2,81.1,36.7,75.1,59.1z" fill="#141414"></path><circle cx="34.5" cy="15.3" r="1" fill="#141414"></circle><circle cx="34.5" cy="25.9" r="1" fill="#141414"></circle><circle cx="34.5" cy="37.1" r="1" fill="#141414"></circle><circle cx="42.4" cy="15.3" r="1" fill="#141414"></circle><circle cx="42.4" cy="25.9" r="1" fill="#141414"></circle><circle cx="42.4" cy="37.1" r="1" fill="#141414"></circle><circle cx="57.5" cy="15.3" r="1" fill="#141414"></circle><circle cx="57.5" cy="25.9" r="1" fill="#141414"></circle><circle cx="57.5" cy="37.1" r="1" fill="#141414"></circle><circle cx="49.6" cy="15.3" r="1" fill="#141414"></circle><circle cx="49.6" cy="25.9" r="1" fill="#141414"></circle><circle cx="49.6" cy="37.1" r="1" fill="#141414"></circle></g></svg>
+                        </div>
+                        <div class="swatch-title">Poltronas</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="color-card" style="cursor: default; padding: 25px 15px;">
+                        <div style="height: 60px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+                            <svg class="svg replaced-svg" style="width: 25px; height: auto;" id="Camada_1" version="1.1" viewbox="0 0 38.8 58.6" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><path d="M38.8,26.5C38.8,26.4,38.8,26.4,38.8,26.5c0-0.1,0-0.1,0-0.3L34.1,8.2C32.8,3.4,28.6,0,23.6,0h-8.5c-5,0-9.3,3.4-10.5,8.2  L0,26.3c0,0,0,0,0,0.1v0.1c0,2.9,2.3,5.3,5.3,5.3h6L4.1,57.6c-0.1,0.3,0,0.6,0.1,0.7c0.1,0.1,0.4,0.3,0.7,0.3h3.4  c0.4,0,0.7-0.3,0.9-0.6l2.9-10.8l7.3-5l7.3,5l2.9,10.8c0.1,0.4,0.4,0.6,0.9,0.6H34c0.3,0,0.6-0.1,0.7-0.3c0.1-0.1,0.3-0.4,0.1-0.7  l-7.1-25.8h6C36.5,31.7,38.8,29.3,38.8,26.5z M6.4,8.6c1-4.1,4.7-6.9,8.8-6.9h8.5c4.1,0,7.7,2.8,8.8,6.9l4.4,16.9H1.9L6.4,8.6z   M1.8,27.4h35.2c-0.4,1.5-1.8,2.6-3.4,2.6h-7.1H23h-7.4h-3.4H5.1C3.5,30,2.2,28.9,1.8,27.4z M22.5,31.7l1.5,5.4l-4.5,3.1L14.9,37  l1.5-5.4H22.5z M7.6,56.9H6l7-25.1h1.6L7.6,56.9z M12.8,44.6l1.6-5.7l3.5,2.3L12.8,44.6z M21,41.3l3.5-2.3l1.6,5.7L21,41.3z   M32.8,56.9h-1.6l-7-25.1h1.6L32.8,56.9z" fill="#141414"></path></svg>
+                        </div>
+                        <div class="swatch-title">Cadeiras</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Motion Showcase (Anchor: #motion) -->
+    <section id="motion" class="ds-section">
+        <div class="container">
+            <h2 class="ds-section-title wow fadeInUp">Motion &amp; Sandbox</h2>
+            <p class="ds-section-desc wow fadeInUp">Uma visualização interativa do ecossistema de movimento. Clique nos botões para testar as animações.</p>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0 wow fadeInUp">
+                    <div style="background: #ffffff; border: 1px solid var(--ds-border-color); padding: 45px; border-radius: 16px; box-shadow: var(--ds-shadow-soft);">
+                        <div id="animation-demo-box" class="animated">Box</div>
+                        <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
+                            <button onclick="triggerAnimation('fadeIn')" class="ds-btn-outline" style="padding: 10px 20px; font-size: 11px;">fadeIn</button>
+                            <button onclick="triggerAnimation('fadeInDown')" class="ds-btn-outline" style="padding: 10px 20px; font-size: 11px;">fadeInDown</button>
+                            <button onclick="triggerAnimation('fadeInUp')" class="ds-btn-outline" style="padding: 10px 20px; font-size: 11px;">fadeInUp</button>
+                            <button onclick="triggerAnimation('zoomIn')" class="ds-btn-outline" style="padding: 10px 20px; font-size: 11px;">zoomIn</button>
+                            <button onclick="triggerAnimation('pulse')" class="ds-btn-outline" style="padding: 10px 20px; font-size: 11px;">pulse</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div style="background: #ffffff; border: 1px solid var(--ds-border-color); padding: 35px; border-radius: 16px; box-shadow: var(--ds-shadow-soft); font-family: var(--ds-font-sans); color: var(--ds-text-secondary); height: 100%;">
+                        <span class="component-label">Motion Standards</span>
+                        <ul style="padding-left: 20px; margin: 0; line-height: 1.8;">
+                            <li class="mb-3"><strong>Reveal Scroll:</strong> WOW.js com Animate.css para surgimento gradual de elementos na viewport.</li>
+                            <li class="mb-3"><strong>Micro-interações:</strong> Transições de 0.4s com curvas de suavização cúbica nos botões e inputs para máxima fluidez.</li>
+                            <li class="mb-3"><strong>Glow &amp; Lift:</strong> Elevação vertical suave combinada a sombras difusas em elementos interativos no hover.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Demo Modal Popup -->
+    <div class="modal-custom-overlay" id="demo-modal" onclick="closeDemoModalOutside(event)">
+        <div class="modal-custom-box">
+            <button class="modal-custom-close" onclick="closeDemoModal()">&times;</button>
+            <h3 style="font-family: var(--ds-font-sans); font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Modal de Demonstração</h3>
+            <p style="font-family: var(--ds-font-sans); font-size: 13px; color: var(--ds-text-secondary); line-height: 1.6; margin-bottom: 25px;">
+                Este componente demonstra as capacidades do modal glassmorphic. Possui fundo semi-transparente fosco e surge com uma animação de escala elástica suave.
+            </p>
+            <button class="ds-btn-primary" onclick="closeDemoModal()">Fechar Janela</button>
+        </div>
+    </div>
+
+    <!-- Copy feedback toast -->
+    <div class="copy-toast" id="copy-toast">Copiado para a área de transferência!</div>
+
+    <!-- Footer Information -->
+    <footer id="footer" style="padding: 60px 0; background: var(--ds-bg-gray); text-align: center; font-family: var(--ds-font-sans); font-size: 12px; color: var(--ds-text-muted); border-top: 1px solid var(--ds-border-color);">
+        <div class="container">
+            <p style="margin: 0; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; color: var(--ds-text-primary);">Master Design System Showcase &bull; 2026</p>
+            <p style="margin: 8px 0 0 0; font-size: 11px;">Baseado no HTML, CSS e ativos originais do ecossistema Le Mond e referências</p>
+        </div>
+    </footer>
+
+    <!-- JS Dependencies Sourced locally -->
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/87981e8062814ca2_jquery.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/0925e8ad7bd97139_jquery-3.4.1.min.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/8710099069011903_jquery.paroller.min.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/1c2f1c1bc2024280_main.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/9c9da3742b894567_wow.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/5602e4c8dcc822cf_pace.min.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/8534da4cd6e90d26_jquery.scrollToStyle.js"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/0c7178cc6ca34fb1_slick.min.js" type="text/javascript"></script>
+    <script src="ref-design-systems/admmobiliario.com.br_pt/assets/e7ed36ceee5450b4_bootstrap.min.js"></script>
+
+    <!-- Interactive script initializers -->
+    <script type="text/javascript">
+        // Initialize WOW scroll reveal
+        new WOW().init();
+
+        // Carousel config for Hero images
+        $(function() {
+            $('#banner-home-carousel').carousel({
+                interval: 5000
+            });
+        });
+
+        // Initialize Slick slider inside product card
+        $(function() {
+            $('.slider-lancamentos').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                arrows: false,
+                dots: true,
+                infinite: true,
+                initialSlide: 0,
+                swipeToSlide: true,
+                touchMove: true
+            });
+        });
+
+        // Toggle side menu overlay
+        $('#toggle').click(function() {
+            $(this).toggleClass('active');
+            if ($(this).hasClass('active')) {
+                $('#overlay').addClass('open').css({'opacity': '1', 'visibility': 'visible'});
+            } else {
+                $('#overlay').removeClass('open').css({'opacity': '0', 'visibility': 'hidden'});
+            }
+            $('body').toggleClass('travascroll');
+        });
+
+        // Close overlay menu on anchor links
+        $('.overlay-menu a').click(function() {
+            $('#toggle').removeClass('active');
+            $('#overlay').removeClass('open').css({'opacity': '0', 'visibility': 'hidden'});
+            $('body').removeClass('travascroll');
+        });
+
+        // Clipboard Copy Swatch color card logic
+        $(function() {
+            $('.color-card').click(function() {
+                var hexColor = $(this).attr('data-clipboard');
+                if (hexColor) {
+                    var tempInput = $('<input>');
+                    $('body').append(tempInput);
+                    tempInput.val(hexColor).select();
+                    document.execCommand('copy');
+                    tempInput.remove();
+                    
+                    var toast = $('#copy-toast');
+                    toast.text("Cor " + hexColor + " Copiada!").fadeIn();
+                    setTimeout(function() {
+                        toast.fadeOut();
+                    }, 2000);
+                }
+            });
+        });
+
+        // Modal triggers
+        function openDemoModal() {
+            $('#demo-modal').addClass('open').css('display', 'flex');
+            setTimeout(function() {
+                $('#demo-modal').css('opacity', '1');
+            }, 10);
+            $('body').addClass('travascroll');
+        }
+
+        function closeDemoModal() {
+            $('#demo-modal').css('opacity', '0');
+            setTimeout(function() {
+                $('#demo-modal').removeClass('open').css('display', 'none');
+                $('body').removeClass('travascroll');
+            }, 400);
+        }
+
+        function closeDemoModalOutside(e) {
+            if (e.target.id === 'demo-modal') {
+                closeDemoModal();
+            }
+        }
+
+        // Sandbox animation sandbox box triggers
+        function triggerAnimation(animName) {
+            var box = document.getElementById('animation-demo-box');
+            box.className = 'animated';
+            void box.offsetWidth; // Force CSS reflow to restart animation
+            box.classList.add(animName);
+        }
+    </script>
+</body>
+</html>

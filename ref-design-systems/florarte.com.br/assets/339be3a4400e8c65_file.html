@@ -1,0 +1,781 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Canal de Ética Florarte</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+<style>
+    @keyframes slideInRight {
+    from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    }
+    to {
+    transform: translate3d(0, 0, 0);
+    }
+    }
+    button.chatLauncher {
+    animation-duration: 0.5s;
+    transition-duration: 0.5s;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+    border: 4px solid #6B3034;
+    padding: 1px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    }
+    button.chatLauncher.open {
+    animation-name: slideInRight;
+    opacity: 1;
+    }
+    button.chatLauncher:hover,
+    button.chatLauncher:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid rgba(0, 0, 0, 0);
+    }
+    button.chatLauncher:focus {
+    outline: 1px solid #0053ba;
+    outline-offset: -4px;
+    }
+    .triangle{
+    animation-duration: 1s;
+    transition-duration: 0.5s;
+    position: fixed;
+    bottom: 131px;
+    right: 140px;
+    z-index: 9999;
+    cursor: default;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 0.1px solid transparent;
+    border-top: 20px solid #6B3034;
+    opacity: 0;
+    }
+    .triangle.open {
+    animation-name: auto;
+    animation-delay: 1s;
+    transition-delay: 1s;
+    opacity: 1;
+    }
+    .message{
+    animation-duration: 1s;
+    transition-duration: 0.5s;
+    position:fixed;
+    background-color: #6B3034;
+    bottom: 150px;
+    right: 132px;
+    cursor: default;
+    z-index: 9999;
+    margin: auto;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    width:250px;
+    height:55px;
+    border:4px solid #6B3034;
+    border-radius: 10px;
+    opacity: 0;
+    }
+    .message.open {
+    animation-name: auto;
+    animation-delay: 1s;
+    transition-delay: 1s;
+    opacity: 1;
+    }
+    .ChatCloseButton {
+    animation-duration: 1s;
+    transition-duration: 1s;
+    position:fixed;
+    background-color: #6B3034;
+    bottom: 195px;
+    right: 140px;
+    z-index: 9999;
+    cursor: pointer;
+    width:22px;
+    height:22px;
+    text-align: center;
+    border-radius: 5px;
+    vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  
+  <!--==========================
+  Header
+    
+
+  ============================-->
+  <!-- #header -->
+
+  <header id="header">
+    <button class="chatLauncher chatLauncher" type="button" style="display:none;">
+  <div>
+    <background-image><img src="./img/Picture2_Robot.png" style="width:110px; border-radius:55px"></background-image>
+  </div>
+</button>
+<div class="triangle"></div>
+<div class="message">
+  <div style="color:#ffffff;font-size:14px;padding: 4px 0">
+    <text>Ol&aacute;! Eu sou um Assistente Virtual, posso te ajudar?</text>
+  </div>
+</div>
+<div class="ChatCloseButton" type="button" style="display:none;">
+  <div style="color:#ffffff;font-size:16px;padding: 0px 0">
+    <text>X</text>
+  </div>
+</div>
+    <div class="container">
+      <nav id="nav-menu-container" >
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">início</a></li>
+           <li class="menu-has-children"><a href="#registro">Registre o seu relato</a>
+            <ul>
+              <li><a href="https://etica.deloitte.com.br/hotsite/login.aspx" target="_blank">Acompanhe o seu relato</a></li>                                
+            </ul>
+          </li>
+          <li><a href="#about">Formas de contato</a></li>
+          <li><a href="Codigo_de_Etica.pdf" target="_blank">Código de Ética</a></li>             
+          <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+          <li><a href="#privacynotice">Proteção de Dados</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+
+
+    </div>
+
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Canal de Ética Florarte</h1>
+      <h2></h2>
+      <a href="#registro" class="btn-get-started">Registre o seu relato</a>
+      <a href="#registro" class="btn-get-started">Acompanhe o seu relato</a>
+    </div>
+	
+  <!--==========================
+    ASSISTENTE VIRTUAL DELOITTE (API Watson)
+  ============================-->
+<script type="text/javascript">
+    function readFile(fileName) {
+    var rawFile = new XMLHttpRequest();
+    var allText;
+
+    rawFile.open("GET", fileName, false);
+    rawFile.onreadystatechange = function () {
+      if (rawFile.readyState === 4) {
+        if (rawFile.status === 200 || rawFile.status == 0) {
+          allText = rawFile.responseText;
+        }
+      }
+    }
+
+    rawFile.send(null);
+    return allText;
+  }
+
+
+
+function getValidToken(callback) {
+var val = "";
+var url = 'https://api.relatoconfidencial.com.br/api/assistente?canal=florarte&id=' + localStorage.getItem('guid');
+    jQuery.ajax({
+      type: "GET",
+      url: url,
+      contentType: "application/json; charset=utf-8",
+      async: false,
+      cache: true,
+      success: function (msg) {
+        var jwt = readFile('tkn.txt');
+        if (window.watsonAssistantChatOptions === undefined) {
+          window.watsonAssistantChatOptions = {
+            integrationID: "8ecd02c7-3634-4429-92c1-78b8f4954cc1", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "2f5b8aec-3e3a-4956-9ed7-0a387577f8f6", // The ID of your service instance.
+            //openChatByDefault: true,
+            identityToken: jwt,
+            showLauncher: false,
+            onLoad: function (instance) {
+              instance.on({
+                type: 'identityTokenExpired', handler: function (event) {
+                  // Perform whatever actions you need to take on your system to get a new token.
+                  var newToken = getValidToken();
+                  return new Promise(function (resolve, reject) {
+                    // And then pass the new JWT into the callback and the service will resume processing messages.
+                    event.identityToken = newToken;
+                    resolve(newToken);
+                  });
+                }
+              });
+              const button = document.querySelector('.chatLauncher');
+              const message = document.querySelector('.message');
+              const triangle = document.querySelector('.triangle');
+              const ChatCloseButton = document.querySelector('.ChatCloseButton');
+
+              button.addEventListener('click', function clickListener() {
+                instance.openWindow();
+                message.style.display = 'none';
+                triangle.style.display = 'none';
+                ChatCloseButton.style.display = 'none';
+              });
+              ChatCloseButton.addEventListener('click', function clickListener() {
+                message.style.display = 'none';
+                triangle.style.display = 'none';
+                ChatCloseButton.style.display = 'none';
+              });
+              instance.render().then(function () {
+                button.style.display = 'block';
+                button.classList.add('open');
+                triangle.classList.add('open');
+                message.classList.add('open');
+                setTimeout(function () {
+                  ChatCloseButton.style.display = 'block';
+                }, 1500);
+                setTimeout(function () {
+                  message.style.display = 'none';
+                  triangle.style.display = 'none';
+                  ChatCloseButton.style.display = 'none';
+                }, 60000);
+              });
+            }
+          };
+          setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+          });
+        } else {
+          val = jwt;
+        }
+
+      },
+      error: function (msg) {
+      }
+    });
+    return val;
+}
+
+function generateGuid() {
+if (!localStorage.getItem('guid')) {
+  var array = new Uint32Array(14);
+  crypto.getRandomValues(array);
+
+  function dec2hex(dec) {
+    return ('0' + dec.toString(16)).substr(-2);
+  }
+
+  var guid = '';
+  for (var i = 0; i <= array.length; i++) {
+    guid += dec2hex(array[i] & 0xFF);
+    if (i === 3 || i === 5 || i === 7 || i === 9) {
+      guid += '-';
+    }
+  }
+localStorage.setItem('guid', guid);
+}
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+window.watsonAssistantChatOptions = undefined;
+generateGuid();
+getValidToken();
+});
+</script>
+
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Formas de Contato</h2>
+            <p>
+              O Canal de Ética Florarte possui outras formas para entrar em contato.
+            </p>
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4 class="title"><a href="">0800 721 9346</a></h4>
+              <p class="description">
+                Dias úteis: Disponível de 07:00 às 20:00 horas.
+              </p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4 class="title"><a href="">canaleticaflorarte<br/>@relatoconfidencial.com.br</a></h4>
+              <p class="description">
+                A qualquer momento.
+              </p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4 class="title"><a href="">Caixa de Voz</a></h4>
+              <p class="description">
+                Dias úteis: Disponível após às 20 horas. <br>
+                Finais de semana e feriados nacionais: 24 horas. 
+              </p>              
+            </div>              
+
+          </div>            
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+     <!--==========================
+     registro Section
+    ============================-->
+    <section id="registro">   
+      <div class="container wow fadeIn">
+        <div class="section-header">    
+          <br>
+          <h3 class="section-title">Registre  o seu relato</h3> 
+          <p></p>     
+        </div>
+        <div class="row about-container">
+          <div class="col-lg-8 mx-auto text-justify">            
+            <p>
+              A D & A Decoração e Ambientação / Florarte preza pela integridade, transparência e responsabilidade nas relações com todos os seus públicos. Por isso, a informação verdadeira e honesta e o cuidado com a conduta ética de seus líderes, colaboradores e fornecedores são sempre valorizados.
+           </p>
+            <p>
+              Qualquer ato que não estiver de acordo com o Código de Ética deve ser reportado. Além disso, qualquer informação ou situação que possa prejudicar a D & A Decoração e Ambientação / Florarte ou algum de seus públicos é importante, merece atenção e pode ser relatada no Canal de Ética Florarte.
+            </p>
+            <p>
+              O Canal de Ética Florarte é atendido por uma empresa independente, que prezará pela confidencialidade das suas informações.
+            </p>
+            <p>
+              Você também pode registrar o seu relato enviando um e-mail para: canaleticaflorarte@relatoconfidencial.com.br, ou entrando em contato pelo número 0800 721 9346.
+            </p> 
+            <p>
+              Conheça o <b>Código de Ética</b> da <b>D & A Decoração e Ambientação / Florarte</b> clicando <a href="Codigo_de_Etica.pdf" target="_blank"><b> aqui</b>.</a>
+            </p>          
+            <div>
+              <input type="checkbox" name="concordo" value="concordo" id="concordo" /><label for=concordo> &nbsp Eu li e concordo com os <a href="" data-toggle="modal" data-target="#modalExemplo"><b>termos de uso</b></a>.</label>
+            </div> 
+            <div>
+              <div class="alert alert-warning alert-danger fade show" role="alert">É necessário que <strong>concorde</strong> com os termos de uso para ativar os botões abaixo. &nbsp<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+                <!--MODAL TERMOS DE USO-->
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Termos de uso</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                  <b>1.</b> Este site é uma ferramenta on-line confidencial, operada pela Deloitte Touche Tohmatsu (”DELOITTE”) para permitir que os colaboradores, clientes, fornecedores e terceiros da “EMPRESA” reportem suspeitas de violações e/ou desvios ao Código de Ética, políticas, e/ou leis e regulamentos pertinentes. A utilização deste site é totalmente voluntária. Encorajamos você (“Manifestante”) a reportar possíveis violações e/ou desvios diretamente ao seu superior imediato, à Superintendência de Compliance, e/ou a um dos Comitês de Ética da “EMPRESA”. Contudo, se você se sentir mais confortável e seguro poderá utilizar este canal para fazer sua denúncia.
+                                </p>
+                                <p>
+                                  <b>2.</b> Esteja ciente de que as informações fornecidas sobre você, seus colegas, terceiros ou qualquer aspecto sobre operações da “EMPRESA”, podem resultar em decisões que afetam outras pessoas. Por isso, pedimos que você forneça somente informações que, no seu melhor conhecimento, são corretas, e íntegras. Você não será alvo de retaliação por parte da “EMPRESA”, por nenhuma denúncia de suspeita de violações e/ou desvios ao Código de Ética, políticas da “EMPRESA” e/ou leis e regulamentos pertinentes feitos de boa-fé, mesmo que, posteriormente, o conteúdo revele-se incorreto ou improcedente.
+                                </p>
+                                <p>
+                                  Esteja ciente, contudo, que o fornecimento intencional de informações falsas ou equivocadas não será tolerado.
+                                </p>
+                                <p>
+                                  <b>3. </b> Ao registrar uma denúncia/relato/reporte você pode escolher a forma de identificação que achar mais adequada de acordo com as seguintes opções:
+                                  </br>
+                                  <b>Identificado:</b> Você se identifica e registra seus dados pessoais, os quais poderão ser visualizados pelo Comitê de Ética/Compliance ou gestores responsáveis que analisarão o seu conteúdo. Manifestações identificadas são importantes para uma averiguação rápida e objetiva.
+                                  </br>
+                                  <b>Sigiloso:</b> Você se identifica apenas para a DELOITTE e ficará anônimo para a EMPRESA. A DELOITTE entrará em contato com você caso necessite de maiores informações.
+                                  </br>
+                                  <b>Anônimo:</b> Você não se identifica, mas poderá fornecer um e-mail opcional para a DELOITTE o contatar (mesmo que fictício).
+                                </p>
+                                <p>
+                                  <b>4. </b> A denúncia/relato/reporte anônimo é aceito, mas é recomendável que você deixe alguma forma de identificação ou contato para que possamos acompanhar seu caso e tirar possíveis dúvidas. Para tanto, é possível o compartilhamento de e-mail fictício. Em todas as situações, as informações que você enviar serão tratadas de forma absolutamente confidencial. Se optar pelo anonimato, não forneça no relato detalhes que possam revelar a sua identidade.
+                                </p>
+                                <p>
+                                  Embora a DELOITTE realize a coleta de registro dos Endereços de Protocolo da Internet (IPs) dos computadores dos Manifestantes (responsáveis pelo registro do relato/reporte/denúncia), esta coleta ocorre apenas para fins de cumprimento às determinações do Marco Civil da Internet (Lei nº 12.964/2014) de modo que este dado não será utilizado para sua identificação no contexto do Canal de Denúncias, o qual é Confidencial (“Canal de Denúncias Confidencial”), a menos que haja obrigação legal em sentido contrário.
+                                </p>
+                                <p>
+                                  <b>5. </b> O conteúdo, fotografias, marcas, títulos, sons, vídeos constantes neste site, com ressalva para os dados pessoais, arquivos e informações constantes do relato/reporte/denúncia, são de propriedade da DELOITTE, não sendo autorizada sua reprodução, transmissão, exploração, armazenamento ou qualquer tipo de uso. O Manifestante assume toda e qualquer responsabilidade, de caráter civil e/ou criminal, pela utilização indevida de todo e qualquer material do site.
+                                </p>
+                                <p>
+                                  <b>6. </b> O conteúdo dos relatos preenchidos no formulário eletrônico do site é de única e exclusiva responsabilidade do Manifestante. A DELOITTE não se responsabiliza por qualquer dano decorrente dos relatos registrados por terceiros.
+                                </p>
+                                <p>
+                                  <b>7. </b> Qualquer acesso não autorizado às áreas privativas do site, assim como tentativas ou consumação de acesso ao código-fonte, serão consideradas atos de violação, sendo devidamente tratados de acordo com a legislação aplicável e pertinente.
+                                </p>
+                                <p>
+                                  <b>8. </b> O presente documento pode ser alterado, sem necessidade de aviso prévio, como em casos de mudança na legislação. Será de inteira responsabilidade do Manifestante revisar periodicamente o conteúdo para que tenha acesso a tais modificações.
+                                </p>
+                                
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FINAL DO MODAL-->
+
+               
+
+            <div class="fade show">
+                <a href = "https://etica.deloitte.com.br/hotsite/relato.aspx?id=5323&language=pt-BR" target="_blank"><button type="button"  class="btn btn-secondary btn-lg btn-block" disabled="disabled" id="btn1">Registre o seu relato</button></a>&nbsp;&nbsp;&nbsp;
+				<a href = "https://etica.deloitte.com.br/hotsite/login.aspx" target="_blank"><button type="button" class="btn btn-secondary btn-lg btn-block" >Acompanhe o seu relato</button></a>                 
+             </div>                                                  
+          </div>                    
+        </div>
+      </div>
+    </section><!-- #registro -->
+    <!--==========================
+      Dúvidas Frequentes
+    ============================-->
+	<br>
+  <br>
+  
+  <section id="duvidas">
+		
+    <div class="container wow fadeIn">
+    <div class="section-header">
+        <h3 class="section-title">Dúvidas Frequentes</h3></br>
+        <!-- AS DÚVIDAS PODEM SER DIFERENTES NÃO PODE APARECER "DELOITTE"-->
+        
+        <a href="#" data-toggle="collapse" data-target="#collItem1" aria-expanded="false" aria-controls="collItem1">
+          <div class="card2 card-body text-center" id="b1">
+            Não tenho certeza se o que observei viola o Código de Ética. O que devo fazer?
+          </div>
+        </a>	
+        <div class="collapse" id="collItem1">
+          <div class="card card-body">
+            O primeiro passo é consultar o seu gestor. Na dúvida ou se não estiver confortável com a consulta, entre em contato com o Canal de Ética Florarte. É preferível realizar um relato anônimo a se omitir.
+          </div>
+      </div>
+      <br/>
+      <a href="#" data-toggle="collapse" data-target="#collItem2" aria-expanded="false" aria-controls="collItem2">
+        <div class="card2 card-body text-center" id="b1">
+          Quem tem acesso aos relatos?
+        </div>
+      </a>	
+      <div class="collapse" id="collItem2">
+        <div class="card card-body">
+          Além da empresa terceirizada e independente, responsável pela operação do Canal de Ética Florarte, os membros do Comitê de Ética da Florarte também terão acesso aos relatos para as devidas averiguações e tratativas, mantendo o anonimato dos relatos.
+        </div>
+      </div>
+      <br/>
+      <a href="#" data-toggle="collapse" data-target="#collItem3" aria-expanded="false" aria-controls="collItem2">
+        <div class="card2 card-body text-center" id="b1">
+          Se os meus superiores estiverem envolvidos, vou ser retaliado?
+        </div>
+      </a>	
+      <div class="collapse" id="collItem3">
+        <div class="card card-body">
+          Não. A D & A Decoração e Ambientação / Florarte não tolera qualquer tipo de retaliação e será garantido o seu total anonimato.
+        </div>
+      </div>
+      <br/>
+      <a href="#" data-toggle="collapse" data-target="#collItem4" aria-expanded="false" aria-controls="collItem2">
+        <div class="card2 card-body text-center" id="b1">
+          O que devo denunciar/reportar?
+        </div>
+      </a>	
+      <div class="collapse" id="collItem4">
+        <div class="card card-body">
+          O canal pode ser utilizado para realização de denúncias relacionadas à violações do Código de Ética Florarte, Desvio de conduta, Corrupção, Desvio de políticas internas ou legislações vigentes 
+        </div>
+      </div>
+      <br/>
+      <a href="#" data-toggle="collapse" data-target="#collItem5" aria-expanded="false" aria-controls="collItem2">
+        <div class="card2 card-body text-center" id="b1">
+          Quem pode denunciar?
+        </div>
+      </a>  
+      <div class="collapse" id="collItem5">
+        <div class="card card-body">
+          Todas as partes interessadas, externas ou internas como Colaboradores, Representantes, Clientes e Fornecedores, o importante é que o relato seja consistente, baseado em fatos e não por julgamento ou achismo.
+        </div>
+      </div>
+      <br/>
+      <a href="#" data-toggle="collapse" data-target="#collItem6" aria-expanded="false" aria-controls="collItem2">
+        <div class="card2 card-body text-center" id="b1">
+          Como acompanhar uma denúncia realizada?
+        </div>
+      </a>  
+      <div class="collapse" id="collItem6">
+        <div class="card card-body">
+          Um número de protocolo será gerado no momento da sua denúncia. Com este número é possivel saber se a denúncia está sendo tratada ou se já foi finalizada.
+        </div>
+      </div>
+      <br/>
+   
+  </section>
+  
+  <section id="privacynotice">   
+    <div class="container wow fadeIn">
+      <div class="section-header">    
+        <br>
+        <h3 class="section-title">Proteção de Dados</h3> 
+        <p></p>     
+      </div>
+      <div class="row about-container">
+        <div class="col-lg-8 mx-auto text-justify">            
+          <p>
+            Ao registrar uma denúncia/relato/reporte neste Canal de Denúncias Confidencial (via site ou 0800), você poderá nos fornecer dados pessoais (informações que identificam ou podem levar à identificação de uma pessoa física) e dados pessoais sensíveis (origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico) sobre você; Manifestante, denunciado ou  terceiro mencionado no relato ou reporte.
+          </p>
+          <p>
+            Esse <I>Privacy Notice</I> tem por finalidade esclarecer como a DELOITTE trata os seus dados pessoais e dados pessoais sensíveis (em conjunto aqui referidos apenas como dados pessoais) quando você entra em contato conosco para utilizar os serviços do Canal de Denúncias Confidencial ou quando você é alvo ou citado em um relato.
+          </p>
+          <p>
+            Todos os dados pessoais coletados neste Canal de Denúncias Confidencial serão tratados pela DELOITTE de acordo com as disposições da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 – “LGPD”) e regulamentos pertinentes.
+          </p>
+          <p>
+            Para saber mais detalhes sobre as medidas que aplicamos no tratamento de dados pessoais, acesse a Política de Privacidade da DELOITTE por meio do <a href="https://www.deloitte.com/br/pt/legal/privacy.html?icid=bn_privacy" target="_blank"><b>link</b></a>.
+          </p>
+          <p>
+            <B>1. Quais tipos de dados pessoais são coletados? </B>
+          </p>
+          <p>
+            Serão coletados apenas dados pessoais a serem fornecidos voluntariamente pelo Manifestante através de registro de relato neste Canal de Denúncias Confidencial - via site ou 0800.
+          </p>
+          <p>
+            Quaisquer dados pessoais informados no relato que sejam considerados excessivos, desnecessários ou que não tenham relevância para a apuração do ocorrido serão desconsiderados e apenas serão armazenados para fins de manutenção da integralidade do texto original constante no relato/reporte/denúncia, pelo período necessário para atingimento das finalidades de tratamento.
+          </p>
+          <p>
+            <b><u>Manifestante</u></b>
+          </p>
+          <p>
+            Os dados pessoais do Manifestante serão coletados de acordo com o perfil de identificação escolhido, podendo incluir nome, gênero (fins estatísticos), cargo, área, e-mail, telefone, celular, tipo de público e gravação de voz (relatos via 0800).
+          </p>
+          <p>
+            Além disso, poderão ser coletados eventuais outros dados pessoais constantes no relato/reporte/denúncia e em arquivos anexados pelo Manifestante, o que pode incluir imagens, gravações de voz e outros tipos de dados pessoais.
+          </p>
+          <p>
+            <b><u>Denunciados e terceiros</u></b>
+          </p>
+          <p>
+            Poderão ser coletados os seguintes dados pessoais de denunciados e terceiros a partir de relato/reporte/denúncia registrado voluntariamente pelo Manifestante:
+          </p>
+          <p>
+            i) nome, sobrenome, cargo e local de trabalho;
+            </br>
+            ii) descrição da suspeita de violação ao Código de Ética, políticas da EMPRESA, e/ou lei e regulamentos pertinentes, incluindo todos os fatos e detalhes relevantes;
+            </br>
+            iii) quaisquer outros dados pessoais que possam ser mencionados pelo Manifestante durante a descrição do ocorrido, o que pode incluir imagens, gravações de voz e outros tipos de dados pessoais.
+          </p>
+          <p>
+            Este Canal de Denúncias Confidencial não é projetado ou intencionalmente direcionado para coletar dados pessoais de crianças e adolescentes. Todavia, em eventuais situações em que a coleta desses tipos de dados pessoais se fizer necessária no contexto de recebimento e apuração de um relato/reporte/denúncia, o tratamento ocorrerá no melhor interesse da criança e/ou do adolescente e todas as disposições da LGPD e regulamentos pertinentes serão respeitadas. 
+          </p>
+          <p>
+            <b>2. Qual a finalidade da coleta dos dados pessoais?</b>
+          </p>
+          <p>
+            <b><u>Manifestante:</u></b>
+          </p>
+          <p>
+            O tratamento dos dados pessoais tem o objetivo de permitir a identificação e contato entre a DELOITTE e/ou a EMPRESA e o Manifestante para esclarecimento de dúvidas, coleta de informações adicionais e andamento das apurações, respeitando-se, em todo o caso, o perfil de identificação escolhido pelo Manifestante (identificado, sigiloso ou anônimo). Além disso, esses dados poderão ser tratados para fins de cumprimento de obrigações legais ou regulatórias, exercício regular de direitos e análises estatísticas (de forma anonimizada).
+          </p>
+          <p>
+            <b><u>Denunciados e terceiros</u></b>
+          </p>
+          <p>
+            A coleta destes dados pessoais tem objetivo de realizar a apuração dos fatos relatados e tomada das devidas providências, de acordo com a legislação aplicável. Tal apuração será realizada pela EMPRESA, sendo a DELOITTE mera intermediadora, responsável tão somente pelo compartilhamento dos dados pessoais e relatos registrados neste Canal de Denúncias Confidencial. Além disso, esses dados poderão ser tratados para fins de cumprimento de obrigações legais ou regulatórias, exercício regular de direitos e análises estatísticas (de forma anonimizada).
+          </p>
+          <p>
+            <b>3. Qual a base legal que justifica o tratamento dos dados pessoais?</b>
+          </p>
+          <p>
+            Todos os dados pessoais coletados serão tratados com base em interesses legítimos da EMPRESA e os dados pessoais sensíveis com base em exercício regular de direitos, uma vez que ambos tratamentos, no contexto e escopo dos serviços prestados pela DELOITTE, visam auxiliar a EMPRESA na apuração, prevenção e mitigação de comportamentos e desvios de conduta que violam o Código de Ética da EMPRESA, políticas internas, leis e regulamentações pertinentes.
+          </p>
+          <p>
+            Também é possível que o tratamento dos dados pessoais e dados pessoais sensíveis ocorra para cumprimento de obrigações legais ou regulatórias, a depender do suposto desvio de conduta praticado.
+          </p>
+          <p>
+            <b>4. Com quem compartilhamos os dados pessoais coletados?</b>
+          </p>
+          <p>
+            Os dados pessoais do Manifestante, denunciados e terceiros poderão ser compartilhados com:
+          </p>
+          <p>           
+            i)	A EMPRESA, para fins de ciência, apuração e investigação do conteúdo do relato, respeitando-se sempre o perfil de identificação do Manifestante;
+            <br>
+            ii)	Autoridades, Órgãos e Entidades governamentais, para cumprimento de obrigações legais ou regulatórias e exercício regular de direitos;
+            <br>
+            iii)	Empresas de tecnologia que fazem a gestão dos sistemas integrados ou responsáveis pelo armazenamento e garantia de segurança no tratamento dos dados pessoais coletados; e
+            <br>
+            iv)	Empresas terceiras que venham a substituir a DELOITTE na prestação de serviços do Canal de Denúncias Confidencial à EMPRESA.
+          </p>
+          <p>
+            Para mais detalhes sobre os compartilhamentos descritos acima, entre em contato com o Encarregado/DPO (Data Protection Officer) da DELOITTE através do link <b><a href="https://www.deloitte.com/br/pt/contact/contact-us.html?icid=top_contact-us">Contate-nos.</a></b>
+          </p>
+          <p>
+            <b>5. Por quanto tempo os dados pessoais são armazenados?</b>
+          </p>
+          <p>
+            Os dados pessoais serão mantidos apenas pelo tempo necessário para o cumprimento das finalidades descritas neste documento ou conforme necessário para cumprir obrigações legais ou regulatórias e exercício regular de direitos. Quando os dados pessoais deixarem de ser necessários ou relevantes para os objetivos pretendidos, será providenciado seu apagamento.
+          </p>
+          <p>
+            Para fins estatísticos, os dados pessoais permanecerão armazenados de forma anonimizada.
+          </p>
+          <p>
+            <b>6. Quais são os direitos relativos aos dados pessoais?</b>
+          </p>
+          <p>
+            De acordo com a LGPD, os titulares possuem diversos direitos sobre seus dados pessoais, dentre eles: confirmação de tratamento, acesso aos dados pessoais, atualização e correção de dados pessoais incorretos, incompletos ou inexatos; anonimização, bloqueio e eliminação de dados pessoais desnecessários, excessivos ou tratados em desconformidade com a LGPD;  oposição ao tratamento de dados pessoais, quando não tivermos mais necessidade legítima ou legal de trata-los; informações sobre compartilhamento dos dados pessoais com entidades públicas e privadas.
+          </p>
+          <p>
+            Esses direitos não são absolutos e devem ser interpretados à luz da legislação e demais regulamentações. Assim, a DELOITTE avaliará a requisições de direito individualmente de modo a manter o caráter confidencial e sigiloso do Canal de Denúncias Confidencial e não comprometer o andamento de apurações e investigações que possam estar em curso junto à EMPRESA.
+          </p>
+          <p>
+            Destaca-se que quando o Manifestante optar por não se identificar ao realizar o registro do relato, a DELOITTE não poderá garantir o acesso aos direitos previstos na LGPD visto que não terá acesso aos dados de identificação do titular.
+          </p>
+          <p>
+            Caso queira acessar gratuitamente algum de seus direitos previstos na LGPD, entre em contato com o DPO da DELOITTE  Fale com DPO <a href="https://www.deloitte.com/br/pt/contact/contact-us.html?icid=top_contact-us" target="_blank"><b> através do link </b></a>.
+          </p>
+          <p>
+            <b>7. Segurança</b>
+          </p>
+          <p>
+            A DELOITTE adotará medidas técnicas e organizacionais aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de tratamento inadequado ou ilícito.
+          </p>
+          <p>
+            Além disso, o acesso aos dados pessoais está restrito apenas aos profissionais da DELOITTE que necessitam acessá-los para desenvolver as atividades relativas ao tratamento do relato.
+          </p>
+          <p>
+            Sempre que possível e aplicável serão adotadas técnicas de anonimização e criptografia para segurança dos dados pessoais.
+          </p>
+          <p>
+            <b>8. Alterações</b>
+          </p>
+          <p>
+            O presente documento pode ser alterado, sem necessidade de aviso prévio, como em casos de mudança na legislação ou eventual decisão ou orientação da Autoridade Nacional de Proteção de Dados Pessoais (“ANPD”). Será de inteira responsabilidade do Manifestante revisar periodicamente o conteúdo para que tenha acesso a tais modificações.
+          </p>
+          <!--<p>
+            <b>9. Dúvidas, solicitações e reclamações</b>
+          </p>
+          <p>
+            Em caso de eventuais dúvidas, solicitações ou reclamações, entre contato com o nosso DPO por meio do link Contate-nos.
+          </p> -->        
+  </section><!-- #registro -->
+
+  
+	
+	
+	<!-- #duvidas -->
+	
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+    <!--
+        &copy; 2019 <strong>Deloitte</strong>. A Deloitte refere-se a uma ou mais entidades da Deloitte Touche Tohmatsu Limited, uma sociedade privada, de responsabilidade limitada, estabelecida no Reino Unido ("DTTL”), sua rede de firmas-membro, e entidades a ela relacionadas. A DTTL e cada uma de suas firmas-membro são entidades legalmente separadas e independentes. A DTTL (também chamada “Deloitte Global”) não presta serviços a clientes. Consulte www.deloitte.com/about para obter uma descrição mais detalhada da DTTL e suas firmas-membro.
+      -->
+      </div>
+	  
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+	  </div>  
+    </div>
+	
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+	<script>
+	var ht = new HT({
+		token: "20ef7e3befcec2e6c57e7e789991ec4e",
+		avatar: "MAYA",
+		pageSpeech: true
+	});
+	</script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+ 
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  
+   
+             
+</body>
+</html>

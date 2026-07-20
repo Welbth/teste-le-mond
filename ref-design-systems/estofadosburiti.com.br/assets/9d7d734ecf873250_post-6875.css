@@ -1,0 +1,36 @@
+.elementor-kit-6875{--e-global-color-primary:#1D1D1B;--e-global-color-secondary:#717965;--e-global-color-text:#FFFFFF;--e-global-color-accent:#EDE6D8;--e-global-color-e466918:#1D1D1B;--e-global-typography-primary-font-family:"Mluvka";--e-global-typography-primary-font-size:35px;--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Mluvka";--e-global-typography-secondary-font-size:15px;--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Mluvka";--e-global-typography-text-font-size:15px;--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Mluvka";--e-global-typography-accent-font-size:15px;--e-global-typography-accent-font-weight:500;--e-global-typography-33a108d-font-family:"Mluvka";--e-global-typography-33a108d-font-size:75px;--e-global-typography-33a108d-font-weight:400;--e-global-typography-33a108d-text-transform:none;color:#1D1D1B;font-family:"Poppins", Sans-serif;font-size:15px;background-color:#FFFFFF;}.elementor-kit-6875 h1{color:#1D1D1B;}.elementor-kit-6875 h2{color:#1D1D1B;}.elementor-kit-6875 h3{color:#1D1D1B;font-family:"Poppins", Sans-serif;font-size:15px;}.elementor-kit-6875 h4{color:#1D1D1B;font-family:"Poppins", Sans-serif;font-size:15px;}.elementor-kit-6875 h5{color:#717965;font-family:"Poppins", Sans-serif;font-size:15px;}.elementor-kit-6875 h6{color:#717965;font-family:"Poppins", Sans-serif;font-size:15px;}.elementor-kit-6875 button,.elementor-kit-6875 input[type="button"],.elementor-kit-6875 input[type="submit"],.elementor-kit-6875 .elementor-button{font-family:"Poppins", Sans-serif;font-size:15px;font-weight:500;color:#163467;}.elementor-kit-6875 button:hover,.elementor-kit-6875 button:focus,.elementor-kit-6875 input[type="button"]:hover,.elementor-kit-6875 input[type="button"]:focus,.elementor-kit-6875 input[type="submit"]:hover,.elementor-kit-6875 input[type="submit"]:focus,.elementor-kit-6875 .elementor-button:hover,.elementor-kit-6875 .elementor-button:focus{color:#000000;}.elementor-kit-6875 label{color:#FFFFFF;font-family:"Poppins", Sans-serif;font-size:14px;}.elementor-kit-6875 input:not([type="button"]):not([type="submit"]),.elementor-kit-6875 textarea,.elementor-kit-6875 .elementor-field-textual{font-family:"Poppins", Sans-serif;font-size:15px;color:#727272;background-color:#FFFFFF;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-kit-6875 e-page-transition{background-color:#FFBC7D;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Mluvka';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Regular-BF65518ac8463f5.woff') format('woff');
+}
+@font-face {
+	font-family: 'Mluvka';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Mluvka';
+	font-style: normal;
+	font-weight: 200;
+	font-display: auto;
+	src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-ExtraLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Mluvka';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url("dd758ac68dc5ee7a_Mluvka-Bold.woff") format('woff');
+}
+@font-face {
+	font-family: 'Mluvka';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Light.woff') format('woff');
+}
+/* End Custom Fonts CSS */

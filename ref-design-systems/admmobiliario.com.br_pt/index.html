@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><script data-offline-resolve="1">(function(){
+var ASSET_MAP = {"https://use.fontawesome.com/releases/v5.8.1/css/all.css": "assets/eeb17a45a48aca1d_all.css", "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css": "assets/de1e399b07289f3b_slick.css", "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap": "assets/5f7fe2a35dcc901b_css.css", "https://www.admmobiliario.com.br/pt": "assets/74c7907de8987167_pt.html", "https://www.admmobiliario.com.br/site/css/bootstrap.min.css": "assets/ae576713bc196098_bootstrap.min.css", "https://www.admmobiliario.com.br/site/css/animate.css": "assets/450cebfb01d4f337_animate.css", "https://www.admmobiliario.com.br/site/css/scrollToStyle.css": "assets/64c33eb0d853ee6a_scrollToStyle.css", "https://www.admmobiliario.com.br/images/sofas.svg": "assets/696230ce822ba825_sofas.svg", "https://www.admmobiliario.com.br/images/luminaria.svg": "assets/07ecc8c38917b3bd_luminaria.svg", "https://www.admmobiliario.com.br/site/css/style.css": "assets/e18d9e813983b247_style.css", "https://www.admmobiliario.com.br/images/poltronas.svg": "assets/3da987617927235e_poltronas.svg", "https://www.admmobiliario.com.br/images/cadeiras.svg": "assets/13d83f1948e6e461_cadeiras.svg", "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js": "assets/0c7178cc6ca34fb1_slick.min.js", "https://code.jquery.com/jquery-3.4.1.min.js": "assets/0925e8ad7bd97139_jquery-3.4.1.min.js", "https://use.fontawesome.com/releases/v5.8.1/webfonts/fa-solid-900.woff2": "assets/f18c486a80175cf0_fa-solid-900.woff2", "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js": "assets/e7ed36ceee5450b4_bootstrap.min.js", "https://www.admmobiliario.com.br/images/banquetas.svg": "assets/f831e5c35a309bd9_banquetas.svg", "https://www.admmobiliario.com.br/site/js/jquery.paroller.min.js": "assets/8710099069011903_jquery.paroller.min.js", "https://www.admmobiliario.com.br/site/js/main.js": "assets/1c2f1c1bc2024280_main.js", "https://www.admmobiliario.com.br/site/js/pace.min.js": "assets/5602e4c8dcc822cf_pace.min.js", "https://www.admmobiliario.com.br/site/js/wow.js": "assets/9c9da3742b894567_wow.js", "https://www.admmobiliario.com.br/site/js/jquery.js": "assets/87981e8062814ca2_jquery.js", "https://www.admmobiliario.com.br/site/fonts/Bodoni.ttf": "assets/4bc590305b674272_Bodoni.ttf", "https://www.admmobiliario.com.br/site/fonts/Raleway-Light.ttf": "assets/56d3585bb750839c_Raleway-Light.ttf", "https://www.admmobiliario.com.br/site/fonts/Raleway-Semibold.ttf": "assets/564368e49d2d7d65_Raleway-Semibold.ttf", "https://www.admmobiliario.com.br/site/fonts/Raleway-Medium.ttf": "assets/f5a6dcd3227d1a75_Raleway-Medium.ttf", "https://www.admmobiliario.com.br/site/fonts/Raleway-Regular.ttf": "assets/de90cc4f3bf8c7e9_Raleway-Regular.ttf", "https://www.admmobiliario.com.br/images/office.svg": "assets/43e753f58ea9fcc1_office.svg", "https://www.admmobiliario.com.br/images/lampada.png": "assets/35531a550b69ae04_lampada.png", "https://www.admmobiliario.com.br/images/mesas.svg": "assets/2eb608f4023ac2a8_mesas.svg", "https://www.admmobiliario.com.br/images/complementos.svg": "assets/41fc4da8ca72800e_complementos.svg", "https://www.admmobiliario.com.br/site/js/jquery.scrollToStyle.js": "assets/8534da4cd6e90d26_jquery.scrollToStyle.js", "https://www.admmobiliario.com.br/images/destaque-sofas.png": "assets/e171407afa06e010_destaque-sofas.png", "https://www.admmobiliario.com.br/images/2d6a1517c6106ccac3763e98aa05bbaa.png": "assets/25935147208e7d53_2d6a1517c6106ccac3763e98aa05bb.png", "https://www.admmobiliario.com.br/images/poltronas-menu.png": "assets/878da096c4b0ca27_poltronas-menu.png", "https://www.admmobiliario.com.br/images/9c4ed20901226a01411bb602e8fe2873.png": "assets/f8252e2d8777aab3_9c4ed20901226a01411bb602e8fe28.png", "https://www.admmobiliario.com.br/images/ec2ce5c802270e545c3be07699735286.png": "assets/26c44383676faa94_ec2ce5c802270e545c3be076997352.png", "https://www.admmobiliario.com.br/images/6aa3d4feff1f39c119350048765206d5.png": "assets/600557131c44efcd_6aa3d4feff1f39c119350048765206.png", "https://www.admmobiliario.com.br/images/9a355994e2d9e5e10dc6e416113761c4.png": "assets/157801db4866ea7c_9a355994e2d9e5e10dc6e416113761.png", "https://www.admmobiliario.com.br/images/4e3288b7201acd8fc16ce185932d3913.png": "assets/b32e60add5693346_4e3288b7201acd8fc16ce185932d39.png", "https://www.admmobiliario.com.br/images/destaque-luminarias.png": "assets/e1914517128f891f_destaque-luminarias.png", "https://www.admmobiliario.com.br/images/56e3ea785df032d8a1fa95b3ef9c50ae.png": "assets/e0d14c4a8dc600f0_56e3ea785df032d8a1fa95b3ef9c50.png", "https://www.admmobiliario.com.br/images/e6ca318aa2fac1d3d38491e985e0d3d9.png": "assets/cd7e3ed167fc0034_e6ca318aa2fac1d3d38491e985e0d3.png", "https://www.admmobiliario.com.br/images/destaque-poltronas.png": "assets/9501341a294e642b_destaque-poltronas.png", "https://www.admmobiliario.com.br/images/destaque-cadeiras.png": "assets/10413f8120b7186d_destaque-cadeiras.png", "https://www.admmobiliario.com.br/images/destaque-banquetas.png": "assets/e4d4a7a56b5a7855_destaque-banquetas.png", "https://www.admmobiliario.com.br/images/destaque-office.png": "assets/33eaa5035d33f4de_destaque-office.png", "https://www.admmobiliario.com.br/images/destaque-mesas.png": "assets/2204d5f44190fe93_destaque-mesas.png", "https://www.admmobiliario.com.br/images/destaque-complementos.png": "assets/fd1b2436463008ad_destaque-complementos.png", "https://www.admmobiliario.com.br/images/dccb1f5aab16cddbf7c1a8f0226735dc.jpg": "assets/6d495bb1c7c75dd7_dccb1f5aab16cddbf7c1a8f0226735.jpg", "https://www.admmobiliario.com.br/images/e5469c5d344871737fe060caba1120d8.jpg": "assets/3eec82a25ce25f15_e5469c5d344871737fe060caba1120.jpg", "https://www.admmobiliario.com.br/images/3941a8e42362e570524b3289b86578a5.jpg": "assets/236205ae253ef3fe_3941a8e42362e570524b3289b86578.jpg", "https://www.admmobiliario.com.br/images/4877446f651cb8f6df4bbd8054a89b83.jpg": "assets/91fedbca831314c7_4877446f651cb8f6df4bbd8054a89b.jpg", "https://www.admmobiliario.com.br/images/f3084d218c6d7c6c5e1f892ef03fc72b.jpg": "assets/93177fb602cd1716_f3084d218c6d7c6c5e1f892ef03fc7.jpg", "https://www.admmobiliario.com.br/images/67b584fc7427659f0d92a011b1297585.jpg": "assets/cc3145e5c5014562_67b584fc7427659f0d92a011b12975.jpg", "https://www.admmobiliario.com.br/images/df8dcf595aa22d86c537a384d2e17bed.jpg": "assets/c2d7beb0b750e255_df8dcf595aa22d86c537a384d2e17b.jpg", "https://www.admmobiliario.com.br/images/1833933168a74b04d5a175b44678760f.jpg": "assets/0f0fac2438993575_1833933168a74b04d5a175b4467876.jpg", "https://www.admmobiliario.com.br/images/bf3a37f3dda585b02f2eb342f818e7fb.jpg": "assets/4eb451c20abdc586_bf3a37f3dda585b02f2eb342f818e7.jpg", "https://www.admmobiliario.com.br/images/78a2ea98a0ccfe319a93c9dbc98570d9.jpg": "assets/98f839b998479d86_78a2ea98a0ccfe319a93c9dbc98570.jpg", "https://www.admmobiliario.com.br/images/42ea82afe6cd69c591687e01b5e656de.jpg": "assets/1eb100bf8af24b11_42ea82afe6cd69c591687e01b5e656.jpg", "https://www.admmobiliario.com.br/site/casoca.jpg": "assets/1708130ca528eb07_casoca.jpg", "https://www.admmobiliario.com.br/images/e141095d9a5e4e413a5dd7c948b78c32.jpg": "assets/87c505584c3380e1_e141095d9a5e4e413a5dd7c948b78c.jpg", "https://www.admmobiliario.com.br/images/logo-contento.png": "assets/b97a0d70be6846f8_logo-contento.png", "https://www.admmobiliario.com.br/images/e60310f85017a30278ab5846d3e12a4d.jpg": "assets/a56350ec8f0948f3_e60310f85017a30278ab5846d3e12a.jpg", "https://www.admmobiliario.com.br/images/d776c9a0a4930e9026f4a2a5061cd96c.jpg": "assets/11e8c4db02d251c4_d776c9a0a4930e9026f4a2a5061cd9.jpg", "https://www.instagram.com/admdesignmobiliario/": "assets/05e020719aa14359_file.html", "https://www.admmobiliario.com.br/pt/poltronapinhao": "assets/013dbc5fbc6750f6_poltronapinhao.html", "https://www.admmobiliario.com.br/pt/admnews": "assets/74666b9bf0545d4d_admnews.html", "https://www.admmobiliario.com.br/pt/sofabold": "assets/fd8a4c60d4b91cb1_sofabold.html", "https://www.admmobiliario.com.br/pt/lancamentos": "assets/4baf4d9141eb0dc9_lancamentos.html", "https://www.admmobiliario.com.br/pt/bancomosaico": "assets/4ce492080a47d144_bancomosaico.html", "https://www.admmobiliario.com.br/pt/poltronaramo": "assets/200dae0bce2339f7_poltronaramo.html", "https://www.admmobiliario.com.br/site/favicon.png": "assets/08767d4bd04dff18_favicon.png", "https://www.admmobiliario.com.br/pt/contato": "assets/8e08d025a0e92f05_contato.html", "https://goo.gl/maps/jH5Zv3Wafp5uu4gp7": "assets/716b174f56de6bc5_jH5Zv3Wafp5uu4gp7.html", "https://www.admmobiliario.com.br/pt/officeaxisalta": "assets/a633704e6f05980a_officeaxisalta.html", "https://www.admmobiliario.com.br/pt/arquitetos": "assets/37994ae824c474d8_arquitetos.html", "https://www.instagram.com/contento.estrategico/": "assets/55711c2151a914d9_file.html", "https://www.admmobiliario.com.br/pt/officeaxis": "assets/3b1a0c7603cb9922_officeaxis.html", "https://www.google.com.br/maps/place/R.+S\u00e3o+Gabriel,+232+-+Guarani,+Garibaldi+-+RS,+95720-000/@-29.2437198,-51.5423138,17z/data=!3m1!4b1!4m5!3m4!1s0x951c3d61e87b6d3d:0x2b6d740f23e73f08!8m2!3d-29.2437198!4d-51.5401251": "assets/ffb6e186ff25d2d2_data__3m1_4b1_4m5_3m4_1s0x951c.html", "https://www.admmobiliario.com.br/pt/office": "assets/c5ec1cc82067086b_office.html", "https://www.admmobiliario.com.br/es": "assets/d7a71bd3eb90d00f_es.html", "https://www.admmobiliario.com.br/pt/cadeiraclip": "assets/8412b75e80593954_cadeiraclip.html", "https://www.admmobiliario.com.br/pt/officezenith": "assets/28c40124c7590f3c_officezenith.html", "https://www.admmobiliario.com.br/pt/cadeiras": "assets/4de2fa47ebab9323_cadeiras.html", "https://flowww.digital": "assets/3cfaf22bede78113_file.html", "https://3dwarehouse.sketchup.com/by/admmoveis": "assets/5ebb2e7b670a0929_admmoveis.html", "https://www.admmobiliario.com.br/pt/luminarias": "assets/9b5dbb1b724ab08a_luminarias.html", "https://www.admmobiliario.com.br/pt/poltronas": "assets/e6986437a74975da_poltronas.html", "https://www.admmobiliario.com.br/pt/historias-que-nos-trouxeram-ate-aqui": "assets/d1ce3d2ff46f9aee_historias-que-nos-trouxeram-at.html", "https://www.admmobiliario.com.br/pt/sofas": "assets/0440ae3a9c439fc3_sofas.html", "https://www.admmobiliario.com.br/pt/mesasdejantar": "assets/6bd3a0a3f829262a_mesasdejantar.html", "https://www.admmobiliario.com.br/pt/quando-o-design-une-identidade-memoria-e-materia": "assets/10316fc8a415904b_quando-o-design-une-identidade.html", "https://www.admmobiliario.com.br/pt/produtos": "assets/b2be3adc3f6b9058_produtos.html", "https://www.admmobiliario.com.br/pt/sobre": "assets/2fb4ac10c6c158f1_sobre.html", "https://www.admmobiliario.com.br/pt/officeflowalta": "assets/fa4bc22ca4efb46e_officeflowalta.html", "https://admmobiliario.proidea.com.br/": "assets/7c27cffcbc918068_file.html", "https://www.admmobiliario.com.br/": "assets/48116d9e8d4a7878_file.html", "https://www.admmobiliario.com.br/pt/banquetas": "assets/76c82e1be5d527ea_banquetas.html", "https://www.admmobiliario.com.br/en": "assets/62716afb9e85055c_en.html", "https://www.admmobiliario.com.br/pt/complementos": "assets/d218fbe02691f9e5_complementos.html", "https://www.admmobiliario.com.br/pt/descubra-a-nova-ferramenta-da-ADM-para-inspirar-projetos-com-proposito": "assets/6b9360346f827ccd_descubra-a-nova-ferramenta-da-.html", "https://www.admmobiliario.com.br/pt/falta-pouco-para-voce-conhecer-a-novacolecao": "assets/a13d0f45006ff5fc_falta-pouco-para-voce-conhecer.html", "https://www.admmobiliario.com.br/pt/contract": "assets/c33183387fdf18ae_contract.html", "https://www.facebook.com/admdesignmobiliario": "assets/8908157fbb00a841_admdesignmobiliario.html", "https://br.pinterest.com/admoveisedesign/": "assets/c7ee0361736d6e76_file.html", "https://www.admmobiliario.com.br/pt/officearchi": "assets/d0ba1a216b281284_officearchi.html"};
+// Pre-populate path+query keys: when opened via file://, JS
+// resolves '/foo.js' against file://… so we lose the original
+// origin. Indexing by pathname+search lets the lookup succeed.
+var _add = {};
+for (var _k in ASSET_MAP) {
+  try { var _u = new URL(_k); _add[_u.pathname + _u.search] = ASSET_MAP[_k]; }
+  catch(e){}
+}
+for (var _k in _add) if (!ASSET_MAP[_k]) ASSET_MAP[_k] = _add[_k];
+function resolveLocal(u){
+  if (!u || typeof u !== 'string') return null;
+  if (u.indexOf('data:') === 0 || u.indexOf('blob:') === 0) return null;
+  if (ASSET_MAP[u]) return ASSET_MAP[u];
+  try {
+    var url = new URL(u, location.href);
+    var pq = url.pathname + url.search;
+    if (ASSET_MAP[pq]) return ASSET_MAP[pq];
+    // The snapshot may be opened from a subdirectory, while
+    // ASSET_MAP paths are origin-rooted. Retry with the
+    // document's own directory prefix stripped off.
+    var dir = location.pathname.replace(/[^/]*$/, '');
+    if (dir.length > 1 && pq.indexOf(dir) === 0) {
+      var rel = pq.slice(dir.length - 1);
+      if (ASSET_MAP[rel]) return ASSET_MAP[rel];
+    }
+    // Next.js image optimization wrapper — peel the inner CDN URL
+    if (/_next\/image$/.test(url.pathname)) {
+      var t = url.searchParams.get('url');
+      if (t) {
+        var dec = decodeURIComponent(t);
+        if (ASSET_MAP[dec]) return ASSET_MAP[dec];
+        var bare = dec.split('?')[0];
+        for (var k in ASSET_MAP) {
+          if (k.split('?')[0] === bare) return ASSET_MAP[k];
+        }
+      }
+    }
+  } catch(e){}
+  return null;
+}
+function rewriteSrcset(s){
+  if (!s || typeof s !== 'string') return s;
+  return s.split(',').map(function(it){
+    var p = it.trim().split(/\s+/);
+    var loc = resolveLocal(p[0]);
+    if (loc) p[0] = loc;
+    return p.join(' ');
+  }).join(', ');
+}
+// Patch property setters: el.src = '...' / el.href = '...'
+// IMPORTANT: skip rewrite when the element has crossOrigin set.
+// WebGL textures (UnicornStudio, Three.js, etc.) are loaded via
+//   img.crossOrigin = 'anonymous'; img.src = 'https://cdn/...'
+// and consumed via gl.texImage2D. file:// resources have no CORS
+// headers, so rewriting to local makes WebGL reject the texture
+// (Access blocked by CORS policy → black/missing 3D scene).
+// Better to keep the original URL: works online, fails offline,
+// matches non-patched behaviour.
+function patchSetter(klass, prop, transform){
+  if (!klass || !klass.prototype) return;
+  var desc = Object.getOwnPropertyDescriptor(klass.prototype, prop);
+  if (!desc || !desc.set) return;
+  Object.defineProperty(klass.prototype, prop, {
+    configurable: true,
+    get: desc.get,
+    set: function(v){
+      try {
+        if (transform === 'srcset') {
+          v = rewriteSrcset(v);
+        } else {
+          // Captured runtime resource (UnicornStudio texture,
+          // etc.) → serve as a data: URI. data: never CORS-
+          // taints a WebGL canvas, unlike a file:// texture,
+          // so gl.texImage2D still accepts it offline.
+          var du = window.__offlineDataUri && window.__offlineDataUri(v);
+          if (du) { v = du; }
+          else if (!this.crossOrigin) {
+            var loc = resolveLocal(v); if (loc) v = loc;
+          }
+        }
+      } catch(e){}
+      desc.set.call(this, v);
+    }
+  });
+}
+patchSetter(window.HTMLScriptElement, 'src');
+patchSetter(window.HTMLLinkElement, 'href');
+patchSetter(window.HTMLImageElement, 'src');
+patchSetter(window.HTMLImageElement, 'srcset', 'srcset');
+patchSetter(window.HTMLSourceElement, 'src');
+patchSetter(window.HTMLSourceElement, 'srcset', 'srcset');
+patchSetter(window.HTMLMediaElement, 'src');
+patchSetter(window.HTMLIFrameElement, 'src');
+// Patch setAttribute too — some libs use it instead of property set
+var _setAttr = Element.prototype.setAttribute;
+Element.prototype.setAttribute = function(name, value){
+  try {
+    if (typeof value === 'string') {
+      if (name === 'src' || name === 'href') {
+        var du = window.__offlineDataUri && window.__offlineDataUri(value);
+        if (du) { value = du; }
+        else if (!this.crossOrigin) {
+          var loc = resolveLocal(value); if (loc) value = loc;
+        }
+      } else if (name === 'srcset' && !this.crossOrigin) {
+        value = rewriteSrcset(value);
+      }
+    }
+  } catch(e){}
+  return _setAttr.call(this, name, value);
+};
+// Expose for the late-init script in body
+window.__resolveLocal = resolveLocal;
+window.__rewriteSrcset = rewriteSrcset;
+})();</script>
+<!-- Metas -->
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="assets/08767d4bd04dff18_favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<meta content="Página Inicial" name="description"/>
+<meta content="paginainicial" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="http://fb.com/tiaagopc" name="author"/>
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
+<!-- Facebook Share -->
+<meta content="pt-br" property="og:locale"/>
+<meta content="https://www.admmobiliario.com.br/images" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="800" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<meta content="Página Inicial" property="og:site_name"/>
+<meta content="https://www.admmobiliario.com.br/pt" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="ADM Móveis - Página Inicial" property="og:title"/>
+<meta content="Página Inicial" property="og:description"/>
+<title>ADM - Página Inicial</title>
+<!-- Google Tag Manager -->
+<script async="" src="https://connect.facebook.net/signals/config/1113289878742750?v=2.9.356&amp;r=stable&amp;domain=www.admmobiliario.com.br&amp;hme=1179b74563cacb97c6ebae600e40937237ab12824fb84996eee07eca65cabbd4&amp;ex_m=107%2C208%2C158%2C22%2C73%2C74%2C149%2C69%2C68%2C11%2C167%2C93%2C16%2C141%2C130%2C39%2C76%2C81%2C137%2C163%2C169%2C26%2C27%2C28%2C30%2C48%2C150%2C78%2C115%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C113%2C148%2C151%2C46%2C114%2C24%2C21%2C122%2C70%2C36%2C153%2C152%2C154%2C145%2C143%2C25%2C35%2C59%2C112%2C165%2C71%2C17%2C156%2C117%2C84%2C67%2C19%2C88%2C89%2C119%2C87%2C139%2C138%2C142%2C164%2C34%2C49%2C116%2C47%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C104%2C170%2C175%2C222%2C75%2C235%2C234%2C233%2C23%2C33%2C55%2C106%2C61%2C10%2C64%2C100%2C101%2C102%2C108%2C133%2C31%2C29%2C135%2C136%2C132%2C131%2C159%2C77%2C162%2C160%2C161%2C50%2C60%2C126%2C15%2C166%2C45%2C280%2C281%2C279%2C294%2C310%2C215%2C204%2C62%2C205%2C203%2C313%2C304%2C52%2C216%2C110%2C134%2C83%2C124%2C54%2C123%2C129%2C128%2C58%2C65%2C63%2C155%2C79%2C80%2C118%2C37%2C32%2C53%2C56%2C103%2C168%2C1%2C127%2C14%2C125%2C12%2C2%2C57%2C96%2C66%2C121%2C92%2C91%2C171%2C172%2C97%2C98%2C9%2C105%2C51%2C146%2C90%2C82%2C72%2C120%2C109%2C43%2C147%2C0%2C85%2C140%2C144%2C157%2C38%2C111%2C13%2C173"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript"></script><script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NVM9G3TXLH&amp;cx=c&amp;gtm=4e67f0" type="text/javascript"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K74B5L9"></script><script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K74B5L9');
+    </script>
+<!-- End Google Tag Manager -->
+<!-- GOOGLE FONTS -->
+<link href="assets/5f7fe2a35dcc901b_css.css" rel="stylesheet"/>
+<!-- CSS -->
+<!-- Bootstrap Core CSS -->
+<link href="assets/ae576713bc196098_bootstrap.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="assets/e18d9e813983b247_style.css" rel="stylesheet"/>
+<link href="assets/450cebfb01d4f337_animate.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="assets/64c33eb0d853ee6a_scrollToStyle.css" rel="stylesheet"/>
+<!-- SLICK -->
+<link href="assets/de1e399b07289f3b_slick.css" rel="stylesheet" type="text/css"/>
+<!-- Font Awesome icons -->
+<link href="assets/eeb17a45a48aca1d_all.css" rel="stylesheet"/>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ <![endif]-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48505327-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-48505327-1');
+    </script>
+<style data-offline="1">/* offline: ensure content is visible regardless of JS init state */
+html,body{opacity:1!important;visibility:visible!important}
+.page-loader,.site-loader,[class*='loading-screen'],[id*='loading-screen']{display:none!important}
+</style></head>
+<body class="pace-done" id="home-page"><div class="pace pace-inactive"><div class="pace-progress" data-progress="99" data-progress-text="100%" style="transform: translate3d(100%, 0px, 0px); display: block;">
+<div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="loader" style="display: none;">
+<div class="center">
+<svg fill="none" height="59" viewbox="0 0 113 59" width="113" xmlns="http://www.w3.org/2000/svg">
+<path d="M55.99 17.55C56.06 17.62 42.27 32.86 42.27 32.86L80.36 44.69C80.36 44.69 55.9 17.46 55.99 17.54V17.55ZM67.86 52.83L43.08 47.2C36.09 45.61 29.07 47.66 24.29 53L19.08 58.84H0L52.76 0H59.36L112.11 58.83H92.9L67.87 52.82" fill="white"></path>
+</svg>
+<div class="loaderspin"></div>
+</div>
+</div>
+<section class="pesquisa">
+<div class="button-fechar-pesquisa">
+<span class="top"></span>
+<span class="bottom"></span>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12 vertical-center">
+<h5>Procure aqui o que você está procurando no nosso site e aperte enter para pesquisar.</h5>
+<form action="https://www.admmobiliario.com.br/busca" method="POST">
+<input name="_token" type="hidden" value="lLNkIRbOKAXk5tGBV6afCCFvZLnbuZIeV1A6nkEh"/>
+<input name="name" placeholder="Faça sua pesquisa:" type="search"/>
+</form>
+</div>
+</div>
+</div>
+</section>
+<header class="header wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<a alt="ADM Móveis" class="logo" href="/" title="ADM Móveis">
+<svg fill="none" height="58" viewbox="0 0 518 58" width="518" xmlns="http://www.w3.org/2000/svg">
+<path d="M310.32 2.42969H326.18C333.39 2.42969 336.95 3.29969 339.1 4.69969C341.48 6.26969 342.76 8.60969 342.76 11.9997C342.76 15.6597 341.33 17.9297 339.12 19.3497C336.69 20.9197 333.28 21.4497 327.15 21.4497H310.32V2.42969ZM313.12 19.0997H327.07C332.33 19.0997 335.24 18.6497 337.08 17.5597C338.93 16.4697 339.9 14.7597 339.9 11.9997C339.9 9.42969 338.95 7.66969 337.05 6.48969C335.23 5.36969 331.85 4.77969 326.09 4.77969H313.12V19.0997Z" fill="black"></path>
+<path d="M349.58 15.0725V15.1025C349.64 16.5825 350.31 17.5925 351.43 18.2925C352.8 19.1625 355.23 19.6625 359.68 19.6625C364.6 19.6625 367.84 18.8225 369.86 18.2325L370.11 20.3525C368.63 20.8325 364.88 21.8325 359.68 21.8325C355.04 21.8325 352.13 21.2125 350.14 20.1525C348.29 19.1725 346.95 17.3325 346.95 13.9725C346.95 11.2325 347.98 9.2725 349.75 8.0725C351.79 6.6725 354.64 6.0625 358.92 6.0625C363.2 6.0625 365.63 6.5925 367.09 7.1825C369.33 8.0825 370.5 9.7225 370.5 11.9625C370.5 13.1125 370.25 14.7025 370.16 15.0625H349.58V15.0725ZM349.58 13.0625H367.78C367.78 13.0625 367.86 12.5625 367.86 11.9725C367.86 10.8025 367.27 9.7925 365.71 9.1225C364.51 8.6225 362.41 8.2525 358.92 8.2525C355.17 8.2525 352.74 8.8425 351.34 9.7925C350.08 10.6325 349.63 11.8325 349.58 13.0625Z" fill="black"></path>
+<path d="M375.33 18.6525C377.23 19.0125 381.43 19.6625 385.84 19.6625C389.28 19.6625 391.38 19.4625 392.63 18.9925C393.8 18.5425 394.25 17.9025 394.25 16.7525C394.25 15.6925 393.66 15.0725 391.85 14.9025C390.42 14.7625 388.38 14.7325 385.7 14.7325C380.33 14.7325 377.9 14.6525 376.42 14.0025C375.13 13.4425 374.41 12.3525 374.41 10.9025C374.41 9.2525 375.22 7.8225 377.4 7.0425C378.91 6.5125 381.31 6.0625 385.68 6.0625C391.11 6.0625 395.38 6.8725 395.38 6.8725L395.02 9.0225C395.02 9.0225 390.41 8.2425 385.68 8.2425C382.02 8.2425 379.56 8.6025 378.52 8.9725C377.43 9.3625 377.04 10.0025 377.04 10.8425C377.04 11.6225 377.46 12.1525 378.3 12.4125C379.31 12.7225 381.12 12.7225 385.71 12.7225C389.76 12.7225 392 12.7225 393.68 13.0825C396.03 13.5825 396.9 14.9825 396.9 16.7425C396.9 18.5025 396.26 19.7325 394.8 20.5225C393.04 21.4725 388.98 21.8325 385.85 21.8325C380.73 21.8325 376.76 21.1925 375.06 20.8025L375.34 18.6525H375.33Z" fill="black"></path>
+<path d="M403.46 0C404.61 0 405.05 0.61 405.05 1.57C405.05 2.53 404.6 3.14 403.46 3.14C402.32 3.14 401.87 2.53 401.87 1.57C401.87 0.61 402.32 0 403.46 0ZM404.77 21.45H402.14V6.35H404.77V21.45Z" fill="black"></path>
+<path d="M413.83 15.6603C413.1 16.4703 412.49 17.3403 412.49 18.2003C412.49 19.2603 413.16 19.7103 415.45 19.7103H427.42C432.2 19.7103 434.27 21.1903 434.27 24.0203C434.27 26.8503 432.54 29.5603 421.77 29.5603C412.18 29.5603 410.03 27.9103 410.03 25.0903C410.03 23.7503 410.81 22.5203 411.88 21.4003V21.3403C410.62 20.7803 410.03 19.8003 410.03 18.4303C410.03 17.2303 410.67 15.8903 412.07 14.5203C411.31 13.7603 411.01 12.7903 411.01 11.3303C411.01 9.57031 411.88 8.20031 413.41 7.33031C415 6.44031 417.49 6.07031 421.38 6.07031C423.06 6.07031 424.54 6.18031 425.74 6.35031H433.71V8.36031H431.84C430.92 8.36031 430.3 8.28031 430.3 8.28031L430.27 8.36031C431.25 8.92031 431.75 9.98031 431.75 11.4103C431.75 13.2603 430.97 14.6003 429.29 15.4603C427.61 16.3303 425.01 16.7503 421.38 16.7503C418 16.7503 415.51 16.3903 413.83 15.6603ZM414.22 21.8403C413.44 22.6203 412.71 23.7103 412.71 24.7503C412.71 26.5103 414.25 27.3803 421.77 27.3803C430.3 27.3803 431.59 25.9503 431.59 24.1903C431.59 22.7903 430.72 21.9003 428.04 21.9003H415.46C415.01 21.9003 414.59 21.8703 414.23 21.8403H414.22ZM415.06 13.7303C416.26 14.2903 418.14 14.5703 421.38 14.5703C424.62 14.5703 426.53 14.2603 427.7 13.7303C428.71 13.2803 429.13 12.4403 429.13 11.3503C429.13 10.2603 428.71 9.48031 427.68 9.03031C426.48 8.50031 424.3 8.25031 421.39 8.25031C418.48 8.25031 416.3 8.47031 415.1 9.03031C414.07 9.51031 413.65 10.4003 413.65 11.3503C413.65 12.4103 414.04 13.2503 415.08 13.7303H415.06Z" fill="black"></path>
+<path d="M460.11 21.4503V13.6203C460.11 10.1203 458.12 8.25031 451.64 8.25031C447.61 8.25031 443.19 9.42031 441.38 10.3803V21.4503H438.75V6.35031H440.82C440.9 7.05031 441.02 7.64031 441.1 8.31031H441.18C443.31 7.42031 447.44 6.07031 451.64 6.07031C460.31 6.07031 462.74 9.06031 462.74 13.5103V21.4503H460.11Z" fill="black"></path>
+<path d="M341.7 41.7172H341.64L327.49 55.0872H327.32L313.17 41.7172H313.11V57.1272H310.31V38.1172H312.69L327.37 51.9272H327.43L342.05 38.1172H344.48V57.1272H341.68V41.7172H341.7Z" fill="black"></path>
+<path d="M352.09 55.3322C350.36 54.1822 349.24 52.4522 349.24 49.5722C349.24 46.8622 350.25 45.0422 352.06 43.8422C354.1 42.5022 357.62 41.7422 361.88 41.7422C366.14 41.7422 369.65 42.5022 371.7 43.8422C373.52 45.0422 374.52 46.8622 374.52 49.5722C374.52 52.4522 373.4 54.1822 371.67 55.3322C369.77 56.5922 366.44 57.4022 361.88 57.4022C357.32 57.4022 353.99 56.5922 352.09 55.3322ZM369.76 53.6522C370.99 52.9022 371.83 51.6122 371.83 49.5722C371.83 47.5322 371.13 46.2722 369.82 45.4622C368.34 44.5422 365.35 43.9222 361.88 43.9222C358.41 43.9222 355.42 44.5422 353.94 45.4622C352.63 46.2722 351.93 47.4722 351.93 49.5722C351.93 51.6722 352.77 52.9022 354 53.6522C355.48 54.5722 358.39 55.2222 361.89 55.2222C365.39 55.2222 368.29 54.5822 369.78 53.6522H369.76Z" fill="black"></path>
+<path d="M378.99 57.1184V36.1484H381.62V43.3084H381.68C383.11 42.8584 387.41 41.7384 392.33 41.7384C401.64 41.7384 404.21 45.0384 404.21 49.5384C404.21 54.4884 400.8 57.3984 392.44 57.3984C387.63 57.3984 382.93 55.9184 381.45 55.3884H381.34L381.06 57.1184H378.99ZM381.62 45.5984V53.3484C382.82 53.7684 387.55 55.1684 392.44 55.2184C399.71 55.2184 401.53 52.9784 401.53 49.5384C401.53 46.5184 400.19 43.9184 392.33 43.9184C386.77 43.9184 382.49 45.2584 381.62 45.5984Z" fill="black"></path>
+<path d="M410.78 35.6797C411.93 35.6797 412.37 36.2897 412.37 37.2497C412.37 38.2097 411.92 38.8197 410.78 38.8197C409.64 38.8197 409.19 38.2097 409.19 37.2497C409.19 36.2897 409.64 35.6797 410.78 35.6797ZM412.09 57.1297H409.46V42.0297H412.09V57.1297Z" fill="black"></path>
+<path d="M421.32 57.1184H418.69V36.1484H421.32V57.1184Z" fill="black"></path>
+<path d="M429.24 35.6797C430.39 35.6797 430.83 36.2897 430.83 37.2497C430.83 38.2097 430.38 38.8197 429.24 38.8197C428.1 38.8197 427.65 38.2097 427.65 37.2497C427.65 36.2897 428.1 35.6797 429.24 35.6797ZM430.55 57.1297H427.92V42.0297H430.55V57.1297Z" fill="black"></path>
+<path d="M456.44 57.1237L456.16 55.4437H456.1C453.78 56.2537 449.7 57.5137 444.44 57.5137C441.67 57.5137 439.21 57.1737 437.84 56.4237C436.53 55.6937 435.8 54.5238 435.8 52.9038C435.8 51.4538 436.5 50.1938 437.87 49.4338C438.88 48.8738 441.11 48.2837 445.2 48.2837C449.51 48.2837 455.8 48.8737 455.8 48.8737H455.88V47.6737C455.88 45.2437 452.47 43.9237 445.76 43.9237C441.2 43.9237 437.87 44.7038 437.43 44.7938L437.07 42.6637C437.35 42.6037 440.87 41.7438 445.77 41.7438C453.96 41.7438 458.52 43.9238 458.52 47.5838V57.1237H456.45H456.44ZM455.88 53.4338V50.8037C455.88 50.8037 450.2 50.3037 445.2 50.3037C441.76 50.3037 439.97 50.7538 439.22 51.3138C438.69 51.7038 438.44 52.2338 438.44 52.9038C438.44 53.5738 438.72 54.2137 439.31 54.5537C439.98 54.9437 441.46 55.3338 444.51 55.3338C449.52 55.3338 453.77 54.1638 455.89 53.4338H455.88ZM452.27 35.5938H455.99V36.2137L447.46 39.5137H444.44V39.1237L452.27 35.6037V35.5938Z" fill="black"></path>
+<path d="M465.61 42.0166L465.89 44.0266H465.97L466.11 43.5766C467.14 42.9566 470.08 41.7266 474.86 41.7266C477.57 41.7266 479.33 42.0666 479.7 42.1166L479.48 44.3566C479.12 44.2766 477.13 43.9066 474.81 43.9066C469.39 43.9066 466.17 45.5866 466.17 45.5866V57.1066H463.54V42.0066H465.61V42.0166Z" fill="black"></path>
+<path d="M485.44 35.6797C486.59 35.6797 487.03 36.2897 487.03 37.2497C487.03 38.2097 486.58 38.8197 485.44 38.8197C484.3 38.8197 483.85 38.2097 483.85 37.2497C483.85 36.2897 484.3 35.6797 485.44 35.6797ZM486.75 57.1297H484.12V42.0297H486.75V57.1297Z" fill="black"></path>
+<path d="M494.86 55.3322C493.13 54.1822 492.01 52.4522 492.01 49.5722C492.01 46.8622 493.02 45.0422 494.83 43.8422C496.87 42.5022 500.39 41.7422 504.65 41.7422C508.91 41.7422 512.42 42.5022 514.47 43.8422C516.29 45.0422 517.29 46.8622 517.29 49.5722C517.29 52.4522 516.17 54.1822 514.44 55.3322C512.54 56.5922 509.21 57.4022 504.65 57.4022C500.09 57.4022 496.76 56.5922 494.86 55.3322ZM512.53 53.6522C513.76 52.9022 514.6 51.6122 514.6 49.5722C514.6 47.5322 513.9 46.2722 512.59 45.4622C511.11 44.5422 508.12 43.9222 504.65 43.9222C501.18 43.9222 498.19 44.5422 496.71 45.4622C495.4 46.2722 494.7 47.4722 494.7 49.5722C494.7 51.6722 495.54 52.9022 496.77 53.6522C498.25 54.5722 501.16 55.2222 504.66 55.2222C508.16 55.2222 511.06 54.5822 512.55 53.6522H512.53Z" fill="black"></path>
+<path d="M184.08 2.28906H96.0298V38.7991L112.37 57.0691H161.35C179.41 57.0691 189.39 55.4691 196.52 51.0291C202.8 47.0791 208.78 39.8191 208.78 29.8491L184.07 2.28906H184.08ZM185.15 40.6191C180.87 42.7591 173.74 43.7691 160.67 43.7691H110.57V15.7991H157.5C171.68 15.7991 180.5 16.9191 185.25 19.3791C189.77 21.7591 193 24.7091 193 30.0991C193 35.9591 189.5 38.4091 185.14 40.6291L185.15 40.6191Z" fill="black"></path>
+<path d="M52.09 18.6581C52.16 18.7281 39.33 32.9081 39.33 32.9081L74.77 43.9181C74.77 43.9181 52.02 18.5881 52.09 18.6581ZM63.13 51.4781L40.07 46.2381C33.57 44.7581 27.03 46.6581 22.59 51.6381L17.75 57.0681H0L49.08 2.32812H55.22L104.29 57.0581H86.42L63.13 51.4681" fill="black"></path>
+<path d="M249.58 47.0013L270.5 23.5512V57.1113L285.55 57.0713L285.57 2.29125H278.79C274.29 2.29125 270 4.20125 266.99 7.55125L240.54 36.9913L213.73 7.48125C210.72 4.17125 206.46 2.28125 201.99 2.28125L191.65 2.31125L231.51 47.0013H249.58Z" fill="black"></path>
+</svg>
+</a>
+</div>
+<div class="col-md-9">
+<ul class="menu-itens">
+<li>
+<a alt="#" href="/pt/sobre" title="">
+                             Sobre nós                         </a>
+</li>
+<li>
+<a alt="Área do Cliente" href="https://admmobiliario.proidea.com.br/" target="_blank" title="Área do Cliente">
+                             Área do Cliente                         </a>
+</li>
+<li>
+<a alt="#" href="/pt/admnews" title="">
+                             ADM News                         </a>
+</li>
+<li>
+<a alt="#" href="/pt/contract" title="">
+                             Contract
+                         </a>
+</li>
+<li>
+<a alt="#" class="buscabutton" href="" title="">
+<i class="fas fa-search"></i>
+</a>
+</li>
+<li class="linguas-menu">
+<a alt="" href="/pt" title="">PT</a>
+<span class="separador-linguas"> / </span>
+<a alt="" href="/en" title="">EN</a>
+<span class="separador-linguas"> / </span>
+<a alt="" href="/es" title="">ES</a>
+</li>
+</ul>
+</div>
+<div class="col-md-1">
+<span class="menu-legenda">Menu</span>
+<div class="button_container" id="toggle">
+<span class="top"></span>
+<span class="bottom"></span>
+</div>
+<div class="overlay" id="overlay">
+<nav class="overlay-menu">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<div class="vertical-center">
+<ul class="menu-in-itens">
+<li class="wow fadeInDown animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt" title="">
+                                                         Página Inicial
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt/sobre" title="">
+                                                         Sobre Nós
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt/produtos" title="">
+                                                         Produtos
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt/admnews" title="">
+                                                         ADM News
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt/arquitetos" title="">
+                                                         Área de Arquitetos
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s;">
+<a alt="" href="https://www.admmobiliario.com.br/pt/contato" title="">
+                                                         Contato
+                                                     </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">
+<a alt="" href="/pt/contract" title="">
+                                                     Contract
+                                                 </a>
+</li>
+<li class="wow fadeInDown animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">
+<a alt="Área do Cliente" href="https://admmobiliario.proidea.com.br/" title="Área do Cliente">
+                                                     Área do Cliente                                                 </a>
+</li>
+</ul>
+<ul class="menu-in-contatos">
+<li>
+<svg aria-hidden="true" class="svg-inline--fa fa-envelope fa-w-16" data-icon="envelope" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" fill="currentColor">
+</path>
+</svg>
+<a alt="" href="mailto:comercial@admmoveis.com.br" target="_blank" title="">Enviar E-mail</a>
+</li>
+<li>
+<svg aria-hidden="true" class="svg-inline--fa fa-phone-alt fa-w-16" data-icon="phone-alt" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" fill="currentColor">
+</path>
+</svg>
+<a alt="" href="tel:+55(54)3262-7245" title="">Ligar Agora</a>
+</li>
+<li>
+<svg aria-hidden="true" class="svg-inline--fa fa-map-marker-alt fa-w-12" data-icon="map-marker-alt" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" fill="currentColor">
+</path>
+</svg>
+<a alt="" href="https://goo.gl/maps/jH5Zv3Wafp5uu4gp7" target="_blank" title="">Como chegar</a>
+</li>
+</ul>
+<ul class="mobile-language-selector">
+<li class="linguas-menu-mobile">
+<a alt="" href="/pt" title="">PT</a>
+<span class="separador-linguas"> / </span>
+<a alt="" href="/en" title="">EN</a>
+<span class="separador-linguas"> / </span>
+<a alt="" href="/es" title="">ES</a>
+</li>
+</ul>
+<ul class="menu-redes">
+<li>
+<a alt="" href="https://www.instagram.com/admdesignmobiliario/" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-instagram fa-w-14" data-icon="instagram" data-prefix="fab" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li>
+<a alt="" href="https://www.facebook.com/admdesignmobiliario" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-facebook-square fa-w-14" data-icon="facebook-square" data-prefix="fab" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li>
+<a alt="" href="https://br.pinterest.com/admoveisedesign/" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-pinterest fa-w-16" data-icon="pinterest" data-prefix="fab" focusable="false" role="img" viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li>
+<a alt="" href="https://3dwarehouse.sketchup.com/by/admmoveis" target="_blank" title="">
+<svg id="Layer_1" version="1.1" viewbox="0 0 656.6 566.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path class="st0" d="M656.6,247.2L502.1,32.8l-64.3,63.6l-34.8-54l-13.3,3l-14-45.8L90.2,71.3l33.3,128.7L0,168.9L84.3,438
+                l109.4,13.9l43.7,115.5l278-99.1l8.9-42.9l104.3-39.2l-79.1-37.7L656.6,247.2z M503.6,62.9l131.1,182.6l-105.9,89.6L508,299.3
+                l12.9-79.2l-67.5-107.6L503.6,62.9z M522,340.3v5l-22.5,7.1l5.8-38.7L522,340.3z M400.2,55l103.4,164.8l-75.1,21.9L358.1,118
+                l-167.4,45.5L171,115L400.2,55z M175.1,276.4l-21.5-53.7c0,0,1.6-7.2,7.7-8.6c6.1-1.4,9.6-1.9,9.6-1.9L175.1,276.4z M119,82.9
+                l247.3-61.7l7.4,27.4l-217.4,55.3l12.7,97.7l-15.4,6.8L119,82.9z M101.2,413.6L32.6,194.9l109.8,29.3l79.1,204.9L101.2,413.6z
+                M201.9,228.5l153.5-42.7l62.1,116.1l-77.6,22.6l-31.4-63.9L224.9,285L201.9,228.5z M233.5,343.5l72.5-22l28.2,58.5l-76.5,23.2
+                L233.5,343.5z M574.9,380.8l-299.4,99.3l-28-37.5l270.7-88.3L574.9,380.8z"></path>
+</svg>
+</a>
+</li>
+<!-- 													<span class="instagram-hover">Instagram</span>
+             <span class="facebook-hover">Facebook</span>
+             <span class="pinterest-hover">Pinterest</span>
+             <span class="3dwarehouse-hover">3D Warehouse</span> -->
+</ul>
+</div>
+</div>
+<div class="col-md-6 linhas-bg" style='background:url("assets/878da096c4b0ca27_poltronas-menu.png"); background-position:center center; background-size:cover;'>
+<ul class="menu-linhas">
+<li class="li-categoria-sofas">
+<svg class="svg replaced-svg" viewbox="0 0 348.7 182.04" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2" id="Camada_2"><g data-name="Camada 1" id="Camada_1-2"><path d="M332.25,34.88a59.79,59.79,0,0,0-7.21.24c-.58-5.89-2.51-16.32-10.39-24.24C305.38,1.54,292.59,0,286.48,0Q175,0,63.48,0a45.76,45.76,0,0,0-8.92.68,37.67,37.67,0,0,0-18.41,9.46c-10,9.57-11,22-11.2,25a47.34,47.34,0,0,0-8.39-.36c-5.74.24-10.71.46-13.74,3.26S-.25,45.38.24,53.85C.86,64.58,1.62,69.9,2.43,79.13Q4.81,106.55,7.33,134c.84,8.41,5.26,12.58,13.49,13H36c-.27,1.15-.42,2-.66,2.79-2.48,8.35-5,16.69-7.46,25.05-1.38,4.76.18,6.78,5.18,6.82,4.12,0,8.24-.11,12.35.05a6.59,6.59,0,0,0,6.22-3.22C58.17,169.1,65,159.9,71.5,150.44c1.87-2.73,3.88-3.51,7-3.51q96.53.13,193.06,0c3.3,0,5.46.81,7.34,3.66,4.12,6.24,8.58,12.26,13,18.29,3.08,4.2,5.53,9.89,9.73,12,4.36,2.14,10.47.79,15.82.82,4.75,0,6.34-2.09,5-6.63-1.9-6.58-3.94-13.12-5.89-19.68-.79-2.66-1.52-5.34-2.37-8.34h13.58c8.23-.45,12.65-4.62,13.49-13q2.5-27.41,4.9-54.83,1.11-12.64,2.19-25.28c.16-1.24,1.61-13.27-4.6-17.16C341.34,35.13,337.84,35,332.25,34.88ZM183.86,8.43q51.06,0,102.12,0c5.38,0,15.19,1,22.48,8.09,5.78,5.63,7.57,12.93,8.22,17.42V49.36l0,0V66.63c0,.17,0,.35,0,.52s0,.31,0,.46V80.44H285.91a.16.16,0,0,1,0,.07h-4.37c-20.24,0-47.7,0-89.4,0H179.69v-54h0V8.43Zm-158.54,130-4.5,0v0c-3.38-.28-4.47-1.25-5-4.53C12,88.16,9.33,55.09,8.77,50.08c-.1-.86-.41-3.42,1.1-5,.93-1,2.47-1.44,4.77-1.46h6.18v.06c3.36.33,4.12,1.71,4.14,6q.18,42.17.34,84.34h0Zm8.15-92.57h0a90.15,90.15,0,0,1,0-9.59c0-.78.1-1.56.17-2.33.9-13.69,12.51-25.29,26.2-25.38,36.4-.25,72.8-.11,109.21-.12a14.62,14.62,0,0,1,1.63.22V34h0V80.57H157.17l-87.89,0H64.63l0-.07H33.47ZM45.26,172.29c-1.2,1.51-5,.94-8.24,1.43l7.91-26.51H63.55C57.31,155.92,51.61,164.37,45.26,172.29Zm257.37-2.95-16-22.33c6.28,0,11.73-.06,17.18.07a2.82,2.82,0,0,1,2,1.63c2.47,7.95,4.81,15.94,7.19,23.92C307.17,174.29,305.87,173.86,302.63,169.34Zm13.93-35.42h0v4.39H33.93v-4.39h0v-2.15h282.6Zm.1-21.15c-.09,6.29-3.66,10-10,10.18-7.73.15-15.46,0-23.2,0H191.83c-.75,0-1.44,0-2.11-.07h-28c-1.12.09-2.24.07-3.37.07H46.46c-9.79,0-12.73-3-12.73-12.71,0-3.37,0-6.74,0-10.1,0-7.73,3.49-11.25,11.13-11.25q28.81,0,57.63,0,28.62,0,57.25,0c.64,0,1.24,0,1.82.07h26.82q.68-.06,1.41-.06,29.19-.06,58.37,0,28.62,0,57.24,0c7.73,0,11.24,3.48,11.27,11.11C316.69,104.29,316.73,108.53,316.66,112.77Zm23.25-62.69c-.56,5-3.27,38.08-7.06,83.88-.52,3.28-1.61,4.25-5,4.53v0l-1.66,0c-.22,0-.45-.19-1.18-.51v-4h0q0-41.59,0-83.17c0-4.13.54-6,2.8-6.75,3.33-.84,8.62-1.67,10.95,1C340.28,46.74,340,49.19,339.91,50.08Z"></path></g></g></svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/sofas" title="">Sofás</a>
+</li>
+<li class="li-categoria-luminarias">
+<svg class="svg replaced-svg" data-name="Camada 2" id="Camada_2" viewbox="0 0 290.64 434.73" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+      .cls-1 {
+        fill: #606060;
+        stroke-width: 0px;
+      }
+    </style>
+</defs>
+<g data-name="Camada 1" id="Camada_1-2">
+<path class="cls-1" d="M282.19,65.2c-.18-.06-.34-.11-.47-.17.09.04.16.08.22.11-2.17-1.24-183.3-58.27-184.94-58.74C92.05,5,70.07-.21,59.65,0c-6.75.14-27.28.56-33.33,26.91-4.71,20.54,2.5,32.02,7.97,38.42-8.08,9.02-9.84,22.5-5.21,40.1.51,1.95,1.11,4.07,1.78,6.3-.29.92-.45,1.89-.45,2.91,0,3.23,1.6,6.09,4.05,7.85,6.31,17,16.72,36.47,32.9,44.76,2.81,1.44,6.31,2.25,10.5,2.42,5.79,19.34,5.68,39.69-.39,59l-55.78,177.6c-5.99,1.3-11.59,3.28-15.62,6.28-4.93,3.67-6.87,7.41-5.78,11.11,1.72,5.85,10.25,7.64,17.11,8.11,5.92.4,91.54,2.96,130.12,2.96,2.05,0,3.96,0,5.72-.02,34.7-.3,37.83-.96,47.92-10.05,3.79-3.42,7.72-7.44,6.34-11.82-1.41-4.47-7.07-5.18-10.45-5.6-6.79-.84-128.57-3.52-141.54-3.13l53.98-171.87c5.5-17.51,6.43-36.06,2.92-53.87,1.79.03,3.57.06,5.35.06,28.23,0,55.92-4.57,98.01-22.74,25.19-10.87,43.31-28.86,54.07-42.04,12.29-15.05,19.33-29.04,20.41-34.16,1.49-7.13-1.21-11.93-8.05-14.27ZM34.61,28.82c3.36-14.67,11.6-18.86,20.19-19.96-.27,2.96-1.05,7.26-2.21,12.21-6.35,5.14-10.42,19.36-9.99,30.74-1.03,2.32-2.08,4.47-3.15,6.38-4.27-5.55-8.32-14.2-4.84-29.38ZM40.98,115.37c-.21-.62-.42-1.23-.61-1.83.5.13.89.56.89,1.11,0,.28-.11.52-.27.72ZM44,123.48c3.38-1.51,5.75-4.89,5.75-8.83,0-5.33-4.34-9.67-9.67-9.67-.77,0-1.52.1-2.23.27-.19-.69-.37-1.36-.54-1.98-3.96-15.06-2.68-26.11,3.83-32.84,11.15-11.55,21.2-48.32,22.19-61.8,9.91.75,26.61,4.61,31.34,5.96,7.01,2,136.22,42.93,173.57,54.93-13.84,6.71-40.35,22.54-82.53,49.24-3.45,2.18-6.43,4.07-6.89,4.33-22.14,12.45-89.43,45.91-107.59,36.6-12.72-6.52-21.57-22.2-27.24-36.21ZM196,415.67c.77.09,1.4.19,1.92.28-.57.61-1.36,1.39-2.46,2.38-7.76,7-8.39,7.57-42.29,7.86-34.85.31-128.99-2.49-135.19-2.92-4.28-.29-7.58-1.2-9.03-1.95.38-.44.77-2.11,2.21-1.96,12.49,1.27,30.83,1.66,44.01-6.78h.22s.22,0,.22,0c10.8-.41,134.14,2.29,140.4,3.07ZM101.37,229.68l-54.72,174.21c-4.36.02-9.87.22-15.57.86l54.5-173.53c6.37-20.28,6.7-41.61,1.02-61.99,4.12-.51,8.71-1.44,13.78-2.79,7.07,20.36,7.47,42.58.98,63.23ZM281.92,77.73c-1.57,7.48-25.65,51.2-69.52,70.14-44.43,19.18-72.19,22.72-102.04,21.94-.55-1.93-1.15-3.85-1.81-5.76,7.7-2.46,16.31-5.72,25.9-9.8,25.78-10.98,48.31-23.62,48.54-23.74.58-.33,2.52-1.56,7.26-4.56,65.41-41.39,84.46-50.98,88.92-51.74l-.19-1.11c.15.05.3.11.45.16,2.19.75,3.18,1.09,2.47,4.48Z"></path>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/luminarias" title="">Luminárias</a>
+</li>
+<li class="li-categoria-poltronas">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 90 112.5" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<path d="M84.3,28.7C83,26,77.4,26,73.9,26.3c-0.1-3.7-0.2-13-0.3-15.5c0-0.5,0-1,0-1.4c0-2.3,0-5.1-3.9-5.3C67.6,4,66.2,5,65.2,5.6   C65,5.8,64.6,6,64.5,6.1C61.6,5.2,51,4.9,46.9,4.9c-0.1,0-0.1,0-0.2,0l0,0c-0.1,0-0.4,0-0.7,0s-0.5,0-0.7,0l0,0c-0.1,0-0.1,0-0.2,0   c-4.1,0-14.6,0.3-17.6,1.2C27.4,6,27,5.8,26.8,5.6c-1-0.7-2.4-1.6-4.5-1.6c-3.8,0.2-3.8,3-3.9,5.3c0,0.4,0,0.9,0,1.4   c-0.1,2.6,0.1,12.1,0.2,16.1c-4.9-0.7-7.6-0.3-9.1,0.4c-0.1,0-0.2,0-0.2,0c-0.3,0.1-0.5,0.2-0.6,0.4c-0.5,0.4-0.8,0.8-0.9,1   c-0.6,1.3-0.7,4.9,6.4,31.1c0.3,1,0.5,1.7,0.5,2l0.1,0.6c0.4,1.8,0.9,3.8,4.3,3.8c0.4,0,1.3,0,2.5,0l0,0l0,0c0.2,0,0.4,0,0.6,0   l-1,18.5h2.7l3.7-18.4c0.9,0,1.9,0,2.9,0.1l-0.7,11.1h2l2.6-11c4.3,0.1,8.3,0.2,10.5,0.2c0.1,0,0.2,0,0.3,0l0,0c0,0,0.3,0,0.7,0   s0.6,0,0.7,0l0,0c0.1,0,0.2,0,0.3,0c2.2,0,6.2-0.1,10.5-0.2l2.7,11.2h2l-0.7-11.2c1,0,2,0,2.9-0.1L68,84.8h2.7l-1-18.6   c0.2,0,0.4,0,0.6,0l0,0l0,0c1.2,0,2.1,0,2.5,0c3.4,0,3.9-2,4.3-3.8l0.1-0.6c0.1-0.3,0.3-1,0.5-2C84.9,33.6,84.9,30,84.3,28.7z    M69.6,6.9c1.1,0,1.1,0.1,1.1,2.5c0,0.5,0,1,0,1.5c0.1,3.1,0.3,16.9,0.3,17v1.6l1.6-0.2c1.1-0.1,2.2-0.2,3.3-0.2   c-3.3,2.6-5.7,7.8-7,15.2c0,0.2-0.1,0.4-0.1,0.5c-0.6-0.4-1.3-0.8-2-1.1c1.1-17.1-0.3-31.3-0.7-35.2c0.3-0.2,0.5-0.3,0.7-0.5   C67.6,7.4,68.4,6.9,69.6,6.9z M46,63.9c-3.2-0.1-15.7-0.3-22.6-0.5c0.4-2.3,1-6.8,0.4-13.2c3.1,0.7,12.1,2.6,21.3,2.8   c0.1,0,0.1,0,0.2,0c0.2,0,0.5,0,0.7,0s0.5,0,0.7,0c0.1,0,0.1,0,0.2,0c9.2-0.2,18.2-2.1,21.3-2.8c-0.5,6.3,0,10.8,0.4,13.2   C61.7,63.6,49.2,63.9,46,63.9z M28.7,8.7c2.5-0.6,11.5-0.9,17.3-1c5.8,0.1,14.9,0.4,17.3,1c0.4,3.7,1.7,17.4,0.8,34   c-6.2-1.7-14.7-1.7-18-1.6c-3.3-0.1-11.8-0.2-18,1.6C27,26.1,28.3,12.4,28.7,8.7z M45,43.9c0.1,0,0.3,0.1,0.4,0c0.2,0,0.4,0,0.6,0   c0.2,0,0.4,0,0.6,0c0.1,0,0.3,0,0.4,0c11.7-0.3,18.5,1.6,20.6,3.6c-2.9,0.7-12.4,2.7-21.7,2.8c-9.2-0.1-18.7-2.1-21.7-2.8   C26.5,45.6,33.2,43.6,45,43.9z M19.8,29.9l1.7,0.3v-1.7c0-0.1-0.4-14.5-0.3-17.6c0-0.5,0-1,0-1.5c0-2.4,0.1-2.4,1.1-2.5   c1.1-0.1,2,0.5,2.8,1.1c0.2,0.2,0.5,0.3,0.7,0.5c-0.4,3.9-1.8,18.1-0.7,35.2c-0.8,0.3-1.4,0.7-2,1.1c0-0.2-0.1-0.4-0.1-0.5   c-1.2-7.1-3.4-12.1-6.5-14.8C17.6,29.6,18.7,29.7,19.8,29.9z M17.6,61.8l-0.2-0.6c-0.1-0.3-0.3-1-0.5-2.1   c-6-22.4-6.8-27.9-6.6-29.2c0.5-0.1,1.8-0.1,3.4,0.9c2.1,1.4,5,4.9,6.5,13.9c1.7,9.7,0.8,16.3,0.3,18.7c-0.7,0-1.1,0-1.4,0   C18,63.4,18,63.4,17.6,61.8z M75.1,59.1c-0.3,1.1-0.5,1.8-0.5,2.1l-0.2,0.6c-0.4,1.6-0.4,1.6-1.5,1.6c-0.3,0-0.7,0-1.4,0   C71,61,70,54.5,71.7,44.8c1.6-9,4.4-12.6,6.5-13.9c1.6-1,2.9-1,3.4-0.9C81.8,31.2,81.1,36.7,75.1,59.1z"></path>
+<circle cx="34.5" cy="15.3" r="1"></circle>
+<circle cx="34.5" cy="25.9" r="1"></circle>
+<circle cx="34.5" cy="37.1" r="1"></circle>
+<circle cx="42.4" cy="15.3" r="1"></circle>
+<circle cx="42.4" cy="25.9" r="1"></circle>
+<circle cx="42.4" cy="37.1" r="1"></circle>
+<circle cx="57.5" cy="15.3" r="1"></circle>
+<circle cx="57.5" cy="25.9" r="1"></circle>
+<circle cx="57.5" cy="37.1" r="1"></circle>
+<circle cx="49.6" cy="15.3" r="1"></circle>
+<circle cx="49.6" cy="25.9" r="1"></circle>
+<circle cx="49.6" cy="37.1" r="1"></circle>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/poltronas" title="">Poltronas</a>
+</li>
+<li class="li-categoria-cadeiras">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 38.8 58.6" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path d="M38.8,26.5C38.8,26.4,38.8,26.4,38.8,26.5c0-0.1,0-0.1,0-0.3L34.1,8.2C32.8,3.4,28.6,0,23.6,0h-8.5c-5,0-9.3,3.4-10.5,8.2  L0,26.3c0,0,0,0,0,0.1v0.1c0,2.9,2.3,5.3,5.3,5.3h6L4.1,57.6c-0.1,0.3,0,0.6,0.1,0.7c0.1,0.1,0.4,0.3,0.7,0.3h3.4  c0.4,0,0.7-0.3,0.9-0.6l2.9-10.8l7.3-5l7.3,5l2.9,10.8c0.1,0.4,0.4,0.6,0.9,0.6H34c0.3,0,0.6-0.1,0.7-0.3c0.1-0.1,0.3-0.4,0.1-0.7  l-7.1-25.8h6C36.5,31.7,38.8,29.3,38.8,26.5z M6.4,8.6c1-4.1,4.7-6.9,8.8-6.9h8.5c4.1,0,7.7,2.8,8.8,6.9l4.4,16.9H1.9L6.4,8.6z   M1.8,27.4h35.2c-0.4,1.5-1.8,2.6-3.4,2.6h-7.1H23h-7.4h-3.4H5.1C3.5,30,2.2,28.9,1.8,27.4z M22.5,31.7l1.5,5.4l-4.5,3.1L14.9,37  l1.5-5.4H22.5z M7.6,56.9H6l7-25.1h1.6L7.6,56.9z M12.8,44.6l1.6-5.7l3.5,2.3L12.8,44.6z M21,41.3l3.5-2.3l1.6,5.7L21,41.3z   M32.8,56.9h-1.6l-7-25.1h1.6L32.8,56.9z"></path>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/cadeiras" title="">Cadeiras</a>
+</li>
+<li class="li-categoria-banquetas">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 70 102.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<path d="M53.9,96c-0.4,0-0.7-0.3-0.8-0.7l-8.3-55.2c-0.1-0.4,0.2-0.8,0.7-0.9c0.4-0.1,0.8,0.2,0.9,0.7l8.3,55.2   c0.1,0.4-0.2,0.8-0.7,0.9c0,0,0,0,0,0L53.9,96z"></path>
+<path d="M47.9,84.2c-0.4,0-0.7-0.3-0.8-0.7l-6-43.1c-0.1-0.4,0.2-0.8,0.7-0.9c0,0,0,0,0,0c0.4-0.1,0.8,0.2,0.9,0.7c0,0,0,0,0,0   l6,43.1c0.1,0.4-0.2,0.8-0.7,0.9L47.9,84.2z"></path>
+<path d="M16.1,96L16.1,96c-0.5-0.1-0.8-0.5-0.7-0.9c0,0,0,0,0,0l8.3-55.2c0.1-0.4,0.5-0.7,0.9-0.7c0.4,0.1,0.7,0.5,0.7,0.9   l-8.3,55.2C16.8,95.7,16.5,96,16.1,96z"></path>
+<path d="M22.1,84.2H22c-0.4-0.1-0.7-0.5-0.7-0.9l6-43.1c0.1-0.4,0.5-0.7,0.9-0.7c0,0,0,0,0,0c0.4,0.1,0.7,0.5,0.7,0.9c0,0,0,0,0,0   l-6,43.1C22.8,83.9,22.5,84.2,22.1,84.2z"></path>
+<path d="M50.6,71.8H19.4c-0.4,0-0.8-0.5-0.7-0.9c0-0.4,0.3-0.7,0.7-0.7h31.2c0.4,0,0.8,0.5,0.7,0.9C51.3,71.4,51,71.7,50.6,71.8z"></path>
+<path d="M45.9,64H24.1c-0.4,0-0.8-0.4-0.8-0.8s0.4-0.8,0.8-0.8c0,0,0,0,0,0h21.8c0.4,0,0.8,0.4,0.8,0.8S46.3,64,45.9,64   C45.9,64,45.9,64,45.9,64z"></path>
+<path d="M50.6,71.8c-0.3,0-0.5-0.1-0.7-0.4l-4.7-7.7c-0.2-0.4-0.1-0.9,0.3-1.1s0.9-0.1,1.1,0.3l0,0l4.7,7.8   c0.2,0.4,0.1,0.9-0.3,1.1c0,0,0,0,0,0C50.9,71.7,50.8,71.8,50.6,71.8z"></path>
+<path d="M19.4,71.8c-0.1,0-0.3,0-0.4-0.1c-0.4-0.2-0.5-0.7-0.3-1.1c0,0,0,0,0,0l4.7-7.8c0.2-0.4,0.7-0.5,1.1-0.3s0.5,0.7,0.3,1.1   l0,0l-4.7,7.7C19.9,71.6,19.7,71.8,19.4,71.8z"></path>
+<path d="M33.5,41.1c-1.4,0-2.7-0.1-8.8-0.7c-3.8-0.4-6-1.3-6.9-3c-1-2,0-4.4,1.1-6.5c1.2-2.3,1.5-4,1.9-6.8   c0.3-2.1,0.7-4.7,1.6-8.4c2.1-8.8,4.2-10.1,6.9-11C31.1,4.2,33,3.9,34.8,4h0.8c2.2-0.1,4.5,0.1,6.6,0.7c2.7,1,4.8,2.3,6.9,11.1   c0.9,3.8,1.3,6.3,1.6,8.4c0.4,2.8,0.7,4.5,1.9,6.8c1.2,2.1,2.2,4.5,1.1,6.5c-0.9,1.7-3.2,2.7-6.9,3c-3.5,0.4-7.1,0.6-10.7,0.7   L33.5,41.1L33.5,41.1z M34.2,5.6c-1.5,0-3,0.2-4.4,0.6c-1.9,0.7-3.8,1.3-5.9,9.9c-0.9,3.7-1.3,6.2-1.6,8.3   c-0.4,2.9-0.7,4.8-2.1,7.3s-1.7,3.9-1.1,5s2.5,1.9,5.7,2.2c7.3,0.7,7.7,0.7,9.6,0.7h1.9c3.5,0,7-0.2,10.5-0.7c3.1-0.3,5-1,5.7-2.2   s0.2-2.5-1.1-5c-1.2-2.3-1.9-4.8-2.1-7.3c-0.3-2-0.7-4.6-1.6-8.3c-2.1-8.6-4-9.3-5.9-9.9c-2-0.5-4-0.7-6.1-0.6L34.2,5.6L34.2,5.6z"></path>
+<path d="M35.5,35.9H35c-4.1-0.1-8.1-1.4-11.4-3.8c-0.1-0.1-0.2-0.3-0.1-0.4c0,0,0,0,0,0c0.1-0.1,0.3-0.2,0.5-0.1   c3.2,2.3,7.1,3.6,11,3.7c4.1,0,8.2-1.3,11.6-3.6l0.1-0.1c0.1-0.1,0.3-0.1,0.4,0.1c0,0,0,0,0,0c0.1,0.2,0,0.4-0.1,0.4l-0.1,0.1   C43.5,34.5,39.5,35.8,35.5,35.9z"></path>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/banquetas" title="">Banquetas</a>
+</li>
+<li class="li-categoria-office">
+<svg class="svg replaced-svg" viewbox="0 0 80 49.01" xmlns="http://www.w3.org/2000/svg"><title>Ativo 5</title><g data-name="Camada 2" id="Camada_2"><g data-name="Camada 1" id="Camada_1-2"><path d="M80,13a1,1,0,0,0-1-1H61V11a4.92,4.92,0,0,0,0-9.61V1a1,1,0,0,0-1-1H52a1,1,0,0,0-1,1V12H36V8.29A7.31,7.31,0,0,0,28.71,1H17.29A7.31,7.31,0,0,0,10,8.29V12H1a1,1,0,0,0-1,1V47a1,1,0,0,0,2,0V18h8.79a7.29,7.29,0,0,0,6.5,4H22v6H14a4,4,0,0,0,0,8h8v7.35l-8.41,3.74a1,1,0,1,0,.81,1.83h0L23,45.09l8.59,3.82a1,1,0,1,0,.81-1.83L24,43.35V36h8a4,4,0,0,0,0-8H24V22h4.71a7.29,7.29,0,0,0,6.5-4H56V47a1,1,0,0,0,1,1H79a1,1,0,0,0,1-1V18a1,1,0,0,0-.15-.5A1,1,0,0,0,80,17ZM34,32a2,2,0,0,1-2,2H14a2,2,0,0,1,0-4H32A2,2,0,0,1,34,32Zm24-4H78v8H58ZM62.88,6.19A3,3,0,0,1,61,8.91V3.46A3,3,0,0,1,62.88,6.19ZM53,2h6V12H53ZM2,16V14h8v.71A7,7,0,0,0,10.12,16Zm26.71,4H17.29A5.3,5.3,0,0,1,12,14.71V8.29A5.3,5.3,0,0,1,17.29,3H28.71A5.3,5.3,0,0,1,34,8.29v6.42A5.3,5.3,0,0,1,28.71,20Zm7.17-4A7,7,0,0,0,36,14.71V14H78v2ZM78,18v8H58V18ZM58,46V38H78v8Z"></path><path d="M66,23h4a1,1,0,0,0,0-2H66a1,1,0,0,0,0,2Z"></path><path d="M70,31H66a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"></path><path d="M70,41H66a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"></path></g></g></svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/office" title="">Office</a>
+</li>
+<li class="li-categoria-mesas">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 100 91.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path d="M93.6,21.2H6.4c-0.8,0-1.4,0.6-1.4,1.4v9.4c0,0.8,0.6,1.4,1.4,1.4h9.6L8.2,77.2c-0.1,0.4,0,0.8,0.3,1.1  c0.3,0.3,0.6,0.5,1,0.5h4c0.6,0,1.1-0.4,1.3-1l10.4-35.6h47.1l10.4,35.6c0.2,0.6,0.7,1,1.3,1h4c0.4,0,0.8-0.2,1-0.5  c0.3-0.3,0.4-0.7,0.3-1.1l-7.7-43.9h11.9c0.8,0,1.4-0.6,1.4-1.4v-9.4C95,21.8,94.4,21.2,93.6,21.2z M12.5,76.1h-1.4l7.5-42.8h6.4  L12.5,76.1z M26.1,39.5l1.8-6.2h41.8l1.8,6.2H26.1z M86.5,76.1h-1.4L72.6,33.3h6.4L86.5,76.1z M92.3,30.5H80.1h-9.3H26.9h-9.3H7.7  v-6.6h84.5L92.3,30.5L92.3,30.5z"></path>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/mesasdejantar" title="">Mesas de Jantar</a>
+</li>
+<li class="li-categoria-complementos">
+<svg class="svg replaced-svg" id="Camada_1" style="enable-background:new 0 0 100 89.9;" version="1.1" viewbox="0 0 100 89.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<g>
+<g>
+<g>
+<circle class="st0" cx="78.8" cy="37.1" r="1.1"></circle>
+<path class="st0" d="M87.4,34.3H12.6V40h74.7L87.4,34.3L87.4,34.3z M78.8,39.9c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7      s2.7,1.2,2.7,2.7C81.6,38.7,80.4,39.9,78.8,39.9z"></path>
+<path class="st0" d="M20.5,44.6h12.1c0,0,0,0,0,0h34.7c0,0,0,0,0,0h12.1c0,0,0,0,0,0h13.8V29.7H6.7v14.9L20.5,44.6      C20.5,44.6,20.5,44.6,20.5,44.6z M11,40.9v-7.4c0-0.5,0.4-0.8,0.8-0.8h76.4c0.5,0,0.8,0.4,0.8,0.8v7.4c0,0.5-0.4,0.8-0.8,0.8      H11.8C11.3,41.7,11,41.3,11,40.9z"></path>
+<polygon class="st0" points="79,46.3 69.2,46.3 71.9,49.2 80.7,49.2"></polygon>
+<polygon class="st0" points="73.5,50.9 91.2,70.3 92.7,70.3 81.6,50.9"></polygon>
+<polygon class="st0" points="18.4,50.9 7.3,70.3 8.8,70.3 26.5,50.9"></polygon>
+<polygon class="st0" points="30.7,46.3 21,46.3 19.3,49.2 28.1,49.2"></polygon>
+<path d="M94.9,70.7l-12-21.1c0,0,0,0,0,0l-1.9-3.4h13.2c0.5,0,0.8-0.4,0.8-0.8V28.8c0-0.5-0.4-0.8-0.8-0.8H5.8      C5.4,28,5,28.4,5,28.8v16.6c0,0.5,0.4,0.8,0.8,0.8h13.2l-1.9,3.4c0,0,0,0,0,0l-12,21.1C5,71,5,71.3,5.1,71.6      C5.3,71.8,5.5,72,5.8,72h3.3c0.2,0,0.5-0.1,0.6-0.3L33,46.3h34l23.2,25.4c0.2,0.2,0.4,0.3,0.6,0.3h3.3c0.3,0,0.6-0.2,0.7-0.4      C95,71.3,95,71,94.9,70.7z M69.2,46.3H79l1.7,2.9h-8.7L69.2,46.3z M6.7,29.7h86.6v14.9H79.5c0,0,0,0,0,0H67.3c0,0,0,0,0,0H32.7      c0,0,0,0,0,0H20.5c0,0,0,0,0,0H6.7V29.7z M21,46.3h9.8l-2.7,2.9h-8.7L21,46.3z M8.8,70.3H7.3l11.1-19.4h8.2L8.8,70.3z       M91.2,70.3L73.5,50.9h8.2l11.1,19.4H91.2z"></path>
+<path d="M88.2,41.7c0.5,0,0.8-0.4,0.8-0.8v-7.4c0-0.5-0.4-0.8-0.8-0.8H11.8c-0.5,0-0.8,0.4-0.8,0.8v7.4c0,0.5,0.4,0.8,0.8,0.8      H88.2z M12.6,34.3h74.7V40H12.6V34.3z"></path>
+<path d="M78.8,34.4c-1.5,0-2.7,1.2-2.7,2.7s1.2,2.7,2.7,2.7s2.7-1.2,2.7-2.7C81.6,35.6,80.4,34.4,78.8,34.4z M78.8,38.2      c-0.6,0-1.1-0.5-1.1-1.1s0.5-1.1,1.1-1.1c0.6,0,1.1,0.5,1.1,1.1C79.9,37.7,79.4,38.2,78.8,38.2z"></path>
+</g>
+</g>
+</g>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/complementos" title="">Complementos</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="banner">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<ul class="categorias-banner wow fadeIn" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/sofas" title="">Sofás</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/luminarias" title="">Luminárias</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/poltronas" title="">Poltronas</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/cadeiras" title="">Cadeiras</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/banquetas" title="">Banquetas</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/office" title="">Office</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/mesasdejantar" title="">Mesas de Jantar</a>
+</li>
+<li>
+<a alt="" href="https://www.admmobiliario.com.br/pt/complementos" title="">Complementos</a>
+</li>
+</ul>
+</div>
+<div class="col-md-10">
+<div class="carousel slide carousel-fade" id="banner-home-carousel">
+<div class="carousel-inner">
+<div class="carousel-item">
+<div class="banner-img-transition wow fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/25935147208e7d53_2d6a1517c6106ccac3763e98aa05bb.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Coleção Alma</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/26c44383676faa94_ec2ce5c802270e545c3be076997352.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Cadeira Clip</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/b32e60add5693346_4e3288b7201acd8fc16ce185932d39.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Mesa de centro Ita</h2>
+</div>
+</div>
+<div class="carousel-item active">
+<div class="banner-img-transition wow fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/600557131c44efcd_6aa3d4feff1f39c119350048765206.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Cadeira Axis</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow animated fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/f8252e2d8777aab3_9c4ed20901226a01411bb602e8fe28.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow animated fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Conjunto de mesas Solum</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow animated fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/157801db4866ea7c_9a355994e2d9e5e10dc6e416113761.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow animated fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Poltrona Pinhão</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow animated fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/cd7e3ed167fc0034_e6ca318aa2fac1d3d38491e985e0d3.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow animated fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Sofá Bold</h2>
+</div>
+</div>
+<div class="carousel-item">
+<div class="banner-img-transition wow animated fadeInRight" style="visibility: visible;">
+<img alt="First slide" class="d-block w-100 wow animated" data-wow-delay=".5s" src="assets/e0d14c4a8dc600f0_56e3ea785df032d8a1fa95b3ef9c50.png" style="visibility: visible; animation-delay: 0.5s;"/>
+</div>
+<div class="carousel-caption d-md-block wow animated fadeInLeft" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<h2>Conjunto Terre</h2>
+</div>
+</div>
+<ol class="carousel-indicators wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s;">
+<li class="" data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li class="" data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li class="" data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li class="active" data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li data-slide-to="$key" data-target="#banner-home-carousel"></li>
+<li data-slide-to="$key" data-target="#banner-home-carousel"></li>
+</ol>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#banner-home-carousel" role="button">
+<i class="fas fa-caret-left"></i>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" data-slide="next" href="#banner-home-carousel" role="button">
+<i class="fa fa-caret-right"></i>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="frase">
+<div class="container">
+<div class="row">
+<div class="col-md-8 offset-md-2">
+<span class="aspas wow fadeInLeft" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInLeft;">’’</span>
+<h2><span class="wow fadeIn" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Mobiliário inspirado</span><br/><span class="wow fadeIn" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">em novos comportamentos</span><br/><span class="wow fadeIn" data-wow-delay=".7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">compondo ambientes atemporais.</span></h2><span class="aspas wow fadeInRight" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">’’</span>
+</div>
+</div>
+</div>
+</section>
+<section id="categorias-slider">
+<div class="container">
+<img alt="" class="lampada wow fadeInDown" data-wow-delay=".6s" src="assets/35531a550b69ae04_lampada.png" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInDown;" title=""/>
+<div class="row">
+<div class="categorias-slider-block wow fadeIn col-md-9 offset-md-1" style="visibility: visible; animation-name: fadeIn;"></div>
+<div class="col-md-2 offset-md-2">
+<h4 class="wow fadeInLeft" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInLeft;">
+                        
+                        Clique e conheça<br/>Nossas categorias
+                    </h4>
+<ol class="carousel-indicators wow fadeInLeft fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInLeft;">
+<li class="categorias-seletor categorias-seletor-active" data-slide-to="0" data-target="#carousel-categorias">
+<img alt="" src="assets/696230ce822ba825_sofas.svg" title=""/>
+                                Sofás
+                            </li>
+<li class="categorias-seletor" data-slide-to="1" data-target="#carousel-categorias">
+<img alt="" src="assets/07ecc8c38917b3bd_luminaria.svg" title=""/>
+                                Luminárias
+                            </li>
+<li class="categorias-seletor" data-slide-to="2" data-target="#carousel-categorias">
+<img alt="" src="assets/3da987617927235e_poltronas.svg" title=""/>
+                                Poltronas
+                            </li>
+<li class="categorias-seletor" data-slide-to="3" data-target="#carousel-categorias">
+<img alt="" src="assets/13d83f1948e6e461_cadeiras.svg" title=""/>
+                                Cadeiras
+                            </li>
+<li class="categorias-seletor" data-slide-to="4" data-target="#carousel-categorias">
+<img alt="" src="assets/f831e5c35a309bd9_banquetas.svg" title=""/>
+                                Banquetas
+                            </li>
+<li class="categorias-seletor" data-slide-to="5" data-target="#carousel-categorias">
+<img alt="" src="assets/43e753f58ea9fcc1_office.svg" title=""/>
+                                Office
+                            </li>
+<li class="categorias-seletor" data-slide-to="6" data-target="#carousel-categorias">
+<img alt="" src="assets/2eb608f4023ac2a8_mesas.svg" title=""/>
+                                Mesas de Jantar
+                            </li>
+<li class="categorias-seletor" data-slide-to="7" data-target="#carousel-categorias">
+<img alt="" src="assets/41fc4da8ca72800e_complementos.svg" title=""/>
+                                Complementos
+                            </li>
+</ol>
+<ul class="categorias-produto-button wow fadeInLeft" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInLeft;">
+<li class="selecao-categoria selecao-categoria-active">
+<a class="button-categoria li-categoria-sofas" href="https://www.admmobiliario.com.br/pt/sofas">
+                                    Ver Sofás
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-luminarias" href="https://www.admmobiliario.com.br/pt/luminarias">
+                                    Ver Luminárias
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-poltronas" href="https://www.admmobiliario.com.br/pt/poltronas">
+                                    Ver Poltronas
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-cadeiras" href="https://www.admmobiliario.com.br/pt/cadeiras">
+                                    Ver Cadeiras
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-banquetas" href="https://www.admmobiliario.com.br/pt/banquetas">
+                                    Ver Banquetas
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-office" href="https://www.admmobiliario.com.br/pt/office">
+                                    Ver Office
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-mesas" href="https://www.admmobiliario.com.br/pt/mesasdejantar">
+                                    Ver Mesas de Jantar
+                                </a>
+</li>
+<li class="selecao-categoria">
+<a class="button-categoria li-categoria-complementos" href="https://www.admmobiliario.com.br/pt/complementos">
+                                    Ver Complementos
+                                </a>
+</li>
+</ul>
+</div>
+<div class="col-md-7">
+<div class="carousel slide wow fadeInRight" data-wow-delay="1.2s" id="carousel-categorias" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInRight;">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img alt="Sofas" class="d-block w-100" src="assets/e171407afa06e010_destaque-sofas.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Luminárias" class="d-block w-100" src="assets/e1914517128f891f_destaque-luminarias.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Poltronas" class="d-block w-100" src="assets/9501341a294e642b_destaque-poltronas.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Cadeiras" class="d-block w-100" src="assets/10413f8120b7186d_destaque-cadeiras.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Banquetas" class="d-block w-100" src="assets/e4d4a7a56b5a7855_destaque-banquetas.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Office" class="d-block w-100" src="assets/33eaa5035d33f4de_destaque-office.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Mesas" class="d-block w-100" src="assets/2204d5f44190fe93_destaque-mesas.png"/>
+</div>
+<div class="carousel-item">
+<img alt="Complementos" class="d-block w-100" src="assets/fd1b2436463008ad_destaque-complementos.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="lancamentos-home">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<h1 class="wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Lançamentos</h1>
+<p class="wow fadeInDown" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">Explore nossos lançamentos e surpreenda-se com os detalhes.</p>
+<a alt="" class="wow fadeInDown" data-wow-delay=".6s" href="/pt/lancamentos" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInDown;" title="">Clique para ver todos os produtos</a>
+<div class="slider-lancamentos slick-initialized slick-slider slick-dotted">
+<div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 15360px; transform: translate3d(-2560px, 0px, 0px);"><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="-4" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<img alt="" src="assets/93177fb602cd1716_f3084d218c6d7c6c5e1f892ef03fc7.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<h4>Cadeira Office Axis</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="-3" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<img alt="" src="assets/cc3145e5c5014562_67b584fc7427659f0d92a011b12975.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<h4>Cadeira Office Axis Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="-2" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<img alt="" src="assets/0f0fac2438993575_1833933168a74b04d5a175b4467876.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<h4>Cadeira Office Flow Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="-1" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<img alt="" src="assets/98f839b998479d86_78a2ea98a0ccfe319a93c9dbc98570.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<h4>Cadeira Office Zenith</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control00" aria-hidden="false" class="item wow fadeInUp slick-slide slick-active" data-slick-index="0" data-wow-delay=".2s" id="slick-slide00" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="0">
+<img alt="" src="assets/6d495bb1c7c75dd7_dccb1f5aab16cddbf7c1a8f0226735.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="0" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="0">
+<h4>Sofá Bold</h4>
+</a>
+<a href="" tabindex="0">
+<h6>Sofás</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control01" aria-hidden="false" class="item wow fadeInUp slick-slide slick-current slick-active slick-center" data-slick-index="1" data-wow-delay=".2s" id="slick-slide01" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="0">
+<a href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="0">
+<img alt="" src="assets/3eec82a25ce25f15_e5469c5d344871737fe060caba1120.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="0" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="0">
+<h4>Poltrona Ramo</h4>
+</a>
+<a href="" tabindex="0">
+<h6>Poltronas</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control02" aria-hidden="false" class="item wow fadeInUp slick-slide slick-active" data-slick-index="2" data-wow-delay=".2s" id="slick-slide02" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="0">
+<a href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="0">
+<img alt="" src="assets/c2d7beb0b750e255_df8dcf595aa22d86c537a384d2e17b.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="0" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="0">
+<h4>Poltrona Pinhão</h4>
+</a>
+<a href="" tabindex="0">
+<h6>Poltronas</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control03" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="3" data-wow-delay=".2s" id="slick-slide03" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="0">
+<a href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1">
+<img alt="" src="assets/236205ae253ef3fe_3941a8e42362e570524b3289b86578.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1">
+<h4>Banco Mosaico</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Complementos</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control04" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="4" data-wow-delay=".2s" id="slick-slide04" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1">
+<img alt="" src="assets/4eb451c20abdc586_bf3a37f3dda585b02f2eb342f818e7.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1">
+<h4>Cadeira Clip</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Cadeiras</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control05" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="5" data-wow-delay=".2s" id="slick-slide05" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1">
+<img alt="" src="assets/91fedbca831314c7_4877446f651cb8f6df4bbd8054a89b.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1">
+<h4>Cadeira Office Archi</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control06" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="6" data-wow-delay=".2s" id="slick-slide06" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<img alt="" src="assets/93177fb602cd1716_f3084d218c6d7c6c5e1f892ef03fc7.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<h4>Cadeira Office Axis</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control07" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="7" data-wow-delay=".2s" id="slick-slide07" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<img alt="" src="assets/cc3145e5c5014562_67b584fc7427659f0d92a011b12975.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<h4>Cadeira Office Axis Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control08" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="8" data-wow-delay=".2s" id="slick-slide08" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<img alt="" src="assets/0f0fac2438993575_1833933168a74b04d5a175b4467876.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<h4>Cadeira Office Flow Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-describedby="slick-slide-control09" aria-hidden="true" class="item wow fadeInUp slick-slide" data-slick-index="9" data-wow-delay=".2s" id="slick-slide09" role="tabpanel" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<img alt="" src="assets/98f839b998479d86_78a2ea98a0ccfe319a93c9dbc98570.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<h4>Cadeira Office Zenith</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="10" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="-1">
+<img alt="" src="assets/6d495bb1c7c75dd7_dccb1f5aab16cddbf7c1a8f0226735.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/sofabold" tabindex="-1">
+<h4>Sofá Bold</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Sofás</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="11" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="-1">
+<img alt="" src="assets/3eec82a25ce25f15_e5469c5d344871737fe060caba1120.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/poltronaramo" tabindex="-1">
+<h4>Poltrona Ramo</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Poltronas</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="12" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="-1">
+<img alt="" src="assets/c2d7beb0b750e255_df8dcf595aa22d86c537a384d2e17b.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/poltronapinhao" tabindex="-1">
+<h4>Poltrona Pinhão</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Poltronas</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="13" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1">
+<img alt="" src="assets/236205ae253ef3fe_3941a8e42362e570524b3289b86578.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/bancomosaico" tabindex="-1">
+<h4>Banco Mosaico</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Complementos</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="14" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1">
+<img alt="" src="assets/4eb451c20abdc586_bf3a37f3dda585b02f2eb342f818e7.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/cadeiraclip" tabindex="-1">
+<h4>Cadeira Clip</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Cadeiras</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="15" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1">
+<img alt="" src="assets/91fedbca831314c7_4877446f651cb8f6df4bbd8054a89b.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officearchi" tabindex="-1">
+<h4>Cadeira Office Archi</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="16" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<img alt="" src="assets/93177fb602cd1716_f3084d218c6d7c6c5e1f892ef03fc7.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxis" tabindex="-1">
+<h4>Cadeira Office Axis</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="17" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<img alt="" src="assets/cc3145e5c5014562_67b584fc7427659f0d92a011b12975.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeaxisalta" tabindex="-1">
+<h4>Cadeira Office Axis Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="18" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<img alt="" src="assets/0f0fac2438993575_1833933168a74b04d5a175b4467876.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officeflowalta" tabindex="-1">
+<h4>Cadeira Office Flow Alta</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div><div aria-hidden="true" class="item wow fadeInUp slick-slide slick-cloned" data-slick-index="19" data-wow-delay=".2s" style="width: 560px; background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" tabindex="-1">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<img alt="" src="assets/98f839b998479d86_78a2ea98a0ccfe319a93c9dbc98570.jpg"/>
+</a>
+<a alt="" class="button-conhecer" href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1" title="">Conhecer Produto</a>
+<div class="item-detalhes">
+<a href="https://www.admmobiliario.com.br/pt/officezenith" tabindex="-1">
+<h4>Cadeira Office Zenith</h4>
+</a>
+<a href="" tabindex="-1">
+<h6>Office</h6>
+</a>
+</div>
+</div></div></div>
+<ul class="slick-dots" role="tablist" style=""><li class="" role="presentation"><button aria-controls="slick-slide00" aria-label="1 of 4" id="slick-slide-control00" role="tab" tabindex="-1" type="button">1</button></li><li class="slick-active" role="presentation"><button aria-controls="slick-slide01" aria-label="2 of 4" aria-selected="true" id="slick-slide-control01" role="tab" tabindex="0" type="button">2</button></li><li role="presentation"><button aria-controls="slick-slide02" aria-label="3 of 4" id="slick-slide-control02" role="tab" tabindex="-1" type="button">3</button></li><li role="presentation"><button aria-controls="slick-slide03" aria-label="4 of 4" id="slick-slide-control03" role="tab" tabindex="-1" type="button">4</button></li><li role="presentation"><button aria-controls="slick-slide04" aria-label="5 of 4" id="slick-slide-control04" role="tab" tabindex="-1" type="button">5</button></li><li role="presentation"><button aria-controls="slick-slide05" aria-label="6 of 4" id="slick-slide-control05" role="tab" tabindex="-1" type="button">6</button></li><li role="presentation"><button aria-controls="slick-slide06" aria-label="7 of 4" id="slick-slide-control06" role="tab" tabindex="-1" type="button">7</button></li><li role="presentation"><button aria-controls="slick-slide07" aria-label="8 of 4" id="slick-slide-control07" role="tab" tabindex="-1" type="button">8</button></li><li role="presentation"><button aria-controls="slick-slide08" aria-label="9 of 4" id="slick-slide-control08" role="tab" tabindex="-1" type="button">9</button></li><li role="presentation"><button aria-controls="slick-slide09" aria-label="10 of 4" id="slick-slide-control09" role="tab" tabindex="-1" type="button">10</button></li></ul></div>
+</div>
+</div>
+</div>
+</section>
+<section id="admnews-home">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<h1 class="wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">ADM News</h1>
+<p class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Fique por dentro das notícias e das últimas novidades do nosso universo.</p>
+</div>
+<div class="col-md-12 admnews-home-bg">
+<div class="admnews-itens row">
+<div class="admnews-item admnews-item-h wow fadeInDown" data-wow-delay=".2s" style="background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+<img alt="" class="w-100" src="assets/87c505584c3380e1_e141095d9a5e4e413a5dd7c948b78c.jpg" title=""/>
+<a alt="" class="button-ver-materia" href="https://www.admmobiliario.com.br/pt/quando-o-design-une-identidade-memoria-e-materia" title="">Ver Matéria Completa</a>
+<h4>Quando o design une identidade, memória e matéria</h4>
+<h6>Notícias</h6>
+</div>
+<div class="admnews-item admnews-item-h wow fadeInDown" data-wow-delay=".2s" style="background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+<img alt="" class="w-100" src="assets/a56350ec8f0948f3_e60310f85017a30278ab5846d3e12a.jpg" title=""/>
+<a alt="" class="button-ver-materia" href="https://www.admmobiliario.com.br/pt/falta-pouco-para-voce-conhecer-a-novacolecao" title="">Ver Matéria Completa</a>
+<h4>Falta pouco para você conhecer a nova coleção</h4>
+<h6>Notícias</h6>
+</div>
+<div class="admnews-item admnews-item-h wow fadeInDown" data-wow-delay=".2s" style="background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+<img alt="" class="w-100" src="assets/11e8c4db02d251c4_d776c9a0a4930e9026f4a2a5061cd9.jpg" title=""/>
+<a alt="" class="button-ver-materia" href="https://www.admmobiliario.com.br/pt/historias-que-nos-trouxeram-ate-aqui" title="">Ver Matéria Completa</a>
+<h4>Histórias que nos trouxeram até aqui, e a coleção que está prestes a nascer</h4>
+<h6>Notícias</h6>
+</div>
+<div class="admnews-item admnews-item-h wow fadeInDown" data-wow-delay=".2s" style="background-position: center 0px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+<img alt="" class="w-100" src="assets/1eb100bf8af24b11_42ea82afe6cd69c591687e01b5e656.jpg" title=""/>
+<a alt="" class="button-ver-materia" href="https://www.admmobiliario.com.br/pt/descubra-a-nova-ferramenta-da-ADM-para-inspirar-projetos-com-proposito" title="">Ver Matéria Completa</a>
+<h4>Descubra a nova ferramenta da ADM para inspirar projetos com propósito</h4>
+<h6>Notícias</h6>
+</div>
+<a alt="" class="btn-vertodas" href="/pt/admnews" style="background-position: center 0px;" title="">Clique para ver todas notícias</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="prefooter">
+<div class="container">
+<div class="row">
+<div class="col-md-4 offset-md-2 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+<h4>Receba as notícias e novidades da ADM direto no seu E-mail. Assine nossa newsletter.</h4>
+</div>
+<div class="col-md-4 wow fadeInDown" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">
+<form action="http://app4.iagentemail.com/integracao/processa" class="newsletterformint" id="newsletterformajax" method="post">
+<input class="newsletter-email-input" name="email" placeholder="E-mail:" type="email"/>
+<span class="voce">Você é:</span>
+<input class="radionewsletter arquitetoinput" name="field4" placeholder="Arquiteto" type="radio" value="Arquiteto"/>
+<label class="radiolegenda arquitetolabel" for="arquiteto">Arquiteto</label>
+<input class="radionewsletter consumidorinput" name="field6" placeholder="Arquiteto" type="radio" value="Consumidor"/>
+<label class="radiolegenda consumidorlabel" for="arquiteto">Consumidor</label>
+<input class="radionewsletter lojistainput" name="field5" placeholder="Arquiteto" type="radio" value="Lojista"/>
+<label class="radiolegenda lojistalabel" for="arquiteto">Lojista</label>
+<input class="hiddengrupos" name="grupos[10]" type="hidden" value="10"/>
+<input class="hiddencodigo" name="codigo" type="hidden" value="1498"/>
+<input class="buttonenviar" type="submit" value="Enviar"/>
+</form>
+<h4 class="ml-4 respostaformnewsletter" style="font-weight:600;"></h4>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<ul class="prefooter-linhas">
+<li class="wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-1">
+<svg class="svg replaced-svg" viewbox="0 0 348.7 182.04" xmlns="http://www.w3.org/2000/svg"><g data-name="Camada 2" id="Camada_2"><g data-name="Camada 1" id="Camada_1-2"><path d="M332.25,34.88a59.79,59.79,0,0,0-7.21.24c-.58-5.89-2.51-16.32-10.39-24.24C305.38,1.54,292.59,0,286.48,0Q175,0,63.48,0a45.76,45.76,0,0,0-8.92.68,37.67,37.67,0,0,0-18.41,9.46c-10,9.57-11,22-11.2,25a47.34,47.34,0,0,0-8.39-.36c-5.74.24-10.71.46-13.74,3.26S-.25,45.38.24,53.85C.86,64.58,1.62,69.9,2.43,79.13Q4.81,106.55,7.33,134c.84,8.41,5.26,12.58,13.49,13H36c-.27,1.15-.42,2-.66,2.79-2.48,8.35-5,16.69-7.46,25.05-1.38,4.76.18,6.78,5.18,6.82,4.12,0,8.24-.11,12.35.05a6.59,6.59,0,0,0,6.22-3.22C58.17,169.1,65,159.9,71.5,150.44c1.87-2.73,3.88-3.51,7-3.51q96.53.13,193.06,0c3.3,0,5.46.81,7.34,3.66,4.12,6.24,8.58,12.26,13,18.29,3.08,4.2,5.53,9.89,9.73,12,4.36,2.14,10.47.79,15.82.82,4.75,0,6.34-2.09,5-6.63-1.9-6.58-3.94-13.12-5.89-19.68-.79-2.66-1.52-5.34-2.37-8.34h13.58c8.23-.45,12.65-4.62,13.49-13q2.5-27.41,4.9-54.83,1.11-12.64,2.19-25.28c.16-1.24,1.61-13.27-4.6-17.16C341.34,35.13,337.84,35,332.25,34.88ZM183.86,8.43q51.06,0,102.12,0c5.38,0,15.19,1,22.48,8.09,5.78,5.63,7.57,12.93,8.22,17.42V49.36l0,0V66.63c0,.17,0,.35,0,.52s0,.31,0,.46V80.44H285.91a.16.16,0,0,1,0,.07h-4.37c-20.24,0-47.7,0-89.4,0H179.69v-54h0V8.43Zm-158.54,130-4.5,0v0c-3.38-.28-4.47-1.25-5-4.53C12,88.16,9.33,55.09,8.77,50.08c-.1-.86-.41-3.42,1.1-5,.93-1,2.47-1.44,4.77-1.46h6.18v.06c3.36.33,4.12,1.71,4.14,6q.18,42.17.34,84.34h0Zm8.15-92.57h0a90.15,90.15,0,0,1,0-9.59c0-.78.1-1.56.17-2.33.9-13.69,12.51-25.29,26.2-25.38,36.4-.25,72.8-.11,109.21-.12a14.62,14.62,0,0,1,1.63.22V34h0V80.57H157.17l-87.89,0H64.63l0-.07H33.47ZM45.26,172.29c-1.2,1.51-5,.94-8.24,1.43l7.91-26.51H63.55C57.31,155.92,51.61,164.37,45.26,172.29Zm257.37-2.95-16-22.33c6.28,0,11.73-.06,17.18.07a2.82,2.82,0,0,1,2,1.63c2.47,7.95,4.81,15.94,7.19,23.92C307.17,174.29,305.87,173.86,302.63,169.34Zm13.93-35.42h0v4.39H33.93v-4.39h0v-2.15h282.6Zm.1-21.15c-.09,6.29-3.66,10-10,10.18-7.73.15-15.46,0-23.2,0H191.83c-.75,0-1.44,0-2.11-.07h-28c-1.12.09-2.24.07-3.37.07H46.46c-9.79,0-12.73-3-12.73-12.71,0-3.37,0-6.74,0-10.1,0-7.73,3.49-11.25,11.13-11.25q28.81,0,57.63,0,28.62,0,57.25,0c.64,0,1.24,0,1.82.07h26.82q.68-.06,1.41-.06,29.19-.06,58.37,0,28.62,0,57.24,0c7.73,0,11.24,3.48,11.27,11.11C316.69,104.29,316.73,108.53,316.66,112.77Zm23.25-62.69c-.56,5-3.27,38.08-7.06,83.88-.52,3.28-1.61,4.25-5,4.53v0l-1.66,0c-.22,0-.45-.19-1.18-.51v-4h0q0-41.59,0-83.17c0-4.13.54-6,2.8-6.75,3.33-.84,8.62-1.67,10.95,1C340.28,46.74,340,49.19,339.91,50.08Z"></path></g></g></svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/sofas" title="">Sofás</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-2">
+<svg class="svg replaced-svg" data-name="Camada 2" id="Camada_2" viewbox="0 0 290.64 434.73" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+      .cls-1 {
+        fill: #606060;
+        stroke-width: 0px;
+      }
+    </style>
+</defs>
+<g data-name="Camada 1" id="Camada_1-2">
+<path class="cls-1" d="M282.19,65.2c-.18-.06-.34-.11-.47-.17.09.04.16.08.22.11-2.17-1.24-183.3-58.27-184.94-58.74C92.05,5,70.07-.21,59.65,0c-6.75.14-27.28.56-33.33,26.91-4.71,20.54,2.5,32.02,7.97,38.42-8.08,9.02-9.84,22.5-5.21,40.1.51,1.95,1.11,4.07,1.78,6.3-.29.92-.45,1.89-.45,2.91,0,3.23,1.6,6.09,4.05,7.85,6.31,17,16.72,36.47,32.9,44.76,2.81,1.44,6.31,2.25,10.5,2.42,5.79,19.34,5.68,39.69-.39,59l-55.78,177.6c-5.99,1.3-11.59,3.28-15.62,6.28-4.93,3.67-6.87,7.41-5.78,11.11,1.72,5.85,10.25,7.64,17.11,8.11,5.92.4,91.54,2.96,130.12,2.96,2.05,0,3.96,0,5.72-.02,34.7-.3,37.83-.96,47.92-10.05,3.79-3.42,7.72-7.44,6.34-11.82-1.41-4.47-7.07-5.18-10.45-5.6-6.79-.84-128.57-3.52-141.54-3.13l53.98-171.87c5.5-17.51,6.43-36.06,2.92-53.87,1.79.03,3.57.06,5.35.06,28.23,0,55.92-4.57,98.01-22.74,25.19-10.87,43.31-28.86,54.07-42.04,12.29-15.05,19.33-29.04,20.41-34.16,1.49-7.13-1.21-11.93-8.05-14.27ZM34.61,28.82c3.36-14.67,11.6-18.86,20.19-19.96-.27,2.96-1.05,7.26-2.21,12.21-6.35,5.14-10.42,19.36-9.99,30.74-1.03,2.32-2.08,4.47-3.15,6.38-4.27-5.55-8.32-14.2-4.84-29.38ZM40.98,115.37c-.21-.62-.42-1.23-.61-1.83.5.13.89.56.89,1.11,0,.28-.11.52-.27.72ZM44,123.48c3.38-1.51,5.75-4.89,5.75-8.83,0-5.33-4.34-9.67-9.67-9.67-.77,0-1.52.1-2.23.27-.19-.69-.37-1.36-.54-1.98-3.96-15.06-2.68-26.11,3.83-32.84,11.15-11.55,21.2-48.32,22.19-61.8,9.91.75,26.61,4.61,31.34,5.96,7.01,2,136.22,42.93,173.57,54.93-13.84,6.71-40.35,22.54-82.53,49.24-3.45,2.18-6.43,4.07-6.89,4.33-22.14,12.45-89.43,45.91-107.59,36.6-12.72-6.52-21.57-22.2-27.24-36.21ZM196,415.67c.77.09,1.4.19,1.92.28-.57.61-1.36,1.39-2.46,2.38-7.76,7-8.39,7.57-42.29,7.86-34.85.31-128.99-2.49-135.19-2.92-4.28-.29-7.58-1.2-9.03-1.95.38-.44.77-2.11,2.21-1.96,12.49,1.27,30.83,1.66,44.01-6.78h.22s.22,0,.22,0c10.8-.41,134.14,2.29,140.4,3.07ZM101.37,229.68l-54.72,174.21c-4.36.02-9.87.22-15.57.86l54.5-173.53c6.37-20.28,6.7-41.61,1.02-61.99,4.12-.51,8.71-1.44,13.78-2.79,7.07,20.36,7.47,42.58.98,63.23ZM281.92,77.73c-1.57,7.48-25.65,51.2-69.52,70.14-44.43,19.18-72.19,22.72-102.04,21.94-.55-1.93-1.15-3.85-1.81-5.76,7.7-2.46,16.31-5.72,25.9-9.8,25.78-10.98,48.31-23.62,48.54-23.74.58-.33,2.52-1.56,7.26-4.56,65.41-41.39,84.46-50.98,88.92-51.74l-.19-1.11c.15.05.3.11.45.16,2.19.75,3.18,1.09,2.47,4.48Z"></path>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/luminarias" title="">Luminárias</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-3">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 90 112.5" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<path d="M84.3,28.7C83,26,77.4,26,73.9,26.3c-0.1-3.7-0.2-13-0.3-15.5c0-0.5,0-1,0-1.4c0-2.3,0-5.1-3.9-5.3C67.6,4,66.2,5,65.2,5.6   C65,5.8,64.6,6,64.5,6.1C61.6,5.2,51,4.9,46.9,4.9c-0.1,0-0.1,0-0.2,0l0,0c-0.1,0-0.4,0-0.7,0s-0.5,0-0.7,0l0,0c-0.1,0-0.1,0-0.2,0   c-4.1,0-14.6,0.3-17.6,1.2C27.4,6,27,5.8,26.8,5.6c-1-0.7-2.4-1.6-4.5-1.6c-3.8,0.2-3.8,3-3.9,5.3c0,0.4,0,0.9,0,1.4   c-0.1,2.6,0.1,12.1,0.2,16.1c-4.9-0.7-7.6-0.3-9.1,0.4c-0.1,0-0.2,0-0.2,0c-0.3,0.1-0.5,0.2-0.6,0.4c-0.5,0.4-0.8,0.8-0.9,1   c-0.6,1.3-0.7,4.9,6.4,31.1c0.3,1,0.5,1.7,0.5,2l0.1,0.6c0.4,1.8,0.9,3.8,4.3,3.8c0.4,0,1.3,0,2.5,0l0,0l0,0c0.2,0,0.4,0,0.6,0   l-1,18.5h2.7l3.7-18.4c0.9,0,1.9,0,2.9,0.1l-0.7,11.1h2l2.6-11c4.3,0.1,8.3,0.2,10.5,0.2c0.1,0,0.2,0,0.3,0l0,0c0,0,0.3,0,0.7,0   s0.6,0,0.7,0l0,0c0.1,0,0.2,0,0.3,0c2.2,0,6.2-0.1,10.5-0.2l2.7,11.2h2l-0.7-11.2c1,0,2,0,2.9-0.1L68,84.8h2.7l-1-18.6   c0.2,0,0.4,0,0.6,0l0,0l0,0c1.2,0,2.1,0,2.5,0c3.4,0,3.9-2,4.3-3.8l0.1-0.6c0.1-0.3,0.3-1,0.5-2C84.9,33.6,84.9,30,84.3,28.7z    M69.6,6.9c1.1,0,1.1,0.1,1.1,2.5c0,0.5,0,1,0,1.5c0.1,3.1,0.3,16.9,0.3,17v1.6l1.6-0.2c1.1-0.1,2.2-0.2,3.3-0.2   c-3.3,2.6-5.7,7.8-7,15.2c0,0.2-0.1,0.4-0.1,0.5c-0.6-0.4-1.3-0.8-2-1.1c1.1-17.1-0.3-31.3-0.7-35.2c0.3-0.2,0.5-0.3,0.7-0.5   C67.6,7.4,68.4,6.9,69.6,6.9z M46,63.9c-3.2-0.1-15.7-0.3-22.6-0.5c0.4-2.3,1-6.8,0.4-13.2c3.1,0.7,12.1,2.6,21.3,2.8   c0.1,0,0.1,0,0.2,0c0.2,0,0.5,0,0.7,0s0.5,0,0.7,0c0.1,0,0.1,0,0.2,0c9.2-0.2,18.2-2.1,21.3-2.8c-0.5,6.3,0,10.8,0.4,13.2   C61.7,63.6,49.2,63.9,46,63.9z M28.7,8.7c2.5-0.6,11.5-0.9,17.3-1c5.8,0.1,14.9,0.4,17.3,1c0.4,3.7,1.7,17.4,0.8,34   c-6.2-1.7-14.7-1.7-18-1.6c-3.3-0.1-11.8-0.2-18,1.6C27,26.1,28.3,12.4,28.7,8.7z M45,43.9c0.1,0,0.3,0.1,0.4,0c0.2,0,0.4,0,0.6,0   c0.2,0,0.4,0,0.6,0c0.1,0,0.3,0,0.4,0c11.7-0.3,18.5,1.6,20.6,3.6c-2.9,0.7-12.4,2.7-21.7,2.8c-9.2-0.1-18.7-2.1-21.7-2.8   C26.5,45.6,33.2,43.6,45,43.9z M19.8,29.9l1.7,0.3v-1.7c0-0.1-0.4-14.5-0.3-17.6c0-0.5,0-1,0-1.5c0-2.4,0.1-2.4,1.1-2.5   c1.1-0.1,2,0.5,2.8,1.1c0.2,0.2,0.5,0.3,0.7,0.5c-0.4,3.9-1.8,18.1-0.7,35.2c-0.8,0.3-1.4,0.7-2,1.1c0-0.2-0.1-0.4-0.1-0.5   c-1.2-7.1-3.4-12.1-6.5-14.8C17.6,29.6,18.7,29.7,19.8,29.9z M17.6,61.8l-0.2-0.6c-0.1-0.3-0.3-1-0.5-2.1   c-6-22.4-6.8-27.9-6.6-29.2c0.5-0.1,1.8-0.1,3.4,0.9c2.1,1.4,5,4.9,6.5,13.9c1.7,9.7,0.8,16.3,0.3,18.7c-0.7,0-1.1,0-1.4,0   C18,63.4,18,63.4,17.6,61.8z M75.1,59.1c-0.3,1.1-0.5,1.8-0.5,2.1l-0.2,0.6c-0.4,1.6-0.4,1.6-1.5,1.6c-0.3,0-0.7,0-1.4,0   C71,61,70,54.5,71.7,44.8c1.6-9,4.4-12.6,6.5-13.9c1.6-1,2.9-1,3.4-0.9C81.8,31.2,81.1,36.7,75.1,59.1z"></path>
+<circle cx="34.5" cy="15.3" r="1"></circle>
+<circle cx="34.5" cy="25.9" r="1"></circle>
+<circle cx="34.5" cy="37.1" r="1"></circle>
+<circle cx="42.4" cy="15.3" r="1"></circle>
+<circle cx="42.4" cy="25.9" r="1"></circle>
+<circle cx="42.4" cy="37.1" r="1"></circle>
+<circle cx="57.5" cy="15.3" r="1"></circle>
+<circle cx="57.5" cy="25.9" r="1"></circle>
+<circle cx="57.5" cy="37.1" r="1"></circle>
+<circle cx="49.6" cy="15.3" r="1"></circle>
+<circle cx="49.6" cy="25.9" r="1"></circle>
+<circle cx="49.6" cy="37.1" r="1"></circle>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/poltronas" title="">Poltronas</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-4">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 38.8 58.6" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path d="M38.8,26.5C38.8,26.4,38.8,26.4,38.8,26.5c0-0.1,0-0.1,0-0.3L34.1,8.2C32.8,3.4,28.6,0,23.6,0h-8.5c-5,0-9.3,3.4-10.5,8.2  L0,26.3c0,0,0,0,0,0.1v0.1c0,2.9,2.3,5.3,5.3,5.3h6L4.1,57.6c-0.1,0.3,0,0.6,0.1,0.7c0.1,0.1,0.4,0.3,0.7,0.3h3.4  c0.4,0,0.7-0.3,0.9-0.6l2.9-10.8l7.3-5l7.3,5l2.9,10.8c0.1,0.4,0.4,0.6,0.9,0.6H34c0.3,0,0.6-0.1,0.7-0.3c0.1-0.1,0.3-0.4,0.1-0.7  l-7.1-25.8h6C36.5,31.7,38.8,29.3,38.8,26.5z M6.4,8.6c1-4.1,4.7-6.9,8.8-6.9h8.5c4.1,0,7.7,2.8,8.8,6.9l4.4,16.9H1.9L6.4,8.6z   M1.8,27.4h35.2c-0.4,1.5-1.8,2.6-3.4,2.6h-7.1H23h-7.4h-3.4H5.1C3.5,30,2.2,28.9,1.8,27.4z M22.5,31.7l1.5,5.4l-4.5,3.1L14.9,37  l1.5-5.4H22.5z M7.6,56.9H6l7-25.1h1.6L7.6,56.9z M12.8,44.6l1.6-5.7l3.5,2.3L12.8,44.6z M21,41.3l3.5-2.3l1.6,5.7L21,41.3z   M32.8,56.9h-1.6l-7-25.1h1.6L32.8,56.9z"></path>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/cadeiras" title="">Cadeiras</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-5">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 70 102.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<path d="M53.9,96c-0.4,0-0.7-0.3-0.8-0.7l-8.3-55.2c-0.1-0.4,0.2-0.8,0.7-0.9c0.4-0.1,0.8,0.2,0.9,0.7l8.3,55.2   c0.1,0.4-0.2,0.8-0.7,0.9c0,0,0,0,0,0L53.9,96z"></path>
+<path d="M47.9,84.2c-0.4,0-0.7-0.3-0.8-0.7l-6-43.1c-0.1-0.4,0.2-0.8,0.7-0.9c0,0,0,0,0,0c0.4-0.1,0.8,0.2,0.9,0.7c0,0,0,0,0,0   l6,43.1c0.1,0.4-0.2,0.8-0.7,0.9L47.9,84.2z"></path>
+<path d="M16.1,96L16.1,96c-0.5-0.1-0.8-0.5-0.7-0.9c0,0,0,0,0,0l8.3-55.2c0.1-0.4,0.5-0.7,0.9-0.7c0.4,0.1,0.7,0.5,0.7,0.9   l-8.3,55.2C16.8,95.7,16.5,96,16.1,96z"></path>
+<path d="M22.1,84.2H22c-0.4-0.1-0.7-0.5-0.7-0.9l6-43.1c0.1-0.4,0.5-0.7,0.9-0.7c0,0,0,0,0,0c0.4,0.1,0.7,0.5,0.7,0.9c0,0,0,0,0,0   l-6,43.1C22.8,83.9,22.5,84.2,22.1,84.2z"></path>
+<path d="M50.6,71.8H19.4c-0.4,0-0.8-0.5-0.7-0.9c0-0.4,0.3-0.7,0.7-0.7h31.2c0.4,0,0.8,0.5,0.7,0.9C51.3,71.4,51,71.7,50.6,71.8z"></path>
+<path d="M45.9,64H24.1c-0.4,0-0.8-0.4-0.8-0.8s0.4-0.8,0.8-0.8c0,0,0,0,0,0h21.8c0.4,0,0.8,0.4,0.8,0.8S46.3,64,45.9,64   C45.9,64,45.9,64,45.9,64z"></path>
+<path d="M50.6,71.8c-0.3,0-0.5-0.1-0.7-0.4l-4.7-7.7c-0.2-0.4-0.1-0.9,0.3-1.1s0.9-0.1,1.1,0.3l0,0l4.7,7.8   c0.2,0.4,0.1,0.9-0.3,1.1c0,0,0,0,0,0C50.9,71.7,50.8,71.8,50.6,71.8z"></path>
+<path d="M19.4,71.8c-0.1,0-0.3,0-0.4-0.1c-0.4-0.2-0.5-0.7-0.3-1.1c0,0,0,0,0,0l4.7-7.8c0.2-0.4,0.7-0.5,1.1-0.3s0.5,0.7,0.3,1.1   l0,0l-4.7,7.7C19.9,71.6,19.7,71.8,19.4,71.8z"></path>
+<path d="M33.5,41.1c-1.4,0-2.7-0.1-8.8-0.7c-3.8-0.4-6-1.3-6.9-3c-1-2,0-4.4,1.1-6.5c1.2-2.3,1.5-4,1.9-6.8   c0.3-2.1,0.7-4.7,1.6-8.4c2.1-8.8,4.2-10.1,6.9-11C31.1,4.2,33,3.9,34.8,4h0.8c2.2-0.1,4.5,0.1,6.6,0.7c2.7,1,4.8,2.3,6.9,11.1   c0.9,3.8,1.3,6.3,1.6,8.4c0.4,2.8,0.7,4.5,1.9,6.8c1.2,2.1,2.2,4.5,1.1,6.5c-0.9,1.7-3.2,2.7-6.9,3c-3.5,0.4-7.1,0.6-10.7,0.7   L33.5,41.1L33.5,41.1z M34.2,5.6c-1.5,0-3,0.2-4.4,0.6c-1.9,0.7-3.8,1.3-5.9,9.9c-0.9,3.7-1.3,6.2-1.6,8.3   c-0.4,2.9-0.7,4.8-2.1,7.3s-1.7,3.9-1.1,5s2.5,1.9,5.7,2.2c7.3,0.7,7.7,0.7,9.6,0.7h1.9c3.5,0,7-0.2,10.5-0.7c3.1-0.3,5-1,5.7-2.2   s0.2-2.5-1.1-5c-1.2-2.3-1.9-4.8-2.1-7.3c-0.3-2-0.7-4.6-1.6-8.3c-2.1-8.6-4-9.3-5.9-9.9c-2-0.5-4-0.7-6.1-0.6L34.2,5.6L34.2,5.6z"></path>
+<path d="M35.5,35.9H35c-4.1-0.1-8.1-1.4-11.4-3.8c-0.1-0.1-0.2-0.3-0.1-0.4c0,0,0,0,0,0c0.1-0.1,0.3-0.2,0.5-0.1   c3.2,2.3,7.1,3.6,11,3.7c4.1,0,8.2-1.3,11.6-3.6l0.1-0.1c0.1-0.1,0.3-0.1,0.4,0.1c0,0,0,0,0,0c0.1,0.2,0,0.4-0.1,0.4l-0.1,0.1   C43.5,34.5,39.5,35.8,35.5,35.9z"></path>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/banquetas" title="">Banquetas</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-6">
+<svg class="svg replaced-svg" viewbox="0 0 80 49.01" xmlns="http://www.w3.org/2000/svg"><title>Ativo 5</title><g data-name="Camada 2" id="Camada_2"><g data-name="Camada 1" id="Camada_1-2"><path d="M80,13a1,1,0,0,0-1-1H61V11a4.92,4.92,0,0,0,0-9.61V1a1,1,0,0,0-1-1H52a1,1,0,0,0-1,1V12H36V8.29A7.31,7.31,0,0,0,28.71,1H17.29A7.31,7.31,0,0,0,10,8.29V12H1a1,1,0,0,0-1,1V47a1,1,0,0,0,2,0V18h8.79a7.29,7.29,0,0,0,6.5,4H22v6H14a4,4,0,0,0,0,8h8v7.35l-8.41,3.74a1,1,0,1,0,.81,1.83h0L23,45.09l8.59,3.82a1,1,0,1,0,.81-1.83L24,43.35V36h8a4,4,0,0,0,0-8H24V22h4.71a7.29,7.29,0,0,0,6.5-4H56V47a1,1,0,0,0,1,1H79a1,1,0,0,0,1-1V18a1,1,0,0,0-.15-.5A1,1,0,0,0,80,17ZM34,32a2,2,0,0,1-2,2H14a2,2,0,0,1,0-4H32A2,2,0,0,1,34,32Zm24-4H78v8H58ZM62.88,6.19A3,3,0,0,1,61,8.91V3.46A3,3,0,0,1,62.88,6.19ZM53,2h6V12H53ZM2,16V14h8v.71A7,7,0,0,0,10.12,16Zm26.71,4H17.29A5.3,5.3,0,0,1,12,14.71V8.29A5.3,5.3,0,0,1,17.29,3H28.71A5.3,5.3,0,0,1,34,8.29v6.42A5.3,5.3,0,0,1,28.71,20Zm7.17-4A7,7,0,0,0,36,14.71V14H78v2ZM78,18v8H58V18ZM58,46V38H78v8Z"></path><path d="M66,23h4a1,1,0,0,0,0-2H66a1,1,0,0,0,0,2Z"></path><path d="M70,31H66a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"></path><path d="M70,41H66a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"></path></g></g></svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/office" title="">Office</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="1.4s" style="visibility: visible; animation-delay: 1.4s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-7">
+<svg class="svg replaced-svg" id="Camada_1" version="1.1" viewbox="0 0 100 91.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path d="M93.6,21.2H6.4c-0.8,0-1.4,0.6-1.4,1.4v9.4c0,0.8,0.6,1.4,1.4,1.4h9.6L8.2,77.2c-0.1,0.4,0,0.8,0.3,1.1  c0.3,0.3,0.6,0.5,1,0.5h4c0.6,0,1.1-0.4,1.3-1l10.4-35.6h47.1l10.4,35.6c0.2,0.6,0.7,1,1.3,1h4c0.4,0,0.8-0.2,1-0.5  c0.3-0.3,0.4-0.7,0.3-1.1l-7.7-43.9h11.9c0.8,0,1.4-0.6,1.4-1.4v-9.4C95,21.8,94.4,21.2,93.6,21.2z M12.5,76.1h-1.4l7.5-42.8h6.4  L12.5,76.1z M26.1,39.5l1.8-6.2h41.8l1.8,6.2H26.1z M86.5,76.1h-1.4L72.6,33.3h6.4L86.5,76.1z M92.3,30.5H80.1h-9.3H26.9h-9.3H7.7  v-6.6h84.5L92.3,30.5L92.3,30.5z"></path>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/mesasdejantar" title="">Mesas de Jantar</a>
+</div>
+</li>
+<li class="wow fadeInDown" data-wow-delay="1.6s" style="visibility: visible; animation-delay: 1.6s; animation-name: fadeInDown;">
+<div class="opcoes-produtos opcoes-produto-8">
+<svg class="svg replaced-svg" id="Camada_1" style="enable-background:new 0 0 100 89.9;" version="1.1" viewbox="0 0 100 89.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<g>
+<g>
+<g>
+<g>
+<circle class="st0" cx="78.8" cy="37.1" r="1.1"></circle>
+<path class="st0" d="M87.4,34.3H12.6V40h74.7L87.4,34.3L87.4,34.3z M78.8,39.9c-1.5,0-2.7-1.2-2.7-2.7c0-1.5,1.2-2.7,2.7-2.7      s2.7,1.2,2.7,2.7C81.6,38.7,80.4,39.9,78.8,39.9z"></path>
+<path class="st0" d="M20.5,44.6h12.1c0,0,0,0,0,0h34.7c0,0,0,0,0,0h12.1c0,0,0,0,0,0h13.8V29.7H6.7v14.9L20.5,44.6      C20.5,44.6,20.5,44.6,20.5,44.6z M11,40.9v-7.4c0-0.5,0.4-0.8,0.8-0.8h76.4c0.5,0,0.8,0.4,0.8,0.8v7.4c0,0.5-0.4,0.8-0.8,0.8      H11.8C11.3,41.7,11,41.3,11,40.9z"></path>
+<polygon class="st0" points="79,46.3 69.2,46.3 71.9,49.2 80.7,49.2"></polygon>
+<polygon class="st0" points="73.5,50.9 91.2,70.3 92.7,70.3 81.6,50.9"></polygon>
+<polygon class="st0" points="18.4,50.9 7.3,70.3 8.8,70.3 26.5,50.9"></polygon>
+<polygon class="st0" points="30.7,46.3 21,46.3 19.3,49.2 28.1,49.2"></polygon>
+<path d="M94.9,70.7l-12-21.1c0,0,0,0,0,0l-1.9-3.4h13.2c0.5,0,0.8-0.4,0.8-0.8V28.8c0-0.5-0.4-0.8-0.8-0.8H5.8      C5.4,28,5,28.4,5,28.8v16.6c0,0.5,0.4,0.8,0.8,0.8h13.2l-1.9,3.4c0,0,0,0,0,0l-12,21.1C5,71,5,71.3,5.1,71.6      C5.3,71.8,5.5,72,5.8,72h3.3c0.2,0,0.5-0.1,0.6-0.3L33,46.3h34l23.2,25.4c0.2,0.2,0.4,0.3,0.6,0.3h3.3c0.3,0,0.6-0.2,0.7-0.4      C95,71.3,95,71,94.9,70.7z M69.2,46.3H79l1.7,2.9h-8.7L69.2,46.3z M6.7,29.7h86.6v14.9H79.5c0,0,0,0,0,0H67.3c0,0,0,0,0,0H32.7      c0,0,0,0,0,0H20.5c0,0,0,0,0,0H6.7V29.7z M21,46.3h9.8l-2.7,2.9h-8.7L21,46.3z M8.8,70.3H7.3l11.1-19.4h8.2L8.8,70.3z       M91.2,70.3L73.5,50.9h8.2l11.1,19.4H91.2z"></path>
+<path d="M88.2,41.7c0.5,0,0.8-0.4,0.8-0.8v-7.4c0-0.5-0.4-0.8-0.8-0.8H11.8c-0.5,0-0.8,0.4-0.8,0.8v7.4c0,0.5,0.4,0.8,0.8,0.8      H88.2z M12.6,34.3h74.7V40H12.6V34.3z"></path>
+<path d="M78.8,34.4c-1.5,0-2.7,1.2-2.7,2.7s1.2,2.7,2.7,2.7s2.7-1.2,2.7-2.7C81.6,35.6,80.4,34.4,78.8,34.4z M78.8,38.2      c-0.6,0-1.1-0.5-1.1-1.1s0.5-1.1,1.1-1.1c0.6,0,1.1,0.5,1.1,1.1C79.9,37.7,79.4,38.2,78.8,38.2z"></path>
+</g>
+</g>
+</g>
+</g>
+</svg>
+<a alt="" href="https://www.admmobiliario.com.br/pt/complementos" title="">Complementos</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<footer class="wow fadeInUp" data-wow-delay=".2s" id="footer" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+<div class="container">
+<div class="row">
+<div class="col-md-3 logo-redes-container wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+<svg class="logo-footer" fill="none" height="95" viewbox="0 0 307 95" width="307" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1903_98)">
+<path d="M17.25 74.3438H28.75C33.98 74.3438 36.56 74.9738 38.12 75.9838C39.84 77.1238 40.78 78.8238 40.78 81.2838C40.78 83.9438 39.75 85.5838 38.14 86.6238C36.37 87.7638 33.9 88.1438 29.46 88.1438H17.25V74.3438ZM19.28 86.4338H29.4C33.21 86.4338 35.32 86.1038 36.66 85.3138C38 84.5238 38.71 83.2838 38.71 81.2738C38.71 79.4038 38.02 78.1238 36.64 77.2738C35.32 76.4638 32.87 76.0338 28.69 76.0338H19.28V86.4238V86.4338Z" fill="black"></path>
+<path d="M45.5499 83.5144V83.5344C45.5899 84.6144 46.0799 85.3444 46.8899 85.8444C47.8799 86.4744 49.6499 86.8344 52.8799 86.8344C56.4499 86.8344 58.7999 86.2244 60.2699 85.8044L60.4499 87.3444C59.3699 87.6844 56.6599 88.4244 52.8799 88.4244C49.5099 88.4244 47.3999 87.9744 45.9599 87.2044C44.6199 86.4944 43.6499 85.1544 43.6499 82.7244C43.6499 80.7344 44.3999 79.3144 45.6799 78.4444C47.1599 77.4344 49.2299 76.9844 52.3299 76.9844C55.4299 76.9844 57.1999 77.3744 58.2499 77.7944C59.8699 78.4444 60.7199 79.6444 60.7199 81.2644C60.7199 82.0944 60.5399 83.2544 60.4799 83.5144H45.5499ZM45.5499 82.0544H58.7599C58.7599 82.0544 58.8199 81.6944 58.8199 81.2644C58.8199 80.4144 58.3899 79.6844 57.2599 79.1944C56.3899 78.8344 54.8699 78.5644 52.3299 78.5644C49.6099 78.5644 47.8499 78.9944 46.8299 79.6844C45.9199 80.2944 45.5899 81.1644 45.5499 82.0544Z" fill="black"></path>
+<path d="M64.8099 86.1144C66.1899 86.3744 69.2299 86.8444 72.4399 86.8444C74.9399 86.8444 76.4599 86.7044 77.3699 86.3544C78.2199 86.0344 78.5499 85.5644 78.5499 84.7344C78.5499 83.9644 78.1199 83.5144 76.8099 83.3944C75.7799 83.2944 74.2899 83.2744 72.3499 83.2744C68.4499 83.2744 66.6899 83.2144 65.6099 82.7444C64.6799 82.3344 64.1499 81.5444 64.1499 80.4944C64.1499 79.2944 64.7399 78.2644 66.3199 77.6944C67.4199 77.3044 69.1599 76.9844 72.3299 76.9844C76.2699 76.9844 79.3699 77.5744 79.3699 77.5744L79.1099 79.1344C79.1099 79.1344 75.7599 78.5644 72.3299 78.5644C69.6699 78.5644 67.8899 78.8244 67.1399 79.0944C66.3499 79.3744 66.0599 79.8444 66.0599 80.4544C66.0599 81.0244 66.3599 81.4044 66.9699 81.5944C67.6999 81.8144 69.0199 81.8144 72.3499 81.8144C75.2899 81.8144 76.9099 81.8144 78.1299 82.0744C79.8299 82.4344 80.4599 83.4544 80.4599 84.7344C80.4599 86.0144 79.9899 86.9044 78.9399 87.4744C77.6599 88.1644 74.7199 88.4244 72.4499 88.4244C68.7399 88.4244 65.8599 87.9544 64.6199 87.6744L64.8199 86.1144H64.8099Z" fill="black"></path>
+<path d="M84.8499 72.5859C85.6799 72.5859 86.0099 73.0359 86.0099 73.7259C86.0099 74.4159 85.6899 74.8659 84.8499 74.8659C84.0099 74.8659 83.6899 74.4159 83.6899 73.7259C83.6899 73.0359 84.0099 72.5859 84.8499 72.5859ZM85.7999 88.1459H83.8899V77.1859H85.7999V88.1459Z" fill="black"></path>
+<path d="M92.3801 83.9422C91.8501 84.5322 91.4101 85.1622 91.4101 85.7922C91.4101 86.5622 91.9001 86.8922 93.5601 86.8922H102.24C105.71 86.8922 107.21 87.9722 107.21 90.0122C107.21 92.0522 105.95 94.0322 98.1401 94.0322C91.1801 94.0322 89.6201 92.8322 89.6201 90.7822C89.6201 89.8122 90.1901 88.9122 90.9601 88.1022V88.0622C90.0501 87.6522 89.6201 86.9422 89.6201 85.9522C89.6201 85.0822 90.0901 84.1022 91.1001 83.1122C90.5501 82.5622 90.3301 81.8522 90.3301 80.8022C90.3301 79.5222 90.9601 78.5322 92.0701 77.9022C93.2301 77.2522 95.0301 76.9922 97.8501 76.9922C99.0701 76.9922 100.14 77.0722 101.02 77.1922H106.8V78.6522H105.44C104.77 78.6522 104.32 78.5922 104.32 78.5922L104.3 78.6522C105.01 79.0622 105.38 79.8322 105.38 80.8622C105.38 82.2022 104.81 83.1722 103.59 83.8022C102.37 84.4322 100.49 84.7322 97.8501 84.7322C95.4001 84.7322 93.5901 84.4722 92.3701 83.9422H92.3801ZM92.6601 88.4222C92.0901 88.9922 91.5601 89.7822 91.5601 90.5322C91.5601 91.8122 92.6801 92.4422 98.1301 92.4422C104.32 92.4422 105.25 91.4122 105.25 90.1322C105.25 89.1222 104.62 88.4722 102.67 88.4722H93.5401C93.2201 88.4722 92.9101 88.4522 92.6501 88.4322L92.6601 88.4222ZM93.2701 82.5422C94.1401 82.9522 95.5001 83.1522 97.8501 83.1522C100.2 83.1522 101.58 82.9322 102.44 82.5422C103.17 82.2122 103.47 81.6122 103.47 80.8222C103.47 80.0322 103.17 79.4622 102.42 79.1422C101.55 78.7522 99.9701 78.5722 97.8501 78.5722C95.7301 78.5722 94.1601 78.7322 93.2801 79.1422C92.5301 79.4822 92.2301 80.1322 92.2301 80.8222C92.2301 81.5922 92.5101 82.2022 93.2701 82.5422Z" fill="black"></path>
+<path d="M125.96 88.1466V82.4666C125.96 79.9266 124.52 78.5666 119.81 78.5666C116.89 78.5666 113.68 79.4166 112.36 80.1066V88.1366H110.45V77.1766H111.95C112.01 77.6866 112.09 78.1066 112.15 78.5966H112.21C113.75 77.9466 116.75 76.9766 119.8 76.9766C126.09 76.9766 127.86 79.1466 127.86 82.3766V88.1366H125.95L125.96 88.1466Z" fill="black"></path>
+<path d="M163.85 76.9638H163.81L153.54 86.6638H153.42L143.15 76.9638H143.11V88.1438H141.08V74.3438H142.8L153.45 84.3638H153.49L164.1 74.3438H165.87V88.1438H163.84V76.9638H163.85Z" fill="black"></path>
+<path d="M171.44 86.8444C170.18 86.0144 169.37 84.7544 169.37 82.6644C169.37 80.6944 170.1 79.3744 171.42 78.5044C172.9 77.5344 175.46 76.9844 178.54 76.9844C181.62 76.9844 184.18 77.5344 185.66 78.5044C186.98 79.3744 187.71 80.6944 187.71 82.6644C187.71 84.7544 186.9 86.0144 185.64 86.8444C184.26 87.7544 181.85 88.3444 178.54 88.3444C175.23 88.3444 172.82 87.7544 171.44 86.8444ZM184.26 85.6244C185.15 85.0744 185.76 84.1444 185.76 82.6644C185.76 81.1844 185.25 80.2744 184.3 79.6844C183.22 79.0144 181.05 78.5644 178.54 78.5644C176.03 78.5644 173.85 79.0144 172.78 79.6844C171.83 80.2744 171.32 81.1444 171.32 82.6644C171.32 84.1844 171.93 85.0744 172.82 85.6244C173.9 86.2944 176.01 86.7644 178.54 86.7644C181.07 86.7644 183.19 86.2944 184.26 85.6244Z" fill="black"></path>
+<path d="M190.75 88.1419V72.9219H192.66V78.1119H192.7C193.73 77.7919 196.86 76.9719 200.43 76.9719C207.19 76.9719 209.05 79.3619 209.05 82.6319C209.05 86.2219 206.57 88.3319 200.51 88.3319C197.02 88.3319 193.61 87.2519 192.54 86.8719H192.46L192.26 88.1319H190.76L190.75 88.1419ZM192.66 79.7819V85.4019C193.53 85.7019 196.96 86.7219 200.51 86.7619C205.79 86.7619 207.1 85.1419 207.1 82.6419C207.1 80.4519 206.13 78.5619 200.42 78.5619C196.38 78.5619 193.28 79.5319 192.65 79.7819H192.66Z" fill="black"></path>
+<path d="M213.07 72.5859C213.9 72.5859 214.23 73.0359 214.23 73.7259C214.23 74.4159 213.91 74.8659 213.07 74.8659C212.23 74.8659 211.91 74.4159 211.91 73.7259C211.91 73.0359 212.23 72.5859 213.07 72.5859ZM214.02 88.1459H212.11V77.1859H214.02V88.1459Z" fill="black"></path>
+<path d="M220.34 88.1419H218.43V72.9219H220.34V88.1419Z" fill="black"></path>
+<path d="M225.89 72.5859C226.72 72.5859 227.05 73.0359 227.05 73.7259C227.05 74.4159 226.73 74.8659 225.89 74.8659C225.05 74.8659 224.73 74.4159 224.73 73.7259C224.73 73.0359 225.05 72.5859 225.89 72.5859ZM226.84 88.1459H224.93V77.1859H226.84V88.1459Z" fill="black"></path>
+<path d="M245.63 88.1434L245.43 86.9234H245.39C243.71 87.5134 240.74 88.4234 236.93 88.4234C234.92 88.4234 233.14 88.1834 232.14 87.6334C231.19 87.1034 230.66 86.2534 230.66 85.0734C230.66 84.0234 231.17 83.1034 232.16 82.5534C232.89 82.1434 234.51 81.7234 237.48 81.7234C240.6 81.7234 245.17 82.1534 245.17 82.1534H245.23V81.2834C245.23 79.5134 242.76 78.5634 237.89 78.5634C234.58 78.5634 232.17 79.1334 231.84 79.1934L231.58 77.6534C231.78 77.6134 234.34 76.9834 237.89 76.9834C243.84 76.9834 247.14 78.5634 247.14 81.2234V88.1434H245.64H245.63ZM245.22 85.4634V83.5534C245.22 83.5534 241.1 83.1934 237.47 83.1934C234.97 83.1934 233.68 83.5134 233.13 83.9234C232.74 84.2034 232.56 84.5934 232.56 85.0834C232.56 85.5734 232.76 86.0334 233.19 86.2834C233.68 86.5634 234.75 86.8534 236.96 86.8534C240.59 86.8534 243.68 86.0034 245.22 85.4734V85.4634ZM242.6 72.5234H245.3V72.9734L239.11 75.3634H236.92V75.0834L242.6 72.5234Z" fill="black"></path>
+<path d="M252.67 77.1866L252.87 78.6466H252.93L253.03 78.3166C253.78 77.8666 255.91 76.9766 259.38 76.9766C261.35 76.9766 262.63 77.2166 262.89 77.2566L262.73 78.8766C262.47 78.8166 261.03 78.5466 259.34 78.5466C255.4 78.5466 253.07 79.7666 253.07 79.7666V88.1266H251.16V77.1666H252.66L252.67 77.1866Z" fill="black"></path>
+<path d="M267.06 72.5859C267.89 72.5859 268.22 73.0359 268.22 73.7259C268.22 74.4159 267.9 74.8659 267.06 74.8659C266.22 74.8659 265.9 74.4159 265.9 73.7259C265.9 73.0359 266.22 72.5859 267.06 72.5859ZM268.01 88.1459H266.1V77.1859H268.01V88.1459Z" fill="black"></path>
+<path d="M273.71 86.8444C272.45 86.0144 271.64 84.7544 271.64 82.6644C271.64 80.6944 272.37 79.3744 273.69 78.5044C275.17 77.5344 277.73 76.9844 280.81 76.9844C283.89 76.9844 286.45 77.5344 287.93 78.5044C289.25 79.3744 289.98 80.6944 289.98 82.6644C289.98 84.7544 289.17 86.0144 287.91 86.8444C286.53 87.7544 284.12 88.3444 280.81 88.3444C277.5 88.3444 275.09 87.7544 273.71 86.8444ZM286.53 85.6244C287.42 85.0744 288.03 84.1444 288.03 82.6644C288.03 81.1844 287.52 80.2744 286.57 79.6844C285.49 79.0144 283.32 78.5644 280.81 78.5644C278.3 78.5644 276.12 79.0144 275.05 79.6844C274.1 80.2744 273.59 81.1444 273.59 82.6644C273.59 84.1844 274.2 85.0744 275.09 85.6244C276.17 86.2944 278.28 86.7644 280.81 86.7644C283.34 86.7644 285.46 86.2944 286.53 85.6244Z" fill="black"></path>
+<path d="M197.87 0H103.23V39.25L120.8 58.89H173.45C192.86 58.89 203.59 57.17 211.26 52.4C218.01 48.15 224.43 40.35 224.43 29.64L197.87 0ZM199.03 41.2C194.43 43.5 186.77 44.59 172.72 44.59H118.87V14.52H169.32C184.56 14.52 194.04 15.72 199.15 18.36C204 20.91 207.48 24.09 207.48 29.88C207.48 36.18 203.72 38.81 199.04 41.2H199.03Z" fill="black"></path>
+<path d="M55.99 17.5969C56.06 17.6669 42.27 32.9069 42.27 32.9069L80.36 44.7369C80.36 44.7369 55.9 17.5069 55.99 17.5869V17.5969ZM67.86 52.8769L43.08 47.2469C36.09 45.6569 29.07 47.7069 24.29 53.0469L19.08 58.8869H0L52.76 0.046875H59.36L112.11 58.8769H92.9L67.87 52.8669" fill="black"></path>
+<path d="M268.28 48.06L290.77 22.85V58.92L306.95 58.88L306.97 0H299.68C294.84 0 290.23 2.06 286.99 5.66L258.56 37.31L229.75 5.59C226.52 2.03 221.93 0 217.13 0L206.02 0.03L248.86 48.06H268.28Z" fill="black"></path>
+</g>
+<defs>
+<clippath id="clip0_1903_98">
+<rect fill="white" height="94.02" width="306.97"></rect>
+</clippath>
+</defs>
+</svg>
+<ul class="footer-redes">
+<li class="icon-footer-instagram">
+<a alt="" href="https://www.instagram.com/admdesignmobiliario/" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-instagram fa-w-14" data-icon="instagram" data-prefix="fab" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li class="icon-footer-facebook">
+<a alt="" href="https://www.facebook.com/admdesignmobiliario" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-facebook-square fa-w-14" data-icon="facebook-square" data-prefix="fab" focusable="false" role="img" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li class="icon-footer-mapa">
+<a alt="" href="https://www.google.com.br/maps/place/R.+São+Gabriel,+232+-+Guarani,+Garibaldi+-+RS,+95720-000/@-29.2437198,-51.5423138,17z/data=!3m1!4b1!4m5!3m4!1s0x951c3d61e87b6d3d:0x2b6d740f23e73f08!8m2!3d-29.2437198!4d-51.5401251" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-map-marker-alt fa-w-12" data-icon="map-marker-alt" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li class="icon-footer-pinterest">
+<a alt="" href="https://br.pinterest.com/admoveisedesign/" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-pinterest fa-w-16" data-icon="pinterest" data-prefix="fab" focusable="false" role="img" viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" fill="currentColor">
+</path>
+</svg>
+</a>
+</li>
+<li class="icon-footer-3d">
+<a alt="" href="https://3dwarehouse.sketchup.com/by/admmoveis" target="_blank" title="">
+<svg id="Layer_1" version="1.1" viewbox="0 0 656.6 566.9" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<path class="st0" d="M656.6,247.2L502.1,32.8l-64.3,63.6l-34.8-54l-13.3,3l-14-45.8L90.2,71.3l33.3,128.7L0,168.9L84.3,438
+        l109.4,13.9l43.7,115.5l278-99.1l8.9-42.9l104.3-39.2l-79.1-37.7L656.6,247.2z M503.6,62.9l131.1,182.6l-105.9,89.6L508,299.3
+        l12.9-79.2l-67.5-107.6L503.6,62.9z M522,340.3v5l-22.5,7.1l5.8-38.7L522,340.3z M400.2,55l103.4,164.8l-75.1,21.9L358.1,118
+        l-167.4,45.5L171,115L400.2,55z M175.1,276.4l-21.5-53.7c0,0,1.6-7.2,7.7-8.6c6.1-1.4,9.6-1.9,9.6-1.9L175.1,276.4z M119,82.9
+        l247.3-61.7l7.4,27.4l-217.4,55.3l12.7,97.7l-15.4,6.8L119,82.9z M101.2,413.6L32.6,194.9l109.8,29.3l79.1,204.9L101.2,413.6z
+        M201.9,228.5l153.5-42.7l62.1,116.1l-77.6,22.6l-31.4-63.9L224.9,285L201.9,228.5z M233.5,343.5l72.5-22l28.2,58.5l-76.5,23.2
+        L233.5,343.5z M574.9,380.8l-299.4,99.3l-28-37.5l270.7-88.3L574.9,380.8z"></path>
+</svg>
+</a>
+</li>
+<li class="icon-footer-casoca">
+<a alt="" href="https://casoca.com.br/adm-moveis.html" target="_blank" title="">
+<img alt="" src="assets/1708130ca528eb07_casoca.jpg"/>
+</a>
+</li>
+</ul>
+<ul class="footer-redes-nome">
+<li class="texto-footer-instagram">
+                        Ver Instagram
+                    </li>
+<li class="texto-footer-facebook">
+                        Ver Facebook
+                    </li>
+<li class="texto-footer-mapa">
+                        Abrir Mapa                    </li>
+<li class="texto-footer-pinterest">
+                        Ver Pinterest
+                    </li>
+<li class="texto-footer-3d">
+                        Ver 3D Warehouse
+                    </li>
+<li class="texto-footer-casoca">
+                        Ver Casoca
+                    </li>
+</ul>
+</div>
+<div class="col-md-3 row-contatos row-contatos-mapa wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+<h4>Conheça nosso showroom</h4>
+<a class="link-contato" href="https://goo.gl/maps/jH5Zv3Wafp5uu4gp7" target="_blank">
+<p>Estrada São Gabriel, 232
+                        <br/>Bairro Guarani - Garibaldi - RS
+                    </p>
+</a>
+<a alt="" class="link-contatar" href="https://goo.gl/maps/jH5Zv3Wafp5uu4gp7" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-map-marker-alt fa-w-12" data-icon="map-marker-alt" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" fill="currentColor">
+</path>
+</svg>
+                    Ver no Mapa                </a>
+</div>
+<div class="col-md-3 row-contatos wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+<h4>Ou nos envie um E-mail:</h4>
+<a class="link-contato" href="mailto:comercial@admmobiliario.com.br" target="_blank">
+<p>comercial@admmobiliario.com.br</p>
+</a>
+<a alt="" class="link-contatar" href="mailto:comercial@admmobiliario.com.br" target="_blank" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-envelope fa-w-16" data-icon="envelope" data-prefix="far" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" fill="currentColor">
+</path>
+</svg>
+                    Enviar E-mail                </a>
+</div>
+<div class="col-md-3 row-contatos row-contatos-telefone wow fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+<h4>E caso preferir, entre em contato pelo fone:</h4>
+<a class="link-contato" href="tel:+555432627245">
+<p>(54) 3462-7245</p>
+</a>
+<a alt="" class="link-contatar" href="tel:+55(54)3262-7245" title="">
+<svg aria-hidden="true" class="svg-inline--fa fa-phone-alt fa-w-16" data-icon="phone-alt" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" fill="currentColor">
+</path>
+</svg>
+                    Ligar agora                </a>
+</div>
+<div class="copyright wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+<div class="titulo">
+<h3>Uma cocriação:</h3>
+</div>
+<div class="flowww">
+<a href="https://flowww.digital" target="_blank">
+<svg class="logo-flowww animate" viewbox="0 0 469.87 149.57">
+<defs></defs>
+<path class="a" d="M.5 37.64a2.37 2.37 0 012.16-2.32l47-3.48A2.07 2.07 0 0151.81 34v13.63a2.39 2.39 0 01-2.16 2.46l-31.44 1.33v14.76l25.88-.28a2.31 2.31 0 012.15 2.32v13.46A2.27 2.27 0 0144.09 84l-25.88-.54v31.12a2.07 2.07 0 01-2.16 2.06l-13.39-1.07a2.37 2.37 0 01-2.16-2.32zM55.87 33.61A2.48 2.48 0 0158 31.07l13.32-1a2.19 2.19 0 012.13 2.3V102l26.64 1.23a2.52 2.52 0 012.12 2.68v14.79a2.17 2.17 0 01-2.12 2.41L58 119.84a2.48 2.48 0 01-2.12-2.55zM138.16 25.48c21.51-1.65 38.72 20.91 38.72 50.56s-17.21 51.84-38.72 50.11-38.62-24-38.62-50.28 17.1-48.75 38.62-50.39zm0 78.3c11.83.54 21.51-12 21.51-27.78S150 47.36 138.16 47.85 116.75 61 116.75 75.91s9.68 27.34 21.41 27.87zM172.61 26.17c-.46-2.05.45-3.6 2-3.71l13.25-.93c.91-.07 1.81.94 2 2l9.74 51.68h.45l17.55-54.54a2.48 2.48 0 011.93-1.88l2-.15a1.88 1.88 0 011.92 1.61L241 75.32h.45L251.3 19c.23-1.17 1.13-2.39 2-2.45l13.25-.93c1.58-.11 2.49 1.51 2 3.9l-21.33 112.32c-.22 1.3-1.13 2.22-2 2.15l-1.81-.14c-.8-.06-1.59-.94-1.93-1.94l-20.75-66.65h-.34l-20.61 63.65a2.15 2.15 0 01-1.92 1.55l-1.82-.13a2.66 2.66 0 01-2-2.3zM272.77 19c-.46-2.35.45-4.12 2-4.23l13.3-.93c.91-.07 1.82 1.09 2.05 2.29l9.77 59h.46L318 13.59c.34-1.1 1-2.05 1.93-2.11l2.05-.15c1-.07 1.7.78 1.93 1.85l17.62 62h.47l9.77-63.75c.23-1.32 1.14-2.69 2.05-2.76l13.3-.93c1.59-.11 2.5 1.73 2.05 4.42L347.68 139c-.23 1.47-1.14 2.52-2.05 2.45l-1.81-.14c-.8-.06-1.6-1-1.94-2.18l-20.8-75.29h-.34L300.05 136c-.34 1-1.14 1.85-1.93 1.79l-1.82-.14c-.91-.07-1.82-1.19-2.05-2.6zM373.08 12.19c-.45-2.64.46-4.62 2.05-4.73l13.26-.93c.91-.06 1.82 1.23 2 2.58l9.76 66.35h.45L418.22 6c.34-1.23 1-2.28 1.93-2.34l2-.15c1-.08 1.7.88 1.93 2.07l17.57 70h.46l9.79-71.1c.23-1.47 1.13-3 2-3L467.21.5c1.59-.11 2.5 1.94 2 4.92l-21.39 140.91c-.23 1.64-1.14 2.81-2 2.74l-1.82-.14c-.79-.06-1.59-1.15-1.93-2.4l-20.79-83.67h-.34l-20.64 80.59c-.34 1.16-1.13 2.08-1.93 2l-1.81-.14c-.91-.07-1.82-1.31-2-2.89z" stroke-dasharray="3192" stroke-dashoffset="3192"></path>
+</svg>
+</a>
+</div>
+<span class="plus">+</span>
+<div class="contento">
+<a href="https://www.instagram.com/contento.estrategico/" target="_blank">
+<img src="assets/b97a0d70be6846f8_logo-contento.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="assets/87981e8062814ca2_jquery.js"></script>
+<script charset="" id="" type="text/javascript">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1113289878742750");fbq("track","PageView");</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=1113289878742750&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- Scripts -->
+<script src="assets/0925e8ad7bd97139_jquery-3.4.1.min.js"></script>
+<script src="https://kit.fontawesome.com/2c09d9d169.js"></script>
+<script src="assets/8710099069011903_jquery.paroller.min.js"></script>
+<script src="assets/1c2f1c1bc2024280_main.js"></script>
+<script src="assets/9c9da3742b894567_wow.js"></script>
+<script src="assets/5602e4c8dcc822cf_pace.min.js"></script>
+<script src="assets/8534da4cd6e90d26_jquery.scrollToStyle.js"></script>
+<script src="assets/0c7178cc6ca34fb1_slick.min.js" type="text/javascript"></script>
+<script src="assets/e7ed36ceee5450b4_bootstrap.min.js">
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-K74B5L9" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+        $('.newsletterformint input[type="radio"]').click(function() {
+            $('input[type="radio"]').not(this).prop('checked', false);
+        });
+
+        $('.consumidorinput').click(function() {
+            $('.hiddengrupos').attr('name', 'grupos[4237]');
+            $('.hiddengrupos').val('4237');
+            $('.hiddencodigo').val('1498');
+        });
+
+        $('.lojistainput').click(function() {
+            $('.hiddengrupos').attr('name', 'grupos[4234]');
+            $('.hiddengrupos').val('4234');
+            $('.hiddencodigo').val('1498');
+        });
+
+        $('.arquitetoinput').click(function() {
+            $('.hiddengrupos').attr('name', 'grupos[4233]');
+            $('.hiddengrupos').val('4233');
+            $('.hiddencodigo').val('1498');
+        });
+
+        // this is the id of the form
+        $("#newsletterformajax").submit(function(e) {
+
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+
+            var form = $(this);
+
+            $.ajax({
+                type: "POST",
+                crossDomain: true,
+                dataType: 'jsonp',
+                url: 'http://app4.iagentemail.com/integracao/processa',
+                data: form.serialize(), // serializes the form's elements.
+            });
+
+            $(".respostaformnewsletter").text("E-mail cadastrado com sucesso!");
+        });
+    </script>
+<script type="text/javascript">
+        new WOW().init();
+        $(function() {
+            $('#banner-home-carousel').carousel({
+                // interval: 5000
+            });
+        });
+    </script>
+<script type="text/javascript">
+        $('.slider-lancamentos').slick({
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+            arrows: false,
+            dots: true,
+            infinite: true,
+            initialSlide: 1,
+            swipeToSlide: true,
+            touchMove: true,
+            responsive: [{
+                    breakpoint: 770,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '160px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        $(".li-categoria-banquetas").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/banquetas-menu.png')");
+        });
+        $(".li-categoria-cadeiras").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/cadeiras-menu.png')");
+        });
+        $(".li-categoria-poltronas").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/poltronas-menu.png')");
+        });
+        $(".li-categoria-luminarias").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/luminaria-menu.png')");
+        });
+        $(".li-categoria-complementos").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/complementos-menu.png')");
+        });
+        $(".li-categoria-mesas").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/mesas-menu.png')");
+        });
+        $(".li-categoria-office").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/office-menu.png')");
+        });
+        $(".li-categoria-sofas").mouseover(function() {
+            $(".linhas-bg").css("background", "url('https://www.admmobiliario.com.br/images/sofa-menu.png')");
+        });
+
+        $(".icon-footer-instagram").mouseover(function() {
+            $(".texto-footer-instagram").css("opacity", "1");
+        });
+        $(".icon-footer-instagram").mouseout(function() {
+            $(".texto-footer-instagram").css("opacity", "0");
+        });
+
+        $(".icon-footer-mapa").mouseover(function() {
+            $(".texto-footer-mapa").css("opacity", "1");
+        });
+        $(".icon-footer-mapa").mouseout(function() {
+            $(".texto-footer-mapa").css("opacity", "0");
+        });
+
+        $(".icon-footer-pinterest").mouseover(function() {
+            $(".texto-footer-pinterest").css("opacity", "1");
+        });
+        $(".icon-footer-pinterest").mouseout(function() {
+            $(".texto-footer-pinterest").css("opacity", "0");
+        });
+
+        $(".icon-footer-3d").mouseover(function() {
+            $(".texto-footer-3d").css("opacity", "1");
+        });
+        $(".icon-footer-3d").mouseout(function() {
+            $(".texto-footer-3d").css("opacity", "0");
+        });
+
+        $(".categorias-seletor:nth-child(1)").addClass("categorias-seletor-active");
+
+        $('.categorias-seletor').click(function() {
+            $('.categorias-seletor').removeClass("categorias-seletor-active");
+            $(this).addClass("categorias-seletor-active");
+        });
+
+        $(".selecao-categoria:nth-child(1)").addClass("selecao-categoria-active");
+
+        $('.categorias-seletor:nth-child(1)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(1)').addClass("selecao-categoria-active");
+        });
+
+        $('.categorias-seletor:nth-child(2)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(2)').addClass("selecao-categoria-active");
+        });
+
+        $('.categorias-seletor:nth-child(3)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(3)').addClass("selecao-categoria-active");
+        });
+
+        $('.categorias-seletor:nth-child(4)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(4)').addClass("selecao-categoria-active");
+        });
+        $('.categorias-seletor:nth-child(5)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(5)').addClass("selecao-categoria-active");
+        });
+        $('.categorias-seletor:nth-child(6)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(6)').addClass("selecao-categoria-active");
+        });
+        $('.categorias-seletor:nth-child(7)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(7)').addClass("selecao-categoria-active");
+        });
+        $('.categorias-seletor:nth-child(8)').click(function() {
+            $('.selecao-categoria').removeClass("selecao-categoria-active");
+            $('.selecao-categoria:nth-child(8)').addClass("selecao-categoria-active");
+        });
+
+        $('.admnews-item').paroller();
+        $('.btn-vertodas').paroller();
+        $('.item').paroller();
+    </script>
+<script data-offline-fix="1">(function(){
+var IS_CSR = false;
+var resolveLocal = window.__resolveLocal || function(){return null;};
+var rewriteSrcset = window.__rewriteSrcset || function(s){return s;};
+function fixImg(el){
+  if (!el || el.tagName !== 'IMG') return;
+  var src = el.getAttribute('src');
+  var loc = resolveLocal(src);
+  if (loc && src !== loc) el.setAttribute('src', loc);
+  var ss = el.getAttribute('srcset');
+  if (ss) {
+    var nss = rewriteSrcset(ss);
+    if (nss !== ss) el.setAttribute('srcset', nss);
+  }
+}
+function fixAll(){ document.querySelectorAll('img').forEach(fixImg); }
+function hasSlideOffset(t){
+  // True if a transform indicates a 'parked off-screen' starting
+  // state: translation in px (>= 30) or % (>= 5), or a matrix
+  // with non-zero translation. Returns false for crossfade-only
+  // companions like scale(0.9) or pure centering translateX(-50%).
+  if (!t || t === 'none') return false;
+  // matrix(a,b,c,d,tx,ty) — parse tx/ty; matrix3d & friends → assume slide.
+  var matMatch = t.match(/matrix\(([^)]+)\)/);
+  if (matMatch) {
+    var parts = matMatch[1].split(',').map(function(x){return parseFloat(x.trim());});
+    if (parts.length === 6) {
+      if (Math.abs(parts[4]) >= 30 || Math.abs(parts[5]) >= 30) return true;
+    } else { return true; }
+  }
+  if (/matrix3d/i.test(t)) return true;
+  var px = t.match(/(-?\d+\.?\d*)px/g) || [];
+  for (var i = 0; i < px.length; i++) {
+    if (Math.abs(parseFloat(px[i])) >= 30) return true;
+  }
+  var pct = t.match(/(-?\d+\.?\d*)%/g) || [];
+  for (var j = 0; j < pct.length; j++) {
+    if (Math.abs(parseFloat(pct[j])) >= 5) return true;
+  }
+  return false;
+}
+function isHiddenStart(s){
+  // True if the element's inline style is parked at a 'before'
+  // animation state. opacity:0 alone is ambiguous (could be a
+  // crossfade companion); pair it with a slide transform OR an
+  // explicit visibility:hidden (GSAP/SplitType signature) to be
+  // confident it's a scroll-reveal waiting to fire.
+  if (s.opacity !== '0' && s.visibility !== 'hidden') return false;
+  if (s.visibility === 'hidden') return true;
+  return hasSlideOffset(s.transform) || hasSlideOffset(s.translate);
+}
+function revealEl(el){
+  var s = el.style;
+  s.opacity = '1';
+  if (s.visibility === 'hidden') s.visibility = 'visible';
+  if (s.transform) s.transform = 'none';
+  if (s.translate) s.translate = 'none';
+  if (s.rotate)    s.rotate = 'none';
+  if (s.scale)     s.scale = 'none';
+  if (s.pointerEvents === 'none') s.pointerEvents = '';
+}
+function snapReveal(){
+  // Safety net: any 'before-state' element still hidden gets
+  // forced visible. Used as a deadline pass for non-CSR mode
+  // (after GSAP/etc had a chance to play) and as a final guard.
+  // Skip pinned-chain elements — same reason as findScrollAnchor.
+  var n = 0;
+  document.querySelectorAll('[style]').forEach(function(el){
+    if (!isHiddenStart(el.style)) return;
+    if (isInsideFixed(el)) return;
+    revealEl(el); n++;
+  });
+  if (window.console && n) console.log('[offline-fix] snap-revealed', n);
+}
+function isInsideFixed(el){
+  var p = el;
+  while (p && p !== document.documentElement) {
+    if (getComputedStyle(p).position === 'fixed') return true;
+    p = p.parentElement;
+  }
+  return false;
+}
+function findScrollAnchor(el){
+  // Pinned-narrative sections (one position:fixed ancestor wrapping
+  // many sequenced headings the live JS reveals one-by-one across
+  // scroll progress) can't be orchestrated offline — revealing all
+  // of them at once produces an overlapping mess. Skip them: leave
+  // the parked state intact, matching the live site at scroll=0.
+  // For sticky chains, observe the sticky container itself (fires
+  // when the user has scrolled past its stuck threshold).
+  if (isInsideFixed(el)) return null;
+  var p = el;
+  while (p && p !== document.documentElement) {
+    if (getComputedStyle(p).position === 'sticky') return p;
+    p = p.parentElement;
+  }
+  return el;
+}
+function progressiveReveal(){
+  // CSR mode: scripts stripped → no GSAP/IO is going to fire.
+  // Mimic a scroll-driven reveal: each parked element gets a
+  // CSS transition + IntersectionObserver. As it enters viewport
+  // we transition to the 'after' state, with a small stagger by
+  // document order so SplitType chars still feel letter-by-letter.
+  var targets = [];
+  document.querySelectorAll('[style]').forEach(function(el){
+    if (isHiddenStart(el.style)) targets.push(el);
+  });
+  if (!targets.length) return;
+  var EASE = 'cubic-bezier(.16,1,.3,1)';
+  targets.forEach(function(el){
+    el.style.transition =
+      'opacity .6s ' + EASE + ', transform .6s ' + EASE + ', ' +
+      'translate .6s ' + EASE + ', scale .6s ' + EASE + ', ' +
+      'visibility 0s linear';
+  });
+  if (typeof IntersectionObserver === 'undefined') {
+    targets.forEach(revealEl);
+    return;
+  }
+  // Group targets by their scroll anchor. Anchors in sticky
+  // sections share one observation point — when that anchor
+  // intersects, we reveal all its parked descendants.
+  // Targets with null anchor (inside position:fixed) are skipped.
+  var groups = new Map();
+  targets.forEach(function(el){
+    var anchor = findScrollAnchor(el);
+    if (!anchor) return;
+    if (!groups.has(anchor)) groups.set(anchor, []);
+    groups.get(anchor).push(el);
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      var children = groups.get(entry.target) || [entry.target];
+      children.sort(function(a, b){
+        var pos = a.compareDocumentPosition(b);
+        return (pos & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1;
+      });
+      children.forEach(function(child, i){
+        var delay = Math.min(i * 18, 700);
+        setTimeout(function(){ revealEl(child); }, delay);
+      });
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -8% 0px' });
+  groups.forEach(function(_, anchor){ io.observe(anchor); });
+  // Deadline guard: anything that never intersects still gets revealed.
+  setTimeout(snapReveal, 8000);
+}
+function initUnicornStudio(){
+  // Captured page already has the loaded UMD script + the inline
+  // loader that says `if(!window.UnicornStudio)…`. The loader bails
+  // because UnicornStudio is already defined, so init() never runs.
+  if (window.UnicornStudio && typeof window.UnicornStudio.init === 'function'
+      && !window.UnicornStudio.isInitialized) {
+    try { window.UnicornStudio.init(); window.UnicornStudio.isInitialized = true; }
+    catch(e){ if(window.console) console.warn('[offline-fix] UnicornStudio init failed:', e); }
+  }
+}
+// Initial img sweep + observer for hydration-time updates
+fixAll();
+var obs = new MutationObserver(function(muts){
+  for (var i = 0; i < muts.length; i++) {
+    var m = muts[i];
+    if (m.type === 'attributes' && m.target.tagName === 'IMG') fixImg(m.target);
+    for (var j = 0; j < m.addedNodes.length; j++) {
+      var n = m.addedNodes[j];
+      if (n && n.nodeType === 1) {
+        if (n.tagName === 'IMG') fixImg(n);
+        if (n.querySelectorAll) n.querySelectorAll('img').forEach(fixImg);
+      }
+    }
+  }
+});
+obs.observe(document, {childList:true, subtree:true,
+  attributes:true, attributeFilter:['src','srcset']});
+setTimeout(fixAll, 1000);
+setTimeout(fixAll, 3000);
+var go = function(){
+  // CSR: scripts stripped, so 'before-state' elements stay parked
+  // forever unless we do something. Use IntersectionObserver to
+  // reveal them progressively as the user scrolls — preserves the
+  // scroll-triggered animation feel for SplitType chars, etc.
+  // Non-CSR: GSAP/Framer may still play; let them, then catch any
+  // leftovers with a snap pass at 5 s.
+  if (IS_CSR) progressiveReveal();
+  else setTimeout(snapReveal, 5000);
+  initUnicornStudio();
+  setTimeout(initUnicornStudio, 500);
+  setTimeout(initUnicornStudio, 2000);
+};
+if (document.readyState === 'complete') go();
+else window.addEventListener('load', go);
+})();</script></body></html>

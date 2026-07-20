@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Showcase - Estofados Buriti Design System</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="assets/7a496efb662af9b8_wc-blocks.css" rel="stylesheet"/>
+    <link href="assets/47579d0130e564c7_frontend-lite.min.css" rel="stylesheet"/>
+    <link href="assets/c57e64fcb72bddaf_swiper.min.css" rel="stylesheet"/>
+    <link href="assets/9698b6529874a25f_woocommerce-layout.css" rel="stylesheet"/>
+    <link href="assets/f51e6f453765b65e_woocommerce.css" rel="stylesheet"/>
+    <link href="assets/a23eec6136d95864_post-6868.css" rel="stylesheet"/>
+    <link href="assets/3c3c0ebe37e4fd41_style.min.css" rel="stylesheet"/>
+    <link href="assets/39c2c842591e6161_theme.min.css" rel="stylesheet"/>
+    <link href="assets/8b6956dd0335026c_init.css" rel="stylesheet"/>
+    <link href="assets/9cd63b8cea25045c_brands.min.css" rel="stylesheet"/>
+    <link href="assets/1d014c39a7462223_frontend-lite.min.css" rel="stylesheet"/>
+    <link href="assets/34d54ffb178f4438_post-7739.css" rel="stylesheet"/>
+    <link href="assets/ab1fd74a6006623a_dflip.min.css" rel="stylesheet"/>
+    <link href="assets/eea3d6ccda7f6503_regular.min.css" rel="stylesheet"/>
+    <link href="assets/56b84adef96b0cc5_post-1995.css" rel="stylesheet"/>
+    <link href="assets/9d7d734ecf873250_post-6875.css" rel="stylesheet"/>
+    <link href="assets/ccd31ffa708d0258_styles.css" rel="stylesheet"/>
+    <link href="assets/37bab6cd583982e8_solid.min.css" rel="stylesheet"/>
+    <link href="assets/abe4e0480d9ad8ab_rs6.css" rel="stylesheet"/>
+    <link href="assets/029dedf319bc4536_front.min.css" rel="stylesheet"/>
+    <link href="assets/97a09cb2af7d4406_header-footer.min.css" rel="stylesheet"/>
+    <link href="assets/bcd3e29ac3fd83b7_form-themes.css" rel="stylesheet"/>
+    <link href="assets/67ac597bed179b58_elementor-icons.min.css" rel="stylesheet"/>
+    <link href="assets/b0bcb63192c1df20_sl-bootstrap.css" rel="stylesheet"/>
+    <link href="assets/fafc4160788beca6_fontawesome.min.css" rel="stylesheet"/>
+    <link href="assets/fe513ef974b76751_animations.min.css" rel="stylesheet"/>
+    <link href="assets/0202834abf2b5be8_widget-nav-menu.min.css" rel="stylesheet"/>
+    <link href="assets/665535f8cd025565_css.css" rel="stylesheet"/>
+
+    <style>
+        @font-face {
+            font-family: 'Mluvka';
+            font-weight: 700;
+            font-style: normal;
+            src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Bold-1.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Mluvka';
+            font-weight: 200;
+            font-style: normal;
+            src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-ExtraLight-1.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Mluvka';
+            font-weight: 300;
+            font-style: normal;
+            src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Light-1.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Mluvka';
+            font-weight: 500;
+            font-style: normal;
+            src: url('https://estofadosburiti.com.br/wp-content/uploads/2025/01/Mluvka-Medium-1.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Mluvka';
+            font-weight: 400;
+            font-style: normal;
+            src: url("assets/82743ee8e8c2291b_Mluvka-Regular-BF65518ac8463f5.otf") format('opentype');
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom documentation layout helper styles */
+        .doc-section {
+            padding: 80px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .doc-section-title {
+            font-family: "Aboreto", Sans-serif;
+            color: #1d1d1b;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .doc-subsection-title {
+            font-family: "Poppins", Sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #717965;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            border-left: 4px solid #1d1d1b;
+            padding-left: 12px;
+            margin-top: 40px;
+        }
+        .swatch-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .swatch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .swatch-color {
+            height: 100px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .swatch-title {
+            font-family: "Poppins", Sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1D1D1B;
+            margin-bottom: 4px;
+        }
+        .swatch-info {
+            font-family: "Poppins", Sans-serif;
+            font-size: 12px;
+            color: #727272;
+            line-height: 1.4;
+        }
+        .state-label {
+            font-size: 11px;
+            font-family: monospace;
+            color: #727272;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .doc-nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        /* Typography row layouts */
+        .typography-row {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .typography-label {
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            color: #717965;
+            font-weight: 600;
+            width: 20%;
+        }
+        .typography-preview {
+            width: 60%;
+        }
+        .typography-metrics {
+            font-family: monospace;
+            font-size: 12px;
+            color: #727272;
+            text-align: right;
+            width: 20%;
+        }
+    </style>
+</head>
+<body class="home wp-singular page-template-default page page-id-6868 wp-custom-logo wp-theme-hello-elementor theme-hello-elementor woocommerce-js elementor-default elementor-template-full-width elementor-kit-6875 elementor-page elementor-page-6868 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit cookies-not-set" data-elementor-device-mode="desktop">
+
+    <!-- Top Navigation Header -->
+    <div class="doc-nav-wrapper">
+        <div class="elementor elementor-7739 elementor-location-header" data-elementor-id="7739" data-elementor-post-type="elementor_library" data-elementor-type="header">
+            <section class="elementor-section elementor-top-section elementor-element elementor-element-60042529 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-element_type="section" data-id="60042529" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4126756" data-element_type="column" data-id="4126756">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-6fba5d9d elementor-widget elementor-widget-image" data-element_type="widget" data-id="6fba5d9d" data-widget_type="image.default">
+                                <div class="elementor-widget-container">
+                                    <a href="#hero">
+                                        <img alt="" class="attachment-large size-large wp-image-7626" fetchpriority="high" height="1000" sizes="(max-width: 3727px) 100vw, 3727px" src="assets/3579b29e929561a8_logo.png" width="3727"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5c3166f9" data-element_type="column" data-id="5c3166f9">
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class="elementor-element elementor-element-7f394656 elementor-nav-menu__align-end elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-widget__width-initial elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-element_type="widget" data-id="7f394656" data-settings='{"layout":"horizontal"}'>
+                                <div class="elementor-widget-container">
+                                    <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+                                        <ul class="elementor-nav-menu" id="menu-1-7f394656">
+                                            <li class="menu-item"><a class="elementor-item" href="#hero">Hero</a></li>
+                                            <li class="menu-item"><a class="elementor-item" href="#typography">Tipografia</a></li>
+                                            <li class="menu-item"><a class="elementor-item" href="#colors">Cores</a></li>
+                                            <li class="menu-item"><a class="elementor-item" href="#components">Componentes</a></li>
+                                            <li class="menu-item"><a class="elementor-item" href="#layout">Layout</a></li>
+                                            <li class="menu-item"><a class="elementor-item" href="#motion">Motion</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Section 0: Cloned Hero (Anchor: #hero) -->
+    <div class="elementor elementor-6868" style="margin-top: 89px;">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-44105628 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-element_type="section" data-id="44105628" data-settings='{"background_background":"classic"}' id="hero">
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-498ca2cd" data-element_type="column" data-id="498ca2cd" data-settings='{"background_background":"classic"}'>
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-background-overlay"></div>
+                        <div class="elementor-element elementor-element-3052027c elementor-widget elementor-widget-text-editor animated fadeInUp" data-element_type="widget" data-id="3052027c" data-settings='{"_animation":"fadeInUp"}' data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <p>Design System</p>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-4d7e0953 elementor-widget elementor-widget-spacer" data-element_type="widget" data-id="4d7e0953" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-spacer">
+                                    <div class="elementor-spacer-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section 1: Typography (Anchor: #typography) -->
+    <section id="typography" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Tipografia</h1>
+            
+            <div class="elementor elementor-6868">
+                <!-- Heading 1 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 1</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-3052027c elementor-widget elementor-widget-text-editor" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <p style="margin: 0;">Heading 1 (Hero Title)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">94px / 86px (200)</div>
+                </div>
+                
+                <!-- Heading 2 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 2</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-600cdc2e elementor-widget elementor-widget-heading" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default" style="margin: 0;">Heading 2 Title</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">26px / 26px (400)</div>
+                </div>
+                
+                <!-- Heading 3 / Subtitle -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 3</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-1542e8af elementor-widget elementor-widget-heading" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default" style="margin: 0;">Heading 3 Title</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">20px / 20px (600)</div>
+                </div>
+                
+                <!-- Bold L -->
+                <div class="typography-row">
+                    <div class="typography-label">Bold L</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-align-left elementor-widget elementor-widget-button">
+                            <div class="elementor-widget-container">
+                                <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;" style="display: inline-block;">
+                                    <span class="elementor-button-content-wrapper">
+                                        <span class="elementor-button-text">BOLD L BUTTON</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">15px / 15px (500)</div>
+                </div>
+                
+                <!-- Paragraph / Body -->
+                <div class="typography-row">
+                    <div class="typography-label">Paragraph</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-1ca5e74 elementor-widget elementor-widget-text-editor" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <p style="margin: 0;">Este é um parágrafo longo de corpo de texto simulando a tipografia original do site da Buriti.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">16px / 1.6</div>
+                </div>
+                
+                <!-- Regular L (Card Title) -->
+                <div class="typography-row">
+                    <div class="typography-label">Regular L</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-7100e3f elementor-position-top elementor-widget elementor-widget-image-box" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-image-box-wrapper">
+                                    <div class="elementor-image-box-content">
+                                        <h3 class="elementor-image-box-title" style="margin: 0;">REGULAR L TITLE</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">20px / 20px (500)</div>
+                </div>
+                
+                <!-- Regular S (Card Description) -->
+                <div class="typography-row">
+                    <div class="typography-label">Regular S</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-7100e3f elementor-position-top elementor-widget elementor-widget-image-box" style="text-align: left;">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-image-box-wrapper">
+                                    <div class="elementor-image-box-content">
+                                        <p class="elementor-image-box-description" style="margin: 0;">Card description text layout preview in light Poppins font.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">16px / 1.4 (300)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Colors & Surfaces (Anchor: #colors) -->
+    <section id="colors" class="doc-section" style="background:#EDE6D8;">
+        <div class="container">
+            <h1 class="doc-section-title" style="color: #1d1d1b;">Cores & Superfícies</h1>
+            
+            <div class="doc-subsection-title" style="color: #717965;">Cores da Marca & Superfícies</div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #1D1D1B;"></div>
+                        <div class="swatch-title">Primary Dark Charcoal</div>
+                        <div class="swatch-info">Hex: #1D1D1B<br>Uso: Cor primária, títulos principais</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #717965;"></div>
+                        <div class="swatch-title">Muted Sage Green</div>
+                        <div class="swatch-info">Hex: #717965<br>Uso: Títulos secundários, botões primários</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #EDE6D8;"></div>
+                        <div class="swatch-title">Accent Cream</div>
+                        <div class="swatch-info">Hex: #EDE6D8<br>Uso: Fundo de seções, destaque leve</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #FFFFFF;"></div>
+                        <div class="swatch-title">Pure White</div>
+                        <div class="swatch-info">Hex: #FFFFFF<br>Uso: Fundo geral de páginas e containers</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #727272;"></div>
+                        <div class="swatch-title">Muted Text Gray</div>
+                        <div class="swatch-info">Hex: #727272 / #828282<br>Uso: Descrições secundárias, placeholders</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: rgba(50,50,58,1);"></div>
+                        <div class="swatch-title">Dark Cookie Banner</div>
+                        <div class="swatch-info">Hex: rgba(50,50,58,1)<br>Uso: Fundo do aviso de cookies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: UI Components (Anchor: #components) -->
+    <section id="components" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Componentes de Interface</h1>
+
+            <div class="doc-subsection-title">Botões</div>
+            <div class="elementor elementor-6868">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <span class="state-label">Estado Padrão (Buriti Button):</span>
+                        <div class="elementor-element elementor-align-left elementor-widget elementor-widget-button">
+                            <div class="elementor-widget-container">
+                                <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;">
+                                    <span class="elementor-button-content-wrapper">
+                                        <span class="elementor-button-text">A BURITI</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <span class="state-label">Simulação de Hover (Preto):</span>
+                        <div class="elementor-element elementor-align-left elementor-widget elementor-widget-button">
+                            <div class="elementor-widget-container">
+                                <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;" style="background-color: #000000; color: #FFFFFF;">
+                                    <span class="elementor-button-content-wrapper">
+                                        <span class="elementor-button-text">A BURITI</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Formulário de Newsletter</div>
+            <div class="elementor elementor-6868">
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <form class="mc4wp-form mc4wp-form-theme mc4wp-form-theme-light" method="post" onsubmit="return false;" style="max-width: 400px;">
+                            <div class="mc4wp-form-fields">
+                                <p>
+                                    <label>
+                                        <input name="EMAIL" placeholder="Digite seu e-mail..." required="" type="email" style="border: 1px solid #727272; padding: 10px; width: 100%; border-radius: 0;"/>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label style="color: #1d1d1b;">
+                                        <input name="AGREE_TO_TERMS" required="" type="checkbox" value="1"/> Li e concordo com os termos da LGPD
+                                    </label>
+                                </p>
+                                <input class="elementor-button" type="submit" value="Assinar" style="background-color: #717965; color: #fff; border-radius: 0; border: 0; padding: 10px 30px; cursor: pointer;"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Card de Categorias (Image Box)</div>
+            <div class="elementor elementor-6868">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="elementor-element elementor-element-e3ce6ca elementor-position-top elementor-widget elementor-widget-image-box" data-widget_type="image-box.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-image-box-wrapper">
+                                    <figure class="elementor-image-box-img">
+                                        <a href="#" onclick="return false;"><img alt="" src="assets/b8833ec6618f8178_modulare.png" style="width: 100%; max-width: 250px;"/></a>
+                                    </figure>
+                                    <div class="elementor-image-box-content">
+                                        <h3 class="elementor-image-box-title"><a href="#" onclick="return false;">TODOS</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="elementor-element elementor-element-deeb496 elementor-position-top elementor-widget elementor-widget-image-box" data-widget_type="image-box.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-image-box-wrapper">
+                                    <figure class="elementor-image-box-img">
+                                        <a href="#" onclick="return false;"><img alt="" src="assets/349ed26c82877e6b_aurora.png" style="width: 100%; max-width: 250px;"/></a>
+                                    </figure>
+                                    <div class="elementor-image-box-content">
+                                        <h3 class="elementor-image-box-title"><a href="#" onclick="return false;">POLTRONAS</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Carrossel de Imagens (Swiper Category Slider)</div>
+            <div class="elementor elementor-6868">
+                <div class="elementor-element elementor-element-e9b9c79 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel e-widget-swiper" data-widget_type="image-carousel.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-image-carousel-wrapper swiper">
+                            <div class="elementor-image-carousel swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/1c218bb84f4ba161_Ambiente-Alure-Chaise-com-brac.jpg"/>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/e1a6c24b4fdcf444_Ambiente-Aurora-314-370x350.jpg"/>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/f0a13bc0f621a76e_Cartago02-1-370x350.jpg"/>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/b0efcebfb981500f_10-Soft-L-370x350.png"/>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/c1bfc23e878307f5_01-Massaro-Firefly-Upscaler-es.png"/>
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="swiper-slide-inner">
+                                        <img alt="" class="swiper-slide-image" src="assets/b51a00ea20d0bfa4_Vicenzo-1-370x350.png"/>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="elementor-swiper-button elementor-swiper-button-prev"><i class="eicon-chevron-left"></i></div>
+                            <div class="elementor-swiper-button elementor-swiper-button-next"><i class="eicon-chevron-right"></i></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Layout & Spacing (Anchor: #layout) -->
+    <section id="layout" class="doc-section" style="background:#EDE6D8;">
+        <div class="container">
+            <h1 class="doc-section-title" style="color: #1d1d1b;">Layout & Espaçamento</h1>
+
+            <div class="doc-subsection-title" style="color: #717965;">1. Category Grid Layout (6 Colunas - col-16)</div>
+            <p style="font-family:'Poppins', sans-serif; font-size:14px; color:#1d1d1b; margin-bottom:20px;">Utilizado para alinhar os atalhos de categoria do portfólio horizontalmente em colunas iguais.</p>
+            <div class="elementor elementor-6868">
+                <div class="row" style="background:#fff; padding: 20px; border-radius: 8px; border: 1px dashed #717965;">
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(113,121,101,0.1); border: 1px solid #717965; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/6 Width)
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title" style="color: #717965;">2. Certifications Grid Layout (5 Colunas - col-20)</div>
+            <p style="font-family:'Poppins', sans-serif; font-size:14px; color:#1d1d1b; margin-bottom:20px;">Utilizado na seção de certificações da empresa com 5 blocos horizontais.</p>
+            <div class="elementor elementor-6868">
+                <div class="row" style="background:#fff; padding: 20px; border-radius: 8px; border: 1px dashed #717965;">
+                    <div class="col-md-2 offset-md-1" style="background:rgba(29,29,27,0.1); border: 1px solid #1D1D1B; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/5 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(29,29,27,0.1); border: 1px solid #1D1D1B; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/5 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(29,29,27,0.1); border: 1px solid #1D1D1B; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/5 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(29,29,27,0.1); border: 1px solid #1D1D1B; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/5 Width)
+                    </div>
+                    <div class="col-md-2" style="background:rgba(29,29,27,0.1); border: 1px solid #1D1D1B; text-align:center; padding: 15px; font-size: 11px;">
+                        Col-md-2 (1/5 Width)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Motion & Interaction (Anchor: #motion) -->
+    <section id="motion" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Motion & Interações</h1>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="doc-subsection-title">Entradas Animadas (WOW / Elementor)</div>
+                    <p style="font-family:'Poppins', sans-serif; font-size:14px; color:#727272; margin-bottom:20px;">Clique nos controles para testar as animações nativas que ocorrem durante a rolagem do site.</p>
+                    
+                    <div style="background:#EDE6D8; padding:30px; border-radius:8px; text-align:center;">
+                        <div id="motion-target-box" class="animated" style="width: 140px; height: 140px; background:#717965; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-family:'Poppins', sans-serif; font-weight:600; margin-bottom:20px; border-radius:4px;">
+                            Buriti Box
+                        </div>
+                        <div class="d-flex justify-content-center" style="gap:15px;">
+                            <button class="elementor-button" onclick="triggerAnim('fadeInUp')" style="background-color:#1D1D1B; color:#fff; border:0; padding:10px 20px; cursor:pointer;">fadeInUp</button>
+                            <button class="elementor-button" onclick="triggerAnim('fadeInLeft')" style="background-color:#1D1D1B; color:#fff; border:0; padding:10px 20px; cursor:pointer;">fadeInLeft</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="doc-subsection-title">Micro-interações de Elementos</div>
+                    <div style="background:#EDE6D8; padding:30px; border-radius:8px; height:100%;">
+                        <ul style="font-family:'Poppins', sans-serif; font-size:14px; color:#1D1D1B; line-height:1.8; padding-left:20px;">
+                            <li class="mb-2"><strong>CTA Button Transition</strong>: Transição de background sutil de sage green (<code>#717965</code>) para preto (<code>#000000</code>) ao passar o mouse.</li>
+                            <li class="mb-2"><strong>Image Box Hover Zoom</strong>: As imagens de categorias possuem um efeito de zoom sutil (<code>scale(1.03)</code>) com 0.3s de duração para destacar a interação.</li>
+                            <li class="mb-2"><strong>Carousel Slide Scrolling</strong>: O Swiper executa transições horizontais suaves com autoplay de 1500ms e pausa ao passar o mouse.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Cloned Section -->
+    <div class="elementor elementor-1995 elementor-location-footer" data-elementor-id="1995" data-elementor-post-type="elementor_library" data-elementor-type="footer">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-4ff68dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="4ff68dd" data-settings='{"background_background":"classic"}'>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2c9a203" data-element_type="column" data-id="2c9a203">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-e9d5c22 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="e9d5c22">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-324fc52" data-element_type="column" data-id="324fc52">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-51807d1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="51807d1" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <p class="elementor-heading-title elementor-size-default">Empresa</p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-f191f52 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="f191f52" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="#" onclick="return false;">
+                                                            <span class="elementor-icon-list-text">A Empresa</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="#" onclick="return false;">
+                                                            <span class="elementor-icon-list-text">Contato</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ede58c9" data-element_type="column" data-id="ede58c9">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-f1f981d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f1f981d" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <p class="elementor-heading-title elementor-size-default">Links Úteis</p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-940acd1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="940acd1" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="#" onclick="return false;">
+                                                            <span class="elementor-icon-list-text">Modelos em Sketchup</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="#" onclick="return false;">
+                                                            <span class="elementor-icon-list-text">Código de Conduta</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item">
+                                                        <a href="#" onclick="return false;">
+                                                            <span class="elementor-icon-list-text">Política de Privacidade</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4d9b5a5" data-element_type="column" data-id="4d9b5a5">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-cf0b1c2 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="cf0b1c2" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <p class="elementor-heading-title elementor-size-default">Contate-nos</p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-ff4d26f elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="ff4d26f" data-widget_type="icon-list.default">
+                                            <ul class="elementor-icon-list-items">
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon"><i aria-hidden="true" class="far fa-clock"></i></span>
+                                                    <span class="elementor-icon-list-text">Seg-Sex 07:00 as 17:00</span>
+                                                </li>
+                                                <li class="elementor-icon-list-item">
+                                                    <span class="elementor-icon-list-icon"><i aria-hidden="true" class="fas fa-phone-alt"></i></span>
+                                                    <span class="elementor-icon-list-text">(19) 3866-2961</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5689b2c" data-element_type="column" data-id="5689b2c">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-2425771 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-element_type="widget" data-id="2425771" data-widget_type="theme-site-logo.default">
+                                            <div class="elementor-widget-container">
+                                                <a href="#" onclick="return false;">
+                                                    <img alt="" class="attachment-full size-full wp-image-7622" height="1000" sizes="(max-width: 2184px) 100vw, 2184px" src="assets/5d865fd16004cf85_Buriti-white.png" width="2184"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-d5b1754 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="d5b1754" data-settings='{"background_background":"classic"}'>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0e1443b" data-element_type="column" data-id="0e1443b">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-f66aac5 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="f66aac5" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <p>© 2026 Estofados Buriti e desenvolvido por <a href="https://awsolutions.work">AW Solutions Work.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS Dependencies -->
+    <script src="assets/cb6f2d32c49d1c2b_jquery.min.js"></script>
+    <script src="assets/5274f11e6fb32ae0_jquery-migrate.min.js"></script>
+    <script src="assets/2ac3af00c283c0b2_swiper.min.js"></script>
+
+    <!-- Initializer Scripts -->
+    <script>
+        // Motion Sandbox trigger animation
+        function triggerAnim(animName) {
+            var box = document.getElementById('motion-target-box');
+            box.className = 'animated';
+            void box.offsetWidth; // force reflow
+            box.classList.add(animName);
+        }
+
+        // Failsafe Swiper initialization
+        $(window).on('load', function() {
+            if (window.Swiper) {
+                new Swiper('.elementor-image-carousel-wrapper.swiper', {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                    loop: true,
+                    autoplay: {
+                        delay: 1500,
+                        disableOnInteraction: false
+                    },
+                    navigation: {
+                        nextEl: '.elementor-swiper-button-next',
+                        prevEl: '.elementor-swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+                    breakpoints: {
+                        320: { slidesPerView: 2 },
+                        768: { slidesPerView: 4 },
+                        1024: { slidesPerView: 6 }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html><html lang=pt><head><script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NBF7DX6Z');</script><script>(function (w, d, s, o, f, js, fjs) {
+        w['ReleaseNotesWidget'] = o;
+        w[o] =
+          w[o] ||
+          function () {
+            (w[o].q = w[o].q || []).push(arguments);
+          };
+        ((js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]));
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(window, document, 'script', 'rnw', 'https://s3.amazonaws.com/cdn.releasenotes.io/v1/bootstrap.js');
+
+      rnw('init', {
+        account: 'novidades.simplificamais.com.br',
+        banner_css: '/static/css/rn-banner.css',
+        selector: '.rn-badge',
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var observer = new MutationObserver(function (mutations) {
+          var panel = document.querySelector('releases-panel');
+          if (panel) {
+            panel.remove();
+            observer.disconnect();
+            clearTimeout(timeout);
+          }
+        });
+        observer.observe(document.body, { childList: true });
+        var timeout = setTimeout(function () {
+          observer.disconnect();
+        }, 10000);
+      });</script><meta charset=utf-8><title>Portal</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta http-equiv=Expires content=-1><meta http-equiv=Cache-control content=no-cache><link rel=apple-touch-icon sizes=180x180 href="/static/apple-touch-icon.png?v=47MeRp6WoN"><link rel=icon type=image/png sizes=32x32 href="/static/favicon-32x32.png?v=47MeRp6WoN"><link rel=icon type=image/png sizes=16x16 href="/static/favicon-16x16.png?v=47MeRp6WoN"><link rel=manifest href="/static/site.webmanifest?v=47MeRp6WoN"><link rel=mask-icon href="/static/safari-pinned-tab.svg?v=47MeRp6WoN" color=#cc3a3a><link rel="shortcut icon" href="/static/favicon.ico?v=47MeRp6WoN"><meta name=msapplication-TileColor content=#2b5797><meta name=msapplication-config content="/static/browserconfig.xml?v=47MeRp6WoN"><meta name=theme-color content=#ffffff><script>window.dataLayer = window.dataLayer || [];</script><link href=/static/css/vendors~app.12c1f08874e0355eb085.css rel=stylesheet><link href=/static/css/app.3d08d7f5f6009b2cbd30.css rel=stylesheet></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBF7DX6Z" height=0 width=0 style="display: none; visibility: hidden"></iframe></noscript><div id=app></div><script>(function (a, b, c, d, e, f, g) {
+        a['CsdpObject'] = e;
+        ((a[e] =
+          a[e] ||
+          function () {
+            (a[e].q = a[e].q || []).push(arguments);
+          }),
+          (a[e].l = 1 * new Date()));
+        ((f = b.createElement(c)), (g = b.getElementsByTagName(c)[0]));
+        f.async = 1;
+        f.src = d;
+        g.parentNode.insertBefore(f, g);
+      })(window, document, 'script', '//device.clearsale.com.br/p/fp.js', 'csdp');</script><script src=/static/js/vendors~app.25904da78130170e4131.bundle.js></script><script src=/static/js/app.14de478135244901cdd6.bundle.js></script></body></html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui" name="viewport"/>
+    <title>Showcase - Luhaz Decoratte Design System</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="assets/708672bf9c2ab578_dc-utils.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/9c5c880c12ea9a85_css2.css" rel="stylesheet"/>
+    <link href="assets/81239790a1ec7b50_css.css" rel="stylesheet"/>
+    <link href="assets/307b9d27ece5ee9d_css.css" rel="stylesheet"/>
+    <link href="assets/8fc95ae50bd69f1c_css.css" rel="stylesheet"/>
+    <link href="assets/c4bdf2a6a654e899_icon.css" rel="stylesheet"/>
+
+    <style>
+        /* Base Owl Carousel Reset (Original CSS compiled) */
+        .owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-theme .owl-nav {margin-top:10px;text-align:center;}.owl-theme .owl-nav [class*='owl-'] {color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px;}.owl-theme .owl-nav [class*='owl-']:hover {background:#869791;color:#FFF;text-decoration:none;}.owl-theme .owl-nav .disabled {opacity:0.5;cursor:default;}.owl-theme .owl-dots {text-align:center;}.owl-theme .owl-dots .owl-dot {display:inline-block;}.owl-theme .owl-dots .owl-dot span {width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;border-radius:30px;transition:opacity 200ms ease;}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span {background:#869791;}
+
+        /* Variables definitions */
+        :root {
+            --color-primary:  #131313;
+            --color-secondary: #070707;
+            --color-border: #e8e3e2;
+            --color-highlight: #0D0D0D;
+            --color-buy-button: #0B0B0B;
+            --color-buy-button-text: #ffffff;
+            --color-text: #111111;
+
+            --m-ff: 'Nunito', sans-serif;
+            --m-fs: 15px;
+            --m-fw: 700;
+            --m-ls: 0px;
+            --m-tt: none;
+
+            --h1-ff: 'Work Sans', sans-serif;
+            --h1-fs: 30px;
+            --h1-fw: 300;
+            --h1-ls: 0px;
+            --h1-tt: none;
+
+            --h2-ff: 'Nunito', sans-serif;
+            --h2-fs: 15px;
+            --h2-fw: 700;
+            --h2-ls: 0px;
+            --h2-tt: none;
+
+            --h3-ff: 'Nunito', sans-serif;
+            --h3-fs: 16px;
+            --h3-fw: 400;
+            --h3-ls: 0px;
+            --h3-tt: none;
+
+            --tx-ff: 'Roboto', sans-serif;
+            --tx-fs: 13px;
+            --tx-fw: 400;
+            --tx-ls: 0px;
+            --tx-tt: none;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Documentation layouts styles */
+        .doc-section {
+            padding: 80px 0;
+            border-bottom: 1px solid #e8e3e2;
+        }
+        .doc-section-title {
+            font-family: var(--h1-ff);
+            font-weight: var(--h1-fw);
+            color: var(--color-primary);
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .doc-subsection-title {
+            font-family: var(--h2-ff);
+            font-weight: var(--h2-fw);
+            font-size: 16px;
+            color: var(--color-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--color-primary);
+            padding-left: 12px;
+            margin-top: 40px;
+        }
+        .swatch-card {
+            background: #fff;
+            border: 1px solid #e8e3e2;
+            border-radius: 4px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+        .swatch-card:hover {
+            transform: translateY(-5px);
+        }
+        .swatch-color {
+            height: 100px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .swatch-title {
+            font-family: var(--h2-ff);
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 4px;
+        }
+        .swatch-info {
+            font-family: var(--tx-ff);
+            font-size: 12px;
+            color: #777;
+            line-height: 1.4;
+        }
+        .state-label {
+            font-size: 11px;
+            font-family: monospace;
+            color: #777;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .doc-nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        /* Typography row layouts */
+        .typography-row {
+            border-bottom: 1px solid #e8e3e2;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .typography-label {
+            font-family: var(--h2-ff);
+            font-size: 13px;
+            color: #777;
+            font-weight: 600;
+            width: 20%;
+        }
+        .typography-preview {
+            width: 60%;
+        }
+        .typography-metrics {
+            font-family: monospace;
+            font-size: 12px;
+            color: #777;
+            text-align: right;
+            width: 20%;
+        }
+
+        /* Custom text positioning in Hero Carousel for design system presentation */
+        .banners-carousel-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 4px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="page page--index">
+    
+    <!-- Top Navigation Header -->
+    <div class="doc-nav-wrapper">
+        <header class="header header-3 minimalist" style="position: static; box-shadow: none;">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center pl-3 pr-3" style="height: 85px;">
+                    <div class="col-2 logo">
+                        <a aria-label="logo" href="#hero">
+                            <img alt="logo" class="img-fluid" src="assets/5878b27911c731bb_logo200-luhaz-2.jpg" style="max-height: 50px"/>
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <div class="row align-items-center justify-content-end no-gutter">
+                            <nav class="navigation">
+                                <div class="row no-gutters justify-content-end">
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#hero">Hero</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#typography">Tipografia</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#colors">Cores</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#components">Componentes</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#layout">Layout</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#motion">Motion</a></div>
+                                    <div class="col-auto navigation-item"><a class="h-mn-color navigation-link pt-4 pb-4 px-3" href="#icons">Icons</a></div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main class="main-content" role="main" style="margin-top: 85px;">
+        
+        <!-- Section 0: Cloned Hero Carousel Banner (Anchor: #hero) -->
+        <section class="section section--banners-carousel" id="hero">
+            <style>
+                #banners-carousel-1565775 .owl-carousel:not(.owl-loaded) {
+                    display: block;
+                    min-height: 350px;
+                }
+                #banners-carousel-1565775 .owl-carousel:not(.owl-loaded) .carousel-item {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                #banners-carousel-1565775 .owl-carousel.owl-loaded .carousel-item {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: none;
+                }
+                @media (min-width: 992px) {
+                    #banners-carousel-1565775 .owl-carousel:not(.owl-loaded) {
+                        min-height: 450px;
+                    }
+                }
+            </style>
+            <div class="banners-carousel" id="banners-carousel-1565775">
+                <div class="container-fluid p-0">
+                    <div class="carousel slide">
+                        <div class="carousel-inner owl-carousel owl-theme" id="banners-carousel-banners-carousel-1565775">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item d-block position-relative">
+                                <div class="d-none d-lg-block">
+                                    <div class="carousel-bg" style='background-image: url("assets/3dd68bd76665b07b_meia.jpg"); height: 450px; background-size: cover; background-position: center;'></div>
+                                </div>
+                                <div class="carousel-mask" style="opacity: .2; background-color: #000;"></div>
+                                <div class="carousel-caption d-flex justify-content-center w-100" style="position: absolute; top: 30%;">
+                                    <div class="carousel-info text-center w-100">
+                                        <div class="banners-carousel-content">
+                                            <h2 style="font-family: var(--h1-ff); font-weight: 300; font-size: 28px; color: var(--color-primary);">Design System | Tipografia</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item d-block position-relative">
+                                <div class="d-none d-lg-block">
+                                    <div class="carousel-bg" style='background-image: url("assets/5af4a0efb811e6d5_whatsapp-image-2025-10-14-at-0.jpeg"); height: 450px; background-size: cover; background-position: center;'></div>
+                                </div>
+                                <div class="carousel-mask" style="opacity: .2; background-color: #000;"></div>
+                                <div class="carousel-caption d-flex justify-content-center w-100" style="position: absolute; top: 30%;">
+                                    <div class="carousel-info text-center w-100">
+                                        <div class="banners-carousel-content">
+                                            <h2 style="font-family: var(--h1-ff); font-weight: 300; font-size: 28px; color: var(--color-primary);">Design System | Cores & Superfícies</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item d-block position-relative">
+                                <div class="d-none d-lg-block">
+                                    <div class="carousel-bg" style='background-image: url("assets/72fce2d2860517a5_balcao-pub-cortado-1024x671.jpeg"); height: 450px; background-size: cover; background-position: center;'></div>
+                                </div>
+                                <div class="carousel-mask" style="opacity: .2; background-color: #000;"></div>
+                                <div class="carousel-caption d-flex justify-content-center w-100" style="position: absolute; top: 30%;">
+                                    <div class="carousel-info text-center w-100">
+                                        <div class="banners-carousel-content">
+                                            <h2 style="font-family: var(--h1-ff); font-weight: 300; font-size: 28px; color: var(--color-primary);">Design System | Componentes</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-item d-block position-relative">
+                                <div class="d-none d-lg-block">
+                                    <div class="carousel-bg" style='background-image: url("assets/fc30079a44898e54_img-9637.jpg"); height: 450px; background-size: cover; background-position: center;'></div>
+                                </div>
+                                <div class="carousel-mask" style="opacity: .2; background-color: #000;"></div>
+                                <div class="carousel-caption d-flex justify-content-center w-100" style="position: absolute; top: 30%;">
+                                    <div class="carousel-info text-center w-100">
+                                        <div class="banners-carousel-content">
+                                            <h2 style="font-family: var(--h1-ff); font-weight: 300; font-size: 28px; color: var(--color-primary);">Design System | Layouts</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Typography (Anchor: #typography) -->
+        <section id="typography" class="doc-section" style="background:#ffffff;">
+            <div class="container">
+                <h1 class="doc-section-title">Tipografia</h1>
+                
+                <!-- Heading 1 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 1</div>
+                    <div class="typography-preview">
+                        <h2 class="h1" style="font-family: var(--h1-ff); font-weight: var(--h1-fw); font-size: var(--h1-fs); color: var(--color-primary);">Heading 1 Title</h2>
+                    </div>
+                    <div class="typography-metrics">Work Sans / 30px (300)</div>
+                </div>
+                
+                <!-- Heading 2 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 2</div>
+                    <div class="typography-preview">
+                        <h2 class="h2" style="font-family: var(--h2-ff); font-weight: var(--h2-fw); font-size: var(--h2-fs); color: var(--color-secondary);">Heading 2 Subtitle</h2>
+                    </div>
+                    <div class="typography-metrics">Nunito / 15px (700)</div>
+                </div>
+                
+                <!-- Heading 3 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 3</div>
+                    <div class="typography-preview">
+                        <h3 class="h3" style="font-family: var(--h3-ff); font-weight: var(--h3-fw); font-size: var(--h3-fs); color: var(--color-highlight);">Heading 3 Card Title</h3>
+                    </div>
+                    <div class="typography-metrics">Nunito / 16px (Regular)</div>
+                </div>
+
+                <!-- Regular M / Body -->
+                <div class="typography-row">
+                    <div class="typography-label">Regular M</div>
+                    <div class="typography-preview">
+                        <p style="font-family: var(--tx-ff); font-weight: var(--tx-fw); font-size: var(--tx-fs); color: var(--color-text); line-height: 1.5; margin:0;">
+                            Este é o corpo de texto principal utilizado na descrição de rodapés e caixas informativas da loja.
+                        </p>
+                    </div>
+                    <div class="typography-metrics">Roboto / 13px (Regular)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Colors & Surfaces (Anchor: #colors) -->
+        <section id="colors" class="doc-section" style="background:#f8f9fa;">
+            <div class="container">
+                <h1 class="doc-section-title">Cores & Superfícies</h1>
+                
+                <div class="doc-subsection-title">Paleta de Cores Luhaz Decoratte</div>
+                <div class="row" style="display:flex; flex-wrap:wrap; gap: 20px;">
+                    <div class="col-md-4 mb-4">
+                        <div class="swatch-card">
+                            <div class="swatch-color" style="background: #131313;"></div>
+                            <div class="swatch-title">Primary Off-Black</div>
+                            <div class="swatch-info">Hex: #131313 / --color-primary<br>Uso: Títulos, links de navegação e botões principais</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swatch-card">
+                            <div class="swatch-color" style="background: #070707;"></div>
+                            <div class="swatch-title">Secondary Dark</div>
+                            <div class="swatch-info">Hex: #070707 / --color-secondary<br>Uso: Cor de realce de cabeçalhos secundários</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swatch-card">
+                            <div class="swatch-color" style="background: #0D0D0D;"></div>
+                            <div class="swatch-title">Highlight Dark</div>
+                            <div class="swatch-info">Hex: #0D0D0D / --color-highlight<br>Uso: Acentos, carrinho de compras e ícones selecionados</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3" style="display:flex; flex-wrap:wrap; gap: 20px;">
+                    <div class="col-md-4 mb-4">
+                        <div class="swatch-card">
+                            <div class="swatch-color" style="background: #e8e3e2;"></div>
+                            <div class="swatch-title">Border Color</div>
+                            <div class="swatch-info">Hex: #e8e3e2 / --color-border<br>Uso: Divisórias de menu, bordas de input e rodapé</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="swatch-card">
+                            <div class="swatch-color" style="background: #FFFFFF; border: 1px solid #eee;"></div>
+                            <div class="swatch-title">Pure White</div>
+                            <div class="swatch-info">Hex: #ffffff / --white<br>Uso: Cor geral de fundo dos cards e cabeçalho fixo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: UI Components (Anchor: #components) -->
+        <section id="components" class="doc-section" style="background:#ffffff;">
+            <div class="container">
+                <h1 class="doc-section-title">Componentes de Interface</h1>
+
+                <div class="doc-subsection-title">Botão Principal (States)</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                    <div>
+                        <span class="state-label">Default / Link:</span>
+                        <a class="btn" href="#" onclick="return false;" style="background: #131313; color: #FFFFFF; border-radius: .25rem; font-family: var(--h2-ff); font-size:14px; font-weight:700;">
+                            COMPRAR
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <span class="state-label">Hover state (Visual Simulation):</span>
+                        <a class="btn" href="#" onclick="return false;" style="background: #131313; color: #FFFFFF; border-radius: .25rem; font-family: var(--h2-ff); font-size:14px; font-weight:700; opacity: 0.75; text-decoration: underline;">
+                            COMPRAR
+                        </a>
+                    </div>
+                </div>
+
+                <div class="doc-subsection-title">Menu Hamburguer Toggle Action</div>
+                <div class="p-3" style="background:#f8f9fa; border-radius: 4px; display:inline-block;">
+                    <a class="nav-menu d-flex align-items-center h-pr-color" href="javascript:void(0)" style="font-family: var(--h2-ff); font-size:14px; font-weight:700; color: #000; text-decoration:none;">
+                        <i class="menu-icon mr-3" style="vertical-align: middle;">
+                            <i class="material-icons md-36" style="font-size:28px; vertical-align: middle;">menu</i>
+                        </i>
+                        <span style="vertical-align: middle;">MENU</span>
+                    </a>
+                </div>
+
+                <div class="doc-subsection-title">Smart Search Modal Bar Mockup</div>
+                <div class="smart-form w-100" style="background: #f8f9fa; padding: 25px; border-radius: 4px;">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="position-relative form">
+                                <input class="smart-input pl-5 pr-5" placeholder="Buscar por produtos" style="border: solid .1rem #e8e3e2; height: 50px; width: 100%; border-radius: 4px;" type="text"/>
+                                <button class="smart-submit" style="position: absolute; right: 15px; top: 10px; background: none; border:0; cursor: pointer;">
+                                    <i class="material-icons md-36" style="color: #777;">search</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Layout & Spacing (Anchor: #layout) -->
+        <section id="layout" class="doc-section" style="background:#f8f9fa;">
+            <div class="container">
+                <h1 class="doc-section-title">Layout & Espaçamento</h1>
+
+                <div class="doc-subsection-title">1. Sommelier 5-Column Grid Row (Linha Sommelier)</div>
+                <p style="font-family: var(--tx-ff); font-size:14px; color:#777; margin-bottom:20px;">Grid de 5 colunas que se distribui horizontalmente no desktop para fotos da linha Sommelier.</p>
+                <div style="background:#fff; padding: 20px; border-radius:4px; border: 1px dashed var(--color-border);">
+                    <div class="row" style="display:flex; flex-wrap:wrap; justify-content: space-between; text-align:center;">
+                        <div style="flex: 1; padding: 10px; margin:5px; background:#f8f9fa; border:1px solid #e8e3e2; font-family:var(--tx-ff);">Mesa Sommelier</div>
+                        <div style="flex: 1; padding: 10px; margin:5px; background:#f8f9fa; border:1px solid #e8e3e2; font-family:var(--tx-ff);">Cadeira Sommelier</div>
+                        <div style="flex: 1; padding: 10px; margin:5px; background:#f8f9fa; border:1px solid #e8e3e2; font-family:var(--tx-ff);">Banqueta Sommelier</div>
+                        <div style="flex: 1; padding: 10px; margin:5px; background:#f8f9fa; border:1px solid #e8e3e2; font-family:var(--tx-ff);">Balcão Sommelier</div>
+                        <div style="flex: 1; padding: 10px; margin:5px; background:#f8f9fa; border:1px solid #e8e3e2; font-family:var(--tx-ff);">Mocho Sommelier</div>
+                    </div>
+                </div>
+
+                <div class="doc-subsection-title">2. Category Grid Layout (4-Column Item Grid)</div>
+                <p style="font-family: var(--tx-ff); font-size:14px; color:#777; margin-bottom:20px;">Exemplo de grid de categorias utilizado para navegação rápida de produtos.</p>
+                <div style="background:#fff; padding: 20px; border-radius:4px; border: 1px dashed var(--color-border);">
+                    <div class="row" style="display:flex; flex-wrap:wrap; gap: 15px;">
+                        <div style="flex: 1; min-width: 200px; position:relative; text-align:center; height: 180px; background-image: url('assets/4c06511a94d77f66_cat-cadeiras.jpg'); background-size:cover; border-radius: 4px;">
+                            <div style="background:rgba(0,0,0,0.3); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#FFF; font-family:var(--h2-ff); font-size:18px;">Cadeiras</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; position:relative; text-align:center; height: 180px; background-image: url('assets/1ac8f1674094b021_cat-mesa.jpg'); background-size:cover; border-radius: 4px;">
+                            <div style="background:rgba(0,0,0,0.3); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#FFF; font-family:var(--h2-ff); font-size:18px;">Mesas</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; position:relative; text-align:center; height: 180px; background-image: url('assets/ed7cc3dca00c9d77_cat-moveis.jpg'); background-size:cover; border-radius: 4px;">
+                            <div style="background:rgba(0,0,0,0.3); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#FFF; font-family:var(--h2-ff); font-size:18px;">Móveis</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; position:relative; text-align:center; height: 180px; background-image: url('assets/ecf2d49323528588_cat-decoracoes.jpg'); background-size:cover; border-radius: 4px;">
+                            <div style="background:rgba(0,0,0,0.3); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#FFF; font-family:var(--h2-ff); font-size:18px;">Decoração</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Motion & Interaction (Anchor: #motion) -->
+        <section id="motion" class="doc-section" style="background:#ffffff;">
+            <div class="container">
+                <h1 class="doc-section-title">Motion & Interações</h1>
+                
+                <div style="background:#f8f9fa; padding:30px; border-radius:4px;">
+                    <ul style="font-family: var(--tx-ff); font-size:14px; color: var(--color-primary); line-height: 1.8; padding-left: 20px; margin:0;">
+                        <li class="mb-3"><strong>Category Zoom Effect</strong>: Os cards de categoria aplicam zoom gradual na imagem de fundo utilizando transições CSS de <code>transform 0.5s ease</code>.</li>
+                        <li class="mb-3"><strong>Navigation Underline Transition</strong>: Underlines fluidos que se estendem sob os links de navegação no menu ao passar o mouse.</li>
+                        <li class="mb-3"><strong>Owl Carousel Smooth Slide</strong>: O slide da seção Hero transiciona suavemente de forma horizontal com feedback tátil no mobile.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Icons (Anchor: #icons) -->
+        <section id="icons" class="doc-section" style="background:#f8f9fa;">
+            <div class="container">
+                <h1 class="doc-section-title">Ícones</h1>
+                
+                <div class="doc-subsection-title">Material Icons Usados</div>
+                <div style="display:flex; gap: 30px; flex-wrap:wrap; font-family: var(--tx-ff); font-size: 13px; text-align:center;">
+                    <div style="width: 100px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <i class="material-icons" style="font-size:32px; color:var(--color-primary);">menu</i>
+                        <div style="margin-top:10px;">menu</div>
+                    </div>
+                    <div style="width: 100px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <i class="material-icons" style="font-size:32px; color:var(--color-primary);">close</i>
+                        <div style="margin-top:10px;">close</div>
+                    </div>
+                    <div style="width: 100px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <i class="material-icons" style="font-size:32px; color:var(--color-primary);">search</i>
+                        <div style="margin-top:10px;">search</div>
+                    </div>
+                    <div style="width: 100px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <i class="material-icons" style="font-size:32px; color:var(--color-primary);">shopping_cart</i>
+                        <div style="margin-top:10px;">cart</div>
+                    </div>
+                </div>
+
+                <div class="doc-subsection-title">Ícones Sociais / Fontes</div>
+                <div style="display:flex; gap: 30px; flex-wrap:wrap; font-family: var(--tx-ff); font-size: 13px; text-align:center;">
+                    <div style="width: 120px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <span class="icon-instagram" style="font-size:32px; color:var(--color-primary);"></span>
+                        <div style="margin-top:10px;">instagram</div>
+                    </div>
+                    <div style="width: 120px; padding:15px; background:#fff; border-radius: 4px; border:1px solid #e8e3e2;">
+                        <span class="icon-whatsapp" style="font-size:32px; color:var(--color-primary);"></span>
+                        <div style="margin-top:10px;">whatsapp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JS Dependencies -->
+    <script src="assets/0497a8d2a9bde7db_jquery.min.js" charset="utf-8"></script>
+    <script src="assets/6648a8479f6a7ec9_dc-common.js" type="text/javascript"></script>
+
+    <!-- Initializer Scripts -->
+    <script>
+        $(window).on('load', function() {
+            if ($.fn.owlCarousel) {
+                $('#banners-carousel-banners-carousel-1565775').owlCarousel({
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    nav: true,
+                    dots: true
+                });
+            }
+        });
+    </script>
+</body>
+</html>

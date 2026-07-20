@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Showcase - Florarte Design System</title>
+    
+    <!-- CSS Dependencies -->
+    <link href="assets/2f01a854a759c0a6_reset.css" rel="stylesheet"/>
+    <link href="assets/9a7cfe03ec763818_theme.css" rel="stylesheet"/>
+    <link href="assets/5052c28c33de9956_header-footer.css" rel="stylesheet"/>
+    <link href="assets/d8dcd7f6320f61d6_frontend.min.css" rel="stylesheet"/>
+    <link href="assets/b887f5d34fa60968_post-6.css" rel="stylesheet"/>
+    <link href="assets/4873e69e3948cfd2_widget-image.min.css" rel="stylesheet"/>
+    <link href="assets/8fdfb2d2f71413f2_widget-nav-menu.min.css" rel="stylesheet"/>
+    <link href="assets/e1cc1a927f310f6a_widget-divider.min.css" rel="stylesheet"/>
+    <link href="assets/f97324e549b211fa_widget-social-icons.min.css" rel="stylesheet"/>
+    <link href="assets/02c3b1394964fd71_apple-webkit.min.css" rel="stylesheet"/>
+    <link href="assets/4a3268ea0cef2289_widget-heading.min.css" rel="stylesheet"/>
+    <link href="assets/d87ddf917b7a1449_all.min.css" rel="stylesheet"/>
+    <link href="assets/c55902832fb84522_v4-shims.min.css" rel="stylesheet"/>
+    <link href="assets/7263363f11b6184f_fadeInUp.min.css" rel="stylesheet"/>
+    <link href="assets/c57e64fcb72bddaf_swiper.min.css" rel="stylesheet"/>
+    <link href="assets/196f351ce1a78030_e-swiper.min.css" rel="stylesheet"/>
+    <link href="assets/6fe83a0ce11d7ba7_widget-slides.min.css" rel="stylesheet"/>
+    <link href="assets/f4256042ca8f80af_widget-video.min.css" rel="stylesheet"/>
+    <link href="assets/3fc36bffa89279d3_widget-form.min.css" rel="stylesheet"/>
+    <link href="assets/36c4758131ec0d4a_post-7.css" rel="stylesheet"/>
+    <link href="assets/fc8ddb9a5beffd95_post-1465.css" rel="stylesheet"/>
+    <link href="assets/637fede86ac941ed_style.min.css" rel="stylesheet"/>
+    <link href="assets/c4047043368afb4b_font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets/47c1997fc2c99652_post-487.css" rel="stylesheet"/>
+    <link href="assets/3672b6d7bba6d283_roboto.css" rel="stylesheet"/>
+    <link href="assets/3ce6a9f2febd8829_robotoslab.css" rel="stylesheet"/>
+    <link href="assets/f545c86f3ceaa418_css.css" rel="stylesheet"/>
+    <link href="assets/79ff54e539ebb137_huge-icons.min.css" rel="stylesheet"/>
+
+    <style>
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom documentation layout helper styles */
+        .doc-section {
+            padding: 80px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .doc-section-title {
+            font-family: "Roboto Flex", Sans-serif;
+            color: #6B3034;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .doc-subsection-title {
+            font-family: "Roboto Flex", Sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #766E37;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            border-left: 4px solid #6B3034;
+            padding-left: 12px;
+            margin-top: 40px;
+        }
+        .swatch-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .swatch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .swatch-color {
+            height: 100px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .swatch-title {
+            font-family: "Roboto", Sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #6B3034;
+            margin-bottom: 4px;
+        }
+        .swatch-info {
+            font-family: "Roboto", Sans-serif;
+            font-size: 12px;
+            color: #8E8440;
+            line-height: 1.4;
+        }
+        .state-label {
+            font-size: 11px;
+            font-family: monospace;
+            color: #8E8440;
+            margin-bottom: 6px;
+            display: block;
+        }
+        .doc-nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        /* Typography row layouts */
+        .typography-row {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .typography-label {
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+            color: #766E37;
+            font-weight: 600;
+            width: 20%;
+        }
+        .typography-preview {
+            width: 60%;
+        }
+        .typography-metrics {
+            font-family: monospace;
+            font-size: 12px;
+            color: #8E8440;
+            text-align: right;
+            width: 20%;
+        }
+    </style>
+</head>
+<body class="home wp-singular page-template-default page page-id-7 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-7 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit" data-elementor-device-mode="desktop">
+
+    <!-- Top Navigation Header -->
+    <div class="doc-nav-wrapper">
+        <div class="elementor elementor-1465 elementor-location-header" data-elementor-id="1465" data-elementor-type="header">
+            <div class="elementor-element elementor-element-174e1b2 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-element_type="container" data-id="174e1b2">
+                <div class="e-con-inner" style="justify-content: space-between; align-items: center; display: flex; width: 100%;">
+                    <div class="elementor-element elementor-element-fbce544 elementor-widget elementor-widget-image" style="width: auto; margin: 0;">
+                        <a href="#hero">
+                            <img alt="" class="attachment-large size-large wp-image-1137" height="192" src="assets/ddedc218d8f22a06_Logo-Florarte-1.png" width="300" style="max-height: 50px; width: auto;"/>
+                        </a>
+                    </div>
+                    <div class="elementor-element elementor-element-a761b2c elementor-nav-menu__align-center elementor-widget elementor-widget-nav-menu" style="width: auto; margin: 0;">
+                        <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+                            <ul class="elementor-nav-menu" id="menu-1-a761b2c">
+                                <li class="menu-item"><a class="elementor-item" href="#hero">Hero</a></li>
+                                <li class="menu-item"><a class="elementor-item" href="#typography">Tipografia</a></li>
+                                <li class="menu-item"><a class="elementor-item" href="#colors">Cores</a></li>
+                                <li class="menu-item"><a class="elementor-item" href="#components">Componentes</a></li>
+                                <li class="menu-item"><a class="elementor-item" href="#layout">Layout</a></li>
+                                <li class="menu-item"><a class="elementor-item" href="#motion">Motion</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 0: Cloned Hero Banner Slider (Anchor: #hero) -->
+    <div class="elementor elementor-7" style="margin-top: 89px;">
+        <div class="elementor-element elementor-element-a623e3b e-con-full e-flex e-con e-parent e-lazyloaded" data-element_type="container" data-id="a623e3b">
+            <div class="elementor-element elementor-element-12d02a4 elementor--h-position-center elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides e-widget-swiper" data-element_type="widget" data-id="12d02a4" id="hero">
+                <div aria-label="Slides" aria-roledescription="carousel" class="elementor-slides-wrapper elementor-main-swiper swiper" data-animation="fadeInUp" dir="ltr" role="region">
+                    <div class="swiper-wrapper elementor-slides">
+                        <div class="elementor-repeater-item-d57f6fd swiper-slide">
+                            <div class="swiper-slide-bg" role="img"></div>
+                            <div class="swiper-slide-inner">
+                                <div class="swiper-slide-contents animated fadeInUp">
+                                    <div class="elementor-slide-heading">Design System | Tipografia</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-repeater-item-8ebcd73 swiper-slide">
+                            <div class="swiper-slide-bg" role="img"></div>
+                            <div class="swiper-slide-inner">
+                                <div class="swiper-slide-contents animated fadeInUp">
+                                    <div class="elementor-slide-heading">Design System | Cores & Superfícies</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-repeater-item-5f9844a swiper-slide">
+                            <div class="swiper-slide-bg" role="img"></div>
+                            <div class="swiper-slide-inner">
+                                <div class="swiper-slide-contents animated fadeInUp">
+                                    <div class="elementor-slide-heading">Design System | Componentes</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-repeater-item-6e89e7f swiper-slide">
+                            <div class="swiper-slide-bg" role="img"></div>
+                            <div class="swiper-slide-inner">
+                                <div class="swiper-slide-contents animated fadeInUp">
+                                    <div class="elementor-slide-heading">Design System | Layouts</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-repeater-item-abb0804 swiper-slide">
+                            <div class="swiper-slide-bg" role="img"></div>
+                            <div class="swiper-slide-inner">
+                                <div class="swiper-slide-contents animated fadeInUp">
+                                    <div class="elementor-slide-heading">Design System | Motion</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-swiper-button elementor-swiper-button-prev">
+                        <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>
+                    </div>
+                    <div class="elementor-swiper-button elementor-swiper-button-next">
+                        <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Typography (Anchor: #typography) -->
+    <section id="typography" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Tipografia</h1>
+            
+            <div class="elementor elementor-7">
+                <!-- Heading 1 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 1</div>
+                    <div class="typography-preview">
+                        <div class="elementor-slide-heading" style="text-align: left; font-size: 45px;">Heading 1 Hero Slide</div>
+                    </div>
+                    <div class="typography-metrics">Roboto Flex / 45px</div>
+                </div>
+                
+                <!-- Heading 2 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 2</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-243e6ec elementor-widget elementor-widget-heading" style="text-align: left;">
+                            <h2 class="elementor-heading-title elementor-size-default" style="margin: 0;">Heading 2 Title</h2>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto Flex / 36px (500)</div>
+                </div>
+                
+                <!-- Heading 3 -->
+                <div class="typography-row">
+                    <div class="typography-label">Heading 3</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-1207c2f elementor-widget elementor-widget-heading" style="text-align: left;">
+                            <h2 class="elementor-heading-title elementor-size-default" style="margin: 0; color: #6B3034;">Heading 3 Title</h2>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto Flex / 28px (400)</div>
+                </div>
+                
+                <!-- Bold L -->
+                <div class="typography-row">
+                    <div class="typography-label">Bold L</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-0073934 elementor-widget elementor-widget-button" style="text-align: left;">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;" style="display: inline-block;">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">BOLD L BUTTON</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto / 18px (500)</div>
+                </div>
+                
+                <!-- Paragraph / Body 1 -->
+                <div class="typography-row">
+                    <div class="typography-label">Paragraph 1</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-bb72831 elementor-widget elementor-widget-text-editor" style="text-align: left;">
+                            <p style="margin: 0; color: #6b3034;">Este é o parágrafo de corpo grande utilizado no site da Florarte.</p>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto / 21px / 22px</div>
+                </div>
+                
+                <!-- Paragraph / Body 2 -->
+                <div class="typography-row">
+                    <div class="typography-label">Paragraph 2</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-d98afcd elementor-widget elementor-widget-text-editor" style="text-align: left; padding: 0;">
+                            <p style="margin: 0;">Este é o parágrafo de tamanho padrão de descrição para os textos institucionais.</p>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto / 17px / 31px</div>
+                </div>
+                
+                <!-- Regular S -->
+                <div class="typography-row">
+                    <div class="typography-label">Regular S</div>
+                    <div class="typography-preview">
+                        <div class="elementor-element elementor-element-73efe3b elementor-widget elementor-widget-text-editor" style="text-align: left;">
+                            <p style="margin: 0; color:#6b3034;">Asseguramos não utilizar suas informações de contato para enviar spam.</p>
+                        </div>
+                    </div>
+                    <div class="typography-metrics">Roboto / 14px</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Colors & Surfaces (Anchor: #colors) -->
+    <section id="colors" class="doc-section" style="background:#f4f4f4;">
+        <div class="container">
+            <h1 class="doc-section-title">Cores & Superfícies</h1>
+            
+            <div class="doc-subsection-title">Paleta de Cores Florarte</div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #6B3034;"></div>
+                        <div class="swatch-title">Brand Burgundy</div>
+                        <div class="swatch-info">Hex: #6B3034<br>Uso: Cor primária dos textos, títulos e botões</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #766E37;"></div>
+                        <div class="swatch-title">Olive Gold / Green</div>
+                        <div class="swatch-info">Hex: #766E37<br>Uso: Títulos, divisores e acentos da marca</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #D0B89B;"></div>
+                        <div class="swatch-title">Cream Gold Background</div>
+                        <div class="swatch-info">Hex: #D0B89B<br>Uso: Fundo da newsletter e painéis decorativos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #FFFFFF;"></div>
+                        <div class="swatch-title">Pure White</div>
+                        <div class="swatch-info">Hex: #FFFFFF<br>Uso: Fundo geral, painel de vídeo</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: #FAFAFA;"></div>
+                        <div class="swatch-title">Off-White</div>
+                        <div class="swatch-info">Hex: #FAFAFA<br>Uso: Títulos sobre fundo escuro</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="swatch-card">
+                        <div class="swatch-color" style="background: rgb(255, 255, 255); border: 2px solid rgba(0, 0, 0, 0.2);"></div>
+                        <div class="swatch-title">Cookie Banner BG</div>
+                        <div class="swatch-info">Hex: rgb(255, 255, 255)<br>Uso: Janela pop-up de termos e LGPD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: UI Components (Anchor: #components) -->
+    <section id="components" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Componentes de Interface</h1>
+
+            <div class="doc-subsection-title">Botões (States)</div>
+            <div class="elementor elementor-7">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <span class="state-label">Botão Principal (Burgundy):</span>
+                        <div class="elementor-element elementor-element-8b210bb elementor-widget elementor-widget-button">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Saiba Mais</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <span class="state-label">Botão Secundário (White / Burgundy Text):</span>
+                        <div class="elementor-element elementor-element-0073934 elementor-widget elementor-widget-button">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="#" onclick="return false;">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">WhatsApp</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Formulário de Newsletter</div>
+            <div class="elementor elementor-7" style="background: #D0B89B; padding: 30px; border-radius: 8px;">
+                <div class="elementor-element elementor-element-f021a1a elementor-widget elementor-widget-form">
+                    <form class="elementor-form" method="post" onsubmit="return false;">
+                        <div class="elementor-form-fields-wrapper elementor-labels-">
+                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-col-50">
+                                <input class="elementor-field elementor-size-md elementor-field-textual" name="form_fields[name]" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-col-50">
+                                <input class="elementor-field elementor-size-md elementor-field-textual" name="form_fields[celular]" placeholder="Celular" type="tel"/>
+                            </div>
+                            <div class="elementor-field-type-email elementor-field-group elementor-column elementor-col-100">
+                                <input class="elementor-field elementor-size-md elementor-field-textual" name="form_fields[email]" placeholder="E-mail" type="email"/>
+                            </div>
+                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-col-60">
+                                <input class="elementor-field elementor-size-md elementor-field-textual" name="form_fields[cnpj]" placeholder="CNPJ" type="text"/>
+                            </div>
+                            <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-40 e-form__buttons">
+                                <button class="elementor-button elementor-size-md" type="submit" style="background-color: #6B3034;">
+                                    <span class="elementor-button-content-wrapper">
+                                        <span class="elementor-button-text">Cadastrar</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Video Player Component</div>
+            <div class="elementor elementor-7">
+                <div class="elementor-element elementor-element-c721efa elementor-widget elementor-widget-video" style="max-width: 100%; width: 100%;">
+                    <div class="elementor-wrapper elementor-open-inline">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="elementor-video" frameborder="0" height="360" src="https://www.youtube.com/embed/Rlbk87GSHg0?controls=1&amp;rel=0&amp;playsinline=0&amp;cc_load_policy=0&amp;autoplay=0&amp;enablejsapi=1" title="Showroom" width="640"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">Cookie Consent Window Mockup</div>
+            <div class="cc-window cc-banner cc-type-opt-in cc-theme-classic cc-bottom cc-color-override-1444386161" style="position: static; margin-bottom: 20px; width: 100%;">
+                <span class="cc-message">Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage em nosso site e personalizar conteúdo.</span>
+                <div class="cc-compliance cc-highlight">
+                    <a class="cc-btn cc-DENY" role="button">Recusar Cookies</a>
+                    <a class="cc-btn cc-ALLOW" role="button">Aceitar Cookies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Layout & Spacing (Anchor: #layout) -->
+    <section id="layout" class="doc-section" style="background:#f4f4f4;">
+        <div class="container">
+            <h1 class="doc-section-title">Layout & Espaçamento</h1>
+
+            <div class="doc-subsection-title">1. Blurred Glassmorphism Panel (backdrop-filter)</div>
+            <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#8E8440; margin-bottom:20px;">Utilizado sobre a imagem de fundo principal para dar foco ao texto institucional com desfoque.</p>
+            <div class="elementor elementor-7" style="background-image: url('assets/672aac795683d208_0G0A1027-Editar-2.jpg'); background-size: cover; padding: 50px;">
+                <div class="elementor-element elementor-element-3a303b7" style="padding: 30px; text-align: center; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);">
+                    <h2 style="font-family:'Roboto Flex', sans-serif; color: #6B3034; text-transform: uppercase;">Glassmorphism Container</h2>
+                    <p style="font-family:'Roboto', sans-serif; color:#6B3034;">Este container possui a classe <code>.elementor-element-3a303b7</code> e aplica backdrop-filter blur.</p>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">2. Split Flex Layout (30% / 70% Columns)</div>
+            <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#8E8440; margin-bottom:20px;">Utilizado na seção de newsletter para separar o cabeçalho e o formulário de cadastro.</p>
+            <div class="elementor elementor-7">
+                <div class="row" style="background:#fff; padding: 20px; border-radius: 8px; border: 1px dashed #766E37;">
+                    <div class="col-md-4" style="background:rgba(107,48,52,0.1); border: 1px solid #6B3034; text-align:center; padding: 20px; font-family:'Roboto', sans-serif;">
+                        30% Column Header
+                    </div>
+                    <div class="col-md-8" style="background:rgba(118,110,55,0.1); border: 1px solid #766E37; text-align:center; padding: 20px; font-family:'Roboto', sans-serif;">
+                        70% Column Form
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc-subsection-title">3. Contact Banner Split Layout (65% / 20% Columns)</div>
+            <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#8E8440; margin-bottom:20px;">Utilizado na seção de contato rápida contendo chamada e link do WhatsApp.</p>
+            <div class="elementor elementor-7">
+                <div class="row" style="background:#6B3034; padding: 20px; border-radius: 8px;">
+                    <div class="col-md-8" style="color: #fff; text-align:left; padding: 15px; font-family:'Roboto Flex', sans-serif; font-size: 18px;">
+                        65% Heading (Entre em contato para mais informações)
+                    </div>
+                    <div class="col-md-4" style="text-align:right; padding: 15px;">
+                        <a class="elementor-button" href="#" onclick="return false;" style="background:#fff; color:#6B3034; padding: 10px 20px; border-radius:5px;">20% Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Motion & Interaction (Anchor: #motion) -->
+    <section id="motion" class="doc-section" style="background:#ffffff;">
+        <div class="container">
+            <h1 class="doc-section-title">Motion & Interações</h1>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="doc-subsection-title">Entradas Animadas (WOW / Elementor)</div>
+                    <p style="font-family:'Roboto', sans-serif; font-size:14px; color:#8E8440; margin-bottom:20px;">Utilize os botões abaixo para ver e testar a animação fadeInUp.</p>
+                    
+                    <div style="background:#f4f4f4; padding:30px; border-radius:8px; text-align:center;">
+                        <div id="motion-target-box" class="animated" style="width: 140px; height: 140px; background:#6B3034; color:#fff; display:inline-flex; align-items:center; justify-content:center; font-family:'Roboto', sans-serif; font-weight:600; margin-bottom:20px; border-radius:4px;">
+                            Florarte Box
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="elementor-button" onclick="triggerAnim('fadeInUp')" style="background-color:#766E37; color:#fff; border:0; padding:10px 25px; cursor:pointer;">fadeInUp</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="doc-subsection-title">Interações de Slider e Efeitos</div>
+                    <div style="background:#f4f4f4; padding:30px; border-radius:8px; height:100%;">
+                        <ul style="font-family:'Roboto', sans-serif; font-size:14px; color:#6B3034; line-height:1.8; padding-left:20px;">
+                            <li class="mb-2"><strong>Ken Burns Slider Background</strong>: Os slides do carrossel no topo utilizam zoom gradual animado para dar foco e profundidade ao banner.</li>
+                            <li class="mb-2"><strong>CTA Button Grow Transition</strong>: Transições de cores do cadastrar formulário ao passar o mouse.</li>
+                            <li class="mb-2"><strong>Menu underline animations</strong>: Underline que cresce ao focar nos links do menu principal do cabeçalho.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Dependencies -->
+    <script src="assets/cb6f2d32c49d1c2b_jquery.min.js"></script>
+    <script src="assets/5274f11e6fb32ae0_jquery-migrate.min.js"></script>
+    <script src="assets/2ac3af00c283c0b2_swiper.min.js"></script>
+
+    <!-- Initializer Scripts -->
+    <script>
+        // Motion Sandbox trigger animation
+        function triggerAnim(animName) {
+            var box = document.getElementById('motion-target-box');
+            box.className = 'animated';
+            void box.offsetWidth; // force reflow
+            box.classList.add(animName);
+        }
+
+        // Failsafe Swiper initialization for Hero Carousel Slides
+        $(window).on('load', function() {
+            if (window.Swiper) {
+                new Swiper('.elementor-main-swiper', {
+                    slidesPerView: 1,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false
+                    },
+                    navigation: {
+                        nextEl: '.elementor-swiper-button-next',
+                        prevEl: '.elementor-swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

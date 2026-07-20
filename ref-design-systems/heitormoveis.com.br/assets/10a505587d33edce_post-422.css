@@ -1,0 +1,50 @@
+.elementor-422 .elementor-element.elementor-element-3934014{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:stretch;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--padding-top:45px;--padding-bottom:45px;--padding-left:35px;--padding-right:35px;--z-index:9;}.elementor-422 .elementor-element.elementor-element-9592b06{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:center;}.elementor-422 .elementor-element.elementor-element-9592b06.e-con{--align-self:center;}.elementor-422 .elementor-element.elementor-element-8e0d561{width:var( --container-widget-width, 89.826% );max-width:89.826%;--container-widget-width:89.826%;--container-widget-flex-grow:0;}.elementor-422 .elementor-element.elementor-element-8e0d561.elementor-element{--flex-grow:0;--flex-shrink:0;}.elementor-422 .elementor-element.elementor-element-8e0d561 img{max-width:24%;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-popup{background-color:#FFFFFF;background-image:url("d985eed2c3e14853_Sem-titulo-1.webp");background-position:center center;background-repeat:no-repeat;background-size:auto;}.elementor-422 .elementor-element.elementor-element-15ef177{width:auto;max-width:auto;z-index:1;text-align:left;}.elementor-422 .elementor-element.elementor-element-15ef177.elementor-element{--align-self:center;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-vertical .aux-menu-depth-0 .aux-item-content{text-align:left;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-depth-0 > .aux-item-content{font-family:"Philosopher", Sans-serif;font-size:30px;font-weight:400;padding:0% 0% 0% 0%;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-depth-0.aux-hover > .aux-item-content {color:#874414 !important;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-depth-0.aux-hover{box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0);}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-depth-0{margin:10px 0px 20px 0px;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-depth-0.current-menu-item > a{font-family:"Philosopher", Sans-serif;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-submenu .aux-menu-item{font-family:"Philosopher", Sans-serif;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger:before,  .elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger:after, .elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger .mid-line{border-color:#FFFFFF !important;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-menu .aux-menu-item > .aux-item-content{font-family:"Philosopher", Sans-serif;font-size:30px;font-weight:500;text-transform:capitalize;padding:0px 0px 10px 0px;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-menu .aux-menu-item{margin:0px 0px 10px 100px;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-menu .aux-master-menu{text-align:left;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}@media(max-width:767px){.elementor-422 .elementor-element.elementor-element-9592b06{--width:100%;}.elementor-422 .elementor-element.elementor-element-8e0d561{width:var( --container-widget-width, 231px );max-width:231px;--container-widget-width:231px;--container-widget-flex-grow:0;}.elementor-422 .elementor-element.elementor-element-8e0d561 img{max-width:100%;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-menu .aux-menu-item > .aux-item-content{font-size:20px;}.elementor-422 .elementor-element.elementor-element-15ef177 .aux-fs-popup{background-position:39px 61px;background-size:80% auto;}}/* Start custom CSS for aux_menu_box, class: .elementor-element-15ef177 *//*-----burger menu-----*/
+.elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger:not(.aux-close)::before {
+    width: 50%;
+    margin-left: 50%;
+}
+.elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger:not(.aux-close)::after {
+    width: 75%;
+}
+/*.elementor-422 .elementor-element.elementor-element-15ef177 .aux-burger.aux-thick-large .mid-line{*/
+/*    margin: 5px 0 !important;*/
+/*}*/
+.elementor-422 .elementor-element.elementor-element-15ef177 .aux-cross-symbol:after, .elementor-422 .elementor-element.elementor-element-15ef177 .aux-cross-symbol:before{
+    color: #000 !important;
+    height: 3px !important;
+}
+
+/*-----Items-----*/
+.elementor-422 .elementor-element.elementor-element-15ef177 ul li{
+    text-align: left;
+}
+.elementor-422 .elementor-element.elementor-element-15ef177 ul{
+    display: inline-block;
+    width: 20%;
+}
+.elementor-422 .elementor-element.elementor-element-15ef177 .aux-menu-label{
+    position: relative;
+}
+.elementor-422 .elementor-element.elementor-element-15ef177 ul li:hover a span:after{
+    content: '';
+    height: 21px;
+    background-color: #DCECFB;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    z-index: -1;
+}
+@media screen and (max-width:2560px) and (min-width:2000px){
+    .elementor-422 .elementor-element.elementor-element-15ef177 .aux-item-content{
+        padding: 0% 0% 10% 100% !important;
+    }
+}
+@media screen and (max-width:2560px){
+    .elementor-422 .elementor-element.elementor-element-15ef177 .aux-panel-close{
+        top:7%;
+        left: 90%;
+        border: none;
+    }
+}/* End custom CSS */
