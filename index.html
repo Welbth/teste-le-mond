@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Le Mond &bull; Acervo</title>
+
+    <!-- Google Fonts: Fraunces (Italic Display) & Plus Jakarta Sans (400 & 700) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/eeb17a45a48aca1d_all.css" rel="stylesheet" />
+
+    <!-- Design System & Hero Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Ambient Luxury Organic Background -->
+    <div class="ds-ambient-bg">
+        <svg class="ds-noise-texture" xmlns="http://www.w3.org/2000/svg">
+            <filter id="dsNoiseFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#dsNoiseFilter)" />
+        </svg>
+        <div class="ds-light-ray ds-ray-1"></div>
+        <div class="ds-light-ray ds-ray-2"></div>
+        <div class="ds-light-ray ds-ray-3"></div>
+    </div>
+
+    <!-- Header Navigation (Loaded via JS) -->
+    <div id="ds-header-placeholder"></div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="ds-hero">
+        <div class="ds-container">
+            <div class="ds-row" style="align-items: center;">
+
+                <!-- Hero Content Column -->
+                <div class="ds-col-6">
+                    <div class="ds-hero-content">
+                        <!-- Eyebrow Badge -->
+                        <div class="ds-glass-pill">
+                            <span class="ds-pill-dot"></span>
+                            <span class="ds-pill-text">ACERVO LE MOND</span>
+                        </div>
+
+                        <!-- Title -->
+                        <h1 class="ds-hero-title">
+                            A curadoria entre matéria, tempo e <span class="italic">forma</span>.
+                        </h1>
+
+                        <!-- Description -->
+                        <p class="ds-hero-paragraph">
+                            Móveis, tapetes, arte e materiais reunidos de <strong>marcas escolhidas uma a uma</strong>.
+                            Peças que <strong>atravessam décadas</strong> em uma mesma casa.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="ds-btn-group">
+                            <a href="#colecao" class="ds-btn-solid">
+                                CONHECER COLEÇÃO <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#marcas" class="ds-btn-glass">
+                                VER MARCAS
+                            </a>
+                        </div>
+
+                        <!-- Support Line -->
+                        <div class="ds-hero-support-line">
+                            MÓVEIS · TAPETES · ARTE · MATERIAIS
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Visual Stage (Interactive Carousel) -->
+                <div class="ds-col-6">
+                    <div class="ds-hero-stage" id="heroCarousel">
+
+                        <!-- PRODUTO 1 — SOFÁ SONATA -->
+                        <div class="ds-hero-slide active">
+                            <!-- Main Photo Frame -->
+                            <div class="ds-main-photo-frame">
+                                <img src="sofa_sonata_frontal.webp" alt="Sofá Sonata Frontal" />
+                            </div>
+
+                            <!-- Card Inferior (Sobreposto Top-Left) -->
+                            <div class="ds-glass-panel-bottom">
+                                <div class="ds-panel-info">
+                                    <h5>Coleção Buriti</h5>
+                                    <p>Seleção Le Mond</p>
+                                </div>
+                                <span class="ds-panel-badge">ACERVO</span>
+                            </div>
+
+                            <!-- Card Pequeno (Sobreposto Bottom-Right) -->
+                            <div class="ds-glass-card-float-top">
+                                <img src="sofa_sonata_lateral.webp" alt="Sofá Sonata Lateral" class="ds-product-preview-png" />
+                                <div class="ds-card-title-text">Sofá Sonata</div>
+                                <div class="ds-card-subtitle-text">Linho &middot; Coleção Buriti</div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUTO 2 — APARADOR RZ9008 -->
+                        <div class="ds-hero-slide">
+                            <div class="ds-main-photo-frame">
+                                <img src="aparador-rz9008-destaque.webp" alt="Aparador RZ9008 Destaque" />
+                            </div>
+
+                            <div class="ds-glass-panel-bottom">
+                                <div class="ds-panel-info">
+                                    <h5>Linha RZ</h5>
+                                    <p>Seleção Le Mond</p>
+                                </div>
+                                <span class="ds-panel-badge">ACERVO</span>
+                            </div>
+
+                            <div class="ds-glass-card-float-top">
+                                <img src="aparador-rz9008-frontal.webp" alt="Aparador RZ9008 Frontal" class="ds-product-preview-png" />
+                                <div class="ds-card-title-text">Aparador RZ9008</div>
+                                <div class="ds-card-subtitle-text">Madeira Nobre &middot; CCL Móveis</div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUTO 3 — MESA PETRA -->
+                        <div class="ds-hero-slide">
+                            <div class="ds-main-photo-frame">
+                                <img src="base-petra-dupla.webp" alt="Base Petra Dupla" />
+                            </div>
+
+                            <div class="ds-glass-panel-bottom">
+                                <div class="ds-panel-info">
+                                    <h5>Bases de Jantar</h5>
+                                    <p>Seleção Le Mond</p>
+                                </div>
+                                <span class="ds-panel-badge">ACERVO</span>
+                            </div>
+
+                            <div class="ds-glass-card-float-top">
+                                <img src="base-petra-individual.webp" alt="Base Petra Individual" class="ds-product-preview-png" />
+                                <div class="ds-card-title-text">Mesa Petra</div>
+                                <div class="ds-card-subtitle-text">Pedra Natural &middot; Universum</div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUTO 4 — POLTRONA BAOBÁ -->
+                        <div class="ds-hero-slide">
+                            <div class="ds-main-photo-frame">
+                                <img src="poltrona-baoba-frontal.webp" alt="Poltrona Baobá Frontal" />
+                            </div>
+
+                            <div class="ds-glass-panel-bottom">
+                                <div class="ds-panel-info">
+                                    <h5>Coleção Raiz &amp; Forma</h5>
+                                    <p>Seleção Le Mond</p>
+                                </div>
+                                <span class="ds-panel-badge">ACERVO</span>
+                            </div>
+
+                            <div class="ds-glass-card-float-top">
+                                <img src="poltrona-baoba-lateral.webp" alt="Poltrona Baobá Lateral" class="ds-product-preview-png" />
+                                <div class="ds-card-title-text">Poltrona Baobá</div>
+                                <div class="ds-card-subtitle-text">Tecido &middot; Möbel</div>
+                            </div>
+                        </div>
+
+                        <!-- PRODUTO 5 — QUADROS ANIMAIS -->
+                        <div class="ds-hero-slide">
+                            <div class="ds-main-photo-frame">
+                                <img src="quadro-150687-animais.webp" alt="Quadro Animais" />
+                            </div>
+
+                            <div class="ds-glass-panel-bottom">
+                                <div class="ds-panel-info">
+                                    <h5>Le Arte Decor</h5>
+                                    <p>Seleção Le Mond</p>
+                                </div>
+                                <span class="ds-panel-badge">ACERVO</span>
+                            </div>
+
+                            <div class="ds-glass-card-float-top">
+                                <img src="quadro-150710-150715-animais.webp" alt="Trio Animais" class="ds-product-preview-png" />
+                                <div class="ds-card-title-text">Trio Animais — Leão, Onça e Tigre</div>
+                                <div class="ds-card-subtitle-text">Fotografia &middot; Cód. 150687</div>
+                            </div>
+                        </div>
+
+                        <!-- Ultra-Luxury Architectural Dash Nav Indicator -->
+                        <div class="ds-carousel-nav">
+                            <button class="ds-carousel-dash active" onclick="goToSlide(0)" aria-label="Produto 1"></button>
+                            <button class="ds-carousel-dash" onclick="goToSlide(1)" aria-label="Produto 2"></button>
+                            <button class="ds-carousel-dash" onclick="goToSlide(2)" aria-label="Produto 3"></button>
+                            <button class="ds-carousel-dash" onclick="goToSlide(3)" aria-label="Produto 4"></button>
+                            <button class="ds-carousel-dash" onclick="goToSlide(4)" aria-label="Produto 5"></button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: CATEGORIAS (Conheça nossas categorias — Ultra-Minimalist Clean Strip) -->
+    <section id="categorias" class="ds-categories-section">
+        <div class="ds-container">
+            
+            <!-- Section Header -->
+            <div class="ds-categories-header">
+                <h2 class="ds-categories-title">
+                    Conheça nossas <span class="italic">categorias</span>.
+                </h2>
+            </div>
+
+            <!-- Minimalist Clean Grid — Floating Architectural Items (No Heavy Boxes) -->
+            <div class="ds-categories-clean-grid">
+                
+                <!-- 01. Sofás & Estofados -->
+                <a href="#sofas" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Sofás &amp; Estofados</h3>
+                        <span class="ds-cat-clean-cta">Ver Sofás &amp; Estofados <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 02. Poltronas & Cadeiras -->
+                <a href="#poltronas" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Poltronas &amp; Cadeiras</h3>
+                        <span class="ds-cat-clean-cta">Ver Poltronas &amp; Cadeiras <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 03. Mesas, Aparadores & Buffets -->
+                <a href="#mesas" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Mesas &amp; Aparadores</h3>
+                        <span class="ds-cat-clean-cta">Ver Mesas, Aparadores &amp; Buffets <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 04. Camas & Dormitório -->
+                <a href="#dormitorio" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Camas &amp; Dormitório</h3>
+                        <span class="ds-cat-clean-cta">Ver Camas &amp; Dormitório <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 05. Iluminação -->
+                <a href="#iluminacao" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Iluminação</h3>
+                        <span class="ds-cat-clean-cta">Ver Iluminação <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 06. Arte & Quadros -->
+                <a href="#arte" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Arte &amp; Quadros</h3>
+                        <span class="ds-cat-clean-cta">Ver Arte &amp; Quadros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 07. Tapetes -->
+                <a href="#tapetes" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Tapetes</h3>
+                        <span class="ds-cat-clean-cta">Ver Tapetes <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- 08. Décor & Objetos -->
+                <a href="#decor" class="ds-cat-item-clean">
+                    <div class="ds-cat-clean-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="ds-cat-clean-info">
+                        <h3 class="ds-cat-clean-title">Décor &amp; Objetos</h3>
+                        <span class="ds-cat-clean-cta">Ver Décor &amp; Objetos <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CURATORIA PERSONALIZADA -->
+    <section id="curadoria" class="ds-curadoria-section">
+        
+        <!-- Dynamic Background Image Stage -->
+        <div class="ds-curadoria-bg-stage">
+            <img src="sofa_de_canto_temda.webp" alt="Sofás" class="ds-curadoria-bg-img active" />
+            <img src="tapete_couro_linhas.webp" alt="Tapetes" class="ds-curadoria-bg-img" />
+            <img src="buffet_zara_ccl.webp" alt="Mesas" class="ds-curadoria-bg-img" />
+            <img src="learte_quadro_ambiente.webp" alt="Arte" class="ds-curadoria-bg-img" />
+            <div class="ds-curadoria-overlay"></div>
+        </div>
+
+        <div class="ds-container ds-curadoria-container">
+            <!-- Centered Floating Content (No Block Container) -->
+            <div class="ds-curadoria-content-clean">
+                <h2 class="ds-curadoria-title">Curadoria <span class="italic">personalizada</span>.</h2>
+                <p class="ds-curadoria-desc">
+                    Um consultor <strong>Le Mond</strong> ajuda a combinar peças, tecidos e materiais para o seu <strong>ambiente</strong>.
+                </p>
+                
+                <!-- Interactive Tags -->
+                <div class="ds-curadoria-tags">
+                    <button class="ds-curadoria-tag-btn active" onclick="setCuradoriaTag(0)">Sofás</button>
+                    <span class="ds-curadoria-tag-dot">&middot;</span>
+                    <button class="ds-curadoria-tag-btn" onclick="setCuradoriaTag(1)">Tapetes</button>
+                    <span class="ds-curadoria-tag-dot">&middot;</span>
+                    <button class="ds-curadoria-tag-btn" onclick="setCuradoriaTag(2)">Mesas</button>
+                    <span class="ds-curadoria-tag-dot">&middot;</span>
+                    <button class="ds-curadoria-tag-btn" onclick="setCuradoriaTag(3)">Arte</button>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="#consultor" class="ds-btn-solid ds-curadoria-btn">
+                    Falar com um consultor <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: NOVIDADES NO ACERVO (1-Row Center Focus Carousel Slider) -->
+    <section id="novidades" class="ds-novidades-section">
+        
+        <!-- Section Header -->
+        <div class="ds-novidades-header">
+            <h2 class="ds-novidades-title">Novidades no <span class="italic">acervo</span>.</h2>
+        </div>
+
+        <!-- Single Row Center Focus Carousel Stage -->
+        <div class="ds-novidades-carousel-stage">
+            
+            <!-- Navigation Arrows -->
+            <button class="ds-novidades-arrow prev" onclick="prevNovidades()" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="ds-novidades-arrow next" onclick="nextNovidades()" aria-label="Próximo">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Track containing 6 Product Cards -->
+            <div class="ds-novidades-track" id="novidadesTrack">
+                
+                <!-- Card 1: Sofá Hush -->
+                <div class="ds-novidades-card active-center" onclick="selectNovidadesCard(0)">
+                    <div class="ds-novidades-img-box">
+                        <img src="sofa_hush_1002_frontal.webp" alt="Sofá Hush" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">Buriti</span>
+                        <h3 class="ds-novidades-name">Sofá Hush</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2: Poltrona Sephora -->
+                <div class="ds-novidades-card" onclick="selectNovidadesCard(1)">
+                    <div class="ds-novidades-img-box">
+                        <img src="poltrona_sephora_lateral.webp" alt="Poltrona Sephora" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">TEMDA</span>
+                        <h3 class="ds-novidades-name">Poltrona Sephora</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3: Buffet Lys -->
+                <div class="ds-novidades-card" onclick="selectNovidadesCard(2)">
+                    <div class="ds-novidades-img-box">
+                        <img src="buffet_lys_269_frontal.webp" alt="Buffet Lys" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">CCL Móveis</span>
+                        <h3 class="ds-novidades-name">Buffet Lys</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4: Recamier Aris -->
+                <div class="ds-novidades-card" onclick="selectNovidadesCard(3)">
+                    <div class="ds-novidades-img-box">
+                        <img src="recamier_aris_lateral.webp" alt="Recamier Aris" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">Möbel</span>
+                        <h3 class="ds-novidades-name">Recamier Aris</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5: Mesa de Centro -->
+                <div class="ds-novidades-card" onclick="selectNovidadesCard(4)">
+                    <div class="ds-novidades-img-box">
+                        <img src="mesa_centro_lateral_ccl.webp" alt="Mesa de Centro" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">CCL Móveis</span>
+                        <h3 class="ds-novidades-name">Mesa de Centro</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6: Sofá-cama Zara -->
+                <div class="ds-novidades-card" onclick="selectNovidadesCard(5)">
+                    <div class="ds-novidades-img-box">
+                        <img src="sofa_zara_temda.webp" alt="Sofá-cama Zara" />
+                    </div>
+                    <div class="ds-novidades-info">
+                        <span class="ds-novidades-brand">TEMDA</span>
+                        <h3 class="ds-novidades-name">Sofá-cama Zara</h3>
+                    </div>
+                    <a href="#peca" class="ds-novidades-btn-link">
+                        Conhecer peça <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SHOWROOM -->
+    <section id="showroom" class="ds-showroom-section">
+        <div class="ds-container">
+            <div class="ds-row ds-showroom-row">
+                
+                <!-- Text Info -->
+                <div class="ds-col-6 ds-showroom-text-col">
+                    <div class="ds-showroom-content">
+                        <h2 class="ds-showroom-title">Nossa casa em <span class="italic">Castro</span>.</h2>
+                        <p class="ds-showroom-address">
+                            Rua Padre Damaso, 200 — esquina com Dr. Romário Martins, Castro, PR
+                        </p>
+                        
+                        <div class="ds-btn-group ds-showroom-btns">
+                            <a href="#mapa" class="ds-btn-solid">
+                                Ver no Mapa <i class="fas fa-map-marker-alt" style="margin-left: 6px;"></i>
+                            </a>
+                            <a href="#agendar" class="ds-btn-glass">
+                                Agendar visita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual (Map) -->
+                <div class="ds-col-6 ds-showroom-img-col">
+                    <div class="ds-showroom-map-wrapper">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Rua%20Padre%20Damaso,%20200%20Castro%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Loaded via JS) -->
+    <div id="ds-footer-placeholder"></div>
+
+    <!-- Global Components Script -->
+    <script src="components.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        // Continuous Hero Carousel Logic
+        let currentSlide = 0;
+
+        function goToSlide(index) {
+            const slides = document.querySelectorAll('.ds-hero-slide');
+            const dashes = document.querySelectorAll('.ds-carousel-dash');
+            if (!slides.length) return;
+
+            slides[currentSlide].classList.remove('active');
+            if (dashes[currentSlide]) dashes[currentSlide].classList.remove('active');
+
+            currentSlide = (index + slides.length) % slides.length;
+
+            slides[currentSlide].classList.add('active');
+            if (dashes[currentSlide]) dashes[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        // Curadoria Personalizada Tag & Background Switcher
+        let curadoriaTagIndex = 0;
+
+        function setCuradoriaTag(index) {
+            const bgImgs = document.querySelectorAll('.ds-curadoria-bg-img');
+            const tagBtns = document.querySelectorAll('.ds-curadoria-tag-btn');
+            if (!bgImgs.length) return;
+
+            bgImgs[curadoriaTagIndex].classList.remove('active');
+            tagBtns[curadoriaTagIndex].classList.remove('active');
+
+            curadoriaTagIndex = (index + bgImgs.length) % bgImgs.length;
+
+            bgImgs[curadoriaTagIndex].classList.add('active');
+            tagBtns[curadoriaTagIndex].classList.add('active');
+        }
+
+        function nextCuradoriaTag() {
+            setCuradoriaTag(curadoriaTagIndex + 1);
+        }
+
+        // Novidades Center Focal Carousel Logic
+        let currentNovidadesIndex = 0;
+
+        function updateNovidadesCarousel() {
+            const stage = document.querySelector('.ds-novidades-carousel-stage');
+            const track = document.getElementById('novidadesTrack');
+            const cards = document.querySelectorAll('.ds-novidades-card');
+            if (!stage || !track || !cards.length) return;
+
+            cards.forEach((card, i) => {
+                if (i === currentNovidadesIndex) {
+                    card.classList.add('active-center');
+                } else {
+                    card.classList.remove('active-center');
+                }
+            });
+
+            const stageWidth = stage.offsetWidth;
+            const cardWidth = cards[0].offsetWidth;
+            const cardMargin = 32; // 16px left + 16px right
+            const itemFullWidth = cardWidth + cardMargin;
+
+            const centerOffset = (stageWidth / 2) - (cardWidth / 2) - 16;
+            const translateX = centerOffset - (currentNovidadesIndex * itemFullWidth);
+
+            track.style.transform = `translateX(${translateX}px)`;
+        }
+
+        function nextNovidades() {
+            const cards = document.querySelectorAll('.ds-novidades-card');
+            if (!cards.length) return;
+            currentNovidadesIndex = (currentNovidadesIndex + 1) % cards.length;
+            updateNovidadesCarousel();
+        }
+
+        function prevNovidades() {
+            const cards = document.querySelectorAll('.ds-novidades-card');
+            if (!cards.length) return;
+            currentNovidadesIndex = (currentNovidadesIndex - 1 + cards.length) % cards.length;
+            updateNovidadesCarousel();
+        }
+
+        function selectNovidadesCard(index) {
+            currentNovidadesIndex = index;
+            updateNovidadesCarousel();
+        }
+
+        // Continuous Autoplay & Event Listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            setInterval(nextSlide, 2500);
+            setInterval(nextCuradoriaTag, 3500);
+
+            // Novidades Carousel Initial Setup
+            updateNovidadesCarousel();
+            setInterval(nextNovidades, 3000);
+            window.addEventListener('resize', updateNovidadesCarousel);
+        });
+    </script>
+</body>
+
+</html>
