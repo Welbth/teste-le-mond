@@ -18,8 +18,32 @@ const headerHTML = `
             <a href="#contato" class="ds-btn-solid ds-header-btn">
                 Falar com a Le Mond
             </a>
+
+            <button class="ds-menu-trigger" onclick="toggleOverlayMenu()">
+                <div class="ds-hamburger-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </div>
     </header>
+
+    <!-- Fullscreen Glass Overlay Menu -->
+    <div class="ds-overlay-modal" id="overlayMenu">
+        <button class="ds-overlay-close" onclick="toggleOverlayMenu()">&times;</button>
+        <ul class="ds-overlay-nav">
+            <li><a href="#colecao" onclick="toggleOverlayMenu()">Coleção</a></li>
+            <li><a href="#moveis" onclick="toggleOverlayMenu()">Móveis</a></li>
+            <li><a href="#tapetes" onclick="toggleOverlayMenu()">Tapetes</a></li>
+            <li><a href="#arte" onclick="toggleOverlayMenu()">Arte</a></li>
+            <li><a href="#decor" onclick="toggleOverlayMenu()">Décor</a></li>
+            <li style="margin-top: 40px;">
+                <a href="#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 16px; padding: 15px 30px;">
+                    Falar com a Le Mond
+                </a>
+            </li>
+        </ul>
+    </div>
 `;
 
 const footerHTML = `
@@ -97,3 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
         footerPlaceholder.innerHTML = footerHTML;
     }
 });
+
+function toggleOverlayMenu() {
+    const menu = document.getElementById('overlayMenu');
+    if (menu) {
+        menu.classList.toggle('active');
+    }
+}
