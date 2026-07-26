@@ -327,12 +327,13 @@ html, body {
     text-align: center;
 }
 .ds-overlay-nav li {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 .ds-overlay-nav a {
     font-family: var(--font-sans);
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -340,7 +341,7 @@ html, body {
 }
 .ds-overlay-nav a:hover {
     color: var(--ds-color-amber);
-    transform: translateX(10px);
+    transform: translateY(-2px);
 }
 
 /* Hero Section */
@@ -1066,7 +1067,6 @@ html, body {
 /* Responsive */
 @media (max-width: 768px) {
     .ds-curadoria-section {
-        padding: 90px 0;
         min-height: 500px;
     }
 }
@@ -1539,10 +1539,6 @@ html, body {
         flex: 0 0 300px;
         width: 300px;
         padding: 20px;
-    }
-    
-    .ds-showroom-section {
-        padding: 80px 0;
     }
     
     .ds-showroom-btns {

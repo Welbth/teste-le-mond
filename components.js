@@ -37,8 +37,8 @@ const headerHTML = `
             <li><a href="#tapetes" onclick="toggleOverlayMenu()">Tapetes</a></li>
             <li><a href="#arte" onclick="toggleOverlayMenu()">Arte</a></li>
             <li><a href="#decor" onclick="toggleOverlayMenu()">Décor</a></li>
-            <li style="margin-top: 40px;">
-                <a href="#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 16px; padding: 15px 30px;">
+            <li style="margin-top: 24px;">
+                <a href="#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 13px; padding: 12px 24px;">
                     Falar com a Le Mond
                 </a>
             </li>
