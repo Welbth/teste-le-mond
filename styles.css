@@ -220,6 +220,10 @@ html, body {
     text-decoration: none;
     position: relative;
     padding: 8px 0;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+    vertical-align: middle;
     transition: color 0.3s ease;
 }
 .ds-nav-link::after {
@@ -238,6 +242,275 @@ html, body {
 .ds-nav-link:hover::after {
     width: 100%;
     background-color: var(--ds-color-sage);
+}
+
+/* Header Dropdown Menu (Luxury Glassmorphism Dropdown) */
+.ds-nav-item.ds-dropdown-item {
+    position: relative;
+}
+.ds-dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+}
+.ds-dropdown-arrow {
+    font-size: 8px;
+    margin-left: 4px;
+    line-height: 1;
+    transition: transform 0.3s ease, color 0.3s ease;
+    opacity: 0.75;
+}
+.ds-dropdown-item:hover .ds-dropdown-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+    color: var(--ds-color-caramel);
+}
+
+.ds-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(14px);
+    width: 250px;
+    background: rgba(22, 18, 15, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 10px 6px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+}
+.ds-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: transparent;
+}
+.ds-dropdown-item:hover .ds-dropdown-menu,
+.ds-dropdown-item:focus-within .ds-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.ds-dropdown-link {
+    display: block;
+    padding: 10px 14px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.ds-dropdown-link:hover {
+    color: var(--ds-color-gold-light);
+    background: rgba(255, 255, 255, 0.06);
+    padding-left: 18px;
+}
+.ds-dropdown-link.ds-disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+.ds-dropdown-link.ds-disabled:hover {
+    color: rgba(255, 255, 255, 0.45);
+    background: transparent;
+    padding-left: 14px;
+}
+
+/* Mobile Overlay Submenu Accordion Styling */
+.ds-overlay-item-with-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.ds-overlay-link-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.ds-overlay-arrow-btn {
+    background: transparent;
+    border: none;
+    color: var(--ds-text-main);
+    font-size: 14px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.ds-overlay-arrow-btn i {
+    transition: transform 0.3s ease;
+}
+.ds-overlay-arrow-btn.active i {
+    transform: rotate(180deg);
+    color: var(--ds-color-gold-light);
+}
+.ds-overlay-sub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.ds-overlay-sub-list.active {
+    display: flex;
+    opacity: 1;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.ds-overlay-sub-list a {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    letter-spacing: 0.5px !important;
+}
+.ds-overlay-sub-list a:hover {
+    color: var(--ds-color-gold-light) !important;
+}
+/* Category Page Brand Filter Component */
+.ds-brand-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 32px 0 48px;
+    flex-wrap: wrap;
+}
+.ds-filter-pill {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ds-text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.ds-filter-pill:hover {
+    color: var(--ds-text-main);
+    border-color: rgba(212, 175, 55, 0.4);
+    background: rgba(255, 255, 255, 0.06);
+}
+.ds-filter-pill.active {
+    color: var(--ds-color-gold-light);
+    background: rgba(212, 175, 55, 0.12);
+    border-color: var(--ds-color-gold-light);
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.15);
+}
+
+/* Category Page Product Cards & Grid */
+.ds-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+    .ds-category-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
+.ds-category-product-card {
+    display: flex;
+    flex-direction: column;
+}
+.ds-category-card-inner {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 24px;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.ds-category-card-inner:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+.ds-category-card-stage {
+    min-height: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.ds-category-card-stage img {
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    filter: none;
+    transition: transform 0.5s ease;
+}
+.ds-category-card-inner:hover .ds-category-card-stage img {
+    transform: scale(1.04);
+}
+.ds-category-card-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.ds-category-card-brand {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--ds-color-caramel);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+.ds-category-card-title {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--ds-text-main);
+    margin: 0 0 24px 0;
+    letter-spacing: -0.5px;
+}
+.ds-category-card-btn {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 11px;
 }
 
 .ds-header-btn {
@@ -1612,7 +1885,7 @@ html, body {
     width: 100%;
     max-height: 580px;
     object-fit: contain;
-    filter: drop-shadow(0 20px 40px rgba(42, 31, 23, 0.12));
+    filter: none;
     transition: transform 0.5s ease;
 }
 .ds-product-hero-stage:hover img {
@@ -1741,7 +2014,7 @@ html, body {
     max-height: 600px;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 20px 40px rgba(42, 31, 23, 0.12));
+    filter: none;
     transition: transform 0.5s ease;
 }
 .ds-product-detail-stage:hover img {

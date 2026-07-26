@@ -2,20 +2,30 @@ const headerHTML = `
     <!-- Header Navigation -->
     <header class="ds-header">
         <div class="ds-container ds-header-inner">
-            <a href="#hero" class="ds-brand-logo-text" title="Le Mond">
+            <a href="/" class="ds-brand-logo-text" title="Le Mond">
                 <span class="ds-brand-name">LE MOND</span>
                 <span class="ds-brand-desc">Curadoria de Interiores</span>
             </a>
 
             <ul class="ds-nav-menu">
-                <li class="ds-nav-item"><a href="#colecao" class="ds-nav-link">Coleção</a></li>
-                <li class="ds-nav-item"><a href="#moveis" class="ds-nav-link">Móveis</a></li>
-                <li class="ds-nav-item"><a href="#tapetes" class="ds-nav-link">Tapetes</a></li>
-                <li class="ds-nav-item"><a href="#arte" class="ds-nav-link">Arte</a></li>
-                <li class="ds-nav-item"><a href="#decor" class="ds-nav-link">Décor</a></li>
+                <li class="ds-nav-item"><a href="/#colecao" class="ds-nav-link">Coleção</a></li>
+                <li class="ds-nav-item ds-dropdown-item">
+                    <a href="moveis" class="ds-nav-link ds-dropdown-trigger">
+                        Móveis <i class="fas fa-chevron-down ds-dropdown-arrow"></i>
+                    </a>
+                    <ul class="ds-dropdown-menu">
+                        <li><a href="sofas-e-estofados" class="ds-dropdown-link">Sofás &amp; Estofados</a></li>
+                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Poltronas &amp; Cadeiras</a></li>
+                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Mesas, Aparadores &amp; Buffets</a></li>
+                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Camas &amp; Dormitório</a></li>
+                    </ul>
+                </li>
+                <li class="ds-nav-item"><a href="/#tapetes" class="ds-nav-link">Tapetes</a></li>
+                <li class="ds-nav-item"><a href="/#arte" class="ds-nav-link">Arte</a></li>
+                <li class="ds-nav-item"><a href="/#decor" class="ds-nav-link">Décor</a></li>
             </ul>
 
-            <a href="#contato" class="ds-btn-solid ds-header-btn">
+            <a href="/#contato" class="ds-btn-solid ds-header-btn">
                 Falar com a Le Mond
             </a>
 
@@ -32,13 +42,26 @@ const headerHTML = `
     <div class="ds-overlay-modal" id="overlayMenu">
         <button class="ds-overlay-close" onclick="toggleOverlayMenu()">&times;</button>
         <ul class="ds-overlay-nav">
-            <li><a href="#colecao" onclick="toggleOverlayMenu()">Coleção</a></li>
-            <li><a href="#moveis" onclick="toggleOverlayMenu()">Móveis</a></li>
-            <li><a href="#tapetes" onclick="toggleOverlayMenu()">Tapetes</a></li>
-            <li><a href="#arte" onclick="toggleOverlayMenu()">Arte</a></li>
-            <li><a href="#decor" onclick="toggleOverlayMenu()">Décor</a></li>
+            <li><a href="/#colecao" onclick="toggleOverlayMenu()">Coleção</a></li>
+            <li class="ds-overlay-item-with-arrow">
+                <div class="ds-overlay-link-row">
+                    <a href="moveis" onclick="toggleOverlayMenu()">Móveis</a>
+                    <button type="button" class="ds-overlay-arrow-btn" onclick="toggleMobileSubmenu(event)" aria-label="Expandir subcategorias de Móveis">
+                        <i class="fas fa-chevron-down" id="mobileMenuArrow"></i>
+                    </button>
+                </div>
+                <ul class="ds-overlay-sub-list" id="mobileSubMenuMoveis">
+                    <li><a href="sofas-e-estofados" onclick="toggleOverlayMenu()">Sofás &amp; Estofados</a></li>
+                    <li><a href="javascript:void(0)" class="ds-disabled">Poltronas &amp; Cadeiras</a></li>
+                    <li><a href="javascript:void(0)" class="ds-disabled">Mesas, Aparadores &amp; Buffets</a></li>
+                    <li><a href="javascript:void(0)" class="ds-disabled">Camas &amp; Dormitório</a></li>
+                </ul>
+            </li>
+            <li><a href="/#tapetes" onclick="toggleOverlayMenu()">Tapetes</a></li>
+            <li><a href="/#arte" onclick="toggleOverlayMenu()">Arte</a></li>
+            <li><a href="/#decor" onclick="toggleOverlayMenu()">Décor</a></li>
             <li style="margin-top: 24px;">
-                <a href="#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 13px; padding: 12px 24px;">
+                <a href="/#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 13px; padding: 12px 24px;">
                     Falar com a Le Mond
                 </a>
             </li>
@@ -126,6 +149,16 @@ function toggleOverlayMenu() {
     const menu = document.getElementById('overlayMenu');
     if (menu) {
         menu.classList.toggle('active');
+    }
+}
+
+function toggleMobileSubmenu(e) {
+    if (e && e.stopPropagation) e.stopPropagation();
+    const btn = e.currentTarget;
+    const subList = document.getElementById('mobileSubMenuMoveis');
+    if (subList) {
+        subList.classList.toggle('active');
+        if (btn) btn.classList.toggle('active');
     }
 }
 
