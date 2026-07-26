@@ -1559,3 +1559,382 @@ html, body {
         padding-right: 0;
     }
 }
+
+/* ---------------------------------------------------- */
+/* PRODUCT DETAIL TEMPLATE (2-Section Reusable System)  */
+/* ---------------------------------------------------- */
+
+/* Breadcrumb */
+.ds-product-breadcrumb-wrap {
+    padding-top: 140px;
+    padding-bottom: 20px;
+}
+.ds-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-tag);
+    color: var(--ds-text-muted);
+}
+.ds-breadcrumb a {
+    color: var(--ds-text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.ds-breadcrumb a:hover {
+    color: var(--ds-color-caramel);
+}
+
+/* Section 1: Hero Showcase & Description */
+.ds-product-hero-section {
+    padding-bottom: 40px;
+}
+.ds-product-hero-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 60px;
+    align-items: center;
+}
+.ds-product-hero-stage {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.ds-product-hero-stage img {
+    width: 100%;
+    max-height: 580px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(42, 31, 23, 0.12));
+    transition: transform 0.5s ease;
+}
+.ds-product-hero-stage:hover img {
+    transform: scale(1.03);
+}
+
+/* Floating Zoom Pill Overlay (Ultra-Subtle Glass Circle) */
+.ds-img-zoom-pill {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 19, 14, 0.45);
+    backdrop-filter: blur(8px);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.ds-product-hero-stage:hover .ds-img-zoom-pill,
+.ds-product-detail-stage:hover .ds-img-zoom-pill {
+    opacity: 1;
+    transform: scale(1);
+    background: rgba(26, 19, 14, 0.85);
+    color: var(--ds-color-gold);
+    border-color: rgba(232, 201, 122, 0.5);
+}
+
+/* Product Info Column */
+.ds-product-hero-info {
+    display: flex;
+    flex-direction: column;
+}
+.ds-product-brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-tag);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ds-color-caramel);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.ds-product-title {
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-title);
+    font-weight: 700;
+    color: var(--ds-text-main);
+    line-height: 1.12;
+    margin-bottom: 24px;
+}
+.ds-product-title span.italic {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ds-color-sage);
+}
+.ds-product-editorial-desc {
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-paragraph);
+    line-height: 1.75;
+    color: var(--ds-text-secondary);
+    margin-bottom: 36px;
+    padding-left: 20px;
+    border-left: 2px solid var(--ds-color-caramel);
+}
+
+.ds-product-quick-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+.ds-tag-pill {
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-tag);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ds-text-main);
+    background: rgba(255, 255, 255, 0.7);
+    border: var(--ds-subtle-border);
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+.ds-btn-cta-full {
+    width: 100%;
+}
+
+/* Section 2: Materiality & Specs Section */
+.ds-product-specs-section {
+    padding: var(--ds-section-padding);
+    position: relative;
+}
+.ds-product-specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.ds-product-detail-stage {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 540px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.ds-product-detail-stage img {
+    max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(42, 31, 23, 0.12));
+    transition: transform 0.5s ease;
+}
+.ds-product-detail-stage:hover img {
+    transform: scale(1.02);
+}
+
+/* ---------------------------------------------------- */
+/* LIGHTBOX MODAL (High-Res Zoom System)               */
+/* ---------------------------------------------------- */
+.ds-lightbox-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(26, 19, 14, 0.88);
+    backdrop-filter: blur(25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.ds-lightbox-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.ds-lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 100000;
+    line-height: 1;
+}
+.ds-lightbox-close:hover {
+    color: var(--ds-color-caramel);
+    transform: scale(1.15) rotate(90deg);
+}
+.ds-lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 92vw;
+    max-height: 88vh;
+    transform: scale(0.95);
+    transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.ds-lightbox-modal.active .ds-lightbox-content {
+    transform: scale(1);
+}
+.ds-lightbox-content img {
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+.ds-lightbox-caption {
+    margin-top: 16px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ds-color-gold);
+    font-weight: 600;
+}
+
+/* Minimalist Spec List */
+.ds-specs-minimal-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.ds-specs-header {
+    margin-bottom: 32px;
+}
+.ds-specs-title {
+    font-family: var(--font-sans);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ds-text-main);
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+.ds-specs-subtitle {
+    font-family: var(--font-sans);
+    font-size: var(--ds-size-tag);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ds-color-caramel);
+}
+
+.ds-specs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 32px;
+}
+.ds-spec-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed rgba(196, 186, 168, 0.45);
+}
+.ds-spec-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--ds-text-muted);
+}
+.ds-spec-val {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ds-text-main);
+}
+
+/* Responsive Media Queries (Product Detail System) */
+@media (max-width: 1024px) {
+    .ds-product-hero-grid,
+    .ds-product-specs-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .ds-product-hero-info {
+        align-items: center;
+        text-align: center;
+    }
+    .ds-product-brand-badge {
+        justify-content: center;
+    }
+    .ds-product-editorial-desc {
+        border-left: none;
+        border-top: 2px solid var(--ds-color-caramel);
+        padding-left: 0;
+        padding-top: 18px;
+        margin: 0 auto 32px auto;
+        max-width: 560px;
+        text-align: center;
+    }
+    .ds-product-quick-tags {
+        justify-content: center;
+    }
+    .ds-specs-header {
+        text-align: center;
+    }
+    .ds-product-hero-stage {
+        min-height: 360px;
+        padding: 0;
+    }
+    .ds-product-hero-stage img {
+        max-height: 360px;
+    }
+    .ds-product-detail-stage {
+        min-height: 400px;
+        padding: 0;
+    }
+    .ds-product-detail-stage img {
+        max-height: 440px;
+    }
+    .ds-specs-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .ds-breadcrumb {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .ds-specs-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .ds-product-hero-stage {
+        min-height: 280px;
+    }
+    .ds-product-hero-stage img {
+        max-height: 260px;
+    }
+    .ds-product-detail-stage {
+        min-height: 300px;
+    }
+    .ds-product-detail-stage img {
+        max-height: 320px;
+    }
+}

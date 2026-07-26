@@ -128,3 +128,48 @@ function toggleOverlayMenu() {
         menu.classList.toggle('active');
     }
 }
+
+/* Lightbox Modal for High-Res Image Zoom */
+function openLightbox(imgSrc, caption) {
+    let modal = document.getElementById('ds-lightbox-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'ds-lightbox-modal';
+        modal.className = 'ds-lightbox-modal';
+        modal.setAttribute('onclick', 'closeLightbox(event)');
+        modal.innerHTML = `
+            <button class="ds-lightbox-close" onclick="closeLightbox(event)">&times;</button>
+            <div class="ds-lightbox-content" onclick="event.stopPropagation()">
+                <img id="ds-lightbox-img" src="" alt="Ampliação Le Mond" />
+                <span id="ds-lightbox-caption" class="ds-lightbox-caption"></span>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+    
+    const img = document.getElementById('ds-lightbox-img');
+    const cap = document.getElementById('ds-lightbox-caption');
+    if (img) {
+        img.src = imgSrc;
+        if (cap) cap.textContent = caption || 'Sofá Sonata — Le Mond';
+    }
+    
+    // Trigger transition
+    setTimeout(() => {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }, 10);
+}
+
+function closeLightbox(e) {
+    if (e && e.stopPropagation) e.stopPropagation();
+    const modal = document.getElementById('ds-lightbox-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
