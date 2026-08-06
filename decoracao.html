@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Decoração &amp; Espelhos &bull; Le Mond</title>
+
+    <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/eeb17a45a48aca1d_all.css" rel="stylesheet" />
+
+    <!-- Design System & Site Styles -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Ambient Luxury Background -->
+    <div class="ds-ambient-bg">
+        <svg class="ds-noise-texture" xmlns="http://www.w3.org/2000/svg">
+            <filter id="dsNoiseFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#dsNoiseFilter)" />
+        </svg>
+        <div class="ds-light-ray ds-ray-1"></div>
+        <div class="ds-light-ray ds-ray-2"></div>
+        <div class="ds-light-ray ds-ray-3"></div>
+    </div>
+
+    <!-- Header Navigation (Loaded via JS) -->
+    <div id="ds-header-placeholder"></div>
+
+    <!-- MAIN CATEGORY CATALOG PAGE -->
+    <main>
+        
+        <!-- Breadcrumb Navigation -->
+        <div class="ds-product-breadcrumb-wrap">
+            <div class="ds-container">
+                <nav class="ds-breadcrumb" aria-label="Navegação">
+                    <a href="/">Le Mond</a>
+                    <span>&rsaquo;</span>
+                    <a href="moveis.html">Móveis</a>
+                    <span>&rsaquo;</span>
+                    <span style="color: var(--ds-text-main); font-weight: 600;">Decoração &amp; Espelhos</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- CATEGORY HERO SECTION -->
+        <section class="ds-product-hero-section" style="padding-bottom: 0;">
+            <div class="ds-container">
+                <div style="text-align: center;">
+                    <h1 class="ds-product-title" style="font-size: clamp(36px, 5vw, 56px); margin: 0 0 16px;">
+                        Decoração &amp; <span class="italic">Espelhos</span>
+                    </h1>
+                </div>
+
+                <!-- FILTRO POR TIPOLOGIA / CATEGORIA (100% BLINDADO) -->
+                <div class="ds-brand-filter-bar">
+                    <button class="ds-filter-pill active" onclick="filterCategoryByType('all', this)">Todas as peças</button>
+                    <button class="ds-filter-pill" onclick="filterCategoryByType('espelhos', this)">Espelhos Decorativos</button>
+                    <button class="ds-filter-pill" onclick="filterCategoryByType('luminarias', this)">Luminárias</button>
+                    <button class="ds-filter-pill" onclick="filterCategoryByType('acessorios', this)">Relógios &amp; Acessórios</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG GRID SECTION -->
+        <section class="ds-product-specs-section">
+            <div class="ds-container">
+                
+                <div class="ds-category-grid">
+                    
+                    <!-- Card: Relógio 2400 -->
+                    <div class="ds-category-product-card" data-type="acessorios">
+                        <a href="relogio-2400.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/relogio_2400_ambiente.webp" alt="Relógio 2400" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Relógio 2400</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Relógio 2401 -->
+                    <div class="ds-category-product-card" data-type="acessorios">
+                        <a href="relogio-2401.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/relogio_2401_ambiente.webp" alt="Relógio 2401" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Relógio 2401</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Relógio 2402 -->
+                    <div class="ds-category-product-card" data-type="acessorios">
+                        <a href="relogio-2402.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/relogio_2402_ambiente.webp" alt="Relógio 2402" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Relógio 2402</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Relógio 2403 -->
+                    <div class="ds-category-product-card" data-type="acessorios">
+                        <a href="relogio-2403.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/relogio_2403_ambiente.webp" alt="Relógio 2403" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Relógio 2403</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Luminária 2415 -->
+                    <div class="ds-category-product-card" data-type="luminarias">
+                        <a href="luminaria-2415.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/luminaria_2415_ambiente.webp" alt="Luminária 2415" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Luminária 2415</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Luminária RZ9021 -->
+                    <div class="ds-category-product-card" data-type="luminarias">
+                        <a href="luminaria-rz9021.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/luminaria_rz9021_ambiente.webp" alt="Luminária RZ9021" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Luminária RZ9021</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Orgânico 2411 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-organico-2411.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2411_ambiente.webp" alt="Espelho Orgânico 2411" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Orgânico 2411</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho 2410 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-2410.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2410_ambiente.webp" alt="Espelho 2410" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho 2410</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho 2314 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-2314.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2314_ambiente.webp" alt="Espelho 2314" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho 2314</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho 239 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-239.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_239_ambiente.webp" alt="Espelho 239" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho 239</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Decorativo 2311 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-decorativo-2311.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2311_ambiente.webp" alt="Espelho Decorativo 2311" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Decorativo 2311</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Decorativo 2412 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-decorativo-2412.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2412_ambiente.webp" alt="Espelho Decorativo 2412" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Decorativo 2412</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Rattan 2413 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-rattan-2413.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2413_ambiente.webp" alt="Espelho Rattan 2413" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Rattan 2413</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto Decorativo 2310 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="conjunto-espelho-2310.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2310_ambiente.webp" alt="Conjunto Decorativo 2310" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto Decorativo 2310</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto Decorativo 2312 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="conjunto-espelho-2312.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2312_ambiente.webp" alt="Conjunto Decorativo 2312" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto Decorativo 2312</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto Decorativo 2315 -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="conjunto-espelho-2315.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_2315_ambiente.webp" alt="Conjunto Decorativo 2315" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto Decorativo 2315</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Oblli -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-oblli.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_oblli_ambiente.webp" alt="Espelho Oblli" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Oblli</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Espelho Ecco -->
+                    <div class="ds-category-product-card" data-type="espelhos">
+                        <a href="espelho-ecco.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/espelho_ecco_ambiente.webp" alt="Espelho Ecco" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Espelho Ecco</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Luminária Kora -->
+                    <div class="ds-category-product-card" data-type="luminarias">
+                        <a href="luminaria-kora.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/luminaria_kora_ambiente.webp" alt="Luminária Kora" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Luminária Kora</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mancebo Bravus -->
+                    <div class="ds-category-product-card" data-type="acessorios">
+                        <a href="mancebo-bravus.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mancebo_bravus_ambiente.webp" alt="Mancebo Bravus" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mancebo Bravus</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Loaded via JS) -->
+    <div id="ds-footer-placeholder"></div>
+
+    <!-- Filter JS Script -->
+    <script>
+        function filterCategoryByType(type, btn) {
+            const buttons = document.querySelectorAll('.ds-filter-pill');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.ds-category-product-card');
+            cards.forEach(card => {
+                if (type === 'all' || card.getAttribute('data-type') === type) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

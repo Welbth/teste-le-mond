@@ -1,0 +1,29 @@
+produto,tipo,marca,pagina,arquivos,ambiente,LARGURA DA POLTRONA,PROFUNDIDADE DA POLTRONA,ALTURA DO ASSENTO AO PISO,PROFUNDIDADE DO ASSENTO,TECIDO FOTO,PROFUNDIDADE DO RECAMIER
+FENDI,Poltrona,mobel,5,mobel_fendi_01.png | mobel_fendi_02.png,mobel_fendi_ambiente.jpeg,93 CM,88 CM,43 CM,62 CM,132-E POLTRONA GIRATÓRIA,
+LOIS,Poltrona,mobel,7,mobel_lois_01.png | mobel_lois_02.png | mobel_lois_03.png,mobel_lois_ambiente.jpeg,75 CM,77 CM,45 CM,57 CM,84-B/ REC. 08,
+HORUS,Poltrona,mobel,9,mobel_horus_01.png | mobel_horus_02.png,mobel_horus_ambiente.jpeg,89 CM,85 CM,45 CM,60 CM,144-E POLTRONA GIRATÓRIA,
+EMMA,Poltrona,mobel,11,mobel_emma_01.png | mobel_emma_02.png | mobel_emma_03.png,mobel_emma_ambiente.jpeg,83 CM,87 CM,45 CM,58 CM,87-C POLTRONA GIRATÓRIA,
+CORA,Poltrona,mobel,13,mobel_cora_01.png | mobel_cora_02.png | mobel_cora_03.png,mobel_cora_ambiente.jpeg,78 CM,80 CM,44 CM,60 CM,102-C POLTRONA GIRATÓRIA,
+AERO,Poltrona,mobel,15,mobel_aero_01.png | mobel_aero_02.png | mobel_aero_03.png,mobel_aero_ambiente.jpeg,84 CM,,43 CM,57 CM,83-B POLTRONA GIRATÓRIA,
+AURA,Cama,mobel,17,mobel_aura_01.png | mobel_aura_02.png | mobel_aura_03.png,mobel_aura_ambiente.jpeg,,,35 CM,,132 -E / BASE 116-D,
+LUME,Cama,mobel,19,mobel_lume_01.png | mobel_lume_02.png | mobel_lume_03.png,mobel_lume_ambiente.jpeg,,,31 CM,,89-C,
+DOMUS,Recamier,mobel,21,mobel_domus_01.png | mobel_domus_02.png,mobel_domus_ambiente.jpeg,,,,,141-E / 116-E,50 CM
+ARIS,Recamier,mobel,23,mobel_aris_01.png | mobel_aris_02.png,mobel_aris_ambiente.jpeg,,,,,86-C,50 CM
+LANA,Recamier,mobel,25,mobel_lana_01.png | mobel_lana_02.png,mobel_lana_ambiente.jpeg,,,,,81-C,50 CM
+BONI,Recamier,mobel,27,mobel_boni_01.png | mobel_boni_02.png,mobel_boni_ambiente.jpeg,,,,,131-E /74-C,47 CM
+CAROL,Poltrona,mobel,29,mobel_carol_01.png | mobel_carol_02.png,mobel_carol_ambiente.jpeg,78 CM,73 CM,45 CM,57 CM,133-E / 116-E,
+ELOÁ,Poltrona,mobel,31,mobel_eloa_01.png | mobel_eloa_02.png | mobel_eloa_03.png,mobel_eloa_ambiente.jpeg,80 CM,82 CM,44 CM,62 CM,113-D POLTRONA GIRATÓRIA,
+LIA,Poltrona,mobel,33,mobel_lia_01.png | mobel_lia_02.png,mobel_lia_ambiente.jpeg,76 CM,82 CM,45 CM,64 CM,80-C POLTRONA GIRATÓRIA,
+JADE,Poltrona,mobel,35,mobel_jade_01.png | mobel_jade_02.png,mobel_jade_ambiente.jpeg,82 CM,82CM,42 CM,50 CM,131-E / REC. 09,
+DÓRA,Poltrona,mobel,37,mobel_dora_01.png | mobel_dora_02.png,mobel_dora_ambiente.jpeg,80 CM,82 CM,43 CM,52 CM,137-E,
+BAÓBA,Poltrona,mobel,39,mobel_baoba_01.png | mobel_baoba_02.png,mobel_baoba_ambiente.jpeg,78 CM,84 CM,46 CM,62 CM,113-D,
+BIA,Poltrona,mobel,41,mobel_bia_01.png | mobel_bia_02.png,mobel_bia_ambiente.jpeg,75 CM,76 CM,45 CM,59 CM,62-B,
+CAMILA,Poltrona,mobel,43,mobel_camila_01.png | mobel_camila_02.png | mobel_camila_03.png,mobel_camila_ambiente.jpeg,82 CM,82 CM,45 CM,56 CM,136-E,
+ZOE,Poltrona,mobel,45,mobel_zoe_01.png | mobel_zoe_02.png,mobel_zoe_ambiente.jpeg,67 CM,77 CM,46 CM,55 CM,132-E,
+CANELA,Poltrona,mobel,47,mobel_canela_01.png | mobel_canela_02.png,mobel_canela_ambiente.jpeg,74 CM,71 CM,46 CM,54 CM,65-B / 67-B,
+ZARA,Poltrona,mobel,49,mobel_zara_01.png | mobel_zara_02.png | mobel_zara_03.png,mobel_zara_ambiente.jpeg,80 CM,77 CM,47 CM,60 CM,65-B,
+NEON,Poltrona,mobel,51,mobel_neon_01.png | mobel_neon_02.png,mobel_neon_ambiente.jpeg,70 CM,71 CM,44 CM,60 CM,140-E,
+ISIS,Poltrona,mobel,53,mobel_isis_01.png | mobel_isis_02.png,mobel_isis_ambiente.jpeg,69 CM,74 CM,45 CM,50 CM,133-E,
+IPÊ,Poltrona,mobel,55,mobel_ipe_01.png | mobel_ipe_02.png | mobel_ipe_03.png,mobel_ipe_ambiente.jpeg,81 CM,82 CM,43 CM,56 CM,70-C,
+JACARANDÁ,Poltrona,mobel,57,mobel_jacaranda_01.png | mobel_jacaranda_02.png,mobel_jacaranda_ambiente.jpeg,80 CM,83 CM,42 CM,64 CM,66-B,
+MADHU,SOFÁ MODULAR,mobel,58,mobel_madhu_01.png | mobel_madhu_02.png | mobel_madhu_03.png | mobel_madhu_medidas_04.png | mobel_madhu_medidas_05.jpeg | mobel_madhu_medidas_06.jpeg,,,,,,,

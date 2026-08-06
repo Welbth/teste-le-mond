@@ -1,0 +1,164 @@
+[
+  {
+    "produto": "LÓTUS",
+    "tipo": "Poltrona",
+    "marca": "mobel2026",
+    "pagina": 5,
+    "arquivos": [
+      "mobel2026_lotus_01.png",
+      "mobel2026_lotus_02.png",
+      "mobel2026_lotus_03.png"
+    ],
+    "ambiente": "mobel2026_lotus_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "75 CM",
+    "PROFUNDIDADE DA POLTRONA": "85 CM",
+    "LARGURA DA POLTRONA": "90 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "PROFUNDIDADE DO ASSENTO": "59 CM",
+    "TECIDO FOTO": "160-F"
+  },
+  {
+    "produto": "POLI",
+    "tipo": "Poltrona",
+    "marca": "mobel2026",
+    "pagina": 7,
+    "arquivos": [
+      "mobel2026_poli_01.png",
+      "mobel2026_poli_02.png",
+      "mobel2026_poli_03.png"
+    ],
+    "ambiente": "mobel2026_poli_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "72 CM",
+    "PROFUNDIDADE DA POLTRONA": "84 CM",
+    "LARGURA DA POLTRONA": "77 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "63 CM",
+    "TECIDO FOTO": "163-F"
+  },
+  {
+    "produto": "TRIZ",
+    "tipo": "Poltrona",
+    "marca": "mobel2026",
+    "pagina": 9,
+    "arquivos": [
+      "mobel2026_triz_01.png",
+      "mobel2026_triz_02.png",
+      "mobel2026_triz_03.png"
+    ],
+    "ambiente": "mobel2026_triz_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "78 CM",
+    "PROFUNDIDADE DA POLTRONA": "78 CM",
+    "LARGURA DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "64 CM",
+    "TECIDO FOTO": "96-C"
+  },
+  {
+    "produto": "RIO",
+    "tipo": "Poltrona",
+    "marca": "mobel2026",
+    "pagina": 11,
+    "arquivos": [
+      "mobel2026_rio_01.png",
+      "mobel2026_rio_02.png",
+      "mobel2026_rio_03.png"
+    ],
+    "ambiente": "mobel2026_rio_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "77 CM",
+    "PROFUNDIDADE DA POLTRONA": "83 CM",
+    "LARGURA DA POLTRONA": "85 CM",
+    "ALTURA DO ASSENTO AO PISO": "44 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "98-C"
+  },
+  {
+    "produto": "RUTH",
+    "tipo": "Sofá",
+    "marca": "mobel2026",
+    "pagina": 13,
+    "arquivos": [
+      "mobel2026_ruth_01.png",
+      "mobel2026_ruth_02.png",
+      "mobel2026_ruth_03.png",
+      "mobel2026_ruth_04.png"
+    ],
+    "ambiente": "mobel2026_ruth_ambiente.jpeg",
+    "PROFUNDIDADE": "92 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "TECIDO FOTO": "57-E"
+  },
+  {
+    "produto": "KALI",
+    "tipo": "Poltrona",
+    "marca": "mobel2026",
+    "pagina": 15,
+    "arquivos": [
+      "mobel2026_kali_01.png",
+      "mobel2026_kali_02.png",
+      "mobel2026_kali_03.png"
+    ],
+    "ambiente": "mobel2026_kali_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "79 CM",
+    "PROFUNDIDADE DA POLTRONA": "76 CM",
+    "LARGURA DA POLTRONA": "74 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "161-F"
+  },
+  {
+    "produto": "ORBE",
+    "tipo": "Recamier",
+    "marca": "mobel2026",
+    "pagina": 17,
+    "arquivos": [
+      "mobel2026_orbe_01.png",
+      "mobel2026_orbe_02.png",
+      "mobel2026_orbe_03.png"
+    ],
+    "ambiente": "mobel2026_orbe_ambiente.jpeg",
+    "ALTURA DO RECAMIER": "42 CM",
+    "PROFUNDIDADE DO RECAMIER": "50 CM",
+    "TECIDO FOTO": "90-B"
+  },
+  {
+    "produto": "FOZ",
+    "tipo": "Poltrona Fixa e Puff",
+    "marca": "mobel2026",
+    "pagina": 19,
+    "arquivos": [
+      "mobel2026_foz_01.png",
+      "mobel2026_foz_02.png",
+      "mobel2026_foz_03.png"
+    ],
+    "ambiente": "mobel2026_foz_ambiente.jpeg",
+    "PROFUNDIDADE DO ASSENTO": "58 CM",
+    "TECIDO FOTO": "155-E"
+  },
+  {
+    "produto": "FOZ",
+    "tipo": "Poltrona Giratória",
+    "marca": "mobel2026",
+    "pagina": 21,
+    "arquivos": [
+      "mobel2026_foz_giratoria_01.png",
+      "mobel2026_foz_giratoria_02.png"
+    ],
+    "ambiente": "mobel2026_foz_giratoria_ambiente.jpeg",
+    "ALTURA DA POLTRONA": "75 CM",
+    "LARGURA DA POLTRONA": "85 CM",
+    "PROFUNDIDADE DO ASSENTO": "58 CM",
+    "TECIDO FOTO": "155-E"
+  },
+  {
+    "produto": "ZAIA",
+    "tipo": "Cama",
+    "marca": "mobel2026",
+    "pagina": 23,
+    "arquivos": [
+      "mobel2026_zaia_01.png",
+      "mobel2026_zaia_02.png"
+    ],
+    "ambiente": "mobel2026_zaia_ambiente.jpeg",
+    "TECIDO FOTO": "149-E"
+  }
+]

@@ -1,0 +1,1262 @@
+[
+  {
+    "arquivo": "ccl_ambiente_p002_01.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 2,
+    "largura": 1907,
+    "altura": 1050,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p003_02.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 3,
+    "largura": 1990,
+    "altura": 1005,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_2470_ambiente.jpg",
+    "tipo": "Rack",
+    "ref": "2470",
+    "legenda": "Rack 2470",
+    "pagina": 4,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_231_01.jpg",
+    "tipo": "Buffet",
+    "ref": "231",
+    "legenda": "Buffet 231",
+    "pagina": 4,
+    "largura": 776,
+    "altura": 460,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_rz9000_ambiente.jpg",
+    "tipo": "Rack",
+    "ref": "RZ9000",
+    "legenda": "Rack RZ9000",
+    "pagina": 5,
+    "largura": 1414,
+    "altura": 952,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_rz9000_01.jpg",
+    "tipo": "Rack",
+    "ref": "RZ9000",
+    "legenda": "Rack RZ9000",
+    "pagina": 5,
+    "largura": 719,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_rz9001_01.jpg",
+    "tipo": "Aparador",
+    "ref": "RZ9001",
+    "legenda": "Aparador RZ9001",
+    "pagina": 5,
+    "largura": 718,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_rz9025_ambiente.jpg",
+    "tipo": "Rack",
+    "ref": "RZ9025",
+    "legenda": "Rack RZ9025",
+    "pagina": 6,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_rz9013_01.jpg",
+    "tipo": "Rack",
+    "ref": "RZ9013",
+    "legenda": "Rack RZ9013",
+    "pagina": 6,
+    "largura": 1014,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_rz9008_ambiente.jpg",
+    "tipo": "Aparador",
+    "ref": "RZ9008",
+    "legenda": "Aparador RZ9008",
+    "pagina": 7,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_rz9007_01.jpg",
+    "tipo": "Rack",
+    "ref": "RZ9007",
+    "legenda": "Rack RZ9007",
+    "pagina": 7,
+    "largura": 718,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_rz9008_01.jpg",
+    "tipo": "Aparador",
+    "ref": "RZ9008",
+    "legenda": "Aparador RZ9008",
+    "pagina": 7,
+    "largura": 719,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_2472_ambiente.jpg",
+    "tipo": "Rack",
+    "ref": "2472",
+    "legenda": "Rack 2472",
+    "pagina": 8,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_2471_01.jpg",
+    "tipo": "Rack",
+    "ref": "2471",
+    "legenda": "Rack 2471",
+    "pagina": 8,
+    "largura": 719,
+    "altura": 435,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_2473_01.jpg",
+    "tipo": "Rack",
+    "ref": "2473",
+    "legenda": "Rack 2473",
+    "pagina": 8,
+    "largura": 717,
+    "altura": 435,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_2480_ambiente.jpg",
+    "tipo": "Aparador",
+    "ref": "2480",
+    "legenda": "Aparador 2480",
+    "pagina": 9,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_2481_01.jpg",
+    "tipo": "Aparador",
+    "ref": "2481",
+    "legenda": "Aparador 2481",
+    "pagina": 9,
+    "largura": 1019,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_2483_01.jpg",
+    "tipo": "Aparador",
+    "ref": "2483",
+    "legenda": "Aparador 2483",
+    "pagina": 10,
+    "largura": 1017,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p010_03.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 10,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p011_04.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 11,
+    "largura": 1417,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_banco_rattan_2438_01.jpg",
+    "tipo": "Bancorattan",
+    "ref": "2438",
+    "legenda": "Bancorattan 2438",
+    "pagina": 11,
+    "largura": 1013,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_240_ambiente.jpg",
+    "tipo": "Buffet",
+    "ref": "240",
+    "legenda": "Buffet 240",
+    "pagina": 12,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_240_01.jpg",
+    "tipo": "Buffet",
+    "ref": "240",
+    "legenda": "Buffet 240",
+    "pagina": 12,
+    "largura": 713,
+    "altura": 452,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_241_01.jpg",
+    "tipo": "Buffet",
+    "ref": "241",
+    "legenda": "Buffet 241",
+    "pagina": 12,
+    "largura": 707,
+    "altura": 453,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_242_01.jpg",
+    "tipo": "Buffet",
+    "ref": "242",
+    "legenda": "Buffet 242",
+    "pagina": 13,
+    "largura": 702,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_243_01.jpg",
+    "tipo": "Buffet",
+    "ref": "243",
+    "legenda": "Buffet 243",
+    "pagina": 13,
+    "largura": 732,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p013_05.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 13,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_244_ambiente.jpg",
+    "tipo": "Buffet",
+    "ref": "244",
+    "legenda": "Buffet 244",
+    "pagina": 14,
+    "largura": 1417,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_244_01.jpg",
+    "tipo": "Buffet",
+    "ref": "244",
+    "legenda": "Buffet 244",
+    "pagina": 14,
+    "largura": 728,
+    "altura": 434,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_buffet_244_02.jpg",
+    "tipo": "Buffet",
+    "ref": "244",
+    "legenda": "Buffet 244",
+    "pagina": 14,
+    "largura": 781,
+    "altura": 781,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p015_06.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 15,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_232_01.jpg",
+    "tipo": "Rack",
+    "ref": "232",
+    "legenda": "Rack 232",
+    "pagina": 15,
+    "largura": 1019,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_rack_233_ambiente.jpg",
+    "tipo": "Rack",
+    "ref": "233",
+    "legenda": "Rack 233",
+    "pagina": 16,
+    "largura": 1414,
+    "altura": 952,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_aparador_2380_01.jpg",
+    "tipo": "Aparador",
+    "ref": "2380",
+    "legenda": "Aparador 2380",
+    "pagina": 16,
+    "largura": 1019,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p017_07.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 17,
+    "largura": 1995,
+    "altura": 1006,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cama_24138_01.jpg",
+    "tipo": "Cama",
+    "ref": "24138",
+    "legenda": "Cama 24138 / 24158",
+    "pagina": 18,
+    "largura": 957,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p018_08.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 18,
+    "largura": 1414,
+    "altura": 928,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_comoda_2348_01.jpg",
+    "tipo": "Cômoda",
+    "ref": "2348",
+    "legenda": "Cômoda 2348",
+    "pagina": 19,
+    "largura": 846,
+    "altura": 642,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_cabeceira_2440_01.jpg",
+    "tipo": "Mesa de Cabeceira",
+    "ref": "2440",
+    "legenda": "Mesa de Cabeceira 2440",
+    "pagina": 19,
+    "largura": 678,
+    "altura": 679,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_cabeceira_2441_01.jpg",
+    "tipo": "Mesa de Cabeceira",
+    "ref": "2441",
+    "legenda": "Mesa de Cabeceira 2441",
+    "pagina": 19,
+    "largura": 678,
+    "altura": 679,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cama_24438_ambiente.jpg",
+    "tipo": "Cama",
+    "ref": "24438",
+    "legenda": "Cama 24438 / 24458",
+    "pagina": 20,
+    "largura": 1288,
+    "altura": 928,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cama_24338_01.jpg",
+    "tipo": "Cama",
+    "ref": "24338",
+    "legenda": "Cama 24338 / 24358",
+    "pagina": 20,
+    "largura": 1014,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p021_09.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 21,
+    "largura": 1990,
+    "altura": 1005,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2451_01.jpg",
+    "tipo": "Mesa",
+    "ref": "2451",
+    "legenda": "Mesa 2451 e Cadeira 2465",
+    "pagina": 22,
+    "largura": 956,
+    "altura": 637,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2452_ambiente.jpg",
+    "tipo": "Mesa",
+    "ref": "2452",
+    "legenda": "Mesa 2452 e cadeira 2466",
+    "pagina": 22,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2460_ambiente.jpg",
+    "tipo": "Cadeira",
+    "ref": "2460",
+    "legenda": "Cadeira 2460",
+    "pagina": 23,
+    "largura": 1385,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2452_01.jpg",
+    "tipo": "Mesa",
+    "ref": "2452",
+    "legenda": "Mesa 2452 e Cadeira 2468",
+    "pagina": 23,
+    "largura": 1014,
+    "altura": 685,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2351_ambiente.jpg",
+    "tipo": "Mesa",
+    "ref": "2351",
+    "legenda": "Mesa 2351 e Cadeira 2462",
+    "pagina": 24,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2355_01.jpg",
+    "tipo": "Mesa",
+    "ref": "2355",
+    "legenda": "Mesa 2355 e Cadeira 2467",
+    "pagina": 24,
+    "largura": 1017,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2453_ambiente.jpg",
+    "tipo": "Mesa",
+    "ref": "2453",
+    "legenda": "Mesa 2453 e Cadeira 2464",
+    "pagina": 25,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2460_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2460",
+    "legenda": "Cadeira 2460",
+    "pagina": 25,
+    "largura": 702,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2460_02.jpg",
+    "tipo": "Cadeira",
+    "ref": "2460",
+    "legenda": "Cadeira 2460",
+    "pagina": 25,
+    "largura": 732,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2461_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2461",
+    "legenda": "Cadeira 2461",
+    "pagina": 26,
+    "largura": 702,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2462_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2462",
+    "legenda": "Cadeira 2462",
+    "pagina": 26,
+    "largura": 655,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2463_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2463",
+    "legenda": "Cadeira 2463",
+    "pagina": 26,
+    "largura": 642,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2464_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2464",
+    "legenda": "Cadeira 2464",
+    "pagina": 26,
+    "largura": 661,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2465_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2465",
+    "legenda": "Cadeira 2465",
+    "pagina": 27,
+    "largura": 702,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2466_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2466",
+    "legenda": "Cadeira 2466",
+    "pagina": 27,
+    "largura": 735,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p027_10.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 27,
+    "largura": 642,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2467_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2467",
+    "legenda": "Cadeira 2467",
+    "pagina": 27,
+    "largura": 661,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2468_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2468",
+    "legenda": "Cadeira 2468",
+    "pagina": 28,
+    "largura": 635,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_poltrona_2335_01.jpg",
+    "tipo": "Poltrona",
+    "ref": "2335",
+    "legenda": "Poltrona 2335",
+    "pagina": 28,
+    "largura": 757,
+    "altura": 649,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2360_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2360",
+    "legenda": "Cadeira 2360",
+    "pagina": 28,
+    "largura": 688,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_2366_01.jpg",
+    "tipo": "Cadeira",
+    "ref": "2366",
+    "legenda": "Cadeira 2366",
+    "pagina": 28,
+    "largura": 587,
+    "altura": 587,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p029_11.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 29,
+    "largura": 1418,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_2350_01.jpg",
+    "tipo": "Mesa",
+    "ref": "2350",
+    "legenda": "Mesa 2350",
+    "pagina": 29,
+    "largura": 845,
+    "altura": 520,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_cadeira_medalhao_2369_01.jpg",
+    "tipo": "Cadeira Medalhão",
+    "ref": "2369",
+    "legenda": "Cadeira Medalhão 2369",
+    "pagina": 29,
+    "largura": 613,
+    "altura": 666,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p030_12.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 30,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2423_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2423",
+    "legenda": "Conjunto de Mesas 2423",
+    "pagina": 30,
+    "largura": 719,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2420_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2420",
+    "legenda": "Conjunto de Mesas 2420",
+    "pagina": 30,
+    "largura": 719,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p031_13.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 31,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2422_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2422",
+    "legenda": "Conjunto de Mesas 2422",
+    "pagina": 31,
+    "largura": 642,
+    "altura": 582,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_centro_2421_01.jpg",
+    "tipo": "Mesa de Centro",
+    "ref": "2421",
+    "legenda": "Mesa de Centro 2421",
+    "pagina": 31,
+    "largura": 691,
+    "altura": 582,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p032_14.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 32,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2424_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2424",
+    "legenda": "Conjunto de Mesas 2424",
+    "pagina": 32,
+    "largura": 719,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2425_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2425",
+    "legenda": "Conjunto de Mesas 2425",
+    "pagina": 32,
+    "largura": 703,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p033_15.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 33,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p033_16.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 33,
+    "largura": 719,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2427_01.jpg",
+    "tipo": "Conjunto de Mesas",
+    "ref": "2427",
+    "legenda": "Conjunto de Mesas 2427",
+    "pagina": 33,
+    "largura": 716,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p034_17.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 34,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_2428_01.jpg",
+    "tipo": "Conjuntodemesas",
+    "ref": "2428",
+    "legenda": "Conjuntodemesas 2428",
+    "pagina": 34,
+    "largura": 734,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_centro_2429_01.jpg",
+    "tipo": "Mesa de Centro",
+    "ref": "2429",
+    "legenda": "Mesa de Centro 2429",
+    "pagina": 35,
+    "largura": 961,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p035_18.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 35,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_apoio_2431_ambiente.jpg",
+    "tipo": "Mesa de Apoio",
+    "ref": "2431",
+    "legenda": "Mesa de Apoio 2431",
+    "pagina": 36,
+    "largura": 1419,
+    "altura": 935,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_apoio_2433_01.jpg",
+    "tipo": "Mesa de Apoio",
+    "ref": "2433",
+    "legenda": "Mesa de Apoio 2433",
+    "pagina": 36,
+    "largura": 1014,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_lateral_2436_01.jpg",
+    "tipo": "Mesa Lateral",
+    "ref": "2436",
+    "legenda": "Mesa Lateral 2436",
+    "pagina": 37,
+    "largura": 1014,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_apoio_2432_ambiente.jpg",
+    "tipo": "Mesa de Apoio",
+    "ref": "2432",
+    "legenda": "Mesa de Apoio 2432",
+    "pagina": 37,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_decorativa_2435_ambiente.jpg",
+    "tipo": "Mesa Decorativa",
+    "ref": "2435",
+    "legenda": "Mesa Decorativa 2435",
+    "pagina": 38,
+    "largura": 1380,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_decorativa_2434_01.jpg",
+    "tipo": "Mesa Decorativa",
+    "ref": "2434",
+    "legenda": "Mesa Decorativa 2434 + Luminária 2415",
+    "pagina": 38,
+    "largura": 1014,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_organicas_2323_ambiente.jpg",
+    "tipo": "Conjunto de Mesas Orgânicas",
+    "ref": "2323",
+    "legenda": "Conjunto de Mesas Orgânicas 2323",
+    "pagina": 39,
+    "largura": 1418,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_organicas_2326_01.jpg",
+    "tipo": "Conjunto de Mesas Orgânicas",
+    "ref": "2326",
+    "legenda": "Conjunto de Mesas Orgânicas 2326",
+    "pagina": 39,
+    "largura": 1019,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_organicas_2325_ambiente.jpg",
+    "tipo": "Conjunto de Mesas Orgânicas",
+    "ref": "2325",
+    "legenda": "Conjunto de Mesas Orgânicas 2325",
+    "pagina": 40,
+    "largura": 1418,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_centro_2327_01.jpg",
+    "tipo": "Mesa de Centro",
+    "ref": "2327",
+    "legenda": "Mesa de Centro 2327",
+    "pagina": 40,
+    "largura": 710,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_de_centro_2322_01.jpg",
+    "tipo": "Conjunto de Mesas de Centro",
+    "ref": "2322",
+    "legenda": "Conjunto de Mesas de Centro 2322",
+    "pagina": 40,
+    "largura": 716,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_de_mesas_decorativas_2329_ambiente.jpg",
+    "tipo": "Conjunto de Mesas Decorativas",
+    "ref": "2329",
+    "legenda": "Conjunto de Mesas Decorativas 2329",
+    "pagina": 41,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_decorativa_2330_01.jpg",
+    "tipo": "Mesa Decorativa",
+    "ref": "2330",
+    "legenda": "Mesa Decorativa 2330",
+    "pagina": 41,
+    "largura": 1019,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_apoio_2332_ambiente.jpg",
+    "tipo": "Mesa de Apoio",
+    "ref": "2332",
+    "legenda": "Mesa de Apoio 2332",
+    "pagina": 42,
+    "largura": 1419,
+    "altura": 952,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_mesa_de_apoio_2331_01.jpg",
+    "tipo": "Mesa de Apoio",
+    "ref": "2331",
+    "legenda": "Mesa de Apoio 2331",
+    "pagina": 42,
+    "largura": 1019,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p043_19.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 43,
+    "largura": 633,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_246_01.jpg",
+    "tipo": "Carrinho",
+    "ref": "246",
+    "legenda": "Carrinho 246",
+    "pagina": 43,
+    "largura": 633,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p043_20.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 43,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_249_ambiente.jpg",
+    "tipo": "Carrinho",
+    "ref": "249",
+    "legenda": "Carrinho 249",
+    "pagina": 44,
+    "largura": 1416,
+    "altura": 949,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_247_01.jpg",
+    "tipo": "Carrinho",
+    "ref": "247",
+    "legenda": "Carrinho 247",
+    "pagina": 44,
+    "largura": 598,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_248_01.jpg",
+    "tipo": "Carrinho",
+    "ref": "248",
+    "legenda": "Carrinho 248",
+    "pagina": 44,
+    "largura": 603,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_234_ambiente.jpg",
+    "tipo": "Carrinho",
+    "ref": "234",
+    "legenda": "Carrinho 234",
+    "pagina": 45,
+    "largura": 1414,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_carrinho_235_01.jpg",
+    "tipo": "Carrinho",
+    "ref": "235",
+    "legenda": "Carrinho 235",
+    "pagina": 45,
+    "largura": 1019,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p046_21.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 46,
+    "largura": 1993,
+    "altura": 1005,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_2410_ambiente.jpg",
+    "tipo": "Espelho",
+    "ref": "2410",
+    "legenda": "Espelho 2410",
+    "pagina": 47,
+    "largura": 1416,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_organico_2411_01.jpg",
+    "tipo": "Espelho Orgânico",
+    "ref": "2411",
+    "legenda": "Espelho Orgânico 2411",
+    "pagina": 47,
+    "largura": 598,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_2314_01.jpg",
+    "tipo": "Espelho",
+    "ref": "2314",
+    "legenda": "Espelho 2314",
+    "pagina": 47,
+    "largura": 519,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_decorativo_2412_ambiente.jpg",
+    "tipo": "Espelho Decorativo",
+    "ref": "2412",
+    "legenda": "Espelho Decorativo 2412",
+    "pagina": 48,
+    "largura": 1416,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_rattan_2413_01.jpg",
+    "tipo": "Espelho Rattan",
+    "ref": "2413",
+    "legenda": "Espelho Rattan 2413",
+    "pagina": 48,
+    "largura": 1014,
+    "altura": 650,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_239_ambiente.jpg",
+    "tipo": "Espelho",
+    "ref": "239",
+    "legenda": "Espelho 239",
+    "pagina": 49,
+    "largura": 1418,
+    "altura": 949,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_espelho_decorativo_2311_01.jpg",
+    "tipo": "Espelho Decorativo",
+    "ref": "2311",
+    "legenda": "Espelho Decorativo 2311",
+    "pagina": 49,
+    "largura": 705,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_espelhos_organicos_2317_01.jpg",
+    "tipo": "Conjunto Espelhos Orgânicos",
+    "ref": "2317",
+    "legenda": "Conjunto Espelhos Orgânicos 2317",
+    "pagina": 49,
+    "largura": 714,
+    "altura": 600,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_decorativo_com_espelho_2310_ambiente.jpg",
+    "tipo": "Conjunto Decorativo com Espelho",
+    "ref": "2310",
+    "legenda": "Conjunto Decorativo com Espelho 2310",
+    "pagina": 50,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_decorativo_com_espelho_2312_01.jpg",
+    "tipo": "Conjunto Decorativo com Espelho",
+    "ref": "2312",
+    "legenda": "Conjunto Decorativo com Espelho 2312",
+    "pagina": 50,
+    "largura": 718,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_conjunto_decorativo_com_espelho_2315_01.jpg",
+    "tipo": "Conjunto Decorativo com Espelho",
+    "ref": "2315",
+    "legenda": "Conjunto Decorativo com Espelho 2315",
+    "pagina": 50,
+    "largura": 719,
+    "altura": 602,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p051_22.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 51,
+    "largura": 1419,
+    "altura": 954,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_ambiente_p051_23.jpg",
+    "tipo": "",
+    "ref": "",
+    "legenda": "",
+    "pagina": 51,
+    "largura": 598,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_luminaria_2415_01.jpg",
+    "tipo": "Luminária",
+    "ref": "2415",
+    "legenda": "Luminária 2415",
+    "pagina": 51,
+    "largura": 549,
+    "altura": 589,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_luminaria_rz9021_01.jpg",
+    "tipo": "Luminária",
+    "ref": "RZ9021",
+    "legenda": "Luminária RZ9021",
+    "pagina": 52,
+    "largura": 1014,
+    "altura": 603,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_relogio_2403_01.jpg",
+    "tipo": "Relógio",
+    "ref": "2403",
+    "legenda": "Relógio 2403",
+    "pagina": 52,
+    "largura": 598,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_relogio_2401_01.jpg",
+    "tipo": "Relógio",
+    "ref": "2401",
+    "legenda": "Relógio 2401",
+    "pagina": 52,
+    "largura": 598,
+    "altura": 598,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_relogio_2402_01.jpg",
+    "tipo": "Relógio",
+    "ref": "2402",
+    "legenda": "Relógio 2402",
+    "pagina": 53,
+    "largura": 1014,
+    "altura": 629,
+    "metodo": "jpx->jpg"
+  },
+  {
+    "arquivo": "ccl_relogio_2400_01.jpg",
+    "tipo": "Relógio",
+    "ref": "2400",
+    "legenda": "Relógio 2400",
+    "pagina": 53,
+    "largura": 1014,
+    "altura": 679,
+    "metodo": "jpx->jpg"
+  }
+]

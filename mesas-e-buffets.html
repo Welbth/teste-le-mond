@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mesas &amp; Buffets &bull; Le Mond</title>
+
+    <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/eeb17a45a48aca1d_all.css" rel="stylesheet" />
+
+    <!-- Design System & Site Styles -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Ambient Luxury Background -->
+    <div class="ds-ambient-bg">
+        <svg class="ds-noise-texture" xmlns="http://www.w3.org/2000/svg">
+            <filter id="dsNoiseFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#dsNoiseFilter)" />
+        </svg>
+        <div class="ds-light-ray ds-ray-1"></div>
+        <div class="ds-light-ray ds-ray-2"></div>
+        <div class="ds-light-ray ds-ray-3"></div>
+    </div>
+
+    <!-- Header Navigation (Loaded via JS) -->
+    <div id="ds-header-placeholder"></div>
+
+    <!-- MAIN CATEGORY CATALOG PAGE -->
+    <main>
+        
+        <!-- Breadcrumb Navigation -->
+        <div class="ds-product-breadcrumb-wrap">
+            <div class="ds-container">
+                <nav class="ds-breadcrumb" aria-label="Navegação">
+                    <a href="/">Le Mond</a>
+                    <span>&rsaquo;</span>
+                    <a href="moveis.html">Móveis</a>
+                    <span>&rsaquo;</span>
+                    <span style="color: var(--ds-text-main); font-weight: 600;">Mesas &amp; Buffets</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- CATEGORY HERO SECTION -->
+        <section class="ds-product-hero-section" style="padding-bottom: 0;">
+            <div class="ds-container">
+                <div style="text-align: center;">
+                    <h1 class="ds-product-title" style="font-size: clamp(36px, 5vw, 56px); margin: 0 0 16px;">
+                        Mesas &amp; <span class="italic">Buffets</span>
+                    </h1>
+                </div>
+
+                <!-- FILTRO POR TIPOLOGIA / CATEGORIA (100% BLINDADO) -->
+                <div class="ds-brand-filter-bar">
+                    <button class="ds-filter-pill active" onclick="filterCategoryByType('all', this)">Todas as peças</button>
+                    <button class="ds-filter-pill" onclick="filterCategoryByType('mesas', this)">Mesas, Cadeiras &amp; Apoio</button>
+                    <button class="ds-filter-pill" onclick="filterCategoryByType('buffets', this)">Buffets, Racks &amp; Carrinhos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG GRID SECTION -->
+        <section class="ds-product-specs-section">
+            <div class="ds-container">
+                
+                <div class="ds-category-grid">
+                    <!-- Card: Base de Jantar Fiona -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-fiona.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_fiona_ambiente.webp" alt="Base de Jantar Fiona" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Fiona</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Petra Individual -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-petra-individual.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_petra_individual_ambiente.webp" alt="Base de Jantar Petra Individual" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Petra Individual</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Petra Dupla -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-petra-dupla.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_petra_dupla_ambiente.webp" alt="Base de Jantar Petra Dupla" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Petra Dupla</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Santorini -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-santorini.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_santorini_ambiente.webp" alt="Base de Jantar Santorini" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Santorini</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Olga -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-olga.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_olga_ambiente.webp" alt="Base de Jantar Olga" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Olga</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Lui -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-lui.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_lui_ambiente.webp" alt="Base de Jantar Lui" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Lui</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Liége -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-liege.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_liege_ambiente.webp" alt="Base de Jantar Liége" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Liége</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Matrix -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-matrix.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_matrix_ambiente.webp" alt="Base de Jantar Matrix" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Matrix</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Aline -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-aline.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_aline_ambiente.webp" alt="Base de Jantar Aline" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Aline</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Arista -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-arista.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_arista_ambiente.webp" alt="Base de Jantar Arista" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Arista</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Jantar Órion -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="base-orion.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/base_orion_ambiente.webp" alt="Base de Jantar Órion" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Jantar Órion</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Base de Bistrô Lui -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="bistro-lui.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/bistro_lui_ambiente.webp" alt="Base de Bistrô Lui" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Base de Bistrô Lui</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Tampo Bipartido Carlota -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="tampo-carlota.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/tampo_carlota_ambiente.webp" alt="Tampo Bipartido Carlota" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Tampo Bipartido Carlota</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Tampo Orgânico Fiona -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="tampo-fiona.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/tampo_fiona_ambiente.webp" alt="Tampo Orgânico Fiona" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Tampo Orgânico Fiona</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Tampo Redondo Zeus -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="tampo-zeus.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/tampo_zeus_ambiente.webp" alt="Tampo Redondo Zeus" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Tampo Redondo Zeus</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Card: Aparador RZ9001 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="aparador-rz9001.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/aparador_rz9001_ambiente.webp" alt="Aparador RZ9001" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Aparador RZ9001</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 231 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-231.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_231_ambiente.webp" alt="Buffet 231" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 231</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 242 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-242.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_242_ambiente.webp" alt="Buffet 242" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 242</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 243 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-243.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_243_ambiente.webp" alt="Buffet 243" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 243</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2360 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2360.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2360_ambiente.webp" alt="Cadeira 2360" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2360</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2366 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2366.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2366_ambiente.webp" alt="Cadeira 2366" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2366</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira Medalhão 2369 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-medalhao-2369.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2369_ambiente.webp" alt="Cadeira Medalhão 2369" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira Medalhão 2369</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa 2451 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-2451.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2451_ambiente.webp" alt="Mesa 2451" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa 2451</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa 2453 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-2453.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2453_ambiente.webp" alt="Mesa 2453" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa 2453</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack 2471 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-2471.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_2471_ambiente.webp" alt="Rack 2471" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack 2471</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack 2473 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-2473.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_2473_ambiente.webp" alt="Rack 2473" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack 2473</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack RZ9007 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-rz9007.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_rz9007_ambiente.webp" alt="Rack RZ9007" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack RZ9007</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack RZ9013 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-rz9013.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_rz9013_ambiente.webp" alt="Rack RZ9013" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack RZ9013</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack RZ9025 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-rz9025.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_rz9025_ambiente.webp" alt="Rack RZ9025" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack RZ9025</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2420 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2420.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2420_ambiente.webp" alt="Conjunto de Mesas 2420" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2420</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2422 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2422.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2422_ambiente.webp" alt="Conjunto de Mesas 2422" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2422</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2423 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2423.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2423_ambiente.webp" alt="Conjunto de Mesas 2423" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2423</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2424 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2424.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2424_ambiente.webp" alt="Conjunto de Mesas 2424" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2424</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2425 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2425.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2425_ambiente.webp" alt="Conjunto de Mesas 2425" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2425</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2427 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2427.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2427_ambiente.webp" alt="Conjunto de Mesas 2427" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2427</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2428 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-2428.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2428_ambiente.webp" alt="Conjunto de Mesas 2428" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2428</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2322 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-centro-2322.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2322_ambiente.webp" alt="Conjunto de Mesas 2322" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2322</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2323 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-organicas-2323.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2323_ambiente.webp" alt="Conjunto de Mesas 2323" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2323</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Conjunto de Mesas 2325 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="conjunto-mesas-organicas-2325.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesas_2325_ambiente.webp" alt="Conjunto de Mesas 2325" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Conjunto de Mesas 2325</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 234 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-234.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_234_ambiente.webp" alt="Carrinho Bar 234" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 234</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 235 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-235.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_235_ambiente.webp" alt="Carrinho Bar 235" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 235</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 246 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-246.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_246_ambiente.webp" alt="Carrinho Bar 246" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 246</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 247 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-247.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_247_ambiente.webp" alt="Carrinho Bar 247" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 247</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 248 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-248.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_248_ambiente.webp" alt="Carrinho Bar 248" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 248</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Carrinho Bar 249 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="carrinho-bar-249.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/carrinho_249_ambiente.webp" alt="Carrinho Bar 249" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Carrinho Bar 249</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa de Apoio 2331 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-apoio-2331.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2331_ambiente.webp" alt="Mesa de Apoio 2331" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa de Apoio 2331</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa de Apoio 2332 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-apoio-2332.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2332_ambiente.webp" alt="Mesa de Apoio 2332" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa de Apoio 2332</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa de Centro 2327 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-centro-2327.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2327_ambiente.webp" alt="Mesa de Centro 2327" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa de Centro 2327</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa de Centro 2421 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-centro-2421.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2421_ambiente.webp" alt="Mesa de Centro 2421" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa de Centro 2421</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Mesa 2452 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="mesa-jantar-2452.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/mesa_2452_ambiente.webp" alt="Mesa 2452" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Mesa 2452</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2460 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2460.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2460_ambiente.webp" alt="Cadeira 2460" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2460</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2461 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2461.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2461_ambiente.webp" alt="Cadeira 2461" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2461</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2462 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2462.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2462_ambiente.webp" alt="Cadeira 2462" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2462</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2463 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2463.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2463_ambiente.webp" alt="Cadeira 2463" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2463</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2464 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2464.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2464_ambiente.webp" alt="Cadeira 2464" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2464</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2465 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2465.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2465_ambiente.webp" alt="Cadeira 2465" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2465</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2466 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2466.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2466_ambiente.webp" alt="Cadeira 2466" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2466</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2467 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2467.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2467_ambiente.webp" alt="Cadeira 2467" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2467</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Cadeira 2468 -->
+                    <div class="ds-category-product-card" data-type="mesas">
+                        <a href="cadeira-2468.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/cadeira_2468_ambiente.webp" alt="Cadeira 2468" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Cadeira 2468</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 240 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-contemporaneo-240.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_240_ambiente.webp" alt="Buffet 240" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 240</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 244 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-contemporaneo-244.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_244_ambiente.webp" alt="Buffet 244" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 244</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 241 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-contemporaneo-241.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_241_ambiente.webp" alt="Buffet 241" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 241</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack 2470 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-contemporaneo-2470.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_2470_ambiente.webp" alt="Rack 2470" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack 2470</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack 2472 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-contemporaneo-2472.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_2472_ambiente.webp" alt="Rack 2472" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack 2472</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Aparador 2480 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="aparador-contemporaneo-2480.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/aparador_2480_ambiente.webp" alt="Aparador 2480" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Aparador 2480</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Aparador 2483 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="aparador-contemporaneo-2483.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/aparador_2483_ambiente.webp" alt="Aparador 2483" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Aparador 2483</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Buffet 230 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="buffet-230.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/buffet_230_ambiente.webp" alt="Buffet 230" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Buffet 230</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Aparador 2380 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="aparador-2380.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/aparador_2380_ambiente.webp" alt="Aparador 2380" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Aparador 2380</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Card: Rack RZ9000 -->
+                    <div class="ds-category-product-card" data-type="buffets">
+                        <a href="rack-rz9000.html" class="ds-category-card-inner">
+                            <div class="ds-category-card-stage">
+                                <img src="assets/images/rack_rz9000_ambiente.webp" alt="Rack RZ9000" loading="lazy" />
+                            </div>
+                            <div class="ds-category-card-info">
+                                <span class="ds-category-card-brand">
+                                    <i class="fas fa-circle" style="font-size: 5px;"></i> Le Mond
+                                </span>
+                                <h3 class="ds-category-card-title">Rack RZ9000</h3>
+                                <span class="ds-btn-solid ds-category-card-btn">
+                                    Conhecer peça <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Loaded via JS) -->
+    <div id="ds-footer-placeholder"></div>
+
+    <!-- Filter JS Script -->
+    <script>
+        function filterCategoryByType(type, btn) {
+            const buttons = document.querySelectorAll('.ds-filter-pill');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.ds-category-product-card');
+            cards.forEach(card => {
+                if (type === 'all' || card.getAttribute('data-type') === type) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

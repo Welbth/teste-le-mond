@@ -1,0 +1,441 @@
+[
+  {
+    "produto": "FENDI",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 5,
+    "arquivos": [
+      "mobel_fendi_01.png",
+      "mobel_fendi_02.png"
+    ],
+    "ambiente": "mobel_fendi_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "93 CM",
+    "PROFUNDIDADE DA POLTRONA": "88 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "PROFUNDIDADE DO ASSENTO": "62 CM",
+    "TECIDO FOTO": "132-E POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "LOIS",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 7,
+    "arquivos": [
+      "mobel_lois_01.png",
+      "mobel_lois_02.png",
+      "mobel_lois_03.png"
+    ],
+    "ambiente": "mobel_lois_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "75 CM",
+    "PROFUNDIDADE DA POLTRONA": "77 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "57 CM",
+    "TECIDO FOTO": "84-B/ REC. 08"
+  },
+  {
+    "produto": "HORUS",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 9,
+    "arquivos": [
+      "mobel_horus_01.png",
+      "mobel_horus_02.png"
+    ],
+    "ambiente": "mobel_horus_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "89 CM",
+    "PROFUNDIDADE DA POLTRONA": "85 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "144-E POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "EMMA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 11,
+    "arquivos": [
+      "mobel_emma_01.png",
+      "mobel_emma_02.png",
+      "mobel_emma_03.png"
+    ],
+    "ambiente": "mobel_emma_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "83 CM",
+    "PROFUNDIDADE DA POLTRONA": "87 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "58 CM",
+    "TECIDO FOTO": "87-C POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "CORA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 13,
+    "arquivos": [
+      "mobel_cora_01.png",
+      "mobel_cora_02.png",
+      "mobel_cora_03.png"
+    ],
+    "ambiente": "mobel_cora_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "78 CM",
+    "PROFUNDIDADE DA POLTRONA": "80 CM",
+    "ALTURA DO ASSENTO AO PISO": "44 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "102-C POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "AERO",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 15,
+    "arquivos": [
+      "mobel_aero_01.png",
+      "mobel_aero_02.png",
+      "mobel_aero_03.png"
+    ],
+    "ambiente": "mobel_aero_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "84 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "PROFUNDIDADE DO ASSENTO": "57 CM",
+    "TECIDO FOTO": "83-B POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "AURA",
+    "tipo": "Cama",
+    "marca": "mobel",
+    "pagina": 17,
+    "arquivos": [
+      "mobel_aura_01.png",
+      "mobel_aura_02.png",
+      "mobel_aura_03.png"
+    ],
+    "ambiente": "mobel_aura_ambiente.jpeg",
+    "ALTURA DO ASSENTO AO PISO": "35 CM",
+    "TECIDO FOTO": "132 -E / BASE 116-D"
+  },
+  {
+    "produto": "LUME",
+    "tipo": "Cama",
+    "marca": "mobel",
+    "pagina": 19,
+    "arquivos": [
+      "mobel_lume_01.png",
+      "mobel_lume_02.png",
+      "mobel_lume_03.png"
+    ],
+    "ambiente": "mobel_lume_ambiente.jpeg",
+    "ALTURA DO ASSENTO AO PISO": "31 CM",
+    "TECIDO FOTO": "89-C"
+  },
+  {
+    "produto": "DOMUS",
+    "tipo": "Recamier",
+    "marca": "mobel",
+    "pagina": 21,
+    "arquivos": [
+      "mobel_domus_01.png",
+      "mobel_domus_02.png"
+    ],
+    "ambiente": "mobel_domus_ambiente.jpeg",
+    "PROFUNDIDADE DO RECAMIER": "50 CM",
+    "TECIDO FOTO": "141-E / 116-E"
+  },
+  {
+    "produto": "ARIS",
+    "tipo": "Recamier",
+    "marca": "mobel",
+    "pagina": 23,
+    "arquivos": [
+      "mobel_aris_01.png",
+      "mobel_aris_02.png"
+    ],
+    "ambiente": "mobel_aris_ambiente.jpeg",
+    "PROFUNDIDADE DO RECAMIER": "50 CM",
+    "TECIDO FOTO": "86-C"
+  },
+  {
+    "produto": "LANA",
+    "tipo": "Recamier",
+    "marca": "mobel",
+    "pagina": 25,
+    "arquivos": [
+      "mobel_lana_01.png",
+      "mobel_lana_02.png"
+    ],
+    "ambiente": "mobel_lana_ambiente.jpeg",
+    "PROFUNDIDADE DO RECAMIER": "50 CM",
+    "TECIDO FOTO": "81-C"
+  },
+  {
+    "produto": "BONI",
+    "tipo": "Recamier",
+    "marca": "mobel",
+    "pagina": 27,
+    "arquivos": [
+      "mobel_boni_01.png",
+      "mobel_boni_02.png"
+    ],
+    "ambiente": "mobel_boni_ambiente.jpeg",
+    "PROFUNDIDADE DO RECAMIER": "47 CM",
+    "TECIDO FOTO": "131-E /74-C"
+  },
+  {
+    "produto": "CAROL",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 29,
+    "arquivos": [
+      "mobel_carol_01.png",
+      "mobel_carol_02.png"
+    ],
+    "ambiente": "mobel_carol_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "78 CM",
+    "PROFUNDIDADE DA POLTRONA": "73 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "57 CM",
+    "TECIDO FOTO": "133-E / 116-E"
+  },
+  {
+    "produto": "ELOÁ",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 31,
+    "arquivos": [
+      "mobel_eloa_01.png",
+      "mobel_eloa_02.png",
+      "mobel_eloa_03.png"
+    ],
+    "ambiente": "mobel_eloa_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "80 CM",
+    "PROFUNDIDADE DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "44 CM",
+    "PROFUNDIDADE DO ASSENTO": "62 CM",
+    "TECIDO FOTO": "113-D POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "LIA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 33,
+    "arquivos": [
+      "mobel_lia_01.png",
+      "mobel_lia_02.png"
+    ],
+    "ambiente": "mobel_lia_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "76 CM",
+    "PROFUNDIDADE DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "64 CM",
+    "TECIDO FOTO": "80-C POLTRONA GIRATÓRIA"
+  },
+  {
+    "produto": "JADE",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 35,
+    "arquivos": [
+      "mobel_jade_01.png",
+      "mobel_jade_02.png"
+    ],
+    "ambiente": "mobel_jade_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "82 CM",
+    "PROFUNDIDADE DA POLTRONA": "82CM",
+    "ALTURA DO ASSENTO AO PISO": "42 CM",
+    "PROFUNDIDADE DO ASSENTO": "50 CM",
+    "TECIDO FOTO": "131-E / REC. 09"
+  },
+  {
+    "produto": "DÓRA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 37,
+    "arquivos": [
+      "mobel_dora_01.png",
+      "mobel_dora_02.png"
+    ],
+    "ambiente": "mobel_dora_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "80 CM",
+    "PROFUNDIDADE DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "PROFUNDIDADE DO ASSENTO": "52 CM",
+    "TECIDO FOTO": "137-E"
+  },
+  {
+    "produto": "BAÓBA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 39,
+    "arquivos": [
+      "mobel_baoba_01.png",
+      "mobel_baoba_02.png"
+    ],
+    "ambiente": "mobel_baoba_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "78 CM",
+    "PROFUNDIDADE DA POLTRONA": "84 CM",
+    "ALTURA DO ASSENTO AO PISO": "46 CM",
+    "PROFUNDIDADE DO ASSENTO": "62 CM",
+    "TECIDO FOTO": "113-D"
+  },
+  {
+    "produto": "BIA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 41,
+    "arquivos": [
+      "mobel_bia_01.png",
+      "mobel_bia_02.png"
+    ],
+    "ambiente": "mobel_bia_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "75 CM",
+    "PROFUNDIDADE DA POLTRONA": "76 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "59 CM",
+    "TECIDO FOTO": "62-B"
+  },
+  {
+    "produto": "CAMILA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 43,
+    "arquivos": [
+      "mobel_camila_01.png",
+      "mobel_camila_02.png",
+      "mobel_camila_03.png"
+    ],
+    "ambiente": "mobel_camila_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "82 CM",
+    "PROFUNDIDADE DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "56 CM",
+    "TECIDO FOTO": "136-E"
+  },
+  {
+    "produto": "ZOE",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 45,
+    "arquivos": [
+      "mobel_zoe_01.png",
+      "mobel_zoe_02.png"
+    ],
+    "ambiente": "mobel_zoe_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "67 CM",
+    "PROFUNDIDADE DA POLTRONA": "77 CM",
+    "ALTURA DO ASSENTO AO PISO": "46 CM",
+    "PROFUNDIDADE DO ASSENTO": "55 CM",
+    "TECIDO FOTO": "132-E"
+  },
+  {
+    "produto": "CANELA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 47,
+    "arquivos": [
+      "mobel_canela_01.png",
+      "mobel_canela_02.png"
+    ],
+    "ambiente": "mobel_canela_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "74 CM",
+    "PROFUNDIDADE DA POLTRONA": "71 CM",
+    "ALTURA DO ASSENTO AO PISO": "46 CM",
+    "PROFUNDIDADE DO ASSENTO": "54 CM",
+    "TECIDO FOTO": "65-B / 67-B"
+  },
+  {
+    "produto": "ZARA",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 49,
+    "arquivos": [
+      "mobel_zara_01.png",
+      "mobel_zara_02.png",
+      "mobel_zara_03.png"
+    ],
+    "ambiente": "mobel_zara_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "80 CM",
+    "PROFUNDIDADE DA POLTRONA": "77 CM",
+    "ALTURA DO ASSENTO AO PISO": "47 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "65-B"
+  },
+  {
+    "produto": "NEON",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 51,
+    "arquivos": [
+      "mobel_neon_01.png",
+      "mobel_neon_02.png"
+    ],
+    "ambiente": "mobel_neon_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "70 CM",
+    "PROFUNDIDADE DA POLTRONA": "71 CM",
+    "ALTURA DO ASSENTO AO PISO": "44 CM",
+    "PROFUNDIDADE DO ASSENTO": "60 CM",
+    "TECIDO FOTO": "140-E"
+  },
+  {
+    "produto": "ISIS",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 53,
+    "arquivos": [
+      "mobel_isis_01.png",
+      "mobel_isis_02.png"
+    ],
+    "ambiente": "mobel_isis_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "69 CM",
+    "PROFUNDIDADE DA POLTRONA": "74 CM",
+    "ALTURA DO ASSENTO AO PISO": "45 CM",
+    "PROFUNDIDADE DO ASSENTO": "50 CM",
+    "TECIDO FOTO": "133-E"
+  },
+  {
+    "produto": "IPÊ",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 55,
+    "arquivos": [
+      "mobel_ipe_01.png",
+      "mobel_ipe_02.png",
+      "mobel_ipe_03.png"
+    ],
+    "ambiente": "mobel_ipe_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "81 CM",
+    "PROFUNDIDADE DA POLTRONA": "82 CM",
+    "ALTURA DO ASSENTO AO PISO": "43 CM",
+    "PROFUNDIDADE DO ASSENTO": "56 CM",
+    "TECIDO FOTO": "70-C"
+  },
+  {
+    "produto": "JACARANDÁ",
+    "tipo": "Poltrona",
+    "marca": "mobel",
+    "pagina": 57,
+    "arquivos": [
+      "mobel_jacaranda_01.png",
+      "mobel_jacaranda_02.png"
+    ],
+    "ambiente": "mobel_jacaranda_ambiente.jpeg",
+    "LARGURA DA POLTRONA": "80 CM",
+    "PROFUNDIDADE DA POLTRONA": "83 CM",
+    "ALTURA DO ASSENTO AO PISO": "42 CM",
+    "PROFUNDIDADE DO ASSENTO": "64 CM",
+    "TECIDO FOTO": "66-B"
+  },
+  {
+    "produto": "MADHU",
+    "tipo": "SOFÁ MODULAR",
+    "marca": "mobel",
+    "pagina": 58,
+    "arquivos": [
+      "mobel_madhu_01.png",
+      "mobel_madhu_02.png",
+      "mobel_madhu_03.png",
+      "mobel_madhu_medidas_04.png",
+      "mobel_madhu_medidas_05.jpeg",
+      "mobel_madhu_medidas_06.jpeg"
+    ],
+    "ambiente": "",
+    "_extra": true
+  }
+]

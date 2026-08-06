@@ -1,0 +1,11 @@
+produto,tipo,marca,pagina,arquivos,ambiente,ALTURA DA POLTRONA,PROFUNDIDADE DA POLTRONA,LARGURA DA POLTRONA,ALTURA DO ASSENTO AO PISO,PROFUNDIDADE DO ASSENTO,TECIDO FOTO,PROFUNDIDADE,ALTURA DO RECAMIER,PROFUNDIDADE DO RECAMIER
+LÓTUS,Poltrona,mobel2026,5,mobel2026_lotus_01.png | mobel2026_lotus_02.png | mobel2026_lotus_03.png,mobel2026_lotus_ambiente.jpeg,75 CM,85 CM,90 CM,43 CM,59 CM,160-F,,,
+POLI,Poltrona,mobel2026,7,mobel2026_poli_01.png | mobel2026_poli_02.png | mobel2026_poli_03.png,mobel2026_poli_ambiente.jpeg,72 CM,84 CM,77 CM,45 CM,63 CM,163-F,,,
+TRIZ,Poltrona,mobel2026,9,mobel2026_triz_01.png | mobel2026_triz_02.png | mobel2026_triz_03.png,mobel2026_triz_ambiente.jpeg,78 CM,78 CM,82 CM,45 CM,64 CM,96-C,,,
+RIO,Poltrona,mobel2026,11,mobel2026_rio_01.png | mobel2026_rio_02.png | mobel2026_rio_03.png,mobel2026_rio_ambiente.jpeg,77 CM,83 CM,85 CM,44 CM,60 CM,98-C,,,
+RUTH,Sofá,mobel2026,13,mobel2026_ruth_01.png | mobel2026_ruth_02.png | mobel2026_ruth_03.png | mobel2026_ruth_04.png,mobel2026_ruth_ambiente.jpeg,,,,43 CM,,57-E,92 CM,,
+KALI,Poltrona,mobel2026,15,mobel2026_kali_01.png | mobel2026_kali_02.png | mobel2026_kali_03.png,mobel2026_kali_ambiente.jpeg,79 CM,76 CM,74 CM,45 CM,60 CM,161-F,,,
+ORBE,Recamier,mobel2026,17,mobel2026_orbe_01.png | mobel2026_orbe_02.png | mobel2026_orbe_03.png,mobel2026_orbe_ambiente.jpeg,,,,,,90-B,,42 CM,50 CM
+FOZ,Poltrona Fixa e Puff,mobel2026,19,mobel2026_foz_01.png | mobel2026_foz_02.png | mobel2026_foz_03.png,mobel2026_foz_ambiente.jpeg,,,,,58 CM,155-E,,,
+FOZ,Poltrona Giratória,mobel2026,21,mobel2026_foz_giratoria_01.png | mobel2026_foz_giratoria_02.png,mobel2026_foz_giratoria_ambiente.jpeg,75 CM,,85 CM,,58 CM,155-E,,,
+ZAIA,Cama,mobel2026,23,mobel2026_zaia_01.png | mobel2026_zaia_02.png,mobel2026_zaia_ambiente.jpeg,,,,,,149-E,,,

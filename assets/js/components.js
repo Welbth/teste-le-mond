@@ -2,34 +2,24 @@ const headerHTML = `
     <!-- Header Navigation -->
     <header class="ds-header">
         <div class="ds-container ds-header-inner">
-            <a href="/" class="ds-brand-logo-text" title="Le Mond">
+            <a href="index.html" class="ds-brand-logo-text" title="Le Mond">
                 <span class="ds-brand-name">LE MOND</span>
                 <span class="ds-brand-desc">Curadoria de Interiores</span>
             </a>
 
             <ul class="ds-nav-menu">
-                <li class="ds-nav-item"><a href="/#colecao" class="ds-nav-link">Coleção</a></li>
-                <li class="ds-nav-item ds-dropdown-item">
-                    <a href="moveis" class="ds-nav-link ds-dropdown-trigger">
-                        Móveis <i class="fas fa-chevron-down ds-dropdown-arrow"></i>
-                    </a>
-                    <ul class="ds-dropdown-menu">
-                        <li><a href="sofas-e-estofados" class="ds-dropdown-link">Sofás &amp; Estofados</a></li>
-                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Poltronas &amp; Cadeiras</a></li>
-                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Mesas, Aparadores &amp; Buffets</a></li>
-                        <li><a href="javascript:void(0)" class="ds-dropdown-link ds-disabled">Camas &amp; Dormitório</a></li>
-                    </ul>
-                </li>
-                <li class="ds-nav-item"><a href="/#tapetes" class="ds-nav-link">Tapetes</a></li>
-                <li class="ds-nav-item"><a href="/#arte" class="ds-nav-link">Arte</a></li>
-                <li class="ds-nav-item"><a href="/#decor" class="ds-nav-link">Décor</a></li>
+                <li class="ds-nav-item"><a href="index.html" class="ds-nav-link">Início</a></li>
+                <li class="ds-nav-item"><a href="moveis.html" class="ds-nav-link">Móveis</a></li>
+                <li class="ds-nav-item"><a href="estofados.html" class="ds-nav-link">Estofados</a></li>
+                <li class="ds-nav-item"><a href="mesas-e-buffets.html" class="ds-nav-link">Mesas &amp; Buffets</a></li>
+                <li class="ds-nav-item"><a href="decoracao.html" class="ds-nav-link">Décor</a></li>
             </ul>
 
-            <a href="/#contato" class="ds-btn-solid ds-header-btn">
+            <a href="https://wa.me/555499093973?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Le%20Mond." target="_blank" class="ds-btn-solid ds-header-btn">
                 Falar com a Le Mond
             </a>
 
-            <button class="ds-menu-trigger" onclick="toggleOverlayMenu()">
+            <button class="ds-menu-trigger" onclick="toggleOverlayMenu()" aria-label="Abrir Menu">
                 <div class="ds-hamburger-icon">
                     <span></span>
                     <span></span>
@@ -42,26 +32,13 @@ const headerHTML = `
     <div class="ds-overlay-modal" id="overlayMenu">
         <button class="ds-overlay-close" onclick="toggleOverlayMenu()">&times;</button>
         <ul class="ds-overlay-nav">
-            <li><a href="/#colecao" onclick="toggleOverlayMenu()">Coleção</a></li>
-            <li class="ds-overlay-item-with-arrow">
-                <div class="ds-overlay-link-row">
-                    <a href="moveis" onclick="toggleOverlayMenu()">Móveis</a>
-                    <button type="button" class="ds-overlay-arrow-btn" onclick="toggleMobileSubmenu(event)" aria-label="Expandir subcategorias de Móveis">
-                        <i class="fas fa-chevron-down" id="mobileMenuArrow"></i>
-                    </button>
-                </div>
-                <ul class="ds-overlay-sub-list" id="mobileSubMenuMoveis">
-                    <li><a href="sofas-e-estofados" onclick="toggleOverlayMenu()">Sofás &amp; Estofados</a></li>
-                    <li><a href="javascript:void(0)" class="ds-disabled">Poltronas &amp; Cadeiras</a></li>
-                    <li><a href="javascript:void(0)" class="ds-disabled">Mesas, Aparadores &amp; Buffets</a></li>
-                    <li><a href="javascript:void(0)" class="ds-disabled">Camas &amp; Dormitório</a></li>
-                </ul>
-            </li>
-            <li><a href="/#tapetes" onclick="toggleOverlayMenu()">Tapetes</a></li>
-            <li><a href="/#arte" onclick="toggleOverlayMenu()">Arte</a></li>
-            <li><a href="/#decor" onclick="toggleOverlayMenu()">Décor</a></li>
+            <li><a href="index.html" onclick="toggleOverlayMenu()">Início</a></li>
+            <li><a href="moveis.html" onclick="toggleOverlayMenu()">Móveis</a></li>
+            <li><a href="estofados.html" onclick="toggleOverlayMenu()">Estofados</a></li>
+            <li><a href="mesas-e-buffets.html" onclick="toggleOverlayMenu()">Mesas &amp; Buffets</a></li>
+            <li><a href="decoracao.html" onclick="toggleOverlayMenu()">Décor</a></li>
             <li style="margin-top: 24px;">
-                <a href="/#contato" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 13px; padding: 12px 24px;">
+                <a href="https://wa.me/555499093973?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Le%20Mond." target="_blank" class="ds-btn-solid" onclick="toggleOverlayMenu()" style="font-size: 13px; padding: 12px 24px;">
                     Falar com a Le Mond
                 </a>
             </li>
@@ -81,35 +58,34 @@ const footerHTML = `
                     <p class="ds-footer-slogan">A curadoria do que fica.</p>
                 </div>
                 
-                <!-- Col 2: Navegação -->
+                <!-- Col 2: Navegação Real -->
                 <div class="ds-footer-col">
                     <h4 class="ds-footer-title">Navegação</h4>
                     <ul class="ds-footer-list">
-                        <li><a href="#">Coleção</a></li>
-                        <li><a href="#">Sofás & Estofados</a></li>
-                        <li><a href="#">Poltronas & Cadeiras</a></li>
-                        <li><a href="#">Mesas, Aparadores & Buffets</a></li>
-                        <li><a href="#">Camas & Dormitório</a></li>
-                        <li><a href="#">Iluminação</a></li>
-                        <li><a href="#">Arte & Quadros</a></li>
-                        <li><a href="#">Tapetes</a></li>
-                        <li><a href="#">Décor & Objetos</a></li>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="moveis.html">Móveis</a></li>
+                        <li><a href="estofados.html">Estofados &amp; Sofás</a></li>
+                        <li><a href="mesas-e-buffets.html">Mesas &amp; Buffets</a></li>
+                        <li><a href="decoracao.html">Décor &amp; Objetos</a></li>
                     </ul>
                 </div>
 
-                <!-- Col 3: Institucional e Atendimento -->
+                <!-- Col 3: Atendimento -->
                 <div class="ds-footer-col">
-                    <h4 class="ds-footer-title">Institucional</h4>
+                    <h4 class="ds-footer-title">Atendimento</h4>
                     <ul class="ds-footer-list">
-                        <li><a href="#">A Le Mond</a></li>
-                        <li><a href="#">Atendimento</a></li>
-                    </ul>
-
-                    <h4 class="ds-footer-title" style="margin-top: 40px;">Atendimento</h4>
-                    <ul class="ds-footer-list">
-                        <li><a href="#">WhatsApp</a></li>
-                        <li><a href="#">E-mail</a></li>
-                        <li><a href="#">Telefone</a></li>
+                        <li>
+                            <a href="https://wa.me/555499093973?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Le%20Mond." target="_blank" style="display: inline-flex; align-items: center; gap: 8px;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink: 0;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.104 4.035 4.148-1.088z"/></svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@lemond.com.br" style="display: inline-flex; align-items: center; gap: 8px;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                E-mail
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -126,7 +102,7 @@ const footerHTML = `
 
             <!-- Bottom Bar -->
             <div class="ds-footer-bottom">
-                <p>Le Mond — Castro, PR</p>
+                <p>Le Mond — Castro, PR &copy; Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -184,7 +160,7 @@ function openLightbox(imgSrc, caption) {
     const cap = document.getElementById('ds-lightbox-caption');
     if (img) {
         img.src = imgSrc;
-        if (cap) cap.textContent = caption || 'Sofá Sonata — Le Mond';
+        if (cap) cap.textContent = caption || 'Ampliação — Le Mond';
     }
     
     // Trigger transition

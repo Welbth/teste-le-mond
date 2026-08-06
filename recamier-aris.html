@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Recamier Aris &bull; Le Mond</title>
+
+    <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="ref-design-systems/admmobiliario.com.br_pt/assets/eeb17a45a48aca1d_all.css" rel="stylesheet" />
+
+    <!-- Design System & Site Styles -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Ambient Luxury Background -->
+    <div class="ds-ambient-bg">
+        <svg class="ds-noise-texture" xmlns="http://www.w3.org/2000/svg">
+            <filter id="dsNoiseFilter">
+                <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#dsNoiseFilter)" />
+        </svg>
+        <div class="ds-light-ray ds-ray-1"></div>
+        <div class="ds-light-ray ds-ray-2"></div>
+        <div class="ds-light-ray ds-ray-3"></div>
+    </div>
+
+    <!-- Header Navigation (Loaded via JS) -->
+    <div id="ds-header-placeholder"></div>
+
+    <!-- MAIN PRODUCT PAGE -->
+    <main>
+        
+        <!-- Breadcrumb Navigation -->
+        <div class="ds-product-breadcrumb-wrap">
+            <div class="ds-container">
+                <nav class="ds-breadcrumb" aria-label="Navegação">
+                    <a href="/">Le Mond</a>
+                    <span>&rsaquo;</span>
+                    <a href="/#colecao">Acervo</a>
+                    <span>&rsaquo;</span>
+                    <a href="estofados.html">Estofados</a>
+                    <span>&rsaquo;</span>
+                    <span style="color: var(--ds-text-main); font-weight: 600;">Recamier Aris</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 1: APRESENTAÇÃO & FOTO PRINCIPAL -->
+        <section class="ds-product-hero-section">
+            <div class="ds-container">
+                <div class="ds-product-hero-grid">
+                    
+                    <!-- Foto Principal -->
+                    <div class="ds-product-hero-stage" onclick="openLightbox('assets/images/recamier_aris_ambiente.webp', 'Recamier Aris — Vista em Ambiente')">
+                        <img src="assets/images/recamier_aris_ambiente.webp" alt="Recamier Aris - Vista em Ambiente" />
+                        <span class="ds-img-zoom-pill" title="Ampliar imagem"><i class="fas fa-search-plus"></i></span>
+                    </div>
+
+                    <!-- Informações Principais & Descrição Editorial -->
+                    <div class="ds-product-hero-info">
+                        <span class="ds-product-brand-badge">
+                            <i class="fas fa-circle" style="font-size: 6px;"></i> LE MOND &middot; DESIGN CONTEMPORÂNEO
+                        </span>
+                        
+                        <h1 class="ds-product-title">Recamier <span class="italic">Aris</span>.</h1>
+
+                        <!-- Descrição Curatorial Editorial -->
+                        <div class="ds-product-editorial-desc">
+                            Linearidade minimalista com estofamento contínuo e pés de madeira nobre. Peça versátil desenhada para integrar quartos, livings e áreas de passagem.
+                        </div>
+
+                        <!-- Destaques -->
+                        <div class="ds-product-quick-tags">
+                            <span class="ds-tag-pill">Recamier Linear</span>
+                            <span class="ds-tag-pill">Pés em Madeira</span>
+                            <span class="ds-tag-pill">Design Minimalista</span>
+                            <span class="ds-tag-pill">Tecido Tátil</span>
+                        </div>
+
+                        <!-- Botão CTA Principal -->
+                        <a href="https://wa.me/555499093973?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20Recamier%20Aris." target="_blank" class="ds-btn-solid ds-btn-cta-full">
+                            Consultar disponibilidade <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: DETALHE & FICHA TÉCNICA MINIMALISTA -->
+        <section class="ds-product-specs-section">
+            <div class="ds-container">
+                <div class="ds-product-specs-grid">
+                    
+                    <!-- Foto Secundária -->
+                    <div class="ds-product-detail-stage" onclick="openLightbox('assets/images/recamier_aris_detalhe.webp', 'Recamier Aris — Detalhes e Acabamento')">
+                        <img src="assets/images/recamier_aris_detalhe.webp" alt="Recamier Aris - Detalhes" />
+                        <span class="ds-img-zoom-pill" title="Ampliar imagem"><i class="fas fa-search-plus"></i></span>
+                    </div>
+
+                    <!-- Ficha Técnica Minimalista -->
+                    <div class="ds-specs-minimal-wrap">
+                        <div class="ds-specs-header">
+                            <h2 class="ds-specs-title">Ficha Técnica</h2>
+                            <span class="ds-specs-subtitle">Especificações & Estrutura</span>
+                        </div>
+
+                        <div class="ds-specs-list">
+                            
+                            <div class="ds-spec-row">
+                                <span class="ds-spec-label">Linha / Curadoria</span>
+                                <span class="ds-spec-val">Le Mond &middot; Design Autoral</span>
+                            </div>
+
+                            <div class="ds-spec-row">
+                                <span class="ds-spec-label">Peça</span>
+                                <span class="ds-spec-val">Recamier Aris</span>
+                            </div>
+
+                            <div class="ds-spec-row">
+                                <span class="ds-spec-label">Estrutura</span>
+                                <span class="ds-spec-val">Base de madeira nobre maciça com travamento reforçado</span>
+                            </div>
+
+                            <div class="ds-spec-row">
+                                <span class="ds-spec-label">Estofamento</span>
+                                <span class="ds-spec-val">Assento de alta resiliência revestido em tecido nobre</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Loaded via JS) -->
+    <div id="ds-footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/components.js"></script>
+</body>
+
+</html>

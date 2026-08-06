@@ -1,0 +1,108 @@
+arquivo,produto,codigos,tipo,pagina_pdf,dimensoes_px,observacao
+molufan_versalles_ambiente.jpg,Versalles,TCS-722,ambiente,3,3281x2077,"original, sem recompressao"
+molufan_versalles_render_01.png,Versalles,TCS-722,render tecnico,4,1297x932,alpha nativo do PDF
+molufan_versalles_render_02.png,Versalles,TCS-722,render tecnico,4,902x379,alpha nativo do PDF
+molufan_munique_ambiente.jpg,Munique,TCA-310,ambiente,5,3282x2077,"original, sem recompressao"
+molufan_munique_render_01.png,Munique,TCA-310,render tecnico,6,1270x841,alpha nativo do PDF
+molufan_ibiza_ambiente.jpg,Ibiza,TCS-710,ambiente,7,3281x2077,"original, sem recompressao"
+molufan_ibiza_render_01.png,Ibiza,TCS-710,render tecnico,8,1477x867,alpha nativo do PDF
+molufan_london_ambiente.jpg,London,TCS-700,ambiente,9,3281x2076,"original, sem recompressao"
+molufan_london_render_01.png,London,TCS-700,render tecnico,10,1605x480,alpha nativo do PDF
+molufan_london_render_02.png,London,TCS-700,render tecnico,10,893x799,alpha nativo do PDF
+molufan_arezzo_ambiente.jpg,Arezzo,TCA-59,ambiente,11,3282x2077,"original, sem recompressao"
+molufan_arezzo_render_01.png,Arezzo,TCA-59,render tecnico,12,1546x463,alpha nativo do PDF
+molufan_arezzo_render_02.png,Arezzo,TCA-59,render tecnico,12,841x662,alpha nativo do PDF
+molufan_passion_e_puff_erus_ambiente.jpg,Passion  e  Puff Erus,TCE-1011,ambiente,13,3276x2077,"original, sem recompressao"
+molufan_passion_e_puff_erus_render_01.png,Passion  e  Puff Erus,TCE-1011,render tecnico,14,869x802,alpha nativo do PDF
+molufan_passion_e_puff_erus_render_02.png,Passion  e  Puff Erus,TCE-1011,render tecnico,14,902x421,alpha nativo do PDF
+molufan_memphis_ambiente.jpg,Memphis,"TCE-1011, TCS-721",ambiente,15,3281x2076,"original, sem recompressao"
+molufan_memphis_render_01.png,Memphis,"TCE-1011, TCS-721",render tecnico,16,978x823,alpha nativo do PDF
+molufan_memphis_render_02.png,Memphis,"TCE-1011, TCS-721",render tecnico,16,1160x366,alpha nativo do PDF
+molufan_bugatti_ambiente.jpg,Bugatti,"TCA-301, TCS-721",ambiente,17,3281x2076,"original, sem recompressao"
+molufan_bugatti_render_01.png,Bugatti,"TCA-301, TCS-721",render tecnico,18,1617x847,alpha nativo do PDF
+molufan_bugatti_render_02.png,Bugatti,"TCA-301, TCS-721",render tecnico,18,1111x421,alpha nativo do PDF
+molufan_murano_ambiente.jpg,Murano,TCA-215,ambiente,19,3281x2077,"original, sem recompressao"
+molufan_murano_render_01.png,Murano,TCA-215,render tecnico,20,1083x765,alpha nativo do PDF
+molufan_murano_render_02.png,Murano,TCA-215,render tecnico,20,1096x422,alpha nativo do PDF
+molufan_ponteio_ambiente.jpg,Ponteio,TCS-727,ambiente,21,3281x2077,"original, sem recompressao"
+molufan_ponteio_render_01.png,Ponteio,TCS-727,render tecnico,22,1178x783,alpha nativo do PDF
+molufan_ponteio_render_02.png,Ponteio,TCS-727,render tecnico,22,1038x421,alpha nativo do PDF
+molufan_magno_ambiente.jpg,Magno,TCS-721,ambiente,23,3281x2077,"original, sem recompressao"
+molufan_magno_render_01.png,Magno,TCS-721,render tecnico,24,1598x650,alpha nativo do PDF
+molufan_magno_render_02.png,Magno,TCS-721,render tecnico,24,1078x480,alpha nativo do PDF
+molufan_magno_render_03.png,Magno,TCS-721,render tecnico,24,864x379,alpha nativo do PDF
+molufan_atualle_ambiente.jpg,Atualle,SL-99,ambiente,25,3281x2076,"original, sem recompressao"
+molufan_atualle_render_01.png,Atualle,SL-99,render tecnico,26,946x823,alpha nativo do PDF
+molufan_atualle_render_02.png,Atualle,SL-99,render tecnico,26,1092x428,alpha nativo do PDF
+molufan_royalle_ambiente.jpg,Royalle,SL-76,ambiente,27,3281x2076,"original, sem recompressao"
+molufan_royalle_render_01.png,Royalle,SL-76,render tecnico,28,1178x898,alpha nativo do PDF
+molufan_royalle_render_02.png,Royalle,SL-76,render tecnico,28,1069x422,alpha nativo do PDF
+molufan_encanto_ambiente.jpg,Encanto,TCA-301,ambiente,29,3281x2077,"original, sem recompressao"
+molufan_encanto_render_01.png,Encanto,TCA-301,render tecnico,30,1030x796,alpha nativo do PDF
+molufan_encanto_render_02.png,Encanto,TCA-301,render tecnico,30,1010x422,alpha nativo do PDF
+molufan_nilo_ambiente.jpg,Nilo,TCA-210,ambiente,31,3282x2077,"original, sem recompressao"
+molufan_nilo_render_01.png,Nilo,TCA-210,render tecnico,32,1084x823,alpha nativo do PDF
+molufan_nilo_render_02.png,Nilo,TCA-210,render tecnico,32,1042x436,alpha nativo do PDF
+molufan_dallas_ambiente.jpg,Dallas,TCS-721,ambiente,33,3282x2077,"original, sem recompressao"
+molufan_dallas_render_01.png,Dallas,TCS-721,render tecnico,34,1504x817,alpha nativo do PDF
+molufan_dallas_render_02.png,Dallas,TCS-721,render tecnico,34,954x422,alpha nativo do PDF
+molufan_dallas_render_03.png,Dallas,TCS-721,render tecnico,34,747x431,alpha nativo do PDF
+molufan_athos_ambiente.jpg,Athos,TCA-306,ambiente,35,3281x2076,"original, sem recompressao"
+molufan_athos_render_01.png,Athos,TCA-306,render tecnico,36,1445x703,alpha nativo do PDF
+molufan_athos_render_02.png,Athos,TCA-306,render tecnico,36,739x487,alpha nativo do PDF
+molufan_athos_render_03.png,Athos,TCA-306,render tecnico,36,693x446,alpha nativo do PDF
+molufan_athos_render_04.png,Athos,TCA-306,render tecnico,36,729x355,alpha nativo do PDF
+molufan_evidence_ambiente.jpg,Evidence,SL-940,ambiente,37,3282x2077,"original, sem recompressao"
+molufan_evidence_render_01.png,Evidence,SL-940,render tecnico,38,1509x811,alpha nativo do PDF
+molufan_evidence_render_02.png,Evidence,SL-940,render tecnico,38,1031x474,alpha nativo do PDF
+molufan_evidence_render_03.png,Evidence,SL-940,render tecnico,38,671x440,alpha nativo do PDF
+molufan_eldorado_ambiente.jpg,Eldorado,SL-952,ambiente,39,3281x2076,"original, sem recompressao"
+molufan_eldorado_render_01.png,Eldorado,SL-952,render tecnico,40,1557x755,alpha nativo do PDF
+molufan_eldorado_render_02.png,Eldorado,SL-952,render tecnico,40,1067x468,alpha nativo do PDF
+molufan_eldorado_render_03.png,Eldorado,SL-952,render tecnico,40,671x440,alpha nativo do PDF
+molufan_max_ambiente.jpg,Max,SL-941,ambiente,41,3281x2077,"original, sem recompressao"
+molufan_max_render_01.png,Max,SL-941,render tecnico,42,1540x798,alpha nativo do PDF
+molufan_max_render_02.png,Max,SL-941,render tecnico,42,864x467,alpha nativo do PDF
+molufan_max_render_03.png,Max,SL-941,render tecnico,42,662x421,alpha nativo do PDF
+molufan_jaguar_ambiente.jpg,Jaguar,SL-945,ambiente,43,3281x2076,"original, sem recompressao"
+molufan_jaguar_render_01.png,Jaguar,SL-945,render tecnico,44,1616x578,alpha nativo do PDF
+molufan_jaguar_render_02.png,Jaguar,SL-945,render tecnico,44,790x639,alpha nativo do PDF
+molufan_jaguar_render_03.png,Jaguar,SL-945,render tecnico,44,644x380,alpha nativo do PDF
+molufan_eva_ambiente.jpg,Eva,SL-74,ambiente,45,3281x2076,"original, sem recompressao"
+molufan_eva_render_01.png,Eva,SL-74,render tecnico,46,1431x882,alpha nativo do PDF
+molufan_eva_render_02.png,Eva,SL-74,render tecnico,46,1047x421,alpha nativo do PDF
+molufan_eva_render_03.png,Eva,SL-74,render tecnico,46,853x493,alpha nativo do PDF
+molufan_lince_ambiente.jpg,Lince,"TCA-200, TCA-212",ambiente,47,3282x2076,"original, sem recompressao"
+molufan_lince_render_01.png,Lince,"TCA-200, TCA-212",render tecnico,48,974x852,alpha nativo do PDF
+molufan_lince_render_02.png,Lince,"TCA-200, TCA-212",render tecnico,48,812x462,alpha nativo do PDF
+molufan_joly_ambiente.jpg,Joly,"TCA-301, TCS-721",ambiente,49,3281x2076,"original, sem recompressao"
+molufan_joly_render_01.png,Joly,"TCA-301, TCS-721",render tecnico,50,919x802,alpha nativo do PDF
+molufan_maly_ambiente.jpg,Maly,"TCE-1015, TCS-727",ambiente,51,3281x2077,"original, sem recompressao"
+molufan_maly_render_01.png,Maly,"TCE-1015, TCS-727",render tecnico,52,1031x939,alpha nativo do PDF
+molufan_maly_render_02.png,Maly,"TCE-1015, TCS-727",render tecnico,52,628x566,alpha nativo do PDF
+molufan_zafira_ambiente.jpg,Zafira,SL-949,ambiente,53,3085x1883,"original, sem recompressao"
+molufan_zafira_render_01.png,Zafira,SL-949,render tecnico,54,1171x865,alpha nativo do PDF
+molufan_zafira_render_02.png,Zafira,SL-949,render tecnico,54,679x534,alpha nativo do PDF
+molufan_onix_ambiente.jpg,Onix,"TCA-308, TCA-59, TCE-1010",ambiente,55,3281x2076,"original, sem recompressao"
+molufan_onix_render_01.png,Onix,"TCA-308, TCA-59, TCE-1010",render tecnico,56,802x841,alpha nativo do PDF
+molufan_lua_ambiente.jpg,Lua,"TCE-1015, SL-948, SL-75",ambiente,57,3281x2076,"original, sem recompressao"
+molufan_liz_ambiente.jpg,Liz,TCA-300,ambiente,59,3282x2077,"original, sem recompressao"
+molufan_liz_render_01.png,Liz,TCA-300,render tecnico,60,978x835,alpha nativo do PDF
+molufan_plaza_ambiente.jpg,Plaza,SL-70,ambiente,61,3281x2077,"original, sem recompressao"
+molufan_plaza_render_01.png,Plaza,SL-70,render tecnico,62,840x878,alpha nativo do PDF
+molufan_plaza_render_02.png,Plaza,SL-70,render tecnico,62,910x446,alpha nativo do PDF
+molufan_keoma_ambiente.jpg,Keoma,TCA-208,ambiente,63,3282x2076,"original, sem recompressao"
+molufan_keoma_render_01.png,Keoma,TCA-208,render tecnico,64,881x857,alpha nativo do PDF
+molufan_dakota_ambiente.jpg,Dakota,"TCA-210, SL-947, SL-949",ambiente,65,3281x2077,"original, sem recompressao"
+molufan_dakota_render_01.png,Dakota,"TCA-210, SL-947, SL-949",render tecnico,66,877x861,alpha nativo do PDF
+molufan_pietra_ambiente.jpg,Pietra,TCA-301,ambiente,67,3281x2076,"original, sem recompressao"
+molufan_pietra_render_01.png,Pietra,TCA-301,render tecnico,68,905x928,alpha nativo do PDF
+molufan_dalia_ambiente.jpg,Dália,TCS-709,ambiente,69,3282x2077,"original, sem recompressao"
+molufan_dalia_render_01.png,Dália,TCS-709,render tecnico,70,1539x1581,alpha nativo do PDF
+molufan_dalia_render_02.png,Dália,TCS-709,render tecnico,70,1039x865,alpha nativo do PDF
+molufan_dalia_render_03.png,Dália,TCS-709,render tecnico,70,700x446,alpha nativo do PDF
+molufan_scala_ambiente.jpg,Scala,"TCS-700, TCS-727",ambiente,71,3282x2077,"original, sem recompressao"
+molufan_scala_render_01.png,Scala,"TCS-700, TCS-727",render tecnico,72,875x893,alpha nativo do PDF
+molufan_scala_render_02.png,Scala,"TCS-700, TCS-727",render tecnico,72,956x484,alpha nativo do PDF
+molufan_delta_ambiente.jpg,Delta,"TCA-301, TCS-727, TCE-1010, TCS-70, TCE-1026",ambiente,73,3281x2077,"original, sem recompressao"
+molufan_delta_render_01.png,Delta,"TCA-301, TCS-727, TCE-1010, TCS-70, TCE-1026",render tecnico,74,1471x847,alpha nativo do PDF
