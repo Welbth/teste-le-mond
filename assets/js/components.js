@@ -9,8 +9,7 @@ const headerHTML = `
 
             <ul class="ds-nav-menu">
                 <li class="ds-nav-item"><a href="index.html" class="ds-nav-link">Início</a></li>
-                <li class="ds-nav-item"><a href="moveis.html" class="ds-nav-link">Móveis</a></li>
-                <li class="ds-nav-item"><a href="estofados.html" class="ds-nav-link">Estofados</a></li>
+                                <li class="ds-nav-item"><a href="estofados.html" class="ds-nav-link">Estofados</a></li>
                 <li class="ds-nav-item"><a href="mesas-e-buffets.html" class="ds-nav-link">Mesas &amp; Buffets</a></li>
                 <li class="ds-nav-item"><a href="decoracao.html" class="ds-nav-link">Décor</a></li>
             </ul>
@@ -33,8 +32,7 @@ const headerHTML = `
         <button class="ds-overlay-close" onclick="toggleOverlayMenu()">&times;</button>
         <ul class="ds-overlay-nav">
             <li><a href="index.html" onclick="toggleOverlayMenu()">Início</a></li>
-            <li><a href="moveis.html" onclick="toggleOverlayMenu()">Móveis</a></li>
-            <li><a href="estofados.html" onclick="toggleOverlayMenu()">Estofados</a></li>
+                        <li><a href="estofados.html" onclick="toggleOverlayMenu()">Estofados</a></li>
             <li><a href="mesas-e-buffets.html" onclick="toggleOverlayMenu()">Mesas &amp; Buffets</a></li>
             <li><a href="decoracao.html" onclick="toggleOverlayMenu()">Décor</a></li>
             <li style="margin-top: 24px;">
