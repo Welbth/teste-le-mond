@@ -1,0 +1,57 @@
+{
+  "tarefa1": [],
+  "tarefa2": [],
+  "tarefa3": {
+    "total_paginas_alteradas": 242,
+    "exemplos": [
+      {
+        "arquivo": "adega-dommus.html",
+        "antes": "<span class=\"ds-product-brand-badge\">\n                            <i class=\"fas fa-circle\" style=\"font-size: 6px;\"></i> MARCENARIA &middot; DESIGN CONTEMPORÂNEO\n                        </span>",
+        "depois": "(elemento removido)"
+      },
+      {
+        "arquivo": "aparador-2380.html",
+        "antes": "<span class=\"ds-product-brand-badge\">\n                            <i class=\"fas fa-circle\" style=\"font-size: 6px;\"></i> MARCENARIA &middot; MADEIRA NOBRE\n                        </span>",
+        "depois": "(elemento removido)"
+      },
+      {
+        "arquivo": "aparador-contemporaneo-2480.html",
+        "antes": "<span class=\"ds-product-brand-badge\">\n                            <i class=\"fas fa-circle\" style=\"font-size: 6px;\"></i> MARCENARIA &middot; MADEIRA NOBRE\n                        </span>",
+        "depois": "(elemento removido)"
+      },
+      {
+        "arquivo": "aparador-contemporaneo-2483.html",
+        "antes": "<span class=\"ds-product-brand-badge\">\n                            <i class=\"fas fa-circle\" style=\"font-size: 6px;\"></i> MARCENARIA &middot; MADEIRA NOBRE\n                        </span>",
+        "depois": "(elemento removido)"
+      },
+      {
+        "arquivo": "aparador-kiro.html",
+        "antes": "<span class=\"ds-product-brand-badge\">\n                            <i class=\"fas fa-circle\" style=\"font-size: 6px;\"></i> MARCENARIA &middot; MADEIRA NOBRE\n                        </span>",
+        "depois": "(elemento removido)"
+      }
+    ]
+  },
+  "tarefa4": [
+    {
+      "arquivo": "index.html",
+      "antes": "<a href=\"#buffetlys\" class=\"ds-product-card-casaevo\">",
+      "depois": "<a href=\"buffet-lys.html\" class=\"ds-product-card-casaevo\">"
+    },
+    {
+      "arquivo": "estofados.html",
+      "antes": "<button class=\"ds-filter-pill\" onclick=\"filterCategoryByType('puffs', this)\">Puffs Decorativos</button>",
+      "depois": "<button class=\"ds-filter-pill\" onclick=\"filterCategoryByType('puffs', this)\">Puffs Decorativos</button>\n                    <button class=\"ds-filter-pill\" onclick=\"filterCategoryByType('recamiers', this)\">Recamiers</button>"
+    },
+    {
+      "arquivo": "estofados.html",
+      "adicionado": "Adicionados 25 cards de Poltronas e 5 cards de Recamiers no grid da categoria.",
+      "poltronas_ausentes": [],
+      "recamiers_ausentes": []
+    },
+    {
+      "arquivo": "mesas-e-buffets.html",
+      "adicionado": "Adicionados 19 cards de Marcenaria, Aparadores e Buffets no grid da categoria.",
+      "pecas_ausentes": []
+    }
+  ]
+}
